@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCP IAM Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>GCP IAM Search</h1>
+                <p>Search Google Cloud IAM roles and permissions</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        class="search-input"
+                        placeholder="Search permissions or roles (e.g., 'compute.instances' or 'admin')..."
+                        autocomplete="off"
+                    >
+                    <button id="clearBtn" class="clear-btn" aria-label="Clear search">✕</button>
+                </div>
+
+                <!-- Search Mode Toggle -->
+                <div class="mode-selector">
+                    <label>Search mode:</label>
+                    <div class="mode-buttons">
+                        <button class="mode-btn active" data-mode="fuzzy">
+                            Fuzzy
+                        </button>
+                        <button class="mode-btn" data-mode="prefix">
+                            Prefix
+                        </button>
+                        <button class="mode-btn" data-mode="exact">
+                            Exact
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section">
+                <!-- Loading State -->
+                <div id="loadingState" class="state-indicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Searching...</p>
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="state-indicator" style="display: none;">
+                    <p class="empty-message">Type to search for permissions and roles</p>
+                </div>
+
+                <!-- Results Container -->
+                <div id="resultsContainer" class="results-container" style="display: none;">
+                    <!-- Permissions Results -->
+                    <div id="permissionsSection" class="results-section-inner" style="display: none;">
+                        <h2 class="results-title">
+                            Permissions <span id="permissionCount" class="result-count"></span>
+                        </h2>
+                        <div id="permissionsList" class="results-list"></div>
+                    </div>
+
+                    <!-- Roles Results -->
+                    <div id="rolesSection" class="results-section-inner" style="display: none;">
+                        <h2 class="results-title">
+                            Roles <span id="roleCount" class="result-count"></span>
+                        </h2>
+                        <div id="rolesList" class="results-list"></div>
+                    </div>
+                </div>
+
+                <!-- Error State -->
+                <div id="errorState" class="state-indicator" style="display: none;">
+                    <p class="error-message">Error fetching results. Please try again.</p>
+                </div>
+            </section>
+
+            <!-- Info Section -->
+            <section class="info-section">
+                <p>
+                    <strong>Tip:</strong> Use arrow keys to navigate results, Enter to select.
+                    Keyboard shortcut <kbd>/</kbd> focuses the search box.
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 GCP IAM Search •
+                <a href="https://github.com/dmitri-lerko/gcpiam.com" target="_blank">View on GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Inline styles for dark mode toggle -->
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #4a90e2;
+                --accent-hover: #357abd;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-primary: #ffffff;
+                --bg-secondary: #f5f5f5;
+                --text-primary: #1a1a1a;
+                --text-secondary: #666666;
+                --border-color: #e0e0e0;
+                --accent: #1f73e7;
+                --accent-hover: #1553c7;
+            }
+        }
+    </style>
+
+    <!-- Main Application Script -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

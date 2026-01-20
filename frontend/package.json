@@ -1,0 +1,19 @@
+{
+  "name": "gcpiam-frontend",
+  "version": "0.1.0",
+  "description": "Vanilla HTML/CSS/TypeScript frontend for GCP IAM Search",
+  "type": "module",
+  "scripts": {
+    "dev": "http-server public -p 3000 -c-1 -o",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.2",
+    "http-server": "^14.1.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

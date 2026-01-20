@@ -1,0 +1,44 @@
+[package]
+name = "gcpiam-scraper"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "GCP IAM permissions and roles data scraper"
+
+[dependencies]
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+reqwest.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+# GCP - Note: For real implementation, use yup-oauth2 for proper authentication
+# google-cloudiam1 = "0.1"
+# yup-oauth2 = "8.3"
+
+# Serialization and validation
+serde-value = "0.7"
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+dotenv = "0.15"
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+log = "0.4"
+env_logger = "0.11"
+
+[lib]
+name = "gcpiam_scraper"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gcpiam-scraper"
+path = "src/main.rs"
+
+[dev-dependencies]
+mockall = "0.12"
+tempfile = "3.8"

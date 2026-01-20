@@ -1,0 +1,79 @@
+name: Sync GCP IAM Data (Service Account Key)
+
+# This is a simpler alternative using a service account key
+# Use this if you don't have Workload Identity Federation set up
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Verify authentication
+        run: |
+          gcloud auth list
+          echo "Access token obtained successfully"
+
+      - name: Fetch IAM data and generate static pages
+        run: |
+          echo "Starting GCP IAM data sync..."
+          python3 scripts/generate_static_site.py
+
+          # Show stats
+          echo ""
+          echo "Generated files:"
+          ls -la data/
+          echo ""
+          echo "Permission pages: $(ls -1 data/static/permissions/ | wc -l)"
+          echo "Role pages: $(ls -1 data/static/roles/ | wc -l)"
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Add generated files
+          git add data/iam-data.json
+          git add data/static/
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update GCP IAM data $(date -u +'%Y-%m-%d')"
+            git push
+            echo "Changes committed and pushed"
+          fi
+
+      - name: Summary
+        run: |
+          echo "## GCP IAM Data Sync Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Roles:** $(jq '.metadata.total_roles' data/iam-data.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Permissions:** $(jq '.metadata.total_permissions' data/iam-data.json)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Last Updated:** $(jq -r '.metadata.last_updated' data/iam-data.json)" >> $GITHUB_STEP_SUMMARY
