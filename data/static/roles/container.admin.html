@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes Engine Admin (roles/container.admin) | GCP IAM Reference</title>
+    <meta name="description" content="Kubernetes Engine Admin - Full management of Kubernetes Clusters and their Kubernetes API objects.">
+    <link rel="canonical" href="https://gcpiam.com/roles/container.admin">
+    <meta property="og:title" content="Kubernetes Engine Admin (roles/container.admin)">
+    <meta property="og:description" content="Kubernetes Engine Admin - Full management of Kubernetes Clusters and their Kubernetes API objects.">
+    <meta property="og:url" content="https://gcpiam.com/roles/container.admin">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/container.admin</h1>
+    <p class="subtitle">Kubernetes Engine Admin <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Full management of Kubernetes Clusters and their Kubernetes API objects.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(429)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/container.apiServices.create">container.apiServices.create</a></li>
+    <li><a href="/permissions/container.apiServices.delete">container.apiServices.delete</a></li>
+    <li><a href="/permissions/container.apiServices.get">container.apiServices.get</a></li>
+    <li><a href="/permissions/container.apiServices.getStatus">container.apiServices.getStatus</a></li>
+    <li><a href="/permissions/container.apiServices.list">container.apiServices.list</a></li>
+    <li><a href="/permissions/container.apiServices.update">container.apiServices.update</a></li>
+    <li><a href="/permissions/container.apiServices.updateStatus">container.apiServices.updateStatus</a></li>
+    <li><a href="/permissions/container.auditSinks.create">container.auditSinks.create</a></li>
+    <li><a href="/permissions/container.auditSinks.delete">container.auditSinks.delete</a></li>
+    <li><a href="/permissions/container.auditSinks.get">container.auditSinks.get</a></li>
+    <li><a href="/permissions/container.auditSinks.list">container.auditSinks.list</a></li>
+    <li><a href="/permissions/container.auditSinks.update">container.auditSinks.update</a></li>
+    <li><a href="/permissions/container.backendConfigs.create">container.backendConfigs.create</a></li>
+    <li><a href="/permissions/container.backendConfigs.delete">container.backendConfigs.delete</a></li>
+    <li><a href="/permissions/container.backendConfigs.get">container.backendConfigs.get</a></li>
+    <li><a href="/permissions/container.backendConfigs.list">container.backendConfigs.list</a></li>
+    <li><a href="/permissions/container.backendConfigs.update">container.backendConfigs.update</a></li>
+    <li><a href="/permissions/container.bindings.create">container.bindings.create</a></li>
+    <li><a href="/permissions/container.bindings.delete">container.bindings.delete</a></li>
+    <li><a href="/permissions/container.bindings.get">container.bindings.get</a></li>
+    <li><a href="/permissions/container.bindings.list">container.bindings.list</a></li>
+    <li><a href="/permissions/container.bindings.update">container.bindings.update</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.approve">container.certificateSigningRequests.approve</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.create">container.certificateSigningRequests.create</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.delete">container.certificateSigningRequests.delete</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.get">container.certificateSigningRequests.get</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.getStatus">container.certificateSigningRequests.getStatus</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.list">container.certificateSigningRequests.list</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.update">container.certificateSigningRequests.update</a></li>
+    <li><a href="/permissions/container.certificateSigningRequests.updateStatus">container.certificateSigningRequests.updateStatus</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.create">container.clusterRoleBindings.create</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.delete">container.clusterRoleBindings.delete</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.get">container.clusterRoleBindings.get</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.list">container.clusterRoleBindings.list</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.update">container.clusterRoleBindings.update</a></li>
+    <li><a href="/permissions/container.clusterRoles.bind">container.clusterRoles.bind</a></li>
+    <li><a href="/permissions/container.clusterRoles.create">container.clusterRoles.create</a></li>
+    <li><a href="/permissions/container.clusterRoles.delete">container.clusterRoles.delete</a></li>
+    <li><a href="/permissions/container.clusterRoles.escalate">container.clusterRoles.escalate</a></li>
+    <li><a href="/permissions/container.clusterRoles.get">container.clusterRoles.get</a></li>
+    <li><a href="/permissions/container.clusterRoles.list">container.clusterRoles.list</a></li>
+    <li><a href="/permissions/container.clusterRoles.update">container.clusterRoles.update</a></li>
+    <li><a href="/permissions/container.clusters.connect">container.clusters.connect</a></li>
+    <li><a href="/permissions/container.clusters.create">container.clusters.create</a></li>
+    <li><a href="/permissions/container.clusters.createTagBinding">container.clusters.createTagBinding</a></li>
+    <li><a href="/permissions/container.clusters.delete">container.clusters.delete</a></li>
+    <li><a href="/permissions/container.clusters.deleteTagBinding">container.clusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/container.clusters.get">container.clusters.get</a></li>
+    <li><a href="/permissions/container.clusters.getCredentials">container.clusters.getCredentials</a></li>
+    <li><a href="/permissions/container.clusters.impersonate">container.clusters.impersonate</a></li>
+    <li><a href="/permissions/container.clusters.list">container.clusters.list</a></li>
+    <li><a href="/permissions/container.clusters.listEffectiveTags">container.clusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/container.clusters.listTagBindings">container.clusters.listTagBindings</a></li>
+    <li><a href="/permissions/container.clusters.update">container.clusters.update</a></li>
+    <li><a href="/permissions/container.componentStatuses.get">container.componentStatuses.get</a></li>
+    <li><a href="/permissions/container.componentStatuses.list">container.componentStatuses.list</a></li>
+    <li><a href="/permissions/container.configMaps.create">container.configMaps.create</a></li>
+    <li><a href="/permissions/container.configMaps.delete">container.configMaps.delete</a></li>
+    <li><a href="/permissions/container.configMaps.get">container.configMaps.get</a></li>
+    <li><a href="/permissions/container.configMaps.list">container.configMaps.list</a></li>
+    <li><a href="/permissions/container.configMaps.update">container.configMaps.update</a></li>
+    <li><a href="/permissions/container.controllerRevisions.create">container.controllerRevisions.create</a></li>
+    <li><a href="/permissions/container.controllerRevisions.delete">container.controllerRevisions.delete</a></li>
+    <li><a href="/permissions/container.controllerRevisions.get">container.controllerRevisions.get</a></li>
+    <li><a href="/permissions/container.controllerRevisions.list">container.controllerRevisions.list</a></li>
+    <li><a href="/permissions/container.controllerRevisions.update">container.controllerRevisions.update</a></li>
+    <li><a href="/permissions/container.cronJobs.create">container.cronJobs.create</a></li>
+    <li><a href="/permissions/container.cronJobs.delete">container.cronJobs.delete</a></li>
+    <li><a href="/permissions/container.cronJobs.get">container.cronJobs.get</a></li>
+    <li><a href="/permissions/container.cronJobs.getStatus">container.cronJobs.getStatus</a></li>
+    <li><a href="/permissions/container.cronJobs.list">container.cronJobs.list</a></li>
+    <li><a href="/permissions/container.cronJobs.update">container.cronJobs.update</a></li>
+    <li><a href="/permissions/container.cronJobs.updateStatus">container.cronJobs.updateStatus</a></li>
+    <li><a href="/permissions/container.csiDrivers.create">container.csiDrivers.create</a></li>
+    <li><a href="/permissions/container.csiDrivers.delete">container.csiDrivers.delete</a></li>
+    <li><a href="/permissions/container.csiDrivers.get">container.csiDrivers.get</a></li>
+    <li><a href="/permissions/container.csiDrivers.list">container.csiDrivers.list</a></li>
+    <li><a href="/permissions/container.csiDrivers.update">container.csiDrivers.update</a></li>
+    <li><a href="/permissions/container.csiNodeInfos.create">container.csiNodeInfos.create</a></li>
+    <li><a href="/permissions/container.csiNodeInfos.delete">container.csiNodeInfos.delete</a></li>
+    <li><a href="/permissions/container.csiNodeInfos.get">container.csiNodeInfos.get</a></li>
+    <li><a href="/permissions/container.csiNodeInfos.list">container.csiNodeInfos.list</a></li>
+    <li><a href="/permissions/container.csiNodeInfos.update">container.csiNodeInfos.update</a></li>
+    <li><a href="/permissions/container.csiNodes.create">container.csiNodes.create</a></li>
+    <li><a href="/permissions/container.csiNodes.delete">container.csiNodes.delete</a></li>
+    <li><a href="/permissions/container.csiNodes.get">container.csiNodes.get</a></li>
+    <li><a href="/permissions/container.csiNodes.list">container.csiNodes.list</a></li>
+    <li><a href="/permissions/container.csiNodes.update">container.csiNodes.update</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.create">container.customResourceDefinitions.create</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.delete">container.customResourceDefinitions.delete</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.get">container.customResourceDefinitions.get</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.getStatus">container.customResourceDefinitions.getStatus</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.list">container.customResourceDefinitions.list</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.update">container.customResourceDefinitions.update</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.updateStatus">container.customResourceDefinitions.updateStatus</a></li>
+    <li><a href="/permissions/container.daemonSets.create">container.daemonSets.create</a></li>
+    <li><a href="/permissions/container.daemonSets.delete">container.daemonSets.delete</a></li>
+    <li><a href="/permissions/container.daemonSets.get">container.daemonSets.get</a></li>
+    <li><a href="/permissions/container.daemonSets.getStatus">container.daemonSets.getStatus</a></li>
+    <li><a href="/permissions/container.daemonSets.list">container.daemonSets.list</a></li>
+    <li><a href="/permissions/container.daemonSets.update">container.daemonSets.update</a></li>
+    <li><a href="/permissions/container.daemonSets.updateStatus">container.daemonSets.updateStatus</a></li>
+    <li><a href="/permissions/container.deployments.create">container.deployments.create</a></li>
+    <li><a href="/permissions/container.deployments.delete">container.deployments.delete</a></li>
+    <li><a href="/permissions/container.deployments.get">container.deployments.get</a></li>
+    <li><a href="/permissions/container.deployments.getScale">container.deployments.getScale</a></li>
+    <li><a href="/permissions/container.deployments.getStatus">container.deployments.getStatus</a></li>
+    <li><a href="/permissions/container.deployments.list">container.deployments.list</a></li>
+    <li><a href="/permissions/container.deployments.rollback">container.deployments.rollback</a></li>
+    <li><a href="/permissions/container.deployments.update">container.deployments.update</a></li>
+    <li><a href="/permissions/container.deployments.updateScale">container.deployments.updateScale</a></li>
+    <li><a href="/permissions/container.deployments.updateStatus">container.deployments.updateStatus</a></li>
+    <li><a href="/permissions/container.endpointSlices.create">container.endpointSlices.create</a></li>
+    <li><a href="/permissions/container.endpointSlices.delete">container.endpointSlices.delete</a></li>
+    <li><a href="/permissions/container.endpointSlices.get">container.endpointSlices.get</a></li>
+    <li><a href="/permissions/container.endpointSlices.list">container.endpointSlices.list</a></li>
+    <li><a href="/permissions/container.endpointSlices.update">container.endpointSlices.update</a></li>
+    <li><a href="/permissions/container.endpoints.create">container.endpoints.create</a></li>
+    <li><a href="/permissions/container.endpoints.delete">container.endpoints.delete</a></li>
+    <li><a href="/permissions/container.endpoints.get">container.endpoints.get</a></li>
+    <li><a href="/permissions/container.endpoints.list">container.endpoints.list</a></li>
+    <li><a href="/permissions/container.endpoints.update">container.endpoints.update</a></li>
+    <li><a href="/permissions/container.events.create">container.events.create</a></li>
+    <li><a href="/permissions/container.events.delete">container.events.delete</a></li>
+    <li><a href="/permissions/container.events.get">container.events.get</a></li>
+    <li><a href="/permissions/container.events.list">container.events.list</a></li>
+    <li><a href="/permissions/container.events.update">container.events.update</a></li>
+    <li><a href="/permissions/container.frontendConfigs.create">container.frontendConfigs.create</a></li>
+    <li><a href="/permissions/container.frontendConfigs.delete">container.frontendConfigs.delete</a></li>
+    <li><a href="/permissions/container.frontendConfigs.get">container.frontendConfigs.get</a></li>
+    <li><a href="/permissions/container.frontendConfigs.list">container.frontendConfigs.list</a></li>
+    <li><a href="/permissions/container.frontendConfigs.update">container.frontendConfigs.update</a></li>
+    <li><a href="/permissions/container.horizontalPodAutoscalers.create">container.horizontalPodAutoscalers.create</a></li>
+    <li><a href="/permissions/container.horizontalPodAutoscalers.delete">container.horizontalPodAutoscalers.delete</a></li>
+    <li><a href="/permissions/container.horizontalPodAutoscalers.get">container.horizontalPodAutoscalers.get</a></li>
+    <li><a href="/permissions/container.horizontalPodAutoscalers.getStatus">container.horizontalPodAutoscalers.getStatus</a></li>
+    <li><a href="/permissions/container.horizontalPodAutoscalers.list">container.horizontalPodAutoscalers.list</a></li>
+    <li><a href="/permissions/container.horizontalPodAutoscalers.update">container.horizontalPodAutoscalers.update</a></li>
+    <li><a href="/permissions/container.horizontalPodAutoscalers.updateStatus">container.horizontalPodAutoscalers.updateStatus</a></li>
+    <li><a href="/permissions/container.hostServiceAgent.use">container.hostServiceAgent.use</a></li>
+    <li><a href="/permissions/container.ingresses.create">container.ingresses.create</a></li>
+    <li><a href="/permissions/container.ingresses.delete">container.ingresses.delete</a></li>
+    <li><a href="/permissions/container.ingresses.get">container.ingresses.get</a></li>
+    <li><a href="/permissions/container.ingresses.getStatus">container.ingresses.getStatus</a></li>
+    <li><a href="/permissions/container.ingresses.list">container.ingresses.list</a></li>
+    <li><a href="/permissions/container.ingresses.update">container.ingresses.update</a></li>
+    <li><a href="/permissions/container.ingresses.updateStatus">container.ingresses.updateStatus</a></li>
+    <li><a href="/permissions/container.initializerConfigurations.create">container.initializerConfigurations.create</a></li>
+    <li><a href="/permissions/container.initializerConfigurations.delete">container.initializerConfigurations.delete</a></li>
+    <li><a href="/permissions/container.initializerConfigurations.get">container.initializerConfigurations.get</a></li>
+    <li><a href="/permissions/container.initializerConfigurations.list">container.initializerConfigurations.list</a></li>
+    <li><a href="/permissions/container.initializerConfigurations.update">container.initializerConfigurations.update</a></li>
+    <li><a href="/permissions/container.jobs.create">container.jobs.create</a></li>
+    <li><a href="/permissions/container.jobs.delete">container.jobs.delete</a></li>
+    <li><a href="/permissions/container.jobs.get">container.jobs.get</a></li>
+    <li><a href="/permissions/container.jobs.getStatus">container.jobs.getStatus</a></li>
+    <li><a href="/permissions/container.jobs.list">container.jobs.list</a></li>
+    <li><a href="/permissions/container.jobs.update">container.jobs.update</a></li>
+    <li><a href="/permissions/container.jobs.updateStatus">container.jobs.updateStatus</a></li>
+    <li><a href="/permissions/container.leases.create">container.leases.create</a></li>
+    <li><a href="/permissions/container.leases.delete">container.leases.delete</a></li>
+    <li><a href="/permissions/container.leases.get">container.leases.get</a></li>
+    <li><a href="/permissions/container.leases.list">container.leases.list</a></li>
+    <li><a href="/permissions/container.leases.update">container.leases.update</a></li>
+    <li><a href="/permissions/container.limitRanges.create">container.limitRanges.create</a></li>
+    <li><a href="/permissions/container.limitRanges.delete">container.limitRanges.delete</a></li>
+    <li><a href="/permissions/container.limitRanges.get">container.limitRanges.get</a></li>
+    <li><a href="/permissions/container.limitRanges.list">container.limitRanges.list</a></li>
+    <li><a href="/permissions/container.limitRanges.update">container.limitRanges.update</a></li>
+    <li><a href="/permissions/container.localSubjectAccessReviews.create">container.localSubjectAccessReviews.create</a></li>
+    <li><a href="/permissions/container.localSubjectAccessReviews.list">container.localSubjectAccessReviews.list</a></li>
+    <li><a href="/permissions/container.managedCertificates.create">container.managedCertificates.create</a></li>
+    <li><a href="/permissions/container.managedCertificates.delete">container.managedCertificates.delete</a></li>
+    <li><a href="/permissions/container.managedCertificates.get">container.managedCertificates.get</a></li>
+    <li><a href="/permissions/container.managedCertificates.list">container.managedCertificates.list</a></li>
+    <li><a href="/permissions/container.managedCertificates.update">container.managedCertificates.update</a></li>
+    <li><a href="/permissions/container.mutatingWebhookConfigurations.create">container.mutatingWebhookConfigurations.create</a></li>
+    <li><a href="/permissions/container.mutatingWebhookConfigurations.delete">container.mutatingWebhookConfigurations.delete</a></li>
+    <li><a href="/permissions/container.mutatingWebhookConfigurations.get">container.mutatingWebhookConfigurations.get</a></li>
+    <li><a href="/permissions/container.mutatingWebhookConfigurations.list">container.mutatingWebhookConfigurations.list</a></li>
+    <li><a href="/permissions/container.mutatingWebhookConfigurations.update">container.mutatingWebhookConfigurations.update</a></li>
+    <li><a href="/permissions/container.namespaces.create">container.namespaces.create</a></li>
+    <li><a href="/permissions/container.namespaces.delete">container.namespaces.delete</a></li>
+    <li><a href="/permissions/container.namespaces.finalize">container.namespaces.finalize</a></li>
+    <li><a href="/permissions/container.namespaces.get">container.namespaces.get</a></li>
+    <li><a href="/permissions/container.namespaces.getStatus">container.namespaces.getStatus</a></li>
+    <li><a href="/permissions/container.namespaces.list">container.namespaces.list</a></li>
+    <li><a href="/permissions/container.namespaces.update">container.namespaces.update</a></li>
+    <li><a href="/permissions/container.namespaces.updateStatus">container.namespaces.updateStatus</a></li>
+    <li><a href="/permissions/container.networkPolicies.create">container.networkPolicies.create</a></li>
+    <li><a href="/permissions/container.networkPolicies.delete">container.networkPolicies.delete</a></li>
+    <li><a href="/permissions/container.networkPolicies.get">container.networkPolicies.get</a></li>
+    <li><a href="/permissions/container.networkPolicies.list">container.networkPolicies.list</a></li>
+    <li><a href="/permissions/container.networkPolicies.update">container.networkPolicies.update</a></li>
+    <li><a href="/permissions/container.nodes.create">container.nodes.create</a></li>
+    <li><a href="/permissions/container.nodes.delete">container.nodes.delete</a></li>
+    <li><a href="/permissions/container.nodes.get">container.nodes.get</a></li>
+    <li><a href="/permissions/container.nodes.getStatus">container.nodes.getStatus</a></li>
+    <li><a href="/permissions/container.nodes.list">container.nodes.list</a></li>
+    <li><a href="/permissions/container.nodes.proxy">container.nodes.proxy</a></li>
+    <li><a href="/permissions/container.nodes.update">container.nodes.update</a></li>
+    <li><a href="/permissions/container.nodes.updateStatus">container.nodes.updateStatus</a></li>
+    <li><a href="/permissions/container.operations.get">container.operations.get</a></li>
+    <li><a href="/permissions/container.operations.list">container.operations.list</a></li>
+    <li><a href="/permissions/container.persistentVolumeClaims.create">container.persistentVolumeClaims.create</a></li>
+    <li><a href="/permissions/container.persistentVolumeClaims.delete">container.persistentVolumeClaims.delete</a></li>
+    <li><a href="/permissions/container.persistentVolumeClaims.get">container.persistentVolumeClaims.get</a></li>
+    <li><a href="/permissions/container.persistentVolumeClaims.getStatus">container.persistentVolumeClaims.getStatus</a></li>
+    <li><a href="/permissions/container.persistentVolumeClaims.list">container.persistentVolumeClaims.list</a></li>
+    <li><a href="/permissions/container.persistentVolumeClaims.update">container.persistentVolumeClaims.update</a></li>
+    <li><a href="/permissions/container.persistentVolumeClaims.updateStatus">container.persistentVolumeClaims.updateStatus</a></li>
+    <li><a href="/permissions/container.persistentVolumes.create">container.persistentVolumes.create</a></li>
+    <li><a href="/permissions/container.persistentVolumes.delete">container.persistentVolumes.delete</a></li>
+    <li><a href="/permissions/container.persistentVolumes.get">container.persistentVolumes.get</a></li>
+    <li><a href="/permissions/container.persistentVolumes.getStatus">container.persistentVolumes.getStatus</a></li>
+    <li><a href="/permissions/container.persistentVolumes.list">container.persistentVolumes.list</a></li>
+    <li><a href="/permissions/container.persistentVolumes.update">container.persistentVolumes.update</a></li>
+    <li><a href="/permissions/container.persistentVolumes.updateStatus">container.persistentVolumes.updateStatus</a></li>
+    <li><a href="/permissions/container.petSets.create">container.petSets.create</a></li>
+    <li><a href="/permissions/container.petSets.delete">container.petSets.delete</a></li>
+    <li><a href="/permissions/container.petSets.get">container.petSets.get</a></li>
+    <li><a href="/permissions/container.petSets.list">container.petSets.list</a></li>
+    <li><a href="/permissions/container.petSets.update">container.petSets.update</a></li>
+    <li><a href="/permissions/container.petSets.updateStatus">container.petSets.updateStatus</a></li>
+    <li><a href="/permissions/container.podDisruptionBudgets.create">container.podDisruptionBudgets.create</a></li>
+    <li><a href="/permissions/container.podDisruptionBudgets.delete">container.podDisruptionBudgets.delete</a></li>
+    <li><a href="/permissions/container.podDisruptionBudgets.get">container.podDisruptionBudgets.get</a></li>
+    <li><a href="/permissions/container.podDisruptionBudgets.getStatus">container.podDisruptionBudgets.getStatus</a></li>
+    <li><a href="/permissions/container.podDisruptionBudgets.list">container.podDisruptionBudgets.list</a></li>
+    <li><a href="/permissions/container.podDisruptionBudgets.update">container.podDisruptionBudgets.update</a></li>
+    <li><a href="/permissions/container.podDisruptionBudgets.updateStatus">container.podDisruptionBudgets.updateStatus</a></li>
+    <li><a href="/permissions/container.podPresets.create">container.podPresets.create</a></li>
+    <li><a href="/permissions/container.podPresets.delete">container.podPresets.delete</a></li>
+    <li><a href="/permissions/container.podPresets.get">container.podPresets.get</a></li>
+    <li><a href="/permissions/container.podPresets.list">container.podPresets.list</a></li>
+    <li><a href="/permissions/container.podPresets.update">container.podPresets.update</a></li>
+    <li><a href="/permissions/container.podSecurityPolicies.create">container.podSecurityPolicies.create</a></li>
+    <li><a href="/permissions/container.podSecurityPolicies.delete">container.podSecurityPolicies.delete</a></li>
+    <li><a href="/permissions/container.podSecurityPolicies.get">container.podSecurityPolicies.get</a></li>
+    <li><a href="/permissions/container.podSecurityPolicies.list">container.podSecurityPolicies.list</a></li>
+    <li><a href="/permissions/container.podSecurityPolicies.update">container.podSecurityPolicies.update</a></li>
+    <li><a href="/permissions/container.podSecurityPolicies.use">container.podSecurityPolicies.use</a></li>
+    <li><a href="/permissions/container.podTemplates.create">container.podTemplates.create</a></li>
+    <li><a href="/permissions/container.podTemplates.delete">container.podTemplates.delete</a></li>
+    <li><a href="/permissions/container.podTemplates.get">container.podTemplates.get</a></li>
+    <li><a href="/permissions/container.podTemplates.list">container.podTemplates.list</a></li>
+    <li><a href="/permissions/container.podTemplates.update">container.podTemplates.update</a></li>
+    <li><a href="/permissions/container.pods.attach">container.pods.attach</a></li>
+    <li><a href="/permissions/container.pods.create">container.pods.create</a></li>
+    <li><a href="/permissions/container.pods.delete">container.pods.delete</a></li>
+    <li><a href="/permissions/container.pods.evict">container.pods.evict</a></li>
+    <li><a href="/permissions/container.pods.exec">container.pods.exec</a></li>
+    <li><a href="/permissions/container.pods.get">container.pods.get</a></li>
+    <li><a href="/permissions/container.pods.getLogs">container.pods.getLogs</a></li>
+    <li><a href="/permissions/container.pods.getStatus">container.pods.getStatus</a></li>
+    <li><a href="/permissions/container.pods.initialize">container.pods.initialize</a></li>
+    <li><a href="/permissions/container.pods.list">container.pods.list</a></li>
+    <li><a href="/permissions/container.pods.portForward">container.pods.portForward</a></li>
+    <li><a href="/permissions/container.pods.proxy">container.pods.proxy</a></li>
+    <li><a href="/permissions/container.pods.update">container.pods.update</a></li>
+    <li><a href="/permissions/container.pods.updateStatus">container.pods.updateStatus</a></li>
+    <li><a href="/permissions/container.priorityClasses.create">container.priorityClasses.create</a></li>
+    <li><a href="/permissions/container.priorityClasses.delete">container.priorityClasses.delete</a></li>
+    <li><a href="/permissions/container.priorityClasses.get">container.priorityClasses.get</a></li>
+    <li><a href="/permissions/container.priorityClasses.list">container.priorityClasses.list</a></li>
+    <li><a href="/permissions/container.priorityClasses.update">container.priorityClasses.update</a></li>
+    <li><a href="/permissions/container.replicaSets.create">container.replicaSets.create</a></li>
+    <li><a href="/permissions/container.replicaSets.delete">container.replicaSets.delete</a></li>
+    <li><a href="/permissions/container.replicaSets.get">container.replicaSets.get</a></li>
+    <li><a href="/permissions/container.replicaSets.getScale">container.replicaSets.getScale</a></li>
+    <li><a href="/permissions/container.replicaSets.getStatus">container.replicaSets.getStatus</a></li>
+    <li><a href="/permissions/container.replicaSets.list">container.replicaSets.list</a></li>
+    <li><a href="/permissions/container.replicaSets.update">container.replicaSets.update</a></li>
+    <li><a href="/permissions/container.replicaSets.updateScale">container.replicaSets.updateScale</a></li>
+    <li><a href="/permissions/container.replicaSets.updateStatus">container.replicaSets.updateStatus</a></li>
+    <li><a href="/permissions/container.replicationControllers.create">container.replicationControllers.create</a></li>
+    <li><a href="/permissions/container.replicationControllers.delete">container.replicationControllers.delete</a></li>
+    <li><a href="/permissions/container.replicationControllers.get">container.replicationControllers.get</a></li>
+    <li><a href="/permissions/container.replicationControllers.getScale">container.replicationControllers.getScale</a></li>
+    <li><a href="/permissions/container.replicationControllers.getStatus">container.replicationControllers.getStatus</a></li>
+    <li><a href="/permissions/container.replicationControllers.list">container.replicationControllers.list</a></li>
+    <li><a href="/permissions/container.replicationControllers.update">container.replicationControllers.update</a></li>
+    <li><a href="/permissions/container.replicationControllers.updateScale">container.replicationControllers.updateScale</a></li>
+    <li><a href="/permissions/container.replicationControllers.updateStatus">container.replicationControllers.updateStatus</a></li>
+    <li><a href="/permissions/container.resourceQuotas.create">container.resourceQuotas.create</a></li>
+    <li><a href="/permissions/container.resourceQuotas.delete">container.resourceQuotas.delete</a></li>
+    <li><a href="/permissions/container.resourceQuotas.get">container.resourceQuotas.get</a></li>
+    <li><a href="/permissions/container.resourceQuotas.getStatus">container.resourceQuotas.getStatus</a></li>
+    <li><a href="/permissions/container.resourceQuotas.list">container.resourceQuotas.list</a></li>
+    <li><a href="/permissions/container.resourceQuotas.update">container.resourceQuotas.update</a></li>
+    <li><a href="/permissions/container.resourceQuotas.updateStatus">container.resourceQuotas.updateStatus</a></li>
+    <li><a href="/permissions/container.roleBindings.create">container.roleBindings.create</a></li>
+    <li><a href="/permissions/container.roleBindings.delete">container.roleBindings.delete</a></li>
+    <li><a href="/permissions/container.roleBindings.get">container.roleBindings.get</a></li>
+    <li><a href="/permissions/container.roleBindings.list">container.roleBindings.list</a></li>
+    <li><a href="/permissions/container.roleBindings.update">container.roleBindings.update</a></li>
+    <li><a href="/permissions/container.roles.bind">container.roles.bind</a></li>
+    <li><a href="/permissions/container.roles.create">container.roles.create</a></li>
+    <li><a href="/permissions/container.roles.delete">container.roles.delete</a></li>
+    <li><a href="/permissions/container.roles.escalate">container.roles.escalate</a></li>
+    <li><a href="/permissions/container.roles.get">container.roles.get</a></li>
+    <li><a href="/permissions/container.roles.list">container.roles.list</a></li>
+    <li><a href="/permissions/container.roles.update">container.roles.update</a></li>
+    <li><a href="/permissions/container.runtimeClasses.create">container.runtimeClasses.create</a></li>
+    <li><a href="/permissions/container.runtimeClasses.delete">container.runtimeClasses.delete</a></li>
+    <li><a href="/permissions/container.runtimeClasses.get">container.runtimeClasses.get</a></li>
+    <li><a href="/permissions/container.runtimeClasses.list">container.runtimeClasses.list</a></li>
+    <li><a href="/permissions/container.runtimeClasses.update">container.runtimeClasses.update</a></li>
+    <li><a href="/permissions/container.scheduledJobs.create">container.scheduledJobs.create</a></li>
+    <li><a href="/permissions/container.scheduledJobs.delete">container.scheduledJobs.delete</a></li>
+    <li><a href="/permissions/container.scheduledJobs.get">container.scheduledJobs.get</a></li>
+    <li><a href="/permissions/container.scheduledJobs.list">container.scheduledJobs.list</a></li>
+    <li><a href="/permissions/container.scheduledJobs.update">container.scheduledJobs.update</a></li>
+    <li><a href="/permissions/container.scheduledJobs.updateStatus">container.scheduledJobs.updateStatus</a></li>
+    <li><a href="/permissions/container.secrets.create">container.secrets.create</a></li>
+    <li><a href="/permissions/container.secrets.delete">container.secrets.delete</a></li>
+    <li><a href="/permissions/container.secrets.get">container.secrets.get</a></li>
+    <li><a href="/permissions/container.secrets.list">container.secrets.list</a></li>
+    <li><a href="/permissions/container.secrets.update">container.secrets.update</a></li>
+    <li><a href="/permissions/container.selfSubjectAccessReviews.create">container.selfSubjectAccessReviews.create</a></li>
+    <li><a href="/permissions/container.selfSubjectAccessReviews.list">container.selfSubjectAccessReviews.list</a></li>
+    <li><a href="/permissions/container.selfSubjectRulesReviews.create">container.selfSubjectRulesReviews.create</a></li>
+    <li><a href="/permissions/container.serviceAccounts.create">container.serviceAccounts.create</a></li>
+    <li><a href="/permissions/container.serviceAccounts.createToken">container.serviceAccounts.createToken</a></li>
+    <li><a href="/permissions/container.serviceAccounts.delete">container.serviceAccounts.delete</a></li>
+    <li><a href="/permissions/container.serviceAccounts.get">container.serviceAccounts.get</a></li>
+    <li><a href="/permissions/container.serviceAccounts.list">container.serviceAccounts.list</a></li>
+    <li><a href="/permissions/container.serviceAccounts.update">container.serviceAccounts.update</a></li>
+    <li><a href="/permissions/container.services.create">container.services.create</a></li>
+    <li><a href="/permissions/container.services.delete">container.services.delete</a></li>
+    <li><a href="/permissions/container.services.get">container.services.get</a></li>
+    <li><a href="/permissions/container.services.getStatus">container.services.getStatus</a></li>
+    <li><a href="/permissions/container.services.list">container.services.list</a></li>
+    <li><a href="/permissions/container.services.proxy">container.services.proxy</a></li>
+    <li><a href="/permissions/container.services.update">container.services.update</a></li>
+    <li><a href="/permissions/container.services.updateStatus">container.services.updateStatus</a></li>
+    <li><a href="/permissions/container.statefulSets.create">container.statefulSets.create</a></li>
+    <li><a href="/permissions/container.statefulSets.delete">container.statefulSets.delete</a></li>
+    <li><a href="/permissions/container.statefulSets.get">container.statefulSets.get</a></li>
+    <li><a href="/permissions/container.statefulSets.getScale">container.statefulSets.getScale</a></li>
+    <li><a href="/permissions/container.statefulSets.getStatus">container.statefulSets.getStatus</a></li>
+    <li><a href="/permissions/container.statefulSets.list">container.statefulSets.list</a></li>
+    <li><a href="/permissions/container.statefulSets.update">container.statefulSets.update</a></li>
+    <li><a href="/permissions/container.statefulSets.updateScale">container.statefulSets.updateScale</a></li>
+    <li><a href="/permissions/container.statefulSets.updateStatus">container.statefulSets.updateStatus</a></li>
+    <li><a href="/permissions/container.storageClasses.create">container.storageClasses.create</a></li>
+    <li><a href="/permissions/container.storageClasses.delete">container.storageClasses.delete</a></li>
+    <li><a href="/permissions/container.storageClasses.get">container.storageClasses.get</a></li>
+    <li><a href="/permissions/container.storageClasses.list">container.storageClasses.list</a></li>
+    <li><a href="/permissions/container.storageClasses.update">container.storageClasses.update</a></li>
+    <li><a href="/permissions/container.storageStates.create">container.storageStates.create</a></li>
+    <li><a href="/permissions/container.storageStates.delete">container.storageStates.delete</a></li>
+    <li><a href="/permissions/container.storageStates.get">container.storageStates.get</a></li>
+    <li><a href="/permissions/container.storageStates.getStatus">container.storageStates.getStatus</a></li>
+    <li><a href="/permissions/container.storageStates.list">container.storageStates.list</a></li>
+    <li><a href="/permissions/container.storageStates.update">container.storageStates.update</a></li>
+    <li><a href="/permissions/container.storageStates.updateStatus">container.storageStates.updateStatus</a></li>
+    <li><a href="/permissions/container.storageVersionMigrations.create">container.storageVersionMigrations.create</a></li>
+    <li><a href="/permissions/container.storageVersionMigrations.delete">container.storageVersionMigrations.delete</a></li>
+    <li><a href="/permissions/container.storageVersionMigrations.get">container.storageVersionMigrations.get</a></li>
+    <li><a href="/permissions/container.storageVersionMigrations.getStatus">container.storageVersionMigrations.getStatus</a></li>
+    <li><a href="/permissions/container.storageVersionMigrations.list">container.storageVersionMigrations.list</a></li>
+    <li><a href="/permissions/container.storageVersionMigrations.update">container.storageVersionMigrations.update</a></li>
+    <li><a href="/permissions/container.storageVersionMigrations.updateStatus">container.storageVersionMigrations.updateStatus</a></li>
+    <li><a href="/permissions/container.subjectAccessReviews.create">container.subjectAccessReviews.create</a></li>
+    <li><a href="/permissions/container.subjectAccessReviews.list">container.subjectAccessReviews.list</a></li>
+    <li><a href="/permissions/container.thirdPartyObjects.create">container.thirdPartyObjects.create</a></li>
+    <li><a href="/permissions/container.thirdPartyObjects.delete">container.thirdPartyObjects.delete</a></li>
+    <li><a href="/permissions/container.thirdPartyObjects.get">container.thirdPartyObjects.get</a></li>
+    <li><a href="/permissions/container.thirdPartyObjects.list">container.thirdPartyObjects.list</a></li>
+    <li><a href="/permissions/container.thirdPartyObjects.update">container.thirdPartyObjects.update</a></li>
+    <li><a href="/permissions/container.thirdPartyResources.create">container.thirdPartyResources.create</a></li>
+    <li><a href="/permissions/container.thirdPartyResources.delete">container.thirdPartyResources.delete</a></li>
+    <li><a href="/permissions/container.thirdPartyResources.get">container.thirdPartyResources.get</a></li>
+    <li><a href="/permissions/container.thirdPartyResources.list">container.thirdPartyResources.list</a></li>
+    <li><a href="/permissions/container.thirdPartyResources.update">container.thirdPartyResources.update</a></li>
+    <li><a href="/permissions/container.tokenReviews.create">container.tokenReviews.create</a></li>
+    <li><a href="/permissions/container.updateInfos.create">container.updateInfos.create</a></li>
+    <li><a href="/permissions/container.updateInfos.delete">container.updateInfos.delete</a></li>
+    <li><a href="/permissions/container.updateInfos.get">container.updateInfos.get</a></li>
+    <li><a href="/permissions/container.updateInfos.list">container.updateInfos.list</a></li>
+    <li><a href="/permissions/container.updateInfos.update">container.updateInfos.update</a></li>
+    <li><a href="/permissions/container.validatingWebhookConfigurations.create">container.validatingWebhookConfigurations.create</a></li>
+    <li><a href="/permissions/container.validatingWebhookConfigurations.delete">container.validatingWebhookConfigurations.delete</a></li>
+    <li><a href="/permissions/container.validatingWebhookConfigurations.get">container.validatingWebhookConfigurations.get</a></li>
+    <li><a href="/permissions/container.validatingWebhookConfigurations.list">container.validatingWebhookConfigurations.list</a></li>
+    <li><a href="/permissions/container.validatingWebhookConfigurations.update">container.validatingWebhookConfigurations.update</a></li>
+    <li><a href="/permissions/container.volumeAttachments.create">container.volumeAttachments.create</a></li>
+    <li><a href="/permissions/container.volumeAttachments.delete">container.volumeAttachments.delete</a></li>
+    <li><a href="/permissions/container.volumeAttachments.get">container.volumeAttachments.get</a></li>
+    <li><a href="/permissions/container.volumeAttachments.getStatus">container.volumeAttachments.getStatus</a></li>
+    <li><a href="/permissions/container.volumeAttachments.list">container.volumeAttachments.list</a></li>
+    <li><a href="/permissions/container.volumeAttachments.update">container.volumeAttachments.update</a></li>
+    <li><a href="/permissions/container.volumeAttachments.updateStatus">container.volumeAttachments.updateStatus</a></li>
+    <li><a href="/permissions/container.volumeSnapshotClasses.create">container.volumeSnapshotClasses.create</a></li>
+    <li><a href="/permissions/container.volumeSnapshotClasses.delete">container.volumeSnapshotClasses.delete</a></li>
+    <li><a href="/permissions/container.volumeSnapshotClasses.get">container.volumeSnapshotClasses.get</a></li>
+    <li><a href="/permissions/container.volumeSnapshotClasses.list">container.volumeSnapshotClasses.list</a></li>
+    <li><a href="/permissions/container.volumeSnapshotClasses.update">container.volumeSnapshotClasses.update</a></li>
+    <li><a href="/permissions/container.volumeSnapshotContents.create">container.volumeSnapshotContents.create</a></li>
+    <li><a href="/permissions/container.volumeSnapshotContents.delete">container.volumeSnapshotContents.delete</a></li>
+    <li><a href="/permissions/container.volumeSnapshotContents.get">container.volumeSnapshotContents.get</a></li>
+    <li><a href="/permissions/container.volumeSnapshotContents.getStatus">container.volumeSnapshotContents.getStatus</a></li>
+    <li><a href="/permissions/container.volumeSnapshotContents.list">container.volumeSnapshotContents.list</a></li>
+    <li><a href="/permissions/container.volumeSnapshotContents.update">container.volumeSnapshotContents.update</a></li>
+    <li><a href="/permissions/container.volumeSnapshotContents.updateStatus">container.volumeSnapshotContents.updateStatus</a></li>
+    <li><a href="/permissions/container.volumeSnapshots.create">container.volumeSnapshots.create</a></li>
+    <li><a href="/permissions/container.volumeSnapshots.delete">container.volumeSnapshots.delete</a></li>
+    <li><a href="/permissions/container.volumeSnapshots.get">container.volumeSnapshots.get</a></li>
+    <li><a href="/permissions/container.volumeSnapshots.getStatus">container.volumeSnapshots.getStatus</a></li>
+    <li><a href="/permissions/container.volumeSnapshots.list">container.volumeSnapshots.list</a></li>
+    <li><a href="/permissions/container.volumeSnapshots.update">container.volumeSnapshots.update</a></li>
+    <li><a href="/permissions/container.volumeSnapshots.updateStatus">container.volumeSnapshots.updateStatus</a></li>
+    <li><a href="/permissions/recommender.containerDiagnosisInsights.get">recommender.containerDiagnosisInsights.get</a></li>
+    <li><a href="/permissions/recommender.containerDiagnosisInsights.list">recommender.containerDiagnosisInsights.list</a></li>
+    <li><a href="/permissions/recommender.containerDiagnosisInsights.update">recommender.containerDiagnosisInsights.update</a></li>
+    <li><a href="/permissions/recommender.containerDiagnosisRecommendations.get">recommender.containerDiagnosisRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.containerDiagnosisRecommendations.list">recommender.containerDiagnosisRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.containerDiagnosisRecommendations.update">recommender.containerDiagnosisRecommendations.update</a></li>
+    <li><a href="/permissions/recommender.locations.get">recommender.locations.get</a></li>
+    <li><a href="/permissions/recommender.locations.list">recommender.locations.list</a></li>
+    <li><a href="/permissions/recommender.networkAnalyzerGkeConnectivityInsights.get">recommender.networkAnalyzerGkeConnectivityInsights.get</a></li>
+    <li><a href="/permissions/recommender.networkAnalyzerGkeConnectivityInsights.list">recommender.networkAnalyzerGkeConnectivityInsights.list</a></li>
+    <li><a href="/permissions/recommender.networkAnalyzerGkeConnectivityInsights.update">recommender.networkAnalyzerGkeConnectivityInsights.update</a></li>
+    <li><a href="/permissions/recommender.networkAnalyzerGkeIpAddressInsights.get">recommender.networkAnalyzerGkeIpAddressInsights.get</a></li>
+    <li><a href="/permissions/recommender.networkAnalyzerGkeIpAddressInsights.list">recommender.networkAnalyzerGkeIpAddressInsights.list</a></li>
+    <li><a href="/permissions/recommender.networkAnalyzerGkeIpAddressInsights.update">recommender.networkAnalyzerGkeIpAddressInsights.update</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.list">resourcemanager.projects.list</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

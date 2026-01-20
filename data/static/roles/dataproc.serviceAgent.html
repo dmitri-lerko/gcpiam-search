@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataproc Service Agent (roles/dataproc.serviceAgent) | GCP IAM Reference</title>
+    <meta name="description" content="Dataproc Service Agent - Gives Dataproc Service Account access to service accounts, compute resources, storage resources, and kubernetes resources. Includes access to service ...">
+    <link rel="canonical" href="https://gcpiam.com/roles/dataproc.serviceAgent">
+    <meta property="og:title" content="Dataproc Service Agent (roles/dataproc.serviceAgent)">
+    <meta property="og:description" content="Dataproc Service Agent - Gives Dataproc Service Account access to service accounts, compute resources, storage resources, and kubernetes resources. Includes access to service ...">
+    <meta property="og:url" content="https://gcpiam.com/roles/dataproc.serviceAgent">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/dataproc.serviceAgent</h1>
+    <p class="subtitle">Dataproc Service Agent <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Gives Dataproc Service Account access to service accounts, compute resources, storage resources, and kubernetes resources. Includes access to service accounts.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(461)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/backupdr.backupPlanAssociations.createForComputeDisk">backupdr.backupPlanAssociations.createForComputeDisk</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.createForComputeInstance">backupdr.backupPlanAssociations.createForComputeInstance</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.deleteForComputeDisk">backupdr.backupPlanAssociations.deleteForComputeDisk</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.deleteForComputeInstance">backupdr.backupPlanAssociations.deleteForComputeInstance</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.fetchForComputeDisk">backupdr.backupPlanAssociations.fetchForComputeDisk</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.getForComputeDisk">backupdr.backupPlanAssociations.getForComputeDisk</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.list">backupdr.backupPlanAssociations.list</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.triggerBackupForComputeDisk">backupdr.backupPlanAssociations.triggerBackupForComputeDisk</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.triggerBackupForComputeInstance">backupdr.backupPlanAssociations.triggerBackupForComputeInstance</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.updateForComputeDisk">backupdr.backupPlanAssociations.updateForComputeDisk</a></li>
+    <li><a href="/permissions/backupdr.backupPlanAssociations.updateForComputeInstance">backupdr.backupPlanAssociations.updateForComputeInstance</a></li>
+    <li><a href="/permissions/backupdr.backupPlans.get">backupdr.backupPlans.get</a></li>
+    <li><a href="/permissions/backupdr.backupPlans.list">backupdr.backupPlans.list</a></li>
+    <li><a href="/permissions/backupdr.backupPlans.useForComputeDisk">backupdr.backupPlans.useForComputeDisk</a></li>
+    <li><a href="/permissions/backupdr.backupPlans.useForComputeInstance">backupdr.backupPlans.useForComputeInstance</a></li>
+    <li><a href="/permissions/backupdr.backupVaults.get">backupdr.backupVaults.get</a></li>
+    <li><a href="/permissions/backupdr.backupVaults.list">backupdr.backupVaults.list</a></li>
+    <li><a href="/permissions/backupdr.locations.list">backupdr.locations.list</a></li>
+    <li><a href="/permissions/backupdr.operations.get">backupdr.operations.get</a></li>
+    <li><a href="/permissions/backupdr.operations.list">backupdr.operations.list</a></li>
+    <li><a href="/permissions/backupdr.serviceConfig.initialize">backupdr.serviceConfig.initialize</a></li>
+    <li><a href="/permissions/compute.acceleratorTypes.get">compute.acceleratorTypes.get</a></li>
+    <li><a href="/permissions/compute.acceleratorTypes.list">compute.acceleratorTypes.list</a></li>
+    <li><a href="/permissions/compute.addresses.createInternal">compute.addresses.createInternal</a></li>
+    <li><a href="/permissions/compute.addresses.deleteInternal">compute.addresses.deleteInternal</a></li>
+    <li><a href="/permissions/compute.addresses.get">compute.addresses.get</a></li>
+    <li><a href="/permissions/compute.addresses.list">compute.addresses.list</a></li>
+    <li><a href="/permissions/compute.addresses.listEffectiveTags">compute.addresses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.addresses.listTagBindings">compute.addresses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.addresses.use">compute.addresses.use</a></li>
+    <li><a href="/permissions/compute.addresses.useInternal">compute.addresses.useInternal</a></li>
+    <li><a href="/permissions/compute.autoscalers.create">compute.autoscalers.create</a></li>
+    <li><a href="/permissions/compute.autoscalers.delete">compute.autoscalers.delete</a></li>
+    <li><a href="/permissions/compute.autoscalers.get">compute.autoscalers.get</a></li>
+    <li><a href="/permissions/compute.autoscalers.list">compute.autoscalers.list</a></li>
+    <li><a href="/permissions/compute.autoscalers.update">compute.autoscalers.update</a></li>
+    <li><a href="/permissions/compute.diskSettings.get">compute.diskSettings.get</a></li>
+    <li><a href="/permissions/compute.diskTypes.get">compute.diskTypes.get</a></li>
+    <li><a href="/permissions/compute.diskTypes.list">compute.diskTypes.list</a></li>
+    <li><a href="/permissions/compute.disks.create">compute.disks.create</a></li>
+    <li><a href="/permissions/compute.disks.createSnapshot">compute.disks.createSnapshot</a></li>
+    <li><a href="/permissions/compute.disks.createTagBinding">compute.disks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.disks.delete">compute.disks.delete</a></li>
+    <li><a href="/permissions/compute.disks.get">compute.disks.get</a></li>
+    <li><a href="/permissions/compute.disks.list">compute.disks.list</a></li>
+    <li><a href="/permissions/compute.disks.resize">compute.disks.resize</a></li>
+    <li><a href="/permissions/compute.disks.setLabels">compute.disks.setLabels</a></li>
+    <li><a href="/permissions/compute.disks.startAsyncReplication">compute.disks.startAsyncReplication</a></li>
+    <li><a href="/permissions/compute.disks.stopAsyncReplication">compute.disks.stopAsyncReplication</a></li>
+    <li><a href="/permissions/compute.disks.stopGroupAsyncReplication">compute.disks.stopGroupAsyncReplication</a></li>
+    <li><a href="/permissions/compute.disks.update">compute.disks.update</a></li>
+    <li><a href="/permissions/compute.disks.updateKmsKey">compute.disks.updateKmsKey</a></li>
+    <li><a href="/permissions/compute.disks.use">compute.disks.use</a></li>
+    <li><a href="/permissions/compute.disks.useReadOnly">compute.disks.useReadOnly</a></li>
+    <li><a href="/permissions/compute.firewalls.get">compute.firewalls.get</a></li>
+    <li><a href="/permissions/compute.firewalls.list">compute.firewalls.list</a></li>
+    <li><a href="/permissions/compute.globalAddresses.get">compute.globalAddresses.get</a></li>
+    <li><a href="/permissions/compute.globalAddresses.list">compute.globalAddresses.list</a></li>
+    <li><a href="/permissions/compute.globalAddresses.listEffectiveTags">compute.globalAddresses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalAddresses.listTagBindings">compute.globalAddresses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalAddresses.use">compute.globalAddresses.use</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.attachNetworkEndpoints">compute.globalNetworkEndpointGroups.attachNetworkEndpoints</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.create">compute.globalNetworkEndpointGroups.create</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.createTagBinding">compute.globalNetworkEndpointGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.delete">compute.globalNetworkEndpointGroups.delete</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.deleteTagBinding">compute.globalNetworkEndpointGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.detachNetworkEndpoints">compute.globalNetworkEndpointGroups.detachNetworkEndpoints</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.get">compute.globalNetworkEndpointGroups.get</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.list">compute.globalNetworkEndpointGroups.list</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.listEffectiveTags">compute.globalNetworkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.listTagBindings">compute.globalNetworkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.use">compute.globalNetworkEndpointGroups.use</a></li>
+    <li><a href="/permissions/compute.globalOperations.get">compute.globalOperations.get</a></li>
+    <li><a href="/permissions/compute.globalOperations.list">compute.globalOperations.list</a></li>
+    <li><a href="/permissions/compute.images.get">compute.images.get</a></li>
+    <li><a href="/permissions/compute.images.getFromFamily">compute.images.getFromFamily</a></li>
+    <li><a href="/permissions/compute.images.list">compute.images.list</a></li>
+    <li><a href="/permissions/compute.images.useReadOnly">compute.images.useReadOnly</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.create">compute.instanceGroupManagers.create</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.createTagBinding">compute.instanceGroupManagers.createTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.delete">compute.instanceGroupManagers.delete</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.deleteTagBinding">compute.instanceGroupManagers.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.get">compute.instanceGroupManagers.get</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.list">compute.instanceGroupManagers.list</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.listEffectiveTags">compute.instanceGroupManagers.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.listTagBindings">compute.instanceGroupManagers.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.update">compute.instanceGroupManagers.update</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.use">compute.instanceGroupManagers.use</a></li>
+    <li><a href="/permissions/compute.instanceGroups.create">compute.instanceGroups.create</a></li>
+    <li><a href="/permissions/compute.instanceGroups.createTagBinding">compute.instanceGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroups.delete">compute.instanceGroups.delete</a></li>
+    <li><a href="/permissions/compute.instanceGroups.deleteTagBinding">compute.instanceGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroups.get">compute.instanceGroups.get</a></li>
+    <li><a href="/permissions/compute.instanceGroups.list">compute.instanceGroups.list</a></li>
+    <li><a href="/permissions/compute.instanceGroups.listEffectiveTags">compute.instanceGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instanceGroups.listTagBindings">compute.instanceGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instanceGroups.update">compute.instanceGroups.update</a></li>
+    <li><a href="/permissions/compute.instanceGroups.use">compute.instanceGroups.use</a></li>
+    <li><a href="/permissions/compute.instanceSettings.get">compute.instanceSettings.get</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.create">compute.instanceTemplates.create</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.delete">compute.instanceTemplates.delete</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.get">compute.instanceTemplates.get</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.getIamPolicy">compute.instanceTemplates.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.list">compute.instanceTemplates.list</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.setIamPolicy">compute.instanceTemplates.setIamPolicy</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.useReadOnly">compute.instanceTemplates.useReadOnly</a></li>
+    <li><a href="/permissions/compute.instances.addAccessConfig">compute.instances.addAccessConfig</a></li>
+    <li><a href="/permissions/compute.instances.addNetworkInterface">compute.instances.addNetworkInterface</a></li>
+    <li><a href="/permissions/compute.instances.addResourcePolicies">compute.instances.addResourcePolicies</a></li>
+    <li><a href="/permissions/compute.instances.attachDisk">compute.instances.attachDisk</a></li>
+    <li><a href="/permissions/compute.instances.create">compute.instances.create</a></li>
+    <li><a href="/permissions/compute.instances.createTagBinding">compute.instances.createTagBinding</a></li>
+    <li><a href="/permissions/compute.instances.delete">compute.instances.delete</a></li>
+    <li><a href="/permissions/compute.instances.deleteAccessConfig">compute.instances.deleteAccessConfig</a></li>
+    <li><a href="/permissions/compute.instances.deleteNetworkInterface">compute.instances.deleteNetworkInterface</a></li>
+    <li><a href="/permissions/compute.instances.deleteTagBinding">compute.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.instances.detachDisk">compute.instances.detachDisk</a></li>
+    <li><a href="/permissions/compute.instances.get">compute.instances.get</a></li>
+    <li><a href="/permissions/compute.instances.getEffectiveFirewalls">compute.instances.getEffectiveFirewalls</a></li>
+    <li><a href="/permissions/compute.instances.getGuestAttributes">compute.instances.getGuestAttributes</a></li>
+    <li><a href="/permissions/compute.instances.getIamPolicy">compute.instances.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.instances.getScreenshot">compute.instances.getScreenshot</a></li>
+    <li><a href="/permissions/compute.instances.getSerialPortOutput">compute.instances.getSerialPortOutput</a></li>
+    <li><a href="/permissions/compute.instances.getShieldedInstanceIdentity">compute.instances.getShieldedInstanceIdentity</a></li>
+    <li><a href="/permissions/compute.instances.getShieldedVmIdentity">compute.instances.getShieldedVmIdentity</a></li>
+    <li><a href="/permissions/compute.instances.list">compute.instances.list</a></li>
+    <li><a href="/permissions/compute.instances.listEffectiveTags">compute.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instances.listReferrers">compute.instances.listReferrers</a></li>
+    <li><a href="/permissions/compute.instances.listTagBindings">compute.instances.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instances.osAdminLogin">compute.instances.osAdminLogin</a></li>
+    <li><a href="/permissions/compute.instances.osLogin">compute.instances.osLogin</a></li>
+    <li><a href="/permissions/compute.instances.pscInterfaceCreate">compute.instances.pscInterfaceCreate</a></li>
+    <li><a href="/permissions/compute.instances.removeResourcePolicies">compute.instances.removeResourcePolicies</a></li>
+    <li><a href="/permissions/compute.instances.reset">compute.instances.reset</a></li>
+    <li><a href="/permissions/compute.instances.resume">compute.instances.resume</a></li>
+    <li><a href="/permissions/compute.instances.sendDiagnosticInterrupt">compute.instances.sendDiagnosticInterrupt</a></li>
+    <li><a href="/permissions/compute.instances.setDeletionProtection">compute.instances.setDeletionProtection</a></li>
+    <li><a href="/permissions/compute.instances.setDiskAutoDelete">compute.instances.setDiskAutoDelete</a></li>
+    <li><a href="/permissions/compute.instances.setIamPolicy">compute.instances.setIamPolicy</a></li>
+    <li><a href="/permissions/compute.instances.setLabels">compute.instances.setLabels</a></li>
+    <li><a href="/permissions/compute.instances.setMachineResources">compute.instances.setMachineResources</a></li>
+    <li><a href="/permissions/compute.instances.setMachineType">compute.instances.setMachineType</a></li>
+    <li><a href="/permissions/compute.instances.setMetadata">compute.instances.setMetadata</a></li>
+    <li><a href="/permissions/compute.instances.setMinCpuPlatform">compute.instances.setMinCpuPlatform</a></li>
+    <li><a href="/permissions/compute.instances.setName">compute.instances.setName</a></li>
+    <li><a href="/permissions/compute.instances.setScheduling">compute.instances.setScheduling</a></li>
+    <li><a href="/permissions/compute.instances.setSecurityPolicy">compute.instances.setSecurityPolicy</a></li>
+    <li><a href="/permissions/compute.instances.setServiceAccount">compute.instances.setServiceAccount</a></li>
+    <li><a href="/permissions/compute.instances.setShieldedInstanceIntegrityPolicy">compute.instances.setShieldedInstanceIntegrityPolicy</a></li>
+    <li><a href="/permissions/compute.instances.setShieldedVmIntegrityPolicy">compute.instances.setShieldedVmIntegrityPolicy</a></li>
+    <li><a href="/permissions/compute.instances.setTags">compute.instances.setTags</a></li>
+    <li><a href="/permissions/compute.instances.simulateMaintenanceEvent">compute.instances.simulateMaintenanceEvent</a></li>
+    <li><a href="/permissions/compute.instances.start">compute.instances.start</a></li>
+    <li><a href="/permissions/compute.instances.startWithEncryptionKey">compute.instances.startWithEncryptionKey</a></li>
+    <li><a href="/permissions/compute.instances.stop">compute.instances.stop</a></li>
+    <li><a href="/permissions/compute.instances.suspend">compute.instances.suspend</a></li>
+    <li><a href="/permissions/compute.instances.update">compute.instances.update</a></li>
+    <li><a href="/permissions/compute.instances.updateAccessConfig">compute.instances.updateAccessConfig</a></li>
+    <li><a href="/permissions/compute.instances.updateDisplayDevice">compute.instances.updateDisplayDevice</a></li>
+    <li><a href="/permissions/compute.instances.updateNetworkInterface">compute.instances.updateNetworkInterface</a></li>
+    <li><a href="/permissions/compute.instances.updateSecurity">compute.instances.updateSecurity</a></li>
+    <li><a href="/permissions/compute.instances.updateShieldedInstanceConfig">compute.instances.updateShieldedInstanceConfig</a></li>
+    <li><a href="/permissions/compute.instances.updateShieldedVmConfig">compute.instances.updateShieldedVmConfig</a></li>
+    <li><a href="/permissions/compute.instances.use">compute.instances.use</a></li>
+    <li><a href="/permissions/compute.instances.useReadOnly">compute.instances.useReadOnly</a></li>
+    <li><a href="/permissions/compute.licenses.get">compute.licenses.get</a></li>
+    <li><a href="/permissions/compute.licenses.list">compute.licenses.list</a></li>
+    <li><a href="/permissions/compute.licenses.listEffectiveTags">compute.licenses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.licenses.listTagBindings">compute.licenses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.machineImages.create">compute.machineImages.create</a></li>
+    <li><a href="/permissions/compute.machineImages.createTagBinding">compute.machineImages.createTagBinding</a></li>
+    <li><a href="/permissions/compute.machineImages.delete">compute.machineImages.delete</a></li>
+    <li><a href="/permissions/compute.machineImages.deleteTagBinding">compute.machineImages.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.machineImages.get">compute.machineImages.get</a></li>
+    <li><a href="/permissions/compute.machineImages.getIamPolicy">compute.machineImages.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.machineImages.list">compute.machineImages.list</a></li>
+    <li><a href="/permissions/compute.machineImages.listEffectiveTags">compute.machineImages.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.machineImages.listTagBindings">compute.machineImages.listTagBindings</a></li>
+    <li><a href="/permissions/compute.machineImages.setIamPolicy">compute.machineImages.setIamPolicy</a></li>
+    <li><a href="/permissions/compute.machineImages.setLabels">compute.machineImages.setLabels</a></li>
+    <li><a href="/permissions/compute.machineImages.useReadOnly">compute.machineImages.useReadOnly</a></li>
+    <li><a href="/permissions/compute.machineTypes.get">compute.machineTypes.get</a></li>
+    <li><a href="/permissions/compute.machineTypes.list">compute.machineTypes.list</a></li>
+    <li><a href="/permissions/compute.multiMig.create">compute.multiMig.create</a></li>
+    <li><a href="/permissions/compute.multiMig.delete">compute.multiMig.delete</a></li>
+    <li><a href="/permissions/compute.multiMig.get">compute.multiMig.get</a></li>
+    <li><a href="/permissions/compute.multiMig.list">compute.multiMig.list</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.attachNetworkEndpoints">compute.networkEndpointGroups.attachNetworkEndpoints</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.create">compute.networkEndpointGroups.create</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.createTagBinding">compute.networkEndpointGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.delete">compute.networkEndpointGroups.delete</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.deleteTagBinding">compute.networkEndpointGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.detachNetworkEndpoints">compute.networkEndpointGroups.detachNetworkEndpoints</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.get">compute.networkEndpointGroups.get</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.list">compute.networkEndpointGroups.list</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.listEffectiveTags">compute.networkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.listTagBindings">compute.networkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.use">compute.networkEndpointGroups.use</a></li>
+    <li><a href="/permissions/compute.networks.get">compute.networks.get</a></li>
+    <li><a href="/permissions/compute.networks.getEffectiveFirewalls">compute.networks.getEffectiveFirewalls</a></li>
+    <li><a href="/permissions/compute.networks.list">compute.networks.list</a></li>
+    <li><a href="/permissions/compute.networks.listEffectiveTags">compute.networks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networks.listTagBindings">compute.networks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networks.setFirewallPolicy">compute.networks.setFirewallPolicy</a></li>
+    <li><a href="/permissions/compute.networks.use">compute.networks.use</a></li>
+    <li><a href="/permissions/compute.networks.useExternalIp">compute.networks.useExternalIp</a></li>
+    <li><a href="/permissions/compute.nodeGroups.get">compute.nodeGroups.get</a></li>
+    <li><a href="/permissions/compute.nodeTypes.get">compute.nodeTypes.get</a></li>
+    <li><a href="/permissions/compute.projects.get">compute.projects.get</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.create">compute.regionFirewallPolicies.create</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.createTagBinding">compute.regionFirewallPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.get">compute.regionFirewallPolicies.get</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.update">compute.regionFirewallPolicies.update</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.use">compute.regionFirewallPolicies.use</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.attachNetworkEndpoints">compute.regionNetworkEndpointGroups.attachNetworkEndpoints</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.create">compute.regionNetworkEndpointGroups.create</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.createTagBinding">compute.regionNetworkEndpointGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.delete">compute.regionNetworkEndpointGroups.delete</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.deleteTagBinding">compute.regionNetworkEndpointGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.detachNetworkEndpoints">compute.regionNetworkEndpointGroups.detachNetworkEndpoints</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.get">compute.regionNetworkEndpointGroups.get</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.list">compute.regionNetworkEndpointGroups.list</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.listEffectiveTags">compute.regionNetworkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.listTagBindings">compute.regionNetworkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.use">compute.regionNetworkEndpointGroups.use</a></li>
+    <li><a href="/permissions/compute.regionOperations.get">compute.regionOperations.get</a></li>
+    <li><a href="/permissions/compute.regionOperations.list">compute.regionOperations.list</a></li>
+    <li><a href="/permissions/compute.regions.get">compute.regions.get</a></li>
+    <li><a href="/permissions/compute.regions.list">compute.regions.list</a></li>
+    <li><a href="/permissions/compute.reservationBlocks.get">compute.reservationBlocks.get</a></li>
+    <li><a href="/permissions/compute.reservationBlocks.list">compute.reservationBlocks.list</a></li>
+    <li><a href="/permissions/compute.reservationSubBlocks.get">compute.reservationSubBlocks.get</a></li>
+    <li><a href="/permissions/compute.reservationSubBlocks.list">compute.reservationSubBlocks.list</a></li>
+    <li><a href="/permissions/compute.reservationSubBlocks.performMaintenance">compute.reservationSubBlocks.performMaintenance</a></li>
+    <li><a href="/permissions/compute.reservationSubBlocks.reportFaulty">compute.reservationSubBlocks.reportFaulty</a></li>
+    <li><a href="/permissions/compute.reservations.get">compute.reservations.get</a></li>
+    <li><a href="/permissions/compute.reservations.list">compute.reservations.list</a></li>
+    <li><a href="/permissions/compute.reservations.listEffectiveTags">compute.reservations.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.reservations.listTagBindings">compute.reservations.listTagBindings</a></li>
+    <li><a href="/permissions/compute.resourcePolicies.list">compute.resourcePolicies.list</a></li>
+    <li><a href="/permissions/compute.resourcePolicies.useReadOnly">compute.resourcePolicies.useReadOnly</a></li>
+    <li><a href="/permissions/compute.storagePools.get">compute.storagePools.get</a></li>
+    <li><a href="/permissions/compute.storagePools.list">compute.storagePools.list</a></li>
+    <li><a href="/permissions/compute.storagePools.listEffectiveTags">compute.storagePools.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.storagePools.listTagBindings">compute.storagePools.listTagBindings</a></li>
+    <li><a href="/permissions/compute.storagePools.use">compute.storagePools.use</a></li>
+    <li><a href="/permissions/compute.subnetworks.get">compute.subnetworks.get</a></li>
+    <li><a href="/permissions/compute.subnetworks.list">compute.subnetworks.list</a></li>
+    <li><a href="/permissions/compute.subnetworks.listEffectiveTags">compute.subnetworks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.subnetworks.listTagBindings">compute.subnetworks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.subnetworks.setPrivateIpGoogleAccess">compute.subnetworks.setPrivateIpGoogleAccess</a></li>
+    <li><a href="/permissions/compute.subnetworks.use">compute.subnetworks.use</a></li>
+    <li><a href="/permissions/compute.subnetworks.useExternalIp">compute.subnetworks.useExternalIp</a></li>
+    <li><a href="/permissions/compute.targetPools.get">compute.targetPools.get</a></li>
+    <li><a href="/permissions/compute.targetPools.list">compute.targetPools.list</a></li>
+    <li><a href="/permissions/compute.targetPools.listEffectiveTags">compute.targetPools.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetPools.listTagBindings">compute.targetPools.listTagBindings</a></li>
+    <li><a href="/permissions/compute.zoneOperations.get">compute.zoneOperations.get</a></li>
+    <li><a href="/permissions/compute.zoneOperations.list">compute.zoneOperations.list</a></li>
+    <li><a href="/permissions/compute.zones.get">compute.zones.get</a></li>
+    <li><a href="/permissions/compute.zones.list">compute.zones.list</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.create">container.clusterRoleBindings.create</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.delete">container.clusterRoleBindings.delete</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.get">container.clusterRoleBindings.get</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.list">container.clusterRoleBindings.list</a></li>
+    <li><a href="/permissions/container.clusterRoleBindings.update">container.clusterRoleBindings.update</a></li>
+    <li><a href="/permissions/container.clusterRoles.bind">container.clusterRoles.bind</a></li>
+    <li><a href="/permissions/container.clusterRoles.create">container.clusterRoles.create</a></li>
+    <li><a href="/permissions/container.clusterRoles.delete">container.clusterRoles.delete</a></li>
+    <li><a href="/permissions/container.clusterRoles.escalate">container.clusterRoles.escalate</a></li>
+    <li><a href="/permissions/container.clusterRoles.get">container.clusterRoles.get</a></li>
+    <li><a href="/permissions/container.clusterRoles.list">container.clusterRoles.list</a></li>
+    <li><a href="/permissions/container.clusterRoles.update">container.clusterRoles.update</a></li>
+    <li><a href="/permissions/container.clusters.connect">container.clusters.connect</a></li>
+    <li><a href="/permissions/container.clusters.get">container.clusters.get</a></li>
+    <li><a href="/permissions/container.clusters.update">container.clusters.update</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.create">container.customResourceDefinitions.create</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.delete">container.customResourceDefinitions.delete</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.get">container.customResourceDefinitions.get</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.list">container.customResourceDefinitions.list</a></li>
+    <li><a href="/permissions/container.customResourceDefinitions.update">container.customResourceDefinitions.update</a></li>
+    <li><a href="/permissions/container.namespaces.create">container.namespaces.create</a></li>
+    <li><a href="/permissions/container.namespaces.delete">container.namespaces.delete</a></li>
+    <li><a href="/permissions/container.namespaces.get">container.namespaces.get</a></li>
+    <li><a href="/permissions/container.namespaces.list">container.namespaces.list</a></li>
+    <li><a href="/permissions/container.namespaces.update">container.namespaces.update</a></li>
+    <li><a href="/permissions/container.operations.get">container.operations.get</a></li>
+    <li><a href="/permissions/container.roleBindings.create">container.roleBindings.create</a></li>
+    <li><a href="/permissions/container.roleBindings.delete">container.roleBindings.delete</a></li>
+    <li><a href="/permissions/container.roleBindings.get">container.roleBindings.get</a></li>
+    <li><a href="/permissions/container.roleBindings.list">container.roleBindings.list</a></li>
+    <li><a href="/permissions/container.roleBindings.update">container.roleBindings.update</a></li>
+    <li><a href="/permissions/container.roles.bind">container.roles.bind</a></li>
+    <li><a href="/permissions/container.roles.escalate">container.roles.escalate</a></li>
+    <li><a href="/permissions/dataproc.autoscalingPolicies.create">dataproc.autoscalingPolicies.create</a></li>
+    <li><a href="/permissions/dataproc.autoscalingPolicies.delete">dataproc.autoscalingPolicies.delete</a></li>
+    <li><a href="/permissions/dataproc.autoscalingPolicies.get">dataproc.autoscalingPolicies.get</a></li>
+    <li><a href="/permissions/dataproc.autoscalingPolicies.getIamPolicy">dataproc.autoscalingPolicies.getIamPolicy</a></li>
+    <li><a href="/permissions/dataproc.autoscalingPolicies.list">dataproc.autoscalingPolicies.list</a></li>
+    <li><a href="/permissions/dataproc.autoscalingPolicies.update">dataproc.autoscalingPolicies.update</a></li>
+    <li><a href="/permissions/dataproc.autoscalingPolicies.use">dataproc.autoscalingPolicies.use</a></li>
+    <li><a href="/permissions/dataproc.clusters.create">dataproc.clusters.create</a></li>
+    <li><a href="/permissions/dataproc.clusters.delete">dataproc.clusters.delete</a></li>
+    <li><a href="/permissions/dataproc.clusters.get">dataproc.clusters.get</a></li>
+    <li><a href="/permissions/dataproc.clusters.getIamPolicy">dataproc.clusters.getIamPolicy</a></li>
+    <li><a href="/permissions/dataproc.clusters.list">dataproc.clusters.list</a></li>
+    <li><a href="/permissions/dataproc.clusters.repair">dataproc.clusters.repair</a></li>
+    <li><a href="/permissions/dataproc.clusters.setIamPolicy">dataproc.clusters.setIamPolicy</a></li>
+    <li><a href="/permissions/dataproc.clusters.start">dataproc.clusters.start</a></li>
+    <li><a href="/permissions/dataproc.clusters.stop">dataproc.clusters.stop</a></li>
+    <li><a href="/permissions/dataproc.clusters.update">dataproc.clusters.update</a></li>
+    <li><a href="/permissions/dataproc.clusters.use">dataproc.clusters.use</a></li>
+    <li><a href="/permissions/dataproc.jobs.cancel">dataproc.jobs.cancel</a></li>
+    <li><a href="/permissions/dataproc.jobs.create">dataproc.jobs.create</a></li>
+    <li><a href="/permissions/dataproc.jobs.delete">dataproc.jobs.delete</a></li>
+    <li><a href="/permissions/dataproc.jobs.get">dataproc.jobs.get</a></li>
+    <li><a href="/permissions/dataproc.jobs.getIamPolicy">dataproc.jobs.getIamPolicy</a></li>
+    <li><a href="/permissions/dataproc.jobs.list">dataproc.jobs.list</a></li>
+    <li><a href="/permissions/dataproc.jobs.setIamPolicy">dataproc.jobs.setIamPolicy</a></li>
+    <li><a href="/permissions/dataproc.jobs.update">dataproc.jobs.update</a></li>
+    <li><a href="/permissions/dataproc.nodeGroups.create">dataproc.nodeGroups.create</a></li>
+    <li><a href="/permissions/dataproc.nodeGroups.get">dataproc.nodeGroups.get</a></li>
+    <li><a href="/permissions/dataproc.nodeGroups.update">dataproc.nodeGroups.update</a></li>
+    <li><a href="/permissions/dataproc.operations.cancel">dataproc.operations.cancel</a></li>
+    <li><a href="/permissions/dataproc.sessionTemplates.get">dataproc.sessionTemplates.get</a></li>
+    <li><a href="/permissions/dataproc.sessions.create">dataproc.sessions.create</a></li>
+    <li><a href="/permissions/dataproc.sessions.delete">dataproc.sessions.delete</a></li>
+    <li><a href="/permissions/dataproc.sessions.get">dataproc.sessions.get</a></li>
+    <li><a href="/permissions/dataproc.sessions.list">dataproc.sessions.list</a></li>
+    <li><a href="/permissions/dataproc.sessions.sparkApplicationRead">dataproc.sessions.sparkApplicationRead</a></li>
+    <li><a href="/permissions/dataproc.sessions.sparkApplicationWrite">dataproc.sessions.sparkApplicationWrite</a></li>
+    <li><a href="/permissions/dataproc.sessions.terminate">dataproc.sessions.terminate</a></li>
+    <li><a href="/permissions/dataprocrm.nodePools.create">dataprocrm.nodePools.create</a></li>
+    <li><a href="/permissions/dataprocrm.nodePools.delete">dataprocrm.nodePools.delete</a></li>
+    <li><a href="/permissions/dataprocrm.nodePools.deleteNodes">dataprocrm.nodePools.deleteNodes</a></li>
+    <li><a href="/permissions/dataprocrm.nodePools.get">dataprocrm.nodePools.get</a></li>
+    <li><a href="/permissions/dataprocrm.nodePools.list">dataprocrm.nodePools.list</a></li>
+    <li><a href="/permissions/dataprocrm.nodePools.resize">dataprocrm.nodePools.resize</a></li>
+    <li><a href="/permissions/dataprocrm.nodes.get">dataprocrm.nodes.get</a></li>
+    <li><a href="/permissions/dataprocrm.nodes.heartbeat">dataprocrm.nodes.heartbeat</a></li>
+    <li><a href="/permissions/dataprocrm.nodes.list">dataprocrm.nodes.list</a></li>
+    <li><a href="/permissions/dataprocrm.nodes.mintOAuthToken">dataprocrm.nodes.mintOAuthToken</a></li>
+    <li><a href="/permissions/dataprocrm.nodes.update">dataprocrm.nodes.update</a></li>
+    <li><a href="/permissions/dataprocrm.operations.cancel">dataprocrm.operations.cancel</a></li>
+    <li><a href="/permissions/dataprocrm.operations.get">dataprocrm.operations.get</a></li>
+    <li><a href="/permissions/dataprocrm.operations.list">dataprocrm.operations.list</a></li>
+    <li><a href="/permissions/dataprocrm.workloads.cancel">dataprocrm.workloads.cancel</a></li>
+    <li><a href="/permissions/dataprocrm.workloads.create">dataprocrm.workloads.create</a></li>
+    <li><a href="/permissions/dataprocrm.workloads.delete">dataprocrm.workloads.delete</a></li>
+    <li><a href="/permissions/dataprocrm.workloads.get">dataprocrm.workloads.get</a></li>
+    <li><a href="/permissions/dataprocrm.workloads.list">dataprocrm.workloads.list</a></li>
+    <li><a href="/permissions/firebase.projects.get">firebase.projects.get</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.actAs">iam.serviceAccounts.actAs</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.getAccessToken">iam.serviceAccounts.getAccessToken</a></li>
+    <li><a href="/permissions/metastore.services.get">metastore.services.get</a></li>
+    <li><a href="/permissions/monitoring.timeSeries.create">monitoring.timeSeries.create</a></li>
+    <li><a href="/permissions/orgpolicy.policy.get">orgpolicy.policy.get</a></li>
+    <li><a href="/permissions/recommender.iamPolicyInsights.get">recommender.iamPolicyInsights.get</a></li>
+    <li><a href="/permissions/recommender.iamPolicyInsights.list">recommender.iamPolicyInsights.list</a></li>
+    <li><a href="/permissions/recommender.iamPolicyInsights.update">recommender.iamPolicyInsights.update</a></li>
+    <li><a href="/permissions/recommender.iamPolicyRecommendations.get">recommender.iamPolicyRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.iamPolicyRecommendations.list">recommender.iamPolicyRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.iamPolicyRecommendations.update">recommender.iamPolicyRecommendations.update</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteInsights.get">recommender.storageBucketSoftDeleteInsights.get</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteInsights.list">recommender.storageBucketSoftDeleteInsights.list</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteInsights.update">recommender.storageBucketSoftDeleteInsights.update</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteRecommendations.get">recommender.storageBucketSoftDeleteRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteRecommendations.list">recommender.storageBucketSoftDeleteRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteRecommendations.update">recommender.storageBucketSoftDeleteRecommendations.update</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.listEffectiveTags">resourcemanager.hierarchyNodes.listEffectiveTags</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.list">resourcemanager.projects.list</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.create">resourcemanager.tagKeys.create</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.get">resourcemanager.tagKeys.get</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.getIamPolicy">resourcemanager.tagKeys.getIamPolicy</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.setIamPolicy">resourcemanager.tagKeys.setIamPolicy</a></li>
+    <li><a href="/permissions/resourcemanager.tagValueBindings.create">resourcemanager.tagValueBindings.create</a></li>
+    <li><a href="/permissions/resourcemanager.tagValueBindings.delete">resourcemanager.tagValueBindings.delete</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.create">resourcemanager.tagValues.create</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.get">resourcemanager.tagValues.get</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.analyze">serviceusage.consumerpolicy.analyze</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.get">serviceusage.consumerpolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.effectivepolicy.get">serviceusage.effectivepolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.groups.list">serviceusage.groups.list</a></li>
+    <li><a href="/permissions/serviceusage.groups.listExpandedMembers">serviceusage.groups.listExpandedMembers</a></li>
+    <li><a href="/permissions/serviceusage.groups.listMembers">serviceusage.groups.listMembers</a></li>
+    <li><a href="/permissions/serviceusage.quotas.get">serviceusage.quotas.get</a></li>
+    <li><a href="/permissions/serviceusage.services.get">serviceusage.services.get</a></li>
+    <li><a href="/permissions/serviceusage.services.list">serviceusage.services.list</a></li>
+    <li><a href="/permissions/serviceusage.services.use">serviceusage.services.use</a></li>
+    <li><a href="/permissions/serviceusage.values.test">serviceusage.values.test</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.create">storage.anywhereCaches.create</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.disable">storage.anywhereCaches.disable</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.get">storage.anywhereCaches.get</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.list">storage.anywhereCaches.list</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.pause">storage.anywhereCaches.pause</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.resume">storage.anywhereCaches.resume</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.update">storage.anywhereCaches.update</a></li>
+    <li><a href="/permissions/storage.bucketOperations.cancel">storage.bucketOperations.cancel</a></li>
+    <li><a href="/permissions/storage.bucketOperations.get">storage.bucketOperations.get</a></li>
+    <li><a href="/permissions/storage.bucketOperations.list">storage.bucketOperations.list</a></li>
+    <li><a href="/permissions/storage.buckets.create">storage.buckets.create</a></li>
+    <li><a href="/permissions/storage.buckets.createTagBinding">storage.buckets.createTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.delete">storage.buckets.delete</a></li>
+    <li><a href="/permissions/storage.buckets.deleteTagBinding">storage.buckets.deleteTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.enableObjectRetention">storage.buckets.enableObjectRetention</a></li>
+    <li><a href="/permissions/storage.buckets.get">storage.buckets.get</a></li>
+    <li><a href="/permissions/storage.buckets.getIamPolicy">storage.buckets.getIamPolicy</a></li>
+    <li><a href="/permissions/storage.buckets.getIpFilter">storage.buckets.getIpFilter</a></li>
+    <li><a href="/permissions/storage.buckets.getObjectInsights">storage.buckets.getObjectInsights</a></li>
+    <li><a href="/permissions/storage.buckets.list">storage.buckets.list</a></li>
+    <li><a href="/permissions/storage.buckets.listEffectiveTags">storage.buckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/storage.buckets.listTagBindings">storage.buckets.listTagBindings</a></li>
+    <li><a href="/permissions/storage.buckets.relocate">storage.buckets.relocate</a></li>
+    <li><a href="/permissions/storage.buckets.restore">storage.buckets.restore</a></li>
+    <li><a href="/permissions/storage.buckets.setIamPolicy">storage.buckets.setIamPolicy</a></li>
+    <li><a href="/permissions/storage.buckets.setIpFilter">storage.buckets.setIpFilter</a></li>
+    <li><a href="/permissions/storage.buckets.update">storage.buckets.update</a></li>
+    <li><a href="/permissions/storage.buckets.viewIntelligenceDetails">storage.buckets.viewIntelligenceDetails</a></li>
+    <li><a href="/permissions/storage.folders.create">storage.folders.create</a></li>
+    <li><a href="/permissions/storage.folders.delete">storage.folders.delete</a></li>
+    <li><a href="/permissions/storage.folders.get">storage.folders.get</a></li>
+    <li><a href="/permissions/storage.folders.list">storage.folders.list</a></li>
+    <li><a href="/permissions/storage.folders.rename">storage.folders.rename</a></li>
+    <li><a href="/permissions/storage.intelligenceConfigs.get">storage.intelligenceConfigs.get</a></li>
+    <li><a href="/permissions/storage.intelligenceConfigs.update">storage.intelligenceConfigs.update</a></li>
+    <li><a href="/permissions/storage.managedFolders.create">storage.managedFolders.create</a></li>
+    <li><a href="/permissions/storage.managedFolders.delete">storage.managedFolders.delete</a></li>
+    <li><a href="/permissions/storage.managedFolders.get">storage.managedFolders.get</a></li>
+    <li><a href="/permissions/storage.managedFolders.getIamPolicy">storage.managedFolders.getIamPolicy</a></li>
+    <li><a href="/permissions/storage.managedFolders.list">storage.managedFolders.list</a></li>
+    <li><a href="/permissions/storage.managedFolders.setIamPolicy">storage.managedFolders.setIamPolicy</a></li>
+    <li><a href="/permissions/storage.multipartUploads.abort">storage.multipartUploads.abort</a></li>
+    <li><a href="/permissions/storage.multipartUploads.create">storage.multipartUploads.create</a></li>
+    <li><a href="/permissions/storage.multipartUploads.list">storage.multipartUploads.list</a></li>
+    <li><a href="/permissions/storage.multipartUploads.listParts">storage.multipartUploads.listParts</a></li>
+    <li><a href="/permissions/storage.objects.create">storage.objects.create</a></li>
+    <li><a href="/permissions/storage.objects.createContext">storage.objects.createContext</a></li>
+    <li><a href="/permissions/storage.objects.delete">storage.objects.delete</a></li>
+    <li><a href="/permissions/storage.objects.deleteContext">storage.objects.deleteContext</a></li>
+    <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
+    <li><a href="/permissions/storage.objects.getIamPolicy">storage.objects.getIamPolicy</a></li>
+    <li><a href="/permissions/storage.objects.list">storage.objects.list</a></li>
+    <li><a href="/permissions/storage.objects.move">storage.objects.move</a></li>
+    <li><a href="/permissions/storage.objects.overrideUnlockedRetention">storage.objects.overrideUnlockedRetention</a></li>
+    <li><a href="/permissions/storage.objects.restore">storage.objects.restore</a></li>
+    <li><a href="/permissions/storage.objects.setIamPolicy">storage.objects.setIamPolicy</a></li>
+    <li><a href="/permissions/storage.objects.setRetention">storage.objects.setRetention</a></li>
+    <li><a href="/permissions/storage.objects.update">storage.objects.update</a></li>
+    <li><a href="/permissions/storage.objects.updateContext">storage.objects.updateContext</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.cancel">storagebatchoperations.jobs.cancel</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.create">storagebatchoperations.jobs.create</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.delete">storagebatchoperations.jobs.delete</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.get">storagebatchoperations.jobs.get</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.list">storagebatchoperations.jobs.list</a></li>
+    <li><a href="/permissions/storagebatchoperations.locations.get">storagebatchoperations.locations.get</a></li>
+    <li><a href="/permissions/storagebatchoperations.locations.list">storagebatchoperations.locations.list</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.cancel">storagebatchoperations.operations.cancel</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.delete">storagebatchoperations.operations.delete</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.get">storagebatchoperations.operations.get</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.list">storagebatchoperations.operations.list</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

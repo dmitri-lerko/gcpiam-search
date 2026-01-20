@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud KMS Admin (roles/cloudkms.admin) | GCP IAM Reference</title>
+    <meta name="description" content="Cloud KMS Admin - Enables management of crypto resources.">
+    <link rel="canonical" href="https://gcpiam.com/roles/cloudkms.admin">
+    <meta property="og:title" content="Cloud KMS Admin (roles/cloudkms.admin)">
+    <meta property="og:description" content="Cloud KMS Admin - Enables management of crypto resources.">
+    <meta property="og:url" content="https://gcpiam.com/roles/cloudkms.admin">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/cloudkms.admin</h1>
+    <p class="subtitle">Cloud KMS Admin <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Enables management of crypto resources.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(63)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/cloudkms.autokeyConfigs.get">cloudkms.autokeyConfigs.get</a></li>
+    <li><a href="/permissions/cloudkms.autokeyConfigs.update">cloudkms.autokeyConfigs.update</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.create">cloudkms.cryptoKeyVersions.create</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.destroy">cloudkms.cryptoKeyVersions.destroy</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.get">cloudkms.cryptoKeyVersions.get</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.list">cloudkms.cryptoKeyVersions.list</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.restore">cloudkms.cryptoKeyVersions.restore</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.update">cloudkms.cryptoKeyVersions.update</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.useToDecryptViaDelegation">cloudkms.cryptoKeyVersions.useToDecryptViaDelegation</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.useToEncryptViaDelegation">cloudkms.cryptoKeyVersions.useToEncryptViaDelegation</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeys.create">cloudkms.cryptoKeys.create</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeys.get">cloudkms.cryptoKeys.get</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeys.getIamPolicy">cloudkms.cryptoKeys.getIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeys.list">cloudkms.cryptoKeys.list</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeys.setIamPolicy">cloudkms.cryptoKeys.setIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeys.update">cloudkms.cryptoKeys.update</a></li>
+    <li><a href="/permissions/cloudkms.ekmConfigs.get">cloudkms.ekmConfigs.get</a></li>
+    <li><a href="/permissions/cloudkms.ekmConfigs.getIamPolicy">cloudkms.ekmConfigs.getIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.ekmConfigs.setIamPolicy">cloudkms.ekmConfigs.setIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.ekmConfigs.update">cloudkms.ekmConfigs.update</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.create">cloudkms.ekmConnections.create</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.get">cloudkms.ekmConnections.get</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.getIamPolicy">cloudkms.ekmConnections.getIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.list">cloudkms.ekmConnections.list</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.setIamPolicy">cloudkms.ekmConnections.setIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.update">cloudkms.ekmConnections.update</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.use">cloudkms.ekmConnections.use</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.verifyConnectivity">cloudkms.ekmConnections.verifyConnectivity</a></li>
+    <li><a href="/permissions/cloudkms.importJobs.create">cloudkms.importJobs.create</a></li>
+    <li><a href="/permissions/cloudkms.importJobs.get">cloudkms.importJobs.get</a></li>
+    <li><a href="/permissions/cloudkms.importJobs.getIamPolicy">cloudkms.importJobs.getIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.importJobs.list">cloudkms.importJobs.list</a></li>
+    <li><a href="/permissions/cloudkms.importJobs.setIamPolicy">cloudkms.importJobs.setIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.importJobs.useToImport">cloudkms.importJobs.useToImport</a></li>
+    <li><a href="/permissions/cloudkms.kajPolicyConfigs.get">cloudkms.kajPolicyConfigs.get</a></li>
+    <li><a href="/permissions/cloudkms.kajPolicyConfigs.update">cloudkms.kajPolicyConfigs.update</a></li>
+    <li><a href="/permissions/cloudkms.keyHandles.create">cloudkms.keyHandles.create</a></li>
+    <li><a href="/permissions/cloudkms.keyHandles.get">cloudkms.keyHandles.get</a></li>
+    <li><a href="/permissions/cloudkms.keyHandles.list">cloudkms.keyHandles.list</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.create">cloudkms.keyRings.create</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.createTagBinding">cloudkms.keyRings.createTagBinding</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.deleteTagBinding">cloudkms.keyRings.deleteTagBinding</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.get">cloudkms.keyRings.get</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.getIamPolicy">cloudkms.keyRings.getIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.list">cloudkms.keyRings.list</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.listEffectiveTags">cloudkms.keyRings.listEffectiveTags</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.listTagBindings">cloudkms.keyRings.listTagBindings</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.setIamPolicy">cloudkms.keyRings.setIamPolicy</a></li>
+    <li><a href="/permissions/cloudkms.locations.get">cloudkms.locations.get</a></li>
+    <li><a href="/permissions/cloudkms.locations.list">cloudkms.locations.list</a></li>
+    <li><a href="/permissions/cloudkms.locations.optOutKeyDeletionMsa">cloudkms.locations.optOutKeyDeletionMsa</a></li>
+    <li><a href="/permissions/cloudkms.operations.get">cloudkms.operations.get</a></li>
+    <li><a href="/permissions/cloudkms.projects.showEffectiveAutokeyConfig">cloudkms.projects.showEffectiveAutokeyConfig</a></li>
+    <li><a href="/permissions/cloudkms.projects.showEffectiveKajEnrollmentConfig">cloudkms.projects.showEffectiveKajEnrollmentConfig</a></li>
+    <li><a href="/permissions/cloudkms.projects.showEffectiveKajPolicyConfig">cloudkms.projects.showEffectiveKajPolicyConfig</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstanceProposals.delete">cloudkms.singleTenantHsmInstanceProposals.delete</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstanceProposals.get">cloudkms.singleTenantHsmInstanceProposals.get</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstanceProposals.list">cloudkms.singleTenantHsmInstanceProposals.list</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstances.create">cloudkms.singleTenantHsmInstances.create</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstances.get">cloudkms.singleTenantHsmInstances.get</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstances.list">cloudkms.singleTenantHsmInstances.list</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstances.use">cloudkms.singleTenantHsmInstances.use</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

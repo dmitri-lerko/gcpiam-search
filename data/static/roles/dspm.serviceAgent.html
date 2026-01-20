@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSPM Service Agent (roles/dspm.serviceAgent) | GCP IAM Reference</title>
+    <meta name="description" content="DSPM Service Agent - Gives DSPM Service Account access to consumer resources.">
+    <link rel="canonical" href="https://gcpiam.com/roles/dspm.serviceAgent">
+    <meta property="og:title" content="DSPM Service Agent (roles/dspm.serviceAgent)">
+    <meta property="og:description" content="DSPM Service Agent - Gives DSPM Service Account access to consumer resources.">
+    <meta property="og:url" content="https://gcpiam.com/roles/dspm.serviceAgent">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/dspm.serviceAgent</h1>
+    <p class="subtitle">DSPM Service Agent <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Gives DSPM Service Account access to consumer resources.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(85)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/aiplatform.artifacts.list">aiplatform.artifacts.list</a></li>
+    <li><a href="/permissions/aiplatform.contexts.list">aiplatform.contexts.list</a></li>
+    <li><a href="/permissions/aiplatform.dataItems.list">aiplatform.dataItems.list</a></li>
+    <li><a href="/permissions/aiplatform.datasets.get">aiplatform.datasets.get</a></li>
+    <li><a href="/permissions/aiplatform.datasets.list">aiplatform.datasets.list</a></li>
+    <li><a href="/permissions/aiplatform.endpoints.list">aiplatform.endpoints.list</a></li>
+    <li><a href="/permissions/aiplatform.entityTypes.list">aiplatform.entityTypes.list</a></li>
+    <li><a href="/permissions/aiplatform.executions.list">aiplatform.executions.list</a></li>
+    <li><a href="/permissions/aiplatform.metadataSchemas.list">aiplatform.metadataSchemas.list</a></li>
+    <li><a href="/permissions/aiplatform.modelEvaluations.list">aiplatform.modelEvaluations.list</a></li>
+    <li><a href="/permissions/aiplatform.models.list">aiplatform.models.list</a></li>
+    <li><a href="/permissions/aiplatform.trainingPipelines.list">aiplatform.trainingPipelines.list</a></li>
+    <li><a href="/permissions/aiplatform.tuningJobs.list">aiplatform.tuningJobs.list</a></li>
+    <li><a href="/permissions/bigquery.datasets.createTagBinding">bigquery.datasets.createTagBinding</a></li>
+    <li><a href="/permissions/bigquery.datasets.deleteTagBinding">bigquery.datasets.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigquery.datasets.listEffectiveTags">bigquery.datasets.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigquery.datasets.listTagBindings">bigquery.datasets.listTagBindings</a></li>
+    <li><a href="/permissions/bigquery.jobs.create">bigquery.jobs.create</a></li>
+    <li><a href="/permissions/bigquery.tables.createTagBinding">bigquery.tables.createTagBinding</a></li>
+    <li><a href="/permissions/bigquery.tables.deleteTagBinding">bigquery.tables.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigquery.tables.getData">bigquery.tables.getData</a></li>
+    <li><a href="/permissions/bigquery.tables.list">bigquery.tables.list</a></li>
+    <li><a href="/permissions/bigquery.tables.listEffectiveTags">bigquery.tables.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigquery.tables.listTagBindings">bigquery.tables.listTagBindings</a></li>
+    <li><a href="/permissions/cloudasset.assets.exportResource">cloudasset.assets.exportResource</a></li>
+    <li><a href="/permissions/cloudasset.assets.listResource">cloudasset.assets.listResource</a></li>
+    <li><a href="/permissions/cloudasset.assets.queryResource">cloudasset.assets.queryResource</a></li>
+    <li><a href="/permissions/cloudasset.assets.searchAllResources">cloudasset.assets.searchAllResources</a></li>
+    <li><a href="/permissions/cloudasset.feeds.create">cloudasset.feeds.create</a></li>
+    <li><a href="/permissions/cloudasset.feeds.delete">cloudasset.feeds.delete</a></li>
+    <li><a href="/permissions/cloudasset.feeds.update">cloudasset.feeds.update</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.cloudControlDeployments.create">cloudsecuritycompliance.cloudControlDeployments.create</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.cloudControlDeployments.delete">cloudsecuritycompliance.cloudControlDeployments.delete</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.cloudControlDeployments.get">cloudsecuritycompliance.cloudControlDeployments.get</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.cloudControlDeployments.list">cloudsecuritycompliance.cloudControlDeployments.list</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.cloudControls.get">cloudsecuritycompliance.cloudControls.get</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.cloudControls.list">cloudsecuritycompliance.cloudControls.list</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.frameworkDeployments.create">cloudsecuritycompliance.frameworkDeployments.create</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.frameworkDeployments.delete">cloudsecuritycompliance.frameworkDeployments.delete</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.frameworkDeployments.get">cloudsecuritycompliance.frameworkDeployments.get</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.frameworkDeployments.list">cloudsecuritycompliance.frameworkDeployments.list</a></li>
+    <li><a href="/permissions/cloudsecuritycompliance.frameworks.get">cloudsecuritycompliance.frameworks.get</a></li>
+    <li><a href="/permissions/resourcemanager.folders.getIamPolicy">resourcemanager.folders.getIamPolicy</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.createTagBinding">resourcemanager.hierarchyNodes.createTagBinding</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.deleteTagBinding">resourcemanager.hierarchyNodes.deleteTagBinding</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.listEffectiveTags">resourcemanager.hierarchyNodes.listEffectiveTags</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.listTagBindings">resourcemanager.hierarchyNodes.listTagBindings</a></li>
+    <li><a href="/permissions/resourcemanager.organizations.getIamPolicy">resourcemanager.organizations.getIamPolicy</a></li>
+    <li><a href="/permissions/resourcemanager.projects.getIamPolicy">resourcemanager.projects.getIamPolicy</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.create">resourcemanager.tagKeys.create</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.delete">resourcemanager.tagKeys.delete</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.get">resourcemanager.tagKeys.get</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.getIamPolicy">resourcemanager.tagKeys.getIamPolicy</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.list">resourcemanager.tagKeys.list</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.update">resourcemanager.tagKeys.update</a></li>
+    <li><a href="/permissions/resourcemanager.tagValueBindings.create">resourcemanager.tagValueBindings.create</a></li>
+    <li><a href="/permissions/resourcemanager.tagValueBindings.delete">resourcemanager.tagValueBindings.delete</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.create">resourcemanager.tagValues.create</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.delete">resourcemanager.tagValues.delete</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.get">resourcemanager.tagValues.get</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.getIamPolicy">resourcemanager.tagValues.getIamPolicy</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.list">resourcemanager.tagValues.list</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.update">resourcemanager.tagValues.update</a></li>
+    <li><a href="/permissions/securitycenter.securityhealthanalyticssettings.calculate">securitycenter.securityhealthanalyticssettings.calculate</a></li>
+    <li><a href="/permissions/securitycenter.securityhealthanalyticssettings.get">securitycenter.securityhealthanalyticssettings.get</a></li>
+    <li><a href="/permissions/securitycenter.securityhealthanalyticssettings.update">securitycenter.securityhealthanalyticssettings.update</a></li>
+    <li><a href="/permissions/securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.get">securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.get</a></li>
+    <li><a href="/permissions/securitycentermanagement.securityCenterServices.get">securitycentermanagement.securityCenterServices.get</a></li>
+    <li><a href="/permissions/securitycentermanagement.securityCenterServices.update">securitycentermanagement.securityCenterServices.update</a></li>
+    <li><a href="/permissions/securitycentermanagement.securityHealthAnalyticsCustomModules.create">securitycentermanagement.securityHealthAnalyticsCustomModules.create</a></li>
+    <li><a href="/permissions/securitycentermanagement.securityHealthAnalyticsCustomModules.get">securitycentermanagement.securityHealthAnalyticsCustomModules.get</a></li>
+    <li><a href="/permissions/securityposture.operations.get">securityposture.operations.get</a></li>
+    <li><a href="/permissions/securityposture.postureDeployments.create">securityposture.postureDeployments.create</a></li>
+    <li><a href="/permissions/securityposture.postureDeployments.delete">securityposture.postureDeployments.delete</a></li>
+    <li><a href="/permissions/securityposture.postureDeployments.get">securityposture.postureDeployments.get</a></li>
+    <li><a href="/permissions/securityposture.postureDeployments.list">securityposture.postureDeployments.list</a></li>
+    <li><a href="/permissions/securityposture.postures.create">securityposture.postures.create</a></li>
+    <li><a href="/permissions/securityposture.postures.get">securityposture.postures.get</a></li>
+    <li><a href="/permissions/serviceusage.services.enable">serviceusage.services.enable</a></li>
+    <li><a href="/permissions/serviceusage.services.get">serviceusage.services.get</a></li>
+    <li><a href="/permissions/serviceusage.services.list">serviceusage.services.list</a></li>
+    <li><a href="/permissions/storage.buckets.createTagBinding">storage.buckets.createTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.deleteTagBinding">storage.buckets.deleteTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.listEffectiveTags">storage.buckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/storage.buckets.listTagBindings">storage.buckets.listTagBindings</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

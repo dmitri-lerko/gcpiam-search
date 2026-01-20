@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronicle Service Agent (roles/chronicle.serviceAgent) | GCP IAM Reference</title>
+    <meta name="description" content="Chronicle Service Agent - Grants Chronicle global data access to customer project">
+    <link rel="canonical" href="https://gcpiam.com/roles/chronicle.serviceAgent">
+    <meta property="og:title" content="Chronicle Service Agent (roles/chronicle.serviceAgent)">
+    <meta property="og:description" content="Chronicle Service Agent - Grants Chronicle global data access to customer project">
+    <meta property="og:url" content="https://gcpiam.com/roles/chronicle.serviceAgent">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/chronicle.serviceAgent</h1>
+    <p class="subtitle">Chronicle Service Agent <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Grants Chronicle global data access to customer project</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(76)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/bigquery.connections.create">bigquery.connections.create</a></li>
+    <li><a href="/permissions/bigquery.connections.delegate">bigquery.connections.delegate</a></li>
+    <li><a href="/permissions/bigquery.connections.delete">bigquery.connections.delete</a></li>
+    <li><a href="/permissions/bigquery.connections.get">bigquery.connections.get</a></li>
+    <li><a href="/permissions/bigquery.connections.getIamPolicy">bigquery.connections.getIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.connections.list">bigquery.connections.list</a></li>
+    <li><a href="/permissions/bigquery.connections.update">bigquery.connections.update</a></li>
+    <li><a href="/permissions/bigquery.connections.updateTag">bigquery.connections.updateTag</a></li>
+    <li><a href="/permissions/bigquery.connections.use">bigquery.connections.use</a></li>
+    <li><a href="/permissions/bigquery.datasets.create">bigquery.datasets.create</a></li>
+    <li><a href="/permissions/bigquery.jobs.create">bigquery.jobs.create</a></li>
+    <li><a href="/permissions/bigquery.jobs.get">bigquery.jobs.get</a></li>
+    <li><a href="/permissions/bigquery.tables.create">bigquery.tables.create</a></li>
+    <li><a href="/permissions/bigquery.tables.delete">bigquery.tables.delete</a></li>
+    <li><a href="/permissions/bigquery.tables.get">bigquery.tables.get</a></li>
+    <li><a href="/permissions/bigquery.tables.update">bigquery.tables.update</a></li>
+    <li><a href="/permissions/bigquery.tables.updateData">bigquery.tables.updateData</a></li>
+    <li><a href="/permissions/chronicle.caseComments.update">chronicle.caseComments.update</a></li>
+    <li><a href="/permissions/chronicle.conversations.create">chronicle.conversations.create</a></li>
+    <li><a href="/permissions/chronicle.dashboards.copy">chronicle.dashboards.copy</a></li>
+    <li><a href="/permissions/chronicle.dashboards.create">chronicle.dashboards.create</a></li>
+    <li><a href="/permissions/chronicle.dashboards.get">chronicle.dashboards.get</a></li>
+    <li><a href="/permissions/chronicle.dashboards.list">chronicle.dashboards.list</a></li>
+    <li><a href="/permissions/chronicle.dataTableRows.bulkCreate">chronicle.dataTableRows.bulkCreate</a></li>
+    <li><a href="/permissions/chronicle.dataTableRows.delete">chronicle.dataTableRows.delete</a></li>
+    <li><a href="/permissions/chronicle.dataTableRows.list">chronicle.dataTableRows.list</a></li>
+    <li><a href="/permissions/chronicle.dataTables.get">chronicle.dataTables.get</a></li>
+    <li><a href="/permissions/chronicle.dataTables.list">chronicle.dataTables.list</a></li>
+    <li><a href="/permissions/chronicle.entities.findRelatedEntities">chronicle.entities.findRelatedEntities</a></li>
+    <li><a href="/permissions/chronicle.entities.summarize">chronicle.entities.summarize</a></li>
+    <li><a href="/permissions/chronicle.entities.summarizeFromQuery">chronicle.entities.summarizeFromQuery</a></li>
+    <li><a href="/permissions/chronicle.events.udmSearch">chronicle.events.udmSearch</a></li>
+    <li><a href="/permissions/chronicle.globalDataAccessScopes.permit">chronicle.globalDataAccessScopes.permit</a></li>
+    <li><a href="/permissions/chronicle.instances.get">chronicle.instances.get</a></li>
+    <li><a href="/permissions/chronicle.investigations.get">chronicle.investigations.get</a></li>
+    <li><a href="/permissions/chronicle.investigations.list">chronicle.investigations.list</a></li>
+    <li><a href="/permissions/chronicle.investigations.trigger">chronicle.investigations.trigger</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacyGetDetection">chronicle.legacies.legacyGetDetection</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacySearchArtifactIoCDetails">chronicle.legacies.legacySearchArtifactIoCDetails</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacySearchAssetEvents">chronicle.legacies.legacySearchAssetEvents</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacySearchCuratedDetections">chronicle.legacies.legacySearchCuratedDetections</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacySearchDetections">chronicle.legacies.legacySearchDetections</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacySearchEnterpriseWideIoCs">chronicle.legacies.legacySearchEnterpriseWideIoCs</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacyStreamDetectionAlerts">chronicle.legacies.legacyStreamDetectionAlerts</a></li>
+    <li><a href="/permissions/chronicle.legacies.legacyUpdateAlert">chronicle.legacies.legacyUpdateAlert</a></li>
+    <li><a href="/permissions/chronicle.legacySdk.get">chronicle.legacySdk.get</a></li>
+    <li><a href="/permissions/chronicle.legacySdk.update">chronicle.legacySdk.update</a></li>
+    <li><a href="/permissions/chronicle.messages.create">chronicle.messages.create</a></li>
+    <li><a href="/permissions/chronicle.messages.delete">chronicle.messages.delete</a></li>
+    <li><a href="/permissions/chronicle.preferenceSets.update">chronicle.preferenceSets.update</a></li>
+    <li><a href="/permissions/chronicle.referenceLists.get">chronicle.referenceLists.get</a></li>
+    <li><a href="/permissions/chronicle.referenceLists.list">chronicle.referenceLists.list</a></li>
+    <li><a href="/permissions/chronicle.referenceLists.update">chronicle.referenceLists.update</a></li>
+    <li><a href="/permissions/chronicle.retrohunts.create">chronicle.retrohunts.create</a></li>
+    <li><a href="/permissions/chronicle.rules.get">chronicle.rules.get</a></li>
+    <li><a href="/permissions/logging.logEntries.create">logging.logEntries.create</a></li>
+    <li><a href="/permissions/logging.logEntries.route">logging.logEntries.route</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.create">monitoring.alertPolicies.create</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.delete">monitoring.alertPolicies.delete</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.get">monitoring.alertPolicies.get</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.list">monitoring.alertPolicies.list</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.update">monitoring.alertPolicies.update</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/serviceusage.operations.get">serviceusage.operations.get</a></li>
+    <li><a href="/permissions/serviceusage.quotas.get">serviceusage.quotas.get</a></li>
+    <li><a href="/permissions/serviceusage.services.enable">serviceusage.services.enable</a></li>
+    <li><a href="/permissions/serviceusage.services.get">serviceusage.services.get</a></li>
+    <li><a href="/permissions/serviceusage.services.list">serviceusage.services.list</a></li>
+    <li><a href="/permissions/storage.buckets.create">storage.buckets.create</a></li>
+    <li><a href="/permissions/storage.buckets.get">storage.buckets.get</a></li>
+    <li><a href="/permissions/storage.buckets.getIamPolicy">storage.buckets.getIamPolicy</a></li>
+    <li><a href="/permissions/storage.buckets.setIamPolicy">storage.buckets.setIamPolicy</a></li>
+    <li><a href="/permissions/storage.objects.create">storage.objects.create</a></li>
+    <li><a href="/permissions/storage.objects.delete">storage.objects.delete</a></li>
+    <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
+    <li><a href="/permissions/storage.objects.list">storage.objects.list</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

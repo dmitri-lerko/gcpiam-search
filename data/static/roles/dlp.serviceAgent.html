@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLP API Service Agent (roles/dlp.serviceAgent) | GCP IAM Reference</title>
+    <meta name="description" content="DLP API Service Agent - Gives Cloud DLP service agent permissions for BigQuery, Cloud Storage, Datastore, Pub/Sub and Cloud KMS.">
+    <link rel="canonical" href="https://gcpiam.com/roles/dlp.serviceAgent">
+    <meta property="og:title" content="DLP API Service Agent (roles/dlp.serviceAgent)">
+    <meta property="og:description" content="DLP API Service Agent - Gives Cloud DLP service agent permissions for BigQuery, Cloud Storage, Datastore, Pub/Sub and Cloud KMS.">
+    <meta property="og:url" content="https://gcpiam.com/roles/dlp.serviceAgent">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/dlp.serviceAgent</h1>
+    <p class="subtitle">DLP API Service Agent <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Gives Cloud DLP service agent permissions for BigQuery, Cloud Storage, Datastore, Pub/Sub and Cloud KMS.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(300)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/appengine.applications.get">appengine.applications.get</a></li>
+    <li><a href="/permissions/bigquery.config.get">bigquery.config.get</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.attach">bigquery.dataPolicies.attach</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.create">bigquery.dataPolicies.create</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.delete">bigquery.dataPolicies.delete</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.get">bigquery.dataPolicies.get</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.getIamPolicy">bigquery.dataPolicies.getIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.list">bigquery.dataPolicies.list</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.setIamPolicy">bigquery.dataPolicies.setIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.dataPolicies.update">bigquery.dataPolicies.update</a></li>
+    <li><a href="/permissions/bigquery.datasets.create">bigquery.datasets.create</a></li>
+    <li><a href="/permissions/bigquery.datasets.createTagBinding">bigquery.datasets.createTagBinding</a></li>
+    <li><a href="/permissions/bigquery.datasets.delete">bigquery.datasets.delete</a></li>
+    <li><a href="/permissions/bigquery.datasets.deleteTagBinding">bigquery.datasets.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigquery.datasets.get">bigquery.datasets.get</a></li>
+    <li><a href="/permissions/bigquery.datasets.getIamPolicy">bigquery.datasets.getIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.datasets.link">bigquery.datasets.link</a></li>
+    <li><a href="/permissions/bigquery.datasets.listEffectiveTags">bigquery.datasets.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigquery.datasets.listSharedDatasetUsage">bigquery.datasets.listSharedDatasetUsage</a></li>
+    <li><a href="/permissions/bigquery.datasets.listTagBindings">bigquery.datasets.listTagBindings</a></li>
+    <li><a href="/permissions/bigquery.datasets.setIamPolicy">bigquery.datasets.setIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.datasets.update">bigquery.datasets.update</a></li>
+    <li><a href="/permissions/bigquery.datasets.updateTag">bigquery.datasets.updateTag</a></li>
+    <li><a href="/permissions/bigquery.jobs.create">bigquery.jobs.create</a></li>
+    <li><a href="/permissions/bigquery.jobs.get">bigquery.jobs.get</a></li>
+    <li><a href="/permissions/bigquery.jobs.update">bigquery.jobs.update</a></li>
+    <li><a href="/permissions/bigquery.models.create">bigquery.models.create</a></li>
+    <li><a href="/permissions/bigquery.models.delete">bigquery.models.delete</a></li>
+    <li><a href="/permissions/bigquery.models.export">bigquery.models.export</a></li>
+    <li><a href="/permissions/bigquery.models.getData">bigquery.models.getData</a></li>
+    <li><a href="/permissions/bigquery.models.getMetadata">bigquery.models.getMetadata</a></li>
+    <li><a href="/permissions/bigquery.models.list">bigquery.models.list</a></li>
+    <li><a href="/permissions/bigquery.models.updateData">bigquery.models.updateData</a></li>
+    <li><a href="/permissions/bigquery.models.updateMetadata">bigquery.models.updateMetadata</a></li>
+    <li><a href="/permissions/bigquery.models.updateTag">bigquery.models.updateTag</a></li>
+    <li><a href="/permissions/bigquery.readsessions.create">bigquery.readsessions.create</a></li>
+    <li><a href="/permissions/bigquery.readsessions.getData">bigquery.readsessions.getData</a></li>
+    <li><a href="/permissions/bigquery.readsessions.update">bigquery.readsessions.update</a></li>
+    <li><a href="/permissions/bigquery.routines.create">bigquery.routines.create</a></li>
+    <li><a href="/permissions/bigquery.routines.delete">bigquery.routines.delete</a></li>
+    <li><a href="/permissions/bigquery.routines.get">bigquery.routines.get</a></li>
+    <li><a href="/permissions/bigquery.routines.list">bigquery.routines.list</a></li>
+    <li><a href="/permissions/bigquery.routines.update">bigquery.routines.update</a></li>
+    <li><a href="/permissions/bigquery.routines.updateTag">bigquery.routines.updateTag</a></li>
+    <li><a href="/permissions/bigquery.rowAccessPolicies.create">bigquery.rowAccessPolicies.create</a></li>
+    <li><a href="/permissions/bigquery.rowAccessPolicies.delete">bigquery.rowAccessPolicies.delete</a></li>
+    <li><a href="/permissions/bigquery.rowAccessPolicies.get">bigquery.rowAccessPolicies.get</a></li>
+    <li><a href="/permissions/bigquery.rowAccessPolicies.getIamPolicy">bigquery.rowAccessPolicies.getIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.rowAccessPolicies.list">bigquery.rowAccessPolicies.list</a></li>
+    <li><a href="/permissions/bigquery.rowAccessPolicies.setIamPolicy">bigquery.rowAccessPolicies.setIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.rowAccessPolicies.update">bigquery.rowAccessPolicies.update</a></li>
+    <li><a href="/permissions/bigquery.tables.create">bigquery.tables.create</a></li>
+    <li><a href="/permissions/bigquery.tables.createIndex">bigquery.tables.createIndex</a></li>
+    <li><a href="/permissions/bigquery.tables.createSnapshot">bigquery.tables.createSnapshot</a></li>
+    <li><a href="/permissions/bigquery.tables.createTagBinding">bigquery.tables.createTagBinding</a></li>
+    <li><a href="/permissions/bigquery.tables.delete">bigquery.tables.delete</a></li>
+    <li><a href="/permissions/bigquery.tables.deleteIndex">bigquery.tables.deleteIndex</a></li>
+    <li><a href="/permissions/bigquery.tables.deleteSnapshot">bigquery.tables.deleteSnapshot</a></li>
+    <li><a href="/permissions/bigquery.tables.deleteTagBinding">bigquery.tables.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigquery.tables.export">bigquery.tables.export</a></li>
+    <li><a href="/permissions/bigquery.tables.get">bigquery.tables.get</a></li>
+    <li><a href="/permissions/bigquery.tables.getData">bigquery.tables.getData</a></li>
+    <li><a href="/permissions/bigquery.tables.getIamPolicy">bigquery.tables.getIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.tables.list">bigquery.tables.list</a></li>
+    <li><a href="/permissions/bigquery.tables.listEffectiveTags">bigquery.tables.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigquery.tables.listTagBindings">bigquery.tables.listTagBindings</a></li>
+    <li><a href="/permissions/bigquery.tables.replicateData">bigquery.tables.replicateData</a></li>
+    <li><a href="/permissions/bigquery.tables.restoreSnapshot">bigquery.tables.restoreSnapshot</a></li>
+    <li><a href="/permissions/bigquery.tables.setCategory">bigquery.tables.setCategory</a></li>
+    <li><a href="/permissions/bigquery.tables.setColumnDataPolicy">bigquery.tables.setColumnDataPolicy</a></li>
+    <li><a href="/permissions/bigquery.tables.setIamPolicy">bigquery.tables.setIamPolicy</a></li>
+    <li><a href="/permissions/bigquery.tables.update">bigquery.tables.update</a></li>
+    <li><a href="/permissions/bigquery.tables.updateData">bigquery.tables.updateData</a></li>
+    <li><a href="/permissions/bigquery.tables.updateIndex">bigquery.tables.updateIndex</a></li>
+    <li><a href="/permissions/bigquery.tables.updateTag">bigquery.tables.updateTag</a></li>
+    <li><a href="/permissions/cloudasset.assets.analyzeIamPolicy">cloudasset.assets.analyzeIamPolicy</a></li>
+    <li><a href="/permissions/cloudasset.assets.exportResource">cloudasset.assets.exportResource</a></li>
+    <li><a href="/permissions/cloudasset.assets.searchAllIamPolicies">cloudasset.assets.searchAllIamPolicies</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.useToDecrypt">cloudkms.cryptoKeyVersions.useToDecrypt</a></li>
+    <li><a href="/permissions/cloudkms.locations.get">cloudkms.locations.get</a></li>
+    <li><a href="/permissions/cloudkms.locations.list">cloudkms.locations.list</a></li>
+    <li><a href="/permissions/databasesconsole.locations.get">databasesconsole.locations.get</a></li>
+    <li><a href="/permissions/databasesconsole.locations.list">databasesconsole.locations.list</a></li>
+    <li><a href="/permissions/databasesconsole.studioQueries.create">databasesconsole.studioQueries.create</a></li>
+    <li><a href="/permissions/databasesconsole.studioQueries.delete">databasesconsole.studioQueries.delete</a></li>
+    <li><a href="/permissions/databasesconsole.studioQueries.search">databasesconsole.studioQueries.search</a></li>
+    <li><a href="/permissions/databasesconsole.studioQueries.update">databasesconsole.studioQueries.update</a></li>
+    <li><a href="/permissions/datacatalog.categories.fineGrainedGet">datacatalog.categories.fineGrainedGet</a></li>
+    <li><a href="/permissions/datacatalog.migrationConfig.get">datacatalog.migrationConfig.get</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.create">datacatalog.tagTemplates.create</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.delete">datacatalog.tagTemplates.delete</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.get">datacatalog.tagTemplates.get</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.getIamPolicy">datacatalog.tagTemplates.getIamPolicy</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.getTag">datacatalog.tagTemplates.getTag</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.setIamPolicy">datacatalog.tagTemplates.setIamPolicy</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.update">datacatalog.tagTemplates.update</a></li>
+    <li><a href="/permissions/datacatalog.tagTemplates.use">datacatalog.tagTemplates.use</a></li>
+    <li><a href="/permissions/dataform.folders.create">dataform.folders.create</a></li>
+    <li><a href="/permissions/dataform.locations.get">dataform.locations.get</a></li>
+    <li><a href="/permissions/dataform.locations.list">dataform.locations.list</a></li>
+    <li><a href="/permissions/dataform.repositories.create">dataform.repositories.create</a></li>
+    <li><a href="/permissions/dataform.repositories.list">dataform.repositories.list</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.create">dataplex.aspectTypes.create</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.delete">dataplex.aspectTypes.delete</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.get">dataplex.aspectTypes.get</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.getIamPolicy">dataplex.aspectTypes.getIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.list">dataplex.aspectTypes.list</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.setIamPolicy">dataplex.aspectTypes.setIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.update">dataplex.aspectTypes.update</a></li>
+    <li><a href="/permissions/dataplex.aspectTypes.use">dataplex.aspectTypes.use</a></li>
+    <li><a href="/permissions/dataplex.datascans.create">dataplex.datascans.create</a></li>
+    <li><a href="/permissions/dataplex.datascans.delete">dataplex.datascans.delete</a></li>
+    <li><a href="/permissions/dataplex.datascans.get">dataplex.datascans.get</a></li>
+    <li><a href="/permissions/dataplex.datascans.getData">dataplex.datascans.getData</a></li>
+    <li><a href="/permissions/dataplex.datascans.getIamPolicy">dataplex.datascans.getIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.datascans.list">dataplex.datascans.list</a></li>
+    <li><a href="/permissions/dataplex.datascans.run">dataplex.datascans.run</a></li>
+    <li><a href="/permissions/dataplex.datascans.setIamPolicy">dataplex.datascans.setIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.datascans.update">dataplex.datascans.update</a></li>
+    <li><a href="/permissions/dataplex.entries.get">dataplex.entries.get</a></li>
+    <li><a href="/permissions/dataplex.operations.get">dataplex.operations.get</a></li>
+    <li><a href="/permissions/dataplex.operations.list">dataplex.operations.list</a></li>
+    <li><a href="/permissions/dataplex.projects.search">dataplex.projects.search</a></li>
+    <li><a href="/permissions/datastore.databases.get">datastore.databases.get</a></li>
+    <li><a href="/permissions/datastore.databases.getMetadata">datastore.databases.getMetadata</a></li>
+    <li><a href="/permissions/datastore.databases.list">datastore.databases.list</a></li>
+    <li><a href="/permissions/datastore.entities.allocateIds">datastore.entities.allocateIds</a></li>
+    <li><a href="/permissions/datastore.entities.create">datastore.entities.create</a></li>
+    <li><a href="/permissions/datastore.entities.delete">datastore.entities.delete</a></li>
+    <li><a href="/permissions/datastore.entities.get">datastore.entities.get</a></li>
+    <li><a href="/permissions/datastore.entities.list">datastore.entities.list</a></li>
+    <li><a href="/permissions/datastore.entities.update">datastore.entities.update</a></li>
+    <li><a href="/permissions/datastore.indexes.list">datastore.indexes.list</a></li>
+    <li><a href="/permissions/datastore.namespaces.get">datastore.namespaces.get</a></li>
+    <li><a href="/permissions/datastore.namespaces.list">datastore.namespaces.list</a></li>
+    <li><a href="/permissions/datastore.statistics.get">datastore.statistics.get</a></li>
+    <li><a href="/permissions/datastore.statistics.list">datastore.statistics.list</a></li>
+    <li><a href="/permissions/dlp.analyzeRiskTemplates.get">dlp.analyzeRiskTemplates.get</a></li>
+    <li><a href="/permissions/dlp.analyzeRiskTemplates.list">dlp.analyzeRiskTemplates.list</a></li>
+    <li><a href="/permissions/dlp.deidentifyTemplates.get">dlp.deidentifyTemplates.get</a></li>
+    <li><a href="/permissions/dlp.deidentifyTemplates.list">dlp.deidentifyTemplates.list</a></li>
+    <li><a href="/permissions/dlp.inspectTemplates.get">dlp.inspectTemplates.get</a></li>
+    <li><a href="/permissions/dlp.inspectTemplates.list">dlp.inspectTemplates.list</a></li>
+    <li><a href="/permissions/dlp.jobs.cancel">dlp.jobs.cancel</a></li>
+    <li><a href="/permissions/dlp.jobs.create">dlp.jobs.create</a></li>
+    <li><a href="/permissions/dlp.jobs.delete">dlp.jobs.delete</a></li>
+    <li><a href="/permissions/dlp.jobs.get">dlp.jobs.get</a></li>
+    <li><a href="/permissions/dlp.jobs.hybridInspect">dlp.jobs.hybridInspect</a></li>
+    <li><a href="/permissions/dlp.jobs.list">dlp.jobs.list</a></li>
+    <li><a href="/permissions/dlp.kms.encrypt">dlp.kms.encrypt</a></li>
+    <li><a href="/permissions/firebase.projects.get">firebase.projects.get</a></li>
+    <li><a href="/permissions/monitoring.timeSeries.create">monitoring.timeSeries.create</a></li>
+    <li><a href="/permissions/orgpolicy.policy.get">orgpolicy.policy.get</a></li>
+    <li><a href="/permissions/pubsub.messageTransforms.validate">pubsub.messageTransforms.validate</a></li>
+    <li><a href="/permissions/pubsub.schemas.attach">pubsub.schemas.attach</a></li>
+    <li><a href="/permissions/pubsub.schemas.commit">pubsub.schemas.commit</a></li>
+    <li><a href="/permissions/pubsub.schemas.create">pubsub.schemas.create</a></li>
+    <li><a href="/permissions/pubsub.schemas.delete">pubsub.schemas.delete</a></li>
+    <li><a href="/permissions/pubsub.schemas.get">pubsub.schemas.get</a></li>
+    <li><a href="/permissions/pubsub.schemas.getIamPolicy">pubsub.schemas.getIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.schemas.list">pubsub.schemas.list</a></li>
+    <li><a href="/permissions/pubsub.schemas.listRevisions">pubsub.schemas.listRevisions</a></li>
+    <li><a href="/permissions/pubsub.schemas.rollback">pubsub.schemas.rollback</a></li>
+    <li><a href="/permissions/pubsub.schemas.setIamPolicy">pubsub.schemas.setIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.schemas.validate">pubsub.schemas.validate</a></li>
+    <li><a href="/permissions/pubsub.snapshots.create">pubsub.snapshots.create</a></li>
+    <li><a href="/permissions/pubsub.snapshots.createTagBinding">pubsub.snapshots.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.snapshots.delete">pubsub.snapshots.delete</a></li>
+    <li><a href="/permissions/pubsub.snapshots.deleteTagBinding">pubsub.snapshots.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.snapshots.get">pubsub.snapshots.get</a></li>
+    <li><a href="/permissions/pubsub.snapshots.getIamPolicy">pubsub.snapshots.getIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.snapshots.list">pubsub.snapshots.list</a></li>
+    <li><a href="/permissions/pubsub.snapshots.listEffectiveTags">pubsub.snapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.snapshots.listTagBindings">pubsub.snapshots.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.snapshots.seek">pubsub.snapshots.seek</a></li>
+    <li><a href="/permissions/pubsub.snapshots.setIamPolicy">pubsub.snapshots.setIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.snapshots.update">pubsub.snapshots.update</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.consume">pubsub.subscriptions.consume</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.create">pubsub.subscriptions.create</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.createTagBinding">pubsub.subscriptions.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.delete">pubsub.subscriptions.delete</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.deleteTagBinding">pubsub.subscriptions.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.get">pubsub.subscriptions.get</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.getIamPolicy">pubsub.subscriptions.getIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.list">pubsub.subscriptions.list</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.listEffectiveTags">pubsub.subscriptions.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.listTagBindings">pubsub.subscriptions.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.setIamPolicy">pubsub.subscriptions.setIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.update">pubsub.subscriptions.update</a></li>
+    <li><a href="/permissions/pubsub.topics.attachSubscription">pubsub.topics.attachSubscription</a></li>
+    <li><a href="/permissions/pubsub.topics.create">pubsub.topics.create</a></li>
+    <li><a href="/permissions/pubsub.topics.createTagBinding">pubsub.topics.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.topics.delete">pubsub.topics.delete</a></li>
+    <li><a href="/permissions/pubsub.topics.deleteTagBinding">pubsub.topics.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.topics.detachSubscription">pubsub.topics.detachSubscription</a></li>
+    <li><a href="/permissions/pubsub.topics.get">pubsub.topics.get</a></li>
+    <li><a href="/permissions/pubsub.topics.getIamPolicy">pubsub.topics.getIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.topics.list">pubsub.topics.list</a></li>
+    <li><a href="/permissions/pubsub.topics.listEffectiveTags">pubsub.topics.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.topics.listTagBindings">pubsub.topics.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.topics.publish">pubsub.topics.publish</a></li>
+    <li><a href="/permissions/pubsub.topics.setIamPolicy">pubsub.topics.setIamPolicy</a></li>
+    <li><a href="/permissions/pubsub.topics.update">pubsub.topics.update</a></li>
+    <li><a href="/permissions/pubsub.topics.updateTag">pubsub.topics.updateTag</a></li>
+    <li><a href="/permissions/recommender.iamPolicyInsights.get">recommender.iamPolicyInsights.get</a></li>
+    <li><a href="/permissions/recommender.iamPolicyInsights.list">recommender.iamPolicyInsights.list</a></li>
+    <li><a href="/permissions/recommender.iamPolicyInsights.update">recommender.iamPolicyInsights.update</a></li>
+    <li><a href="/permissions/recommender.iamPolicyRecommendations.get">recommender.iamPolicyRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.iamPolicyRecommendations.list">recommender.iamPolicyRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.iamPolicyRecommendations.update">recommender.iamPolicyRecommendations.update</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteInsights.get">recommender.storageBucketSoftDeleteInsights.get</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteInsights.list">recommender.storageBucketSoftDeleteInsights.list</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteInsights.update">recommender.storageBucketSoftDeleteInsights.update</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteRecommendations.get">recommender.storageBucketSoftDeleteRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteRecommendations.list">recommender.storageBucketSoftDeleteRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.storageBucketSoftDeleteRecommendations.update">recommender.storageBucketSoftDeleteRecommendations.update</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.listEffectiveTags">resourcemanager.hierarchyNodes.listEffectiveTags</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.list">resourcemanager.projects.list</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.analyze">serviceusage.consumerpolicy.analyze</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.get">serviceusage.consumerpolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.effectivepolicy.get">serviceusage.effectivepolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.groups.list">serviceusage.groups.list</a></li>
+    <li><a href="/permissions/serviceusage.groups.listExpandedMembers">serviceusage.groups.listExpandedMembers</a></li>
+    <li><a href="/permissions/serviceusage.groups.listMembers">serviceusage.groups.listMembers</a></li>
+    <li><a href="/permissions/serviceusage.quotas.get">serviceusage.quotas.get</a></li>
+    <li><a href="/permissions/serviceusage.services.get">serviceusage.services.get</a></li>
+    <li><a href="/permissions/serviceusage.services.list">serviceusage.services.list</a></li>
+    <li><a href="/permissions/serviceusage.services.use">serviceusage.services.use</a></li>
+    <li><a href="/permissions/serviceusage.values.test">serviceusage.values.test</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.create">storage.anywhereCaches.create</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.disable">storage.anywhereCaches.disable</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.get">storage.anywhereCaches.get</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.list">storage.anywhereCaches.list</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.pause">storage.anywhereCaches.pause</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.resume">storage.anywhereCaches.resume</a></li>
+    <li><a href="/permissions/storage.anywhereCaches.update">storage.anywhereCaches.update</a></li>
+    <li><a href="/permissions/storage.bucketOperations.cancel">storage.bucketOperations.cancel</a></li>
+    <li><a href="/permissions/storage.bucketOperations.get">storage.bucketOperations.get</a></li>
+    <li><a href="/permissions/storage.bucketOperations.list">storage.bucketOperations.list</a></li>
+    <li><a href="/permissions/storage.buckets.create">storage.buckets.create</a></li>
+    <li><a href="/permissions/storage.buckets.createTagBinding">storage.buckets.createTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.delete">storage.buckets.delete</a></li>
+    <li><a href="/permissions/storage.buckets.deleteTagBinding">storage.buckets.deleteTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.enableObjectRetention">storage.buckets.enableObjectRetention</a></li>
+    <li><a href="/permissions/storage.buckets.get">storage.buckets.get</a></li>
+    <li><a href="/permissions/storage.buckets.getIamPolicy">storage.buckets.getIamPolicy</a></li>
+    <li><a href="/permissions/storage.buckets.getIpFilter">storage.buckets.getIpFilter</a></li>
+    <li><a href="/permissions/storage.buckets.getObjectInsights">storage.buckets.getObjectInsights</a></li>
+    <li><a href="/permissions/storage.buckets.list">storage.buckets.list</a></li>
+    <li><a href="/permissions/storage.buckets.listEffectiveTags">storage.buckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/storage.buckets.listTagBindings">storage.buckets.listTagBindings</a></li>
+    <li><a href="/permissions/storage.buckets.relocate">storage.buckets.relocate</a></li>
+    <li><a href="/permissions/storage.buckets.restore">storage.buckets.restore</a></li>
+    <li><a href="/permissions/storage.buckets.setIamPolicy">storage.buckets.setIamPolicy</a></li>
+    <li><a href="/permissions/storage.buckets.setIpFilter">storage.buckets.setIpFilter</a></li>
+    <li><a href="/permissions/storage.buckets.update">storage.buckets.update</a></li>
+    <li><a href="/permissions/storage.buckets.viewIntelligenceDetails">storage.buckets.viewIntelligenceDetails</a></li>
+    <li><a href="/permissions/storage.folders.create">storage.folders.create</a></li>
+    <li><a href="/permissions/storage.folders.delete">storage.folders.delete</a></li>
+    <li><a href="/permissions/storage.folders.get">storage.folders.get</a></li>
+    <li><a href="/permissions/storage.folders.list">storage.folders.list</a></li>
+    <li><a href="/permissions/storage.folders.rename">storage.folders.rename</a></li>
+    <li><a href="/permissions/storage.intelligenceConfigs.get">storage.intelligenceConfigs.get</a></li>
+    <li><a href="/permissions/storage.intelligenceConfigs.update">storage.intelligenceConfigs.update</a></li>
+    <li><a href="/permissions/storage.managedFolders.create">storage.managedFolders.create</a></li>
+    <li><a href="/permissions/storage.managedFolders.delete">storage.managedFolders.delete</a></li>
+    <li><a href="/permissions/storage.managedFolders.get">storage.managedFolders.get</a></li>
+    <li><a href="/permissions/storage.managedFolders.getIamPolicy">storage.managedFolders.getIamPolicy</a></li>
+    <li><a href="/permissions/storage.managedFolders.list">storage.managedFolders.list</a></li>
+    <li><a href="/permissions/storage.managedFolders.setIamPolicy">storage.managedFolders.setIamPolicy</a></li>
+    <li><a href="/permissions/storage.multipartUploads.abort">storage.multipartUploads.abort</a></li>
+    <li><a href="/permissions/storage.multipartUploads.create">storage.multipartUploads.create</a></li>
+    <li><a href="/permissions/storage.multipartUploads.list">storage.multipartUploads.list</a></li>
+    <li><a href="/permissions/storage.multipartUploads.listParts">storage.multipartUploads.listParts</a></li>
+    <li><a href="/permissions/storage.objects.create">storage.objects.create</a></li>
+    <li><a href="/permissions/storage.objects.createContext">storage.objects.createContext</a></li>
+    <li><a href="/permissions/storage.objects.delete">storage.objects.delete</a></li>
+    <li><a href="/permissions/storage.objects.deleteContext">storage.objects.deleteContext</a></li>
+    <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
+    <li><a href="/permissions/storage.objects.getIamPolicy">storage.objects.getIamPolicy</a></li>
+    <li><a href="/permissions/storage.objects.list">storage.objects.list</a></li>
+    <li><a href="/permissions/storage.objects.move">storage.objects.move</a></li>
+    <li><a href="/permissions/storage.objects.overrideUnlockedRetention">storage.objects.overrideUnlockedRetention</a></li>
+    <li><a href="/permissions/storage.objects.restore">storage.objects.restore</a></li>
+    <li><a href="/permissions/storage.objects.setIamPolicy">storage.objects.setIamPolicy</a></li>
+    <li><a href="/permissions/storage.objects.setRetention">storage.objects.setRetention</a></li>
+    <li><a href="/permissions/storage.objects.update">storage.objects.update</a></li>
+    <li><a href="/permissions/storage.objects.updateContext">storage.objects.updateContext</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.cancel">storagebatchoperations.jobs.cancel</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.create">storagebatchoperations.jobs.create</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.delete">storagebatchoperations.jobs.delete</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.get">storagebatchoperations.jobs.get</a></li>
+    <li><a href="/permissions/storagebatchoperations.jobs.list">storagebatchoperations.jobs.list</a></li>
+    <li><a href="/permissions/storagebatchoperations.locations.get">storagebatchoperations.locations.get</a></li>
+    <li><a href="/permissions/storagebatchoperations.locations.list">storagebatchoperations.locations.list</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.cancel">storagebatchoperations.operations.cancel</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.delete">storagebatchoperations.operations.delete</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.get">storagebatchoperations.operations.get</a></li>
+    <li><a href="/permissions/storagebatchoperations.operations.list">storagebatchoperations.operations.list</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

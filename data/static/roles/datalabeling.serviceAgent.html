@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Labeling Service Agent (roles/datalabeling.serviceAgent) | GCP IAM Reference</title>
+    <meta name="description" content="Data Labeling Service Agent - Gives Data Labeling service account read/write access to Cloud Storage, read/write BigQuery, update CMLE model versions, editor access to Annotation s...">
+    <link rel="canonical" href="https://gcpiam.com/roles/datalabeling.serviceAgent">
+    <meta property="og:title" content="Data Labeling Service Agent (roles/datalabeling.serviceAgent)">
+    <meta property="og:description" content="Data Labeling Service Agent - Gives Data Labeling service account read/write access to Cloud Storage, read/write BigQuery, update CMLE model versions, editor access to Annotation s...">
+    <meta property="og:url" content="https://gcpiam.com/roles/datalabeling.serviceAgent">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/datalabeling.serviceAgent</h1>
+    <p class="subtitle">Data Labeling Service Agent <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Gives Data Labeling service account read/write access to Cloud Storage, read/write BigQuery, update CMLE model versions, editor access to Annotation service and AutoML service.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(107)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/automl.annotationSpecs.create">automl.annotationSpecs.create</a></li>
+    <li><a href="/permissions/automl.annotationSpecs.delete">automl.annotationSpecs.delete</a></li>
+    <li><a href="/permissions/automl.annotationSpecs.get">automl.annotationSpecs.get</a></li>
+    <li><a href="/permissions/automl.annotationSpecs.list">automl.annotationSpecs.list</a></li>
+    <li><a href="/permissions/automl.annotationSpecs.update">automl.annotationSpecs.update</a></li>
+    <li><a href="/permissions/automl.annotations.approve">automl.annotations.approve</a></li>
+    <li><a href="/permissions/automl.annotations.create">automl.annotations.create</a></li>
+    <li><a href="/permissions/automl.annotations.list">automl.annotations.list</a></li>
+    <li><a href="/permissions/automl.annotations.manipulate">automl.annotations.manipulate</a></li>
+    <li><a href="/permissions/automl.annotations.reject">automl.annotations.reject</a></li>
+    <li><a href="/permissions/automl.columnSpecs.get">automl.columnSpecs.get</a></li>
+    <li><a href="/permissions/automl.columnSpecs.list">automl.columnSpecs.list</a></li>
+    <li><a href="/permissions/automl.columnSpecs.update">automl.columnSpecs.update</a></li>
+    <li><a href="/permissions/automl.datasets.create">automl.datasets.create</a></li>
+    <li><a href="/permissions/automl.datasets.delete">automl.datasets.delete</a></li>
+    <li><a href="/permissions/automl.datasets.export">automl.datasets.export</a></li>
+    <li><a href="/permissions/automl.datasets.get">automl.datasets.get</a></li>
+    <li><a href="/permissions/automl.datasets.import">automl.datasets.import</a></li>
+    <li><a href="/permissions/automl.datasets.list">automl.datasets.list</a></li>
+    <li><a href="/permissions/automl.datasets.update">automl.datasets.update</a></li>
+    <li><a href="/permissions/automl.examples.delete">automl.examples.delete</a></li>
+    <li><a href="/permissions/automl.examples.get">automl.examples.get</a></li>
+    <li><a href="/permissions/automl.examples.list">automl.examples.list</a></li>
+    <li><a href="/permissions/automl.examples.update">automl.examples.update</a></li>
+    <li><a href="/permissions/automl.files.delete">automl.files.delete</a></li>
+    <li><a href="/permissions/automl.files.list">automl.files.list</a></li>
+    <li><a href="/permissions/automl.humanAnnotationTasks.create">automl.humanAnnotationTasks.create</a></li>
+    <li><a href="/permissions/automl.humanAnnotationTasks.delete">automl.humanAnnotationTasks.delete</a></li>
+    <li><a href="/permissions/automl.humanAnnotationTasks.get">automl.humanAnnotationTasks.get</a></li>
+    <li><a href="/permissions/automl.humanAnnotationTasks.list">automl.humanAnnotationTasks.list</a></li>
+    <li><a href="/permissions/automl.locations.get">automl.locations.get</a></li>
+    <li><a href="/permissions/automl.locations.list">automl.locations.list</a></li>
+    <li><a href="/permissions/automl.modelEvaluations.create">automl.modelEvaluations.create</a></li>
+    <li><a href="/permissions/automl.modelEvaluations.get">automl.modelEvaluations.get</a></li>
+    <li><a href="/permissions/automl.modelEvaluations.list">automl.modelEvaluations.list</a></li>
+    <li><a href="/permissions/automl.models.create">automl.models.create</a></li>
+    <li><a href="/permissions/automl.models.delete">automl.models.delete</a></li>
+    <li><a href="/permissions/automl.models.deploy">automl.models.deploy</a></li>
+    <li><a href="/permissions/automl.models.export">automl.models.export</a></li>
+    <li><a href="/permissions/automl.models.get">automl.models.get</a></li>
+    <li><a href="/permissions/automl.models.list">automl.models.list</a></li>
+    <li><a href="/permissions/automl.models.predict">automl.models.predict</a></li>
+    <li><a href="/permissions/automl.models.undeploy">automl.models.undeploy</a></li>
+    <li><a href="/permissions/automl.operations.cancel">automl.operations.cancel</a></li>
+    <li><a href="/permissions/automl.operations.delete">automl.operations.delete</a></li>
+    <li><a href="/permissions/automl.operations.get">automl.operations.get</a></li>
+    <li><a href="/permissions/automl.operations.list">automl.operations.list</a></li>
+    <li><a href="/permissions/automl.tableSpecs.get">automl.tableSpecs.get</a></li>
+    <li><a href="/permissions/automl.tableSpecs.list">automl.tableSpecs.list</a></li>
+    <li><a href="/permissions/automl.tableSpecs.update">automl.tableSpecs.update</a></li>
+    <li><a href="/permissions/bigquery.datasets.create">bigquery.datasets.create</a></li>
+    <li><a href="/permissions/bigquery.datasets.get">bigquery.datasets.get</a></li>
+    <li><a href="/permissions/bigquery.jobs.create">bigquery.jobs.create</a></li>
+    <li><a href="/permissions/bigquery.jobs.get">bigquery.jobs.get</a></li>
+    <li><a href="/permissions/bigquery.tables.create">bigquery.tables.create</a></li>
+    <li><a href="/permissions/bigquery.tables.get">bigquery.tables.get</a></li>
+    <li><a href="/permissions/bigquery.tables.getData">bigquery.tables.getData</a></li>
+    <li><a href="/permissions/ml.jobs.create">ml.jobs.create</a></li>
+    <li><a href="/permissions/ml.jobs.get">ml.jobs.get</a></li>
+    <li><a href="/permissions/ml.jobs.getIamPolicy">ml.jobs.getIamPolicy</a></li>
+    <li><a href="/permissions/ml.jobs.list">ml.jobs.list</a></li>
+    <li><a href="/permissions/ml.locations.get">ml.locations.get</a></li>
+    <li><a href="/permissions/ml.locations.list">ml.locations.list</a></li>
+    <li><a href="/permissions/ml.models.create">ml.models.create</a></li>
+    <li><a href="/permissions/ml.models.delete">ml.models.delete</a></li>
+    <li><a href="/permissions/ml.models.get">ml.models.get</a></li>
+    <li><a href="/permissions/ml.models.getIamPolicy">ml.models.getIamPolicy</a></li>
+    <li><a href="/permissions/ml.models.list">ml.models.list</a></li>
+    <li><a href="/permissions/ml.models.predict">ml.models.predict</a></li>
+    <li><a href="/permissions/ml.models.setIamPolicy">ml.models.setIamPolicy</a></li>
+    <li><a href="/permissions/ml.models.update">ml.models.update</a></li>
+    <li><a href="/permissions/ml.operations.get">ml.operations.get</a></li>
+    <li><a href="/permissions/ml.operations.list">ml.operations.list</a></li>
+    <li><a href="/permissions/ml.projects.getConfig">ml.projects.getConfig</a></li>
+    <li><a href="/permissions/ml.studies.create">ml.studies.create</a></li>
+    <li><a href="/permissions/ml.studies.delete">ml.studies.delete</a></li>
+    <li><a href="/permissions/ml.studies.get">ml.studies.get</a></li>
+    <li><a href="/permissions/ml.studies.getIamPolicy">ml.studies.getIamPolicy</a></li>
+    <li><a href="/permissions/ml.studies.list">ml.studies.list</a></li>
+    <li><a href="/permissions/ml.studies.setIamPolicy">ml.studies.setIamPolicy</a></li>
+    <li><a href="/permissions/ml.trials.create">ml.trials.create</a></li>
+    <li><a href="/permissions/ml.trials.delete">ml.trials.delete</a></li>
+    <li><a href="/permissions/ml.trials.get">ml.trials.get</a></li>
+    <li><a href="/permissions/ml.trials.list">ml.trials.list</a></li>
+    <li><a href="/permissions/ml.trials.update">ml.trials.update</a></li>
+    <li><a href="/permissions/ml.versions.create">ml.versions.create</a></li>
+    <li><a href="/permissions/ml.versions.delete">ml.versions.delete</a></li>
+    <li><a href="/permissions/ml.versions.get">ml.versions.get</a></li>
+    <li><a href="/permissions/ml.versions.list">ml.versions.list</a></li>
+    <li><a href="/permissions/ml.versions.predict">ml.versions.predict</a></li>
+    <li><a href="/permissions/ml.versions.update">ml.versions.update</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.list">resourcemanager.projects.list</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.analyze">serviceusage.consumerpolicy.analyze</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.get">serviceusage.consumerpolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.effectivepolicy.get">serviceusage.effectivepolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.groups.list">serviceusage.groups.list</a></li>
+    <li><a href="/permissions/serviceusage.groups.listExpandedMembers">serviceusage.groups.listExpandedMembers</a></li>
+    <li><a href="/permissions/serviceusage.groups.listMembers">serviceusage.groups.listMembers</a></li>
+    <li><a href="/permissions/serviceusage.services.get">serviceusage.services.get</a></li>
+    <li><a href="/permissions/serviceusage.services.list">serviceusage.services.list</a></li>
+    <li><a href="/permissions/serviceusage.values.test">serviceusage.values.test</a></li>
+    <li><a href="/permissions/storage.objects.create">storage.objects.create</a></li>
+    <li><a href="/permissions/storage.objects.delete">storage.objects.delete</a></li>
+    <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
+    <li><a href="/permissions/storage.objects.list">storage.objects.list</a></li>
+    <li><a href="/permissions/storage.objects.update">storage.objects.update</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

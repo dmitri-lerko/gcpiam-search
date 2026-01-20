@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Build Service Agent (roles/cloudbuild.serviceAgent) | GCP IAM Reference</title>
+    <meta name="description" content="Cloud Build Service Agent - Gives Cloud Build service account access to managed resources.">
+    <link rel="canonical" href="https://gcpiam.com/roles/cloudbuild.serviceAgent">
+    <meta property="og:title" content="Cloud Build Service Agent (roles/cloudbuild.serviceAgent)">
+    <meta property="og:description" content="Cloud Build Service Agent - Gives Cloud Build service account access to managed resources.">
+    <meta property="og:url" content="https://gcpiam.com/roles/cloudbuild.serviceAgent">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/cloudbuild.serviceAgent</h1>
+    <p class="subtitle">Cloud Build Service Agent <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Gives Cloud Build service account access to managed resources.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(130)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/artifactregistry.aptartifacts.create">artifactregistry.aptartifacts.create</a></li>
+    <li><a href="/permissions/artifactregistry.attachments.create">artifactregistry.attachments.create</a></li>
+    <li><a href="/permissions/artifactregistry.attachments.delete">artifactregistry.attachments.delete</a></li>
+    <li><a href="/permissions/artifactregistry.attachments.get">artifactregistry.attachments.get</a></li>
+    <li><a href="/permissions/artifactregistry.attachments.list">artifactregistry.attachments.list</a></li>
+    <li><a href="/permissions/artifactregistry.dockerimages.get">artifactregistry.dockerimages.get</a></li>
+    <li><a href="/permissions/artifactregistry.dockerimages.list">artifactregistry.dockerimages.list</a></li>
+    <li><a href="/permissions/artifactregistry.files.download">artifactregistry.files.download</a></li>
+    <li><a href="/permissions/artifactregistry.files.get">artifactregistry.files.get</a></li>
+    <li><a href="/permissions/artifactregistry.files.list">artifactregistry.files.list</a></li>
+    <li><a href="/permissions/artifactregistry.files.update">artifactregistry.files.update</a></li>
+    <li><a href="/permissions/artifactregistry.files.upload">artifactregistry.files.upload</a></li>
+    <li><a href="/permissions/artifactregistry.kfpartifacts.create">artifactregistry.kfpartifacts.create</a></li>
+    <li><a href="/permissions/artifactregistry.locations.get">artifactregistry.locations.get</a></li>
+    <li><a href="/permissions/artifactregistry.locations.list">artifactregistry.locations.list</a></li>
+    <li><a href="/permissions/artifactregistry.mavenartifacts.get">artifactregistry.mavenartifacts.get</a></li>
+    <li><a href="/permissions/artifactregistry.mavenartifacts.list">artifactregistry.mavenartifacts.list</a></li>
+    <li><a href="/permissions/artifactregistry.npmpackages.get">artifactregistry.npmpackages.get</a></li>
+    <li><a href="/permissions/artifactregistry.npmpackages.list">artifactregistry.npmpackages.list</a></li>
+    <li><a href="/permissions/artifactregistry.packages.get">artifactregistry.packages.get</a></li>
+    <li><a href="/permissions/artifactregistry.packages.list">artifactregistry.packages.list</a></li>
+    <li><a href="/permissions/artifactregistry.packages.update">artifactregistry.packages.update</a></li>
+    <li><a href="/permissions/artifactregistry.projectsettings.get">artifactregistry.projectsettings.get</a></li>
+    <li><a href="/permissions/artifactregistry.pythonpackages.get">artifactregistry.pythonpackages.get</a></li>
+    <li><a href="/permissions/artifactregistry.pythonpackages.list">artifactregistry.pythonpackages.list</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.createOnPush">artifactregistry.repositories.createOnPush</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.deleteArtifacts">artifactregistry.repositories.deleteArtifacts</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.downloadArtifacts">artifactregistry.repositories.downloadArtifacts</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.exportArtifacts">artifactregistry.repositories.exportArtifacts</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.get">artifactregistry.repositories.get</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.list">artifactregistry.repositories.list</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.listEffectiveTags">artifactregistry.repositories.listEffectiveTags</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.listTagBindings">artifactregistry.repositories.listTagBindings</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.readViaVirtualRepository">artifactregistry.repositories.readViaVirtualRepository</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.uploadArtifacts">artifactregistry.repositories.uploadArtifacts</a></li>
+    <li><a href="/permissions/artifactregistry.rules.get">artifactregistry.rules.get</a></li>
+    <li><a href="/permissions/artifactregistry.rules.list">artifactregistry.rules.list</a></li>
+    <li><a href="/permissions/artifactregistry.tags.create">artifactregistry.tags.create</a></li>
+    <li><a href="/permissions/artifactregistry.tags.get">artifactregistry.tags.get</a></li>
+    <li><a href="/permissions/artifactregistry.tags.list">artifactregistry.tags.list</a></li>
+    <li><a href="/permissions/artifactregistry.tags.update">artifactregistry.tags.update</a></li>
+    <li><a href="/permissions/artifactregistry.versions.get">artifactregistry.versions.get</a></li>
+    <li><a href="/permissions/artifactregistry.versions.list">artifactregistry.versions.list</a></li>
+    <li><a href="/permissions/artifactregistry.yumartifacts.create">artifactregistry.yumartifacts.create</a></li>
+    <li><a href="/permissions/binaryauthorization.attestors.create">binaryauthorization.attestors.create</a></li>
+    <li><a href="/permissions/binaryauthorization.attestors.delete">binaryauthorization.attestors.delete</a></li>
+    <li><a href="/permissions/binaryauthorization.attestors.get">binaryauthorization.attestors.get</a></li>
+    <li><a href="/permissions/binaryauthorization.attestors.list">binaryauthorization.attestors.list</a></li>
+    <li><a href="/permissions/binaryauthorization.attestors.update">binaryauthorization.attestors.update</a></li>
+    <li><a href="/permissions/binaryauthorization.attestors.verifyImageAttested">binaryauthorization.attestors.verifyImageAttested</a></li>
+    <li><a href="/permissions/cloudbuild.builds.create">cloudbuild.builds.create</a></li>
+    <li><a href="/permissions/cloudbuild.builds.get">cloudbuild.builds.get</a></li>
+    <li><a href="/permissions/cloudbuild.builds.list">cloudbuild.builds.list</a></li>
+    <li><a href="/permissions/cloudbuild.builds.update">cloudbuild.builds.update</a></li>
+    <li><a href="/permissions/cloudbuild.connections.get">cloudbuild.connections.get</a></li>
+    <li><a href="/permissions/cloudbuild.locations.get">cloudbuild.locations.get</a></li>
+    <li><a href="/permissions/cloudbuild.locations.list">cloudbuild.locations.list</a></li>
+    <li><a href="/permissions/cloudbuild.operations.get">cloudbuild.operations.get</a></li>
+    <li><a href="/permissions/cloudbuild.operations.list">cloudbuild.operations.list</a></li>
+    <li><a href="/permissions/cloudbuild.repositories.accessReadToken">cloudbuild.repositories.accessReadToken</a></li>
+    <li><a href="/permissions/cloudbuild.repositories.accessReadWriteToken">cloudbuild.repositories.accessReadWriteToken</a></li>
+    <li><a href="/permissions/cloudbuild.repositories.get">cloudbuild.repositories.get</a></li>
+    <li><a href="/permissions/cloudbuild.repositories.list">cloudbuild.repositories.list</a></li>
+    <li><a href="/permissions/cloudbuild.workerpools.use">cloudbuild.workerpools.use</a></li>
+    <li><a href="/permissions/compute.firewalls.get">compute.firewalls.get</a></li>
+    <li><a href="/permissions/compute.firewalls.list">compute.firewalls.list</a></li>
+    <li><a href="/permissions/compute.networkAttachments.get">compute.networkAttachments.get</a></li>
+    <li><a href="/permissions/compute.networkAttachments.update">compute.networkAttachments.update</a></li>
+    <li><a href="/permissions/compute.networks.get">compute.networks.get</a></li>
+    <li><a href="/permissions/compute.regionOperations.get">compute.regionOperations.get</a></li>
+    <li><a href="/permissions/compute.subnetworks.get">compute.subnetworks.get</a></li>
+    <li><a href="/permissions/containeranalysis.notes.attachOccurrence">containeranalysis.notes.attachOccurrence</a></li>
+    <li><a href="/permissions/containeranalysis.notes.create">containeranalysis.notes.create</a></li>
+    <li><a href="/permissions/containeranalysis.notes.delete">containeranalysis.notes.delete</a></li>
+    <li><a href="/permissions/containeranalysis.notes.get">containeranalysis.notes.get</a></li>
+    <li><a href="/permissions/containeranalysis.notes.list">containeranalysis.notes.list</a></li>
+    <li><a href="/permissions/containeranalysis.notes.update">containeranalysis.notes.update</a></li>
+    <li><a href="/permissions/containeranalysis.occurrences.create">containeranalysis.occurrences.create</a></li>
+    <li><a href="/permissions/containeranalysis.occurrences.delete">containeranalysis.occurrences.delete</a></li>
+    <li><a href="/permissions/containeranalysis.occurrences.get">containeranalysis.occurrences.get</a></li>
+    <li><a href="/permissions/containeranalysis.occurrences.list">containeranalysis.occurrences.list</a></li>
+    <li><a href="/permissions/containeranalysis.occurrences.update">containeranalysis.occurrences.update</a></li>
+    <li><a href="/permissions/developerconnect.connections.get">developerconnect.connections.get</a></li>
+    <li><a href="/permissions/developerconnect.gitRepositoryLinks.fetchReadToken">developerconnect.gitRepositoryLinks.fetchReadToken</a></li>
+    <li><a href="/permissions/developerconnect.gitRepositoryLinks.fetchReadWriteToken">developerconnect.gitRepositoryLinks.fetchReadWriteToken</a></li>
+    <li><a href="/permissions/developerconnect.gitRepositoryLinks.get">developerconnect.gitRepositoryLinks.get</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.get">iam.serviceAccounts.get</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.getAccessToken">iam.serviceAccounts.getAccessToken</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.getOpenIdToken">iam.serviceAccounts.getOpenIdToken</a></li>
+    <li><a href="/permissions/logging.buckets.create">logging.buckets.create</a></li>
+    <li><a href="/permissions/logging.buckets.get">logging.buckets.get</a></li>
+    <li><a href="/permissions/logging.buckets.list">logging.buckets.list</a></li>
+    <li><a href="/permissions/logging.logEntries.create">logging.logEntries.create</a></li>
+    <li><a href="/permissions/logging.logEntries.list">logging.logEntries.list</a></li>
+    <li><a href="/permissions/logging.views.access">logging.views.access</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.create">pubsub.subscriptions.create</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.delete">pubsub.subscriptions.delete</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.get">pubsub.subscriptions.get</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.update">pubsub.subscriptions.update</a></li>
+    <li><a href="/permissions/pubsub.topics.attachSubscription">pubsub.topics.attachSubscription</a></li>
+    <li><a href="/permissions/pubsub.topics.create">pubsub.topics.create</a></li>
+    <li><a href="/permissions/pubsub.topics.get">pubsub.topics.get</a></li>
+    <li><a href="/permissions/pubsub.topics.publish">pubsub.topics.publish</a></li>
+    <li><a href="/permissions/remotebuildexecution.blobs.get">remotebuildexecution.blobs.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.list">resourcemanager.projects.list</a></li>
+    <li><a href="/permissions/servicedirectory.endpoints.get">servicedirectory.endpoints.get</a></li>
+    <li><a href="/permissions/servicedirectory.endpoints.getIamPolicy">servicedirectory.endpoints.getIamPolicy</a></li>
+    <li><a href="/permissions/servicedirectory.endpoints.list">servicedirectory.endpoints.list</a></li>
+    <li><a href="/permissions/servicedirectory.locations.get">servicedirectory.locations.get</a></li>
+    <li><a href="/permissions/servicedirectory.locations.list">servicedirectory.locations.list</a></li>
+    <li><a href="/permissions/servicedirectory.namespaces.get">servicedirectory.namespaces.get</a></li>
+    <li><a href="/permissions/servicedirectory.namespaces.getIamPolicy">servicedirectory.namespaces.getIamPolicy</a></li>
+    <li><a href="/permissions/servicedirectory.namespaces.list">servicedirectory.namespaces.list</a></li>
+    <li><a href="/permissions/servicedirectory.networks.access">servicedirectory.networks.access</a></li>
+    <li><a href="/permissions/servicedirectory.services.get">servicedirectory.services.get</a></li>
+    <li><a href="/permissions/servicedirectory.services.getIamPolicy">servicedirectory.services.getIamPolicy</a></li>
+    <li><a href="/permissions/servicedirectory.services.list">servicedirectory.services.list</a></li>
+    <li><a href="/permissions/servicedirectory.services.resolve">servicedirectory.services.resolve</a></li>
+    <li><a href="/permissions/serviceusage.services.use">serviceusage.services.use</a></li>
+    <li><a href="/permissions/source.repos.get">source.repos.get</a></li>
+    <li><a href="/permissions/source.repos.list">source.repos.list</a></li>
+    <li><a href="/permissions/storage.buckets.create">storage.buckets.create</a></li>
+    <li><a href="/permissions/storage.buckets.get">storage.buckets.get</a></li>
+    <li><a href="/permissions/storage.buckets.list">storage.buckets.list</a></li>
+    <li><a href="/permissions/storage.objects.create">storage.objects.create</a></li>
+    <li><a href="/permissions/storage.objects.delete">storage.objects.delete</a></li>
+    <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
+    <li><a href="/permissions/storage.objects.list">storage.objects.list</a></li>
+    <li><a href="/permissions/storage.objects.update">storage.objects.update</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Run Source Developer (roles/run.sourceDeveloper) | GCP IAM Reference</title>
+    <meta name="description" content="Cloud Run Source Developer - Deploy and manage Cloud Run source deployed resources.">
+    <link rel="canonical" href="https://gcpiam.com/roles/run.sourceDeveloper">
+    <meta property="og:title" content="Cloud Run Source Developer (roles/run.sourceDeveloper)">
+    <meta property="og:description" content="Cloud Run Source Developer - Deploy and manage Cloud Run source deployed resources.">
+    <meta property="og:url" content="https://gcpiam.com/roles/run.sourceDeveloper">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/run.sourceDeveloper</h1>
+    <p class="subtitle">Cloud Run Source Developer <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Deploy and manage Cloud Run source deployed resources.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(242)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/artifactregistry.attachments.get">artifactregistry.attachments.get</a></li>
+    <li><a href="/permissions/artifactregistry.attachments.list">artifactregistry.attachments.list</a></li>
+    <li><a href="/permissions/artifactregistry.dockerimages.get">artifactregistry.dockerimages.get</a></li>
+    <li><a href="/permissions/artifactregistry.dockerimages.list">artifactregistry.dockerimages.list</a></li>
+    <li><a href="/permissions/artifactregistry.files.download">artifactregistry.files.download</a></li>
+    <li><a href="/permissions/artifactregistry.files.get">artifactregistry.files.get</a></li>
+    <li><a href="/permissions/artifactregistry.files.list">artifactregistry.files.list</a></li>
+    <li><a href="/permissions/artifactregistry.locations.get">artifactregistry.locations.get</a></li>
+    <li><a href="/permissions/artifactregistry.locations.list">artifactregistry.locations.list</a></li>
+    <li><a href="/permissions/artifactregistry.mavenartifacts.get">artifactregistry.mavenartifacts.get</a></li>
+    <li><a href="/permissions/artifactregistry.mavenartifacts.list">artifactregistry.mavenartifacts.list</a></li>
+    <li><a href="/permissions/artifactregistry.npmpackages.get">artifactregistry.npmpackages.get</a></li>
+    <li><a href="/permissions/artifactregistry.npmpackages.list">artifactregistry.npmpackages.list</a></li>
+    <li><a href="/permissions/artifactregistry.packages.get">artifactregistry.packages.get</a></li>
+    <li><a href="/permissions/artifactregistry.packages.list">artifactregistry.packages.list</a></li>
+    <li><a href="/permissions/artifactregistry.projectsettings.get">artifactregistry.projectsettings.get</a></li>
+    <li><a href="/permissions/artifactregistry.pythonpackages.get">artifactregistry.pythonpackages.get</a></li>
+    <li><a href="/permissions/artifactregistry.pythonpackages.list">artifactregistry.pythonpackages.list</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.create">artifactregistry.repositories.create</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.downloadArtifacts">artifactregistry.repositories.downloadArtifacts</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.exportArtifacts">artifactregistry.repositories.exportArtifacts</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.get">artifactregistry.repositories.get</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.list">artifactregistry.repositories.list</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.listEffectiveTags">artifactregistry.repositories.listEffectiveTags</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.listTagBindings">artifactregistry.repositories.listTagBindings</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.readViaVirtualRepository">artifactregistry.repositories.readViaVirtualRepository</a></li>
+    <li><a href="/permissions/artifactregistry.rules.get">artifactregistry.rules.get</a></li>
+    <li><a href="/permissions/artifactregistry.rules.list">artifactregistry.rules.list</a></li>
+    <li><a href="/permissions/artifactregistry.tags.get">artifactregistry.tags.get</a></li>
+    <li><a href="/permissions/artifactregistry.tags.list">artifactregistry.tags.list</a></li>
+    <li><a href="/permissions/artifactregistry.versions.get">artifactregistry.versions.get</a></li>
+    <li><a href="/permissions/artifactregistry.versions.list">artifactregistry.versions.list</a></li>
+    <li><a href="/permissions/cloudbuild.builds.create">cloudbuild.builds.create</a></li>
+    <li><a href="/permissions/cloudbuild.builds.get">cloudbuild.builds.get</a></li>
+    <li><a href="/permissions/cloudbuild.builds.list">cloudbuild.builds.list</a></li>
+    <li><a href="/permissions/cloudbuild.builds.update">cloudbuild.builds.update</a></li>
+    <li><a href="/permissions/cloudbuild.locations.get">cloudbuild.locations.get</a></li>
+    <li><a href="/permissions/cloudbuild.locations.list">cloudbuild.locations.list</a></li>
+    <li><a href="/permissions/cloudbuild.operations.get">cloudbuild.operations.get</a></li>
+    <li><a href="/permissions/cloudbuild.operations.list">cloudbuild.operations.list</a></li>
+    <li><a href="/permissions/cloudkms.keyHandles.create">cloudkms.keyHandles.create</a></li>
+    <li><a href="/permissions/cloudkms.keyHandles.get">cloudkms.keyHandles.get</a></li>
+    <li><a href="/permissions/cloudkms.keyHandles.list">cloudkms.keyHandles.list</a></li>
+    <li><a href="/permissions/cloudkms.operations.get">cloudkms.operations.get</a></li>
+    <li><a href="/permissions/cloudkms.projects.showEffectiveAutokeyConfig">cloudkms.projects.showEffectiveAutokeyConfig</a></li>
+    <li><a href="/permissions/eventarc.channelConnections.create">eventarc.channelConnections.create</a></li>
+    <li><a href="/permissions/eventarc.channelConnections.delete">eventarc.channelConnections.delete</a></li>
+    <li><a href="/permissions/eventarc.channelConnections.get">eventarc.channelConnections.get</a></li>
+    <li><a href="/permissions/eventarc.channelConnections.getIamPolicy">eventarc.channelConnections.getIamPolicy</a></li>
+    <li><a href="/permissions/eventarc.channelConnections.list">eventarc.channelConnections.list</a></li>
+    <li><a href="/permissions/eventarc.channelConnections.publish">eventarc.channelConnections.publish</a></li>
+    <li><a href="/permissions/eventarc.channels.attach">eventarc.channels.attach</a></li>
+    <li><a href="/permissions/eventarc.channels.create">eventarc.channels.create</a></li>
+    <li><a href="/permissions/eventarc.channels.delete">eventarc.channels.delete</a></li>
+    <li><a href="/permissions/eventarc.channels.get">eventarc.channels.get</a></li>
+    <li><a href="/permissions/eventarc.channels.getIamPolicy">eventarc.channels.getIamPolicy</a></li>
+    <li><a href="/permissions/eventarc.channels.list">eventarc.channels.list</a></li>
+    <li><a href="/permissions/eventarc.channels.publish">eventarc.channels.publish</a></li>
+    <li><a href="/permissions/eventarc.channels.undelete">eventarc.channels.undelete</a></li>
+    <li><a href="/permissions/eventarc.channels.update">eventarc.channels.update</a></li>
+    <li><a href="/permissions/eventarc.enrollments.create">eventarc.enrollments.create</a></li>
+    <li><a href="/permissions/eventarc.enrollments.delete">eventarc.enrollments.delete</a></li>
+    <li><a href="/permissions/eventarc.enrollments.get">eventarc.enrollments.get</a></li>
+    <li><a href="/permissions/eventarc.enrollments.getIamPolicy">eventarc.enrollments.getIamPolicy</a></li>
+    <li><a href="/permissions/eventarc.enrollments.list">eventarc.enrollments.list</a></li>
+    <li><a href="/permissions/eventarc.enrollments.update">eventarc.enrollments.update</a></li>
+    <li><a href="/permissions/eventarc.googleApiSources.create">eventarc.googleApiSources.create</a></li>
+    <li><a href="/permissions/eventarc.googleApiSources.delete">eventarc.googleApiSources.delete</a></li>
+    <li><a href="/permissions/eventarc.googleApiSources.get">eventarc.googleApiSources.get</a></li>
+    <li><a href="/permissions/eventarc.googleApiSources.getIamPolicy">eventarc.googleApiSources.getIamPolicy</a></li>
+    <li><a href="/permissions/eventarc.googleApiSources.list">eventarc.googleApiSources.list</a></li>
+    <li><a href="/permissions/eventarc.googleApiSources.update">eventarc.googleApiSources.update</a></li>
+    <li><a href="/permissions/eventarc.googleChannelConfigs.get">eventarc.googleChannelConfigs.get</a></li>
+    <li><a href="/permissions/eventarc.googleChannelConfigs.update">eventarc.googleChannelConfigs.update</a></li>
+    <li><a href="/permissions/eventarc.kafkaSources.create">eventarc.kafkaSources.create</a></li>
+    <li><a href="/permissions/eventarc.kafkaSources.delete">eventarc.kafkaSources.delete</a></li>
+    <li><a href="/permissions/eventarc.kafkaSources.get">eventarc.kafkaSources.get</a></li>
+    <li><a href="/permissions/eventarc.kafkaSources.getIamPolicy">eventarc.kafkaSources.getIamPolicy</a></li>
+    <li><a href="/permissions/eventarc.kafkaSources.list">eventarc.kafkaSources.list</a></li>
+    <li><a href="/permissions/eventarc.locations.get">eventarc.locations.get</a></li>
+    <li><a href="/permissions/eventarc.locations.list">eventarc.locations.list</a></li>
+    <li><a href="/permissions/eventarc.operations.cancel">eventarc.operations.cancel</a></li>
+    <li><a href="/permissions/eventarc.operations.delete">eventarc.operations.delete</a></li>
+    <li><a href="/permissions/eventarc.operations.get">eventarc.operations.get</a></li>
+    <li><a href="/permissions/eventarc.operations.list">eventarc.operations.list</a></li>
+    <li><a href="/permissions/eventarc.pipelines.create">eventarc.pipelines.create</a></li>
+    <li><a href="/permissions/eventarc.pipelines.delete">eventarc.pipelines.delete</a></li>
+    <li><a href="/permissions/eventarc.pipelines.get">eventarc.pipelines.get</a></li>
+    <li><a href="/permissions/eventarc.pipelines.getIamPolicy">eventarc.pipelines.getIamPolicy</a></li>
+    <li><a href="/permissions/eventarc.pipelines.list">eventarc.pipelines.list</a></li>
+    <li><a href="/permissions/eventarc.pipelines.update">eventarc.pipelines.update</a></li>
+    <li><a href="/permissions/eventarc.providers.get">eventarc.providers.get</a></li>
+    <li><a href="/permissions/eventarc.providers.list">eventarc.providers.list</a></li>
+    <li><a href="/permissions/eventarc.triggers.create">eventarc.triggers.create</a></li>
+    <li><a href="/permissions/eventarc.triggers.delete">eventarc.triggers.delete</a></li>
+    <li><a href="/permissions/eventarc.triggers.get">eventarc.triggers.get</a></li>
+    <li><a href="/permissions/eventarc.triggers.getIamPolicy">eventarc.triggers.getIamPolicy</a></li>
+    <li><a href="/permissions/eventarc.triggers.list">eventarc.triggers.list</a></li>
+    <li><a href="/permissions/eventarc.triggers.undelete">eventarc.triggers.undelete</a></li>
+    <li><a href="/permissions/eventarc.triggers.update">eventarc.triggers.update</a></li>
+    <li><a href="/permissions/orgpolicy.policy.get">orgpolicy.policy.get</a></li>
+    <li><a href="/permissions/pubsub.messageTransforms.validate">pubsub.messageTransforms.validate</a></li>
+    <li><a href="/permissions/pubsub.schemas.attach">pubsub.schemas.attach</a></li>
+    <li><a href="/permissions/pubsub.schemas.commit">pubsub.schemas.commit</a></li>
+    <li><a href="/permissions/pubsub.schemas.create">pubsub.schemas.create</a></li>
+    <li><a href="/permissions/pubsub.schemas.delete">pubsub.schemas.delete</a></li>
+    <li><a href="/permissions/pubsub.schemas.get">pubsub.schemas.get</a></li>
+    <li><a href="/permissions/pubsub.schemas.list">pubsub.schemas.list</a></li>
+    <li><a href="/permissions/pubsub.schemas.listRevisions">pubsub.schemas.listRevisions</a></li>
+    <li><a href="/permissions/pubsub.schemas.rollback">pubsub.schemas.rollback</a></li>
+    <li><a href="/permissions/pubsub.schemas.validate">pubsub.schemas.validate</a></li>
+    <li><a href="/permissions/pubsub.snapshots.create">pubsub.snapshots.create</a></li>
+    <li><a href="/permissions/pubsub.snapshots.createTagBinding">pubsub.snapshots.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.snapshots.delete">pubsub.snapshots.delete</a></li>
+    <li><a href="/permissions/pubsub.snapshots.deleteTagBinding">pubsub.snapshots.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.snapshots.get">pubsub.snapshots.get</a></li>
+    <li><a href="/permissions/pubsub.snapshots.list">pubsub.snapshots.list</a></li>
+    <li><a href="/permissions/pubsub.snapshots.listEffectiveTags">pubsub.snapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.snapshots.listTagBindings">pubsub.snapshots.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.snapshots.seek">pubsub.snapshots.seek</a></li>
+    <li><a href="/permissions/pubsub.snapshots.update">pubsub.snapshots.update</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.consume">pubsub.subscriptions.consume</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.create">pubsub.subscriptions.create</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.createTagBinding">pubsub.subscriptions.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.delete">pubsub.subscriptions.delete</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.deleteTagBinding">pubsub.subscriptions.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.get">pubsub.subscriptions.get</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.list">pubsub.subscriptions.list</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.listEffectiveTags">pubsub.subscriptions.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.listTagBindings">pubsub.subscriptions.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.update">pubsub.subscriptions.update</a></li>
+    <li><a href="/permissions/pubsub.topics.attachSubscription">pubsub.topics.attachSubscription</a></li>
+    <li><a href="/permissions/pubsub.topics.create">pubsub.topics.create</a></li>
+    <li><a href="/permissions/pubsub.topics.createTagBinding">pubsub.topics.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.topics.delete">pubsub.topics.delete</a></li>
+    <li><a href="/permissions/pubsub.topics.deleteTagBinding">pubsub.topics.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.topics.detachSubscription">pubsub.topics.detachSubscription</a></li>
+    <li><a href="/permissions/pubsub.topics.get">pubsub.topics.get</a></li>
+    <li><a href="/permissions/pubsub.topics.list">pubsub.topics.list</a></li>
+    <li><a href="/permissions/pubsub.topics.listEffectiveTags">pubsub.topics.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.topics.listTagBindings">pubsub.topics.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.topics.publish">pubsub.topics.publish</a></li>
+    <li><a href="/permissions/pubsub.topics.update">pubsub.topics.update</a></li>
+    <li><a href="/permissions/pubsub.topics.updateTag">pubsub.topics.updateTag</a></li>
+    <li><a href="/permissions/recommender.locations.get">recommender.locations.get</a></li>
+    <li><a href="/permissions/recommender.locations.list">recommender.locations.list</a></li>
+    <li><a href="/permissions/recommender.runServiceCostInsights.get">recommender.runServiceCostInsights.get</a></li>
+    <li><a href="/permissions/recommender.runServiceCostInsights.list">recommender.runServiceCostInsights.list</a></li>
+    <li><a href="/permissions/recommender.runServiceCostInsights.update">recommender.runServiceCostInsights.update</a></li>
+    <li><a href="/permissions/recommender.runServiceCostRecommendations.get">recommender.runServiceCostRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.runServiceCostRecommendations.list">recommender.runServiceCostRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.runServiceCostRecommendations.update">recommender.runServiceCostRecommendations.update</a></li>
+    <li><a href="/permissions/recommender.runServiceIdentityInsights.get">recommender.runServiceIdentityInsights.get</a></li>
+    <li><a href="/permissions/recommender.runServiceIdentityInsights.list">recommender.runServiceIdentityInsights.list</a></li>
+    <li><a href="/permissions/recommender.runServiceIdentityInsights.update">recommender.runServiceIdentityInsights.update</a></li>
+    <li><a href="/permissions/recommender.runServiceIdentityRecommendations.get">recommender.runServiceIdentityRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.runServiceIdentityRecommendations.list">recommender.runServiceIdentityRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.runServiceIdentityRecommendations.update">recommender.runServiceIdentityRecommendations.update</a></li>
+    <li><a href="/permissions/recommender.runServicePerformanceInsights.get">recommender.runServicePerformanceInsights.get</a></li>
+    <li><a href="/permissions/recommender.runServicePerformanceInsights.list">recommender.runServicePerformanceInsights.list</a></li>
+    <li><a href="/permissions/recommender.runServicePerformanceInsights.update">recommender.runServicePerformanceInsights.update</a></li>
+    <li><a href="/permissions/recommender.runServicePerformanceRecommendations.get">recommender.runServicePerformanceRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.runServicePerformanceRecommendations.list">recommender.runServicePerformanceRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.runServicePerformanceRecommendations.update">recommender.runServicePerformanceRecommendations.update</a></li>
+    <li><a href="/permissions/recommender.runServiceSecurityInsights.get">recommender.runServiceSecurityInsights.get</a></li>
+    <li><a href="/permissions/recommender.runServiceSecurityInsights.list">recommender.runServiceSecurityInsights.list</a></li>
+    <li><a href="/permissions/recommender.runServiceSecurityInsights.update">recommender.runServiceSecurityInsights.update</a></li>
+    <li><a href="/permissions/recommender.runServiceSecurityRecommendations.get">recommender.runServiceSecurityRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.runServiceSecurityRecommendations.list">recommender.runServiceSecurityRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.runServiceSecurityRecommendations.update">recommender.runServiceSecurityRecommendations.update</a></li>
+    <li><a href="/permissions/remotebuildexecution.blobs.get">remotebuildexecution.blobs.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.list">resourcemanager.projects.list</a></li>
+    <li><a href="/permissions/run.configurations.get">run.configurations.get</a></li>
+    <li><a href="/permissions/run.configurations.list">run.configurations.list</a></li>
+    <li><a href="/permissions/run.executions.cancel">run.executions.cancel</a></li>
+    <li><a href="/permissions/run.executions.delete">run.executions.delete</a></li>
+    <li><a href="/permissions/run.executions.get">run.executions.get</a></li>
+    <li><a href="/permissions/run.executions.list">run.executions.list</a></li>
+    <li><a href="/permissions/run.jobs.create">run.jobs.create</a></li>
+    <li><a href="/permissions/run.jobs.delete">run.jobs.delete</a></li>
+    <li><a href="/permissions/run.jobs.get">run.jobs.get</a></li>
+    <li><a href="/permissions/run.jobs.getIamPolicy">run.jobs.getIamPolicy</a></li>
+    <li><a href="/permissions/run.jobs.list">run.jobs.list</a></li>
+    <li><a href="/permissions/run.jobs.listEffectiveTags">run.jobs.listEffectiveTags</a></li>
+    <li><a href="/permissions/run.jobs.listTagBindings">run.jobs.listTagBindings</a></li>
+    <li><a href="/permissions/run.jobs.run">run.jobs.run</a></li>
+    <li><a href="/permissions/run.jobs.runWithOverrides">run.jobs.runWithOverrides</a></li>
+    <li><a href="/permissions/run.jobs.update">run.jobs.update</a></li>
+    <li><a href="/permissions/run.locations.list">run.locations.list</a></li>
+    <li><a href="/permissions/run.operations.delete">run.operations.delete</a></li>
+    <li><a href="/permissions/run.operations.get">run.operations.get</a></li>
+    <li><a href="/permissions/run.operations.list">run.operations.list</a></li>
+    <li><a href="/permissions/run.revisions.delete">run.revisions.delete</a></li>
+    <li><a href="/permissions/run.revisions.get">run.revisions.get</a></li>
+    <li><a href="/permissions/run.revisions.list">run.revisions.list</a></li>
+    <li><a href="/permissions/run.routes.get">run.routes.get</a></li>
+    <li><a href="/permissions/run.routes.invoke">run.routes.invoke</a></li>
+    <li><a href="/permissions/run.routes.list">run.routes.list</a></li>
+    <li><a href="/permissions/run.services.create">run.services.create</a></li>
+    <li><a href="/permissions/run.services.delete">run.services.delete</a></li>
+    <li><a href="/permissions/run.services.get">run.services.get</a></li>
+    <li><a href="/permissions/run.services.getIamPolicy">run.services.getIamPolicy</a></li>
+    <li><a href="/permissions/run.services.list">run.services.list</a></li>
+    <li><a href="/permissions/run.services.listEffectiveTags">run.services.listEffectiveTags</a></li>
+    <li><a href="/permissions/run.services.listTagBindings">run.services.listTagBindings</a></li>
+    <li><a href="/permissions/run.services.update">run.services.update</a></li>
+    <li><a href="/permissions/run.tasks.get">run.tasks.get</a></li>
+    <li><a href="/permissions/run.tasks.list">run.tasks.list</a></li>
+    <li><a href="/permissions/run.workerpools.create">run.workerpools.create</a></li>
+    <li><a href="/permissions/run.workerpools.delete">run.workerpools.delete</a></li>
+    <li><a href="/permissions/run.workerpools.get">run.workerpools.get</a></li>
+    <li><a href="/permissions/run.workerpools.getIamPolicy">run.workerpools.getIamPolicy</a></li>
+    <li><a href="/permissions/run.workerpools.list">run.workerpools.list</a></li>
+    <li><a href="/permissions/run.workerpools.update">run.workerpools.update</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.analyze">serviceusage.consumerpolicy.analyze</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.get">serviceusage.consumerpolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.effectivepolicy.get">serviceusage.effectivepolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.groups.list">serviceusage.groups.list</a></li>
+    <li><a href="/permissions/serviceusage.groups.listExpandedMembers">serviceusage.groups.listExpandedMembers</a></li>
+    <li><a href="/permissions/serviceusage.groups.listMembers">serviceusage.groups.listMembers</a></li>
+    <li><a href="/permissions/serviceusage.quotas.get">serviceusage.quotas.get</a></li>
+    <li><a href="/permissions/serviceusage.services.get">serviceusage.services.get</a></li>
+    <li><a href="/permissions/serviceusage.services.list">serviceusage.services.list</a></li>
+    <li><a href="/permissions/serviceusage.services.use">serviceusage.services.use</a></li>
+    <li><a href="/permissions/serviceusage.values.test">serviceusage.values.test</a></li>
+    <li><a href="/permissions/storage.buckets.create">storage.buckets.create</a></li>
+    <li><a href="/permissions/storage.buckets.get">storage.buckets.get</a></li>
+    <li><a href="/permissions/storage.buckets.list">storage.buckets.list</a></li>
+    <li><a href="/permissions/storage.folders.create">storage.folders.create</a></li>
+    <li><a href="/permissions/storage.folders.get">storage.folders.get</a></li>
+    <li><a href="/permissions/storage.folders.list">storage.folders.list</a></li>
+    <li><a href="/permissions/storage.managedFolders.create">storage.managedFolders.create</a></li>
+    <li><a href="/permissions/storage.managedFolders.get">storage.managedFolders.get</a></li>
+    <li><a href="/permissions/storage.managedFolders.list">storage.managedFolders.list</a></li>
+    <li><a href="/permissions/storage.multipartUploads.abort">storage.multipartUploads.abort</a></li>
+    <li><a href="/permissions/storage.multipartUploads.create">storage.multipartUploads.create</a></li>
+    <li><a href="/permissions/storage.multipartUploads.listParts">storage.multipartUploads.listParts</a></li>
+    <li><a href="/permissions/storage.objects.create">storage.objects.create</a></li>
+    <li><a href="/permissions/storage.objects.createContext">storage.objects.createContext</a></li>
+    <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
+    <li><a href="/permissions/storage.objects.list">storage.objects.list</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

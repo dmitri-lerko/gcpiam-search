@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebooks Viewer (roles/notebooks.viewer) | GCP IAM Reference</title>
+    <meta name="description" content="Notebooks Viewer - Read-only access to Notebooks all resources.">
+    <link rel="canonical" href="https://gcpiam.com/roles/notebooks.viewer">
+    <meta property="og:title" content="Notebooks Viewer (roles/notebooks.viewer)">
+    <meta property="og:description" content="Notebooks Viewer - Read-only access to Notebooks all resources.">
+    <meta property="og:url" content="https://gcpiam.com/roles/notebooks.viewer">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/notebooks.viewer</h1>
+    <p class="subtitle">Notebooks Viewer <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Read-only access to Notebooks all resources.</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(418)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/aiplatform.notebookExecutionJobs.get">aiplatform.notebookExecutionJobs.get</a></li>
+    <li><a href="/permissions/aiplatform.notebookExecutionJobs.list">aiplatform.notebookExecutionJobs.list</a></li>
+    <li><a href="/permissions/aiplatform.schedules.get">aiplatform.schedules.get</a></li>
+    <li><a href="/permissions/aiplatform.schedules.list">aiplatform.schedules.list</a></li>
+    <li><a href="/permissions/compute.acceleratorTypes.get">compute.acceleratorTypes.get</a></li>
+    <li><a href="/permissions/compute.acceleratorTypes.list">compute.acceleratorTypes.list</a></li>
+    <li><a href="/permissions/compute.addresses.get">compute.addresses.get</a></li>
+    <li><a href="/permissions/compute.addresses.list">compute.addresses.list</a></li>
+    <li><a href="/permissions/compute.addresses.listEffectiveTags">compute.addresses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.addresses.listTagBindings">compute.addresses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.autoscalers.get">compute.autoscalers.get</a></li>
+    <li><a href="/permissions/compute.autoscalers.list">compute.autoscalers.list</a></li>
+    <li><a href="/permissions/compute.backendBuckets.get">compute.backendBuckets.get</a></li>
+    <li><a href="/permissions/compute.backendBuckets.getIamPolicy">compute.backendBuckets.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.backendBuckets.list">compute.backendBuckets.list</a></li>
+    <li><a href="/permissions/compute.backendBuckets.listEffectiveTags">compute.backendBuckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.backendBuckets.listTagBindings">compute.backendBuckets.listTagBindings</a></li>
+    <li><a href="/permissions/compute.backendServices.get">compute.backendServices.get</a></li>
+    <li><a href="/permissions/compute.backendServices.getIamPolicy">compute.backendServices.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.backendServices.list">compute.backendServices.list</a></li>
+    <li><a href="/permissions/compute.backendServices.listEffectiveTags">compute.backendServices.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.backendServices.listTagBindings">compute.backendServices.listTagBindings</a></li>
+    <li><a href="/permissions/compute.commitments.get">compute.commitments.get</a></li>
+    <li><a href="/permissions/compute.commitments.list">compute.commitments.list</a></li>
+    <li><a href="/permissions/compute.crossSiteNetworks.get">compute.crossSiteNetworks.get</a></li>
+    <li><a href="/permissions/compute.crossSiteNetworks.list">compute.crossSiteNetworks.list</a></li>
+    <li><a href="/permissions/compute.diskSettings.get">compute.diskSettings.get</a></li>
+    <li><a href="/permissions/compute.diskTypes.get">compute.diskTypes.get</a></li>
+    <li><a href="/permissions/compute.diskTypes.list">compute.diskTypes.list</a></li>
+    <li><a href="/permissions/compute.disks.get">compute.disks.get</a></li>
+    <li><a href="/permissions/compute.disks.getIamPolicy">compute.disks.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.disks.list">compute.disks.list</a></li>
+    <li><a href="/permissions/compute.disks.listEffectiveTags">compute.disks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.disks.listTagBindings">compute.disks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.get">compute.externalVpnGateways.get</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.list">compute.externalVpnGateways.list</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.listEffectiveTags">compute.externalVpnGateways.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.listTagBindings">compute.externalVpnGateways.listTagBindings</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.get">compute.firewallPolicies.get</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.getIamPolicy">compute.firewallPolicies.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.list">compute.firewallPolicies.list</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.listEffectiveTags">compute.firewallPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.listTagBindings">compute.firewallPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.firewalls.get">compute.firewalls.get</a></li>
+    <li><a href="/permissions/compute.firewalls.list">compute.firewalls.list</a></li>
+    <li><a href="/permissions/compute.firewalls.listEffectiveTags">compute.firewalls.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.firewalls.listTagBindings">compute.firewalls.listTagBindings</a></li>
+    <li><a href="/permissions/compute.forwardingRules.get">compute.forwardingRules.get</a></li>
+    <li><a href="/permissions/compute.forwardingRules.list">compute.forwardingRules.list</a></li>
+    <li><a href="/permissions/compute.forwardingRules.listEffectiveTags">compute.forwardingRules.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.forwardingRules.listTagBindings">compute.forwardingRules.listTagBindings</a></li>
+    <li><a href="/permissions/compute.futureReservations.get">compute.futureReservations.get</a></li>
+    <li><a href="/permissions/compute.futureReservations.getIamPolicy">compute.futureReservations.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.futureReservations.list">compute.futureReservations.list</a></li>
+    <li><a href="/permissions/compute.globalAddresses.get">compute.globalAddresses.get</a></li>
+    <li><a href="/permissions/compute.globalAddresses.list">compute.globalAddresses.list</a></li>
+    <li><a href="/permissions/compute.globalAddresses.listEffectiveTags">compute.globalAddresses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalAddresses.listTagBindings">compute.globalAddresses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.get">compute.globalForwardingRules.get</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.list">compute.globalForwardingRules.list</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.listEffectiveTags">compute.globalForwardingRules.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.listTagBindings">compute.globalForwardingRules.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.get">compute.globalNetworkEndpointGroups.get</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.list">compute.globalNetworkEndpointGroups.list</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.listEffectiveTags">compute.globalNetworkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.listTagBindings">compute.globalNetworkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalOperations.get">compute.globalOperations.get</a></li>
+    <li><a href="/permissions/compute.globalOperations.getIamPolicy">compute.globalOperations.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.globalOperations.list">compute.globalOperations.list</a></li>
+    <li><a href="/permissions/compute.globalPublicDelegatedPrefixes.get">compute.globalPublicDelegatedPrefixes.get</a></li>
+    <li><a href="/permissions/compute.globalPublicDelegatedPrefixes.list">compute.globalPublicDelegatedPrefixes.list</a></li>
+    <li><a href="/permissions/compute.healthChecks.get">compute.healthChecks.get</a></li>
+    <li><a href="/permissions/compute.healthChecks.list">compute.healthChecks.list</a></li>
+    <li><a href="/permissions/compute.healthChecks.listEffectiveTags">compute.healthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.healthChecks.listTagBindings">compute.healthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.get">compute.httpHealthChecks.get</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.list">compute.httpHealthChecks.list</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.listEffectiveTags">compute.httpHealthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.listTagBindings">compute.httpHealthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.get">compute.httpsHealthChecks.get</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.list">compute.httpsHealthChecks.list</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.listEffectiveTags">compute.httpsHealthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.listTagBindings">compute.httpsHealthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.images.get">compute.images.get</a></li>
+    <li><a href="/permissions/compute.images.getFromFamily">compute.images.getFromFamily</a></li>
+    <li><a href="/permissions/compute.images.getIamPolicy">compute.images.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.images.list">compute.images.list</a></li>
+    <li><a href="/permissions/compute.images.listEffectiveTags">compute.images.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.images.listTagBindings">compute.images.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.get">compute.instanceGroupManagers.get</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.list">compute.instanceGroupManagers.list</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.listEffectiveTags">compute.instanceGroupManagers.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.listTagBindings">compute.instanceGroupManagers.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instanceGroups.get">compute.instanceGroups.get</a></li>
+    <li><a href="/permissions/compute.instanceGroups.list">compute.instanceGroups.list</a></li>
+    <li><a href="/permissions/compute.instanceGroups.listEffectiveTags">compute.instanceGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instanceGroups.listTagBindings">compute.instanceGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instanceSettings.get">compute.instanceSettings.get</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.get">compute.instanceTemplates.get</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.getIamPolicy">compute.instanceTemplates.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.instanceTemplates.list">compute.instanceTemplates.list</a></li>
+    <li><a href="/permissions/compute.instances.get">compute.instances.get</a></li>
+    <li><a href="/permissions/compute.instances.getEffectiveFirewalls">compute.instances.getEffectiveFirewalls</a></li>
+    <li><a href="/permissions/compute.instances.getGuestAttributes">compute.instances.getGuestAttributes</a></li>
+    <li><a href="/permissions/compute.instances.getIamPolicy">compute.instances.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.instances.getScreenshot">compute.instances.getScreenshot</a></li>
+    <li><a href="/permissions/compute.instances.getSerialPortOutput">compute.instances.getSerialPortOutput</a></li>
+    <li><a href="/permissions/compute.instances.getShieldedInstanceIdentity">compute.instances.getShieldedInstanceIdentity</a></li>
+    <li><a href="/permissions/compute.instances.getShieldedVmIdentity">compute.instances.getShieldedVmIdentity</a></li>
+    <li><a href="/permissions/compute.instances.list">compute.instances.list</a></li>
+    <li><a href="/permissions/compute.instances.listEffectiveTags">compute.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instances.listReferrers">compute.instances.listReferrers</a></li>
+    <li><a href="/permissions/compute.instances.listTagBindings">compute.instances.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instantSnapshotGroups.get">compute.instantSnapshotGroups.get</a></li>
+    <li><a href="/permissions/compute.instantSnapshotGroups.getIamPolicy">compute.instantSnapshotGroups.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.instantSnapshotGroups.list">compute.instantSnapshotGroups.list</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.get">compute.instantSnapshots.get</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.getIamPolicy">compute.instantSnapshots.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.list">compute.instantSnapshots.list</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.listEffectiveTags">compute.instantSnapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.listTagBindings">compute.instantSnapshots.listTagBindings</a></li>
+    <li><a href="/permissions/compute.interconnectAttachmentGroups.get">compute.interconnectAttachmentGroups.get</a></li>
+    <li><a href="/permissions/compute.interconnectAttachmentGroups.list">compute.interconnectAttachmentGroups.list</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.get">compute.interconnectAttachments.get</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.list">compute.interconnectAttachments.list</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.listEffectiveTags">compute.interconnectAttachments.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.listTagBindings">compute.interconnectAttachments.listTagBindings</a></li>
+    <li><a href="/permissions/compute.interconnectGroups.get">compute.interconnectGroups.get</a></li>
+    <li><a href="/permissions/compute.interconnectGroups.list">compute.interconnectGroups.list</a></li>
+    <li><a href="/permissions/compute.interconnectLocations.get">compute.interconnectLocations.get</a></li>
+    <li><a href="/permissions/compute.interconnectLocations.list">compute.interconnectLocations.list</a></li>
+    <li><a href="/permissions/compute.interconnectRemoteLocations.get">compute.interconnectRemoteLocations.get</a></li>
+    <li><a href="/permissions/compute.interconnectRemoteLocations.list">compute.interconnectRemoteLocations.list</a></li>
+    <li><a href="/permissions/compute.interconnects.get">compute.interconnects.get</a></li>
+    <li><a href="/permissions/compute.interconnects.list">compute.interconnects.list</a></li>
+    <li><a href="/permissions/compute.interconnects.listEffectiveTags">compute.interconnects.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.interconnects.listTagBindings">compute.interconnects.listTagBindings</a></li>
+    <li><a href="/permissions/compute.licenseCodes.get">compute.licenseCodes.get</a></li>
+    <li><a href="/permissions/compute.licenseCodes.getIamPolicy">compute.licenseCodes.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.licenseCodes.list">compute.licenseCodes.list</a></li>
+    <li><a href="/permissions/compute.licenses.get">compute.licenses.get</a></li>
+    <li><a href="/permissions/compute.licenses.getIamPolicy">compute.licenses.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.licenses.list">compute.licenses.list</a></li>
+    <li><a href="/permissions/compute.licenses.listEffectiveTags">compute.licenses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.licenses.listTagBindings">compute.licenses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.machineImages.get">compute.machineImages.get</a></li>
+    <li><a href="/permissions/compute.machineImages.getIamPolicy">compute.machineImages.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.machineImages.list">compute.machineImages.list</a></li>
+    <li><a href="/permissions/compute.machineImages.listEffectiveTags">compute.machineImages.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.machineImages.listTagBindings">compute.machineImages.listTagBindings</a></li>
+    <li><a href="/permissions/compute.machineTypes.get">compute.machineTypes.get</a></li>
+    <li><a href="/permissions/compute.machineTypes.list">compute.machineTypes.list</a></li>
+    <li><a href="/permissions/compute.multiMig.get">compute.multiMig.get</a></li>
+    <li><a href="/permissions/compute.multiMig.list">compute.multiMig.list</a></li>
+    <li><a href="/permissions/compute.multiMigMembers.get">compute.multiMigMembers.get</a></li>
+    <li><a href="/permissions/compute.multiMigMembers.list">compute.multiMigMembers.list</a></li>
+    <li><a href="/permissions/compute.networkAttachments.get">compute.networkAttachments.get</a></li>
+    <li><a href="/permissions/compute.networkAttachments.getIamPolicy">compute.networkAttachments.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.networkAttachments.list">compute.networkAttachments.list</a></li>
+    <li><a href="/permissions/compute.networkAttachments.listEffectiveTags">compute.networkAttachments.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networkAttachments.listTagBindings">compute.networkAttachments.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.get">compute.networkEdgeSecurityServices.get</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.list">compute.networkEdgeSecurityServices.list</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.listEffectiveTags">compute.networkEdgeSecurityServices.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.listTagBindings">compute.networkEdgeSecurityServices.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.get">compute.networkEndpointGroups.get</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.list">compute.networkEndpointGroups.list</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.listEffectiveTags">compute.networkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.listTagBindings">compute.networkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networkProfiles.get">compute.networkProfiles.get</a></li>
+    <li><a href="/permissions/compute.networkProfiles.list">compute.networkProfiles.list</a></li>
+    <li><a href="/permissions/compute.networks.get">compute.networks.get</a></li>
+    <li><a href="/permissions/compute.networks.getEffectiveFirewalls">compute.networks.getEffectiveFirewalls</a></li>
+    <li><a href="/permissions/compute.networks.getRegionEffectiveFirewalls">compute.networks.getRegionEffectiveFirewalls</a></li>
+    <li><a href="/permissions/compute.networks.list">compute.networks.list</a></li>
+    <li><a href="/permissions/compute.networks.listEffectiveTags">compute.networks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networks.listPeeringRoutes">compute.networks.listPeeringRoutes</a></li>
+    <li><a href="/permissions/compute.networks.listTagBindings">compute.networks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.nodeGroups.get">compute.nodeGroups.get</a></li>
+    <li><a href="/permissions/compute.nodeGroups.getIamPolicy">compute.nodeGroups.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.nodeGroups.list">compute.nodeGroups.list</a></li>
+    <li><a href="/permissions/compute.nodeTemplates.get">compute.nodeTemplates.get</a></li>
+    <li><a href="/permissions/compute.nodeTemplates.getIamPolicy">compute.nodeTemplates.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.nodeTemplates.list">compute.nodeTemplates.list</a></li>
+    <li><a href="/permissions/compute.nodeTypes.get">compute.nodeTypes.get</a></li>
+    <li><a href="/permissions/compute.nodeTypes.list">compute.nodeTypes.list</a></li>
+    <li><a href="/permissions/compute.organizations.listAssociations">compute.organizations.listAssociations</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.get">compute.packetMirrorings.get</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.list">compute.packetMirrorings.list</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.listEffectiveTags">compute.packetMirrorings.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.listTagBindings">compute.packetMirrorings.listTagBindings</a></li>
+    <li><a href="/permissions/compute.previewFeatures.get">compute.previewFeatures.get</a></li>
+    <li><a href="/permissions/compute.previewFeatures.list">compute.previewFeatures.list</a></li>
+    <li><a href="/permissions/compute.projects.get">compute.projects.get</a></li>
+    <li><a href="/permissions/compute.publicAdvertisedPrefixes.get">compute.publicAdvertisedPrefixes.get</a></li>
+    <li><a href="/permissions/compute.publicAdvertisedPrefixes.list">compute.publicAdvertisedPrefixes.list</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.get">compute.publicDelegatedPrefixes.get</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.list">compute.publicDelegatedPrefixes.list</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.listEffectiveTags">compute.publicDelegatedPrefixes.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.listTagBindings">compute.publicDelegatedPrefixes.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.get">compute.regionBackendBuckets.get</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.getIamPolicy">compute.regionBackendBuckets.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.list">compute.regionBackendBuckets.list</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.listEffectiveTags">compute.regionBackendBuckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.listTagBindings">compute.regionBackendBuckets.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.get">compute.regionBackendServices.get</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.getIamPolicy">compute.regionBackendServices.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.list">compute.regionBackendServices.list</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.listEffectiveTags">compute.regionBackendServices.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.listTagBindings">compute.regionBackendServices.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionCompositeHealthChecks.get">compute.regionCompositeHealthChecks.get</a></li>
+    <li><a href="/permissions/compute.regionCompositeHealthChecks.list">compute.regionCompositeHealthChecks.list</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.get">compute.regionFirewallPolicies.get</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.getIamPolicy">compute.regionFirewallPolicies.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.list">compute.regionFirewallPolicies.list</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.listEffectiveTags">compute.regionFirewallPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.listTagBindings">compute.regionFirewallPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionHealthAggregationPolicies.get">compute.regionHealthAggregationPolicies.get</a></li>
+    <li><a href="/permissions/compute.regionHealthAggregationPolicies.list">compute.regionHealthAggregationPolicies.list</a></li>
+    <li><a href="/permissions/compute.regionHealthCheckServices.get">compute.regionHealthCheckServices.get</a></li>
+    <li><a href="/permissions/compute.regionHealthCheckServices.list">compute.regionHealthCheckServices.list</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.get">compute.regionHealthChecks.get</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.list">compute.regionHealthChecks.list</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.listEffectiveTags">compute.regionHealthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.listTagBindings">compute.regionHealthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionHealthSources.get">compute.regionHealthSources.get</a></li>
+    <li><a href="/permissions/compute.regionHealthSources.list">compute.regionHealthSources.list</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.get">compute.regionNetworkEndpointGroups.get</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.list">compute.regionNetworkEndpointGroups.list</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.listEffectiveTags">compute.regionNetworkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.listTagBindings">compute.regionNetworkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionNetworkPolicies.get">compute.regionNetworkPolicies.get</a></li>
+    <li><a href="/permissions/compute.regionNetworkPolicies.list">compute.regionNetworkPolicies.list</a></li>
+    <li><a href="/permissions/compute.regionNotificationEndpoints.get">compute.regionNotificationEndpoints.get</a></li>
+    <li><a href="/permissions/compute.regionNotificationEndpoints.list">compute.regionNotificationEndpoints.list</a></li>
+    <li><a href="/permissions/compute.regionOperations.get">compute.regionOperations.get</a></li>
+    <li><a href="/permissions/compute.regionOperations.getIamPolicy">compute.regionOperations.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.regionOperations.list">compute.regionOperations.list</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.get">compute.regionSecurityPolicies.get</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.list">compute.regionSecurityPolicies.list</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.listEffectiveTags">compute.regionSecurityPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.listTagBindings">compute.regionSecurityPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.get">compute.regionSslCertificates.get</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.list">compute.regionSslCertificates.list</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.listEffectiveTags">compute.regionSslCertificates.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.listTagBindings">compute.regionSslCertificates.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.get">compute.regionSslPolicies.get</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.list">compute.regionSslPolicies.list</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.listAvailableFeatures">compute.regionSslPolicies.listAvailableFeatures</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.listEffectiveTags">compute.regionSslPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.listTagBindings">compute.regionSslPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.get">compute.regionTargetHttpProxies.get</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.list">compute.regionTargetHttpProxies.list</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.listEffectiveTags">compute.regionTargetHttpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.listTagBindings">compute.regionTargetHttpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.get">compute.regionTargetHttpsProxies.get</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.list">compute.regionTargetHttpsProxies.list</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.listEffectiveTags">compute.regionTargetHttpsProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.listTagBindings">compute.regionTargetHttpsProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.get">compute.regionTargetTcpProxies.get</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.list">compute.regionTargetTcpProxies.list</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.listEffectiveTags">compute.regionTargetTcpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.listTagBindings">compute.regionTargetTcpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.get">compute.regionUrlMaps.get</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.list">compute.regionUrlMaps.list</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.listEffectiveTags">compute.regionUrlMaps.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.listTagBindings">compute.regionUrlMaps.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.validate">compute.regionUrlMaps.validate</a></li>
+    <li><a href="/permissions/compute.regions.get">compute.regions.get</a></li>
+    <li><a href="/permissions/compute.regions.list">compute.regions.list</a></li>
+    <li><a href="/permissions/compute.reservationBlocks.get">compute.reservationBlocks.get</a></li>
+    <li><a href="/permissions/compute.reservationBlocks.list">compute.reservationBlocks.list</a></li>
+    <li><a href="/permissions/compute.reservationSubBlocks.get">compute.reservationSubBlocks.get</a></li>
+    <li><a href="/permissions/compute.reservationSubBlocks.list">compute.reservationSubBlocks.list</a></li>
+    <li><a href="/permissions/compute.reservations.get">compute.reservations.get</a></li>
+    <li><a href="/permissions/compute.reservations.list">compute.reservations.list</a></li>
+    <li><a href="/permissions/compute.reservations.listEffectiveTags">compute.reservations.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.reservations.listTagBindings">compute.reservations.listTagBindings</a></li>
+    <li><a href="/permissions/compute.resourcePolicies.get">compute.resourcePolicies.get</a></li>
+    <li><a href="/permissions/compute.resourcePolicies.getIamPolicy">compute.resourcePolicies.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.resourcePolicies.list">compute.resourcePolicies.list</a></li>
+    <li><a href="/permissions/compute.rolloutPlans.get">compute.rolloutPlans.get</a></li>
+    <li><a href="/permissions/compute.rolloutPlans.list">compute.rolloutPlans.list</a></li>
+    <li><a href="/permissions/compute.rollouts.get">compute.rollouts.get</a></li>
+    <li><a href="/permissions/compute.rollouts.list">compute.rollouts.list</a></li>
+    <li><a href="/permissions/compute.routers.get">compute.routers.get</a></li>
+    <li><a href="/permissions/compute.routers.getRoutePolicy">compute.routers.getRoutePolicy</a></li>
+    <li><a href="/permissions/compute.routers.list">compute.routers.list</a></li>
+    <li><a href="/permissions/compute.routers.listBgpRoutes">compute.routers.listBgpRoutes</a></li>
+    <li><a href="/permissions/compute.routers.listEffectiveTags">compute.routers.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.routers.listRoutePolicies">compute.routers.listRoutePolicies</a></li>
+    <li><a href="/permissions/compute.routers.listTagBindings">compute.routers.listTagBindings</a></li>
+    <li><a href="/permissions/compute.routes.get">compute.routes.get</a></li>
+    <li><a href="/permissions/compute.routes.list">compute.routes.list</a></li>
+    <li><a href="/permissions/compute.routes.listEffectiveTags">compute.routes.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.routes.listTagBindings">compute.routes.listTagBindings</a></li>
+    <li><a href="/permissions/compute.securityPolicies.get">compute.securityPolicies.get</a></li>
+    <li><a href="/permissions/compute.securityPolicies.list">compute.securityPolicies.list</a></li>
+    <li><a href="/permissions/compute.securityPolicies.listEffectiveTags">compute.securityPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.securityPolicies.listTagBindings">compute.securityPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.get">compute.serviceAttachments.get</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.getIamPolicy">compute.serviceAttachments.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.list">compute.serviceAttachments.list</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.listEffectiveTags">compute.serviceAttachments.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.listTagBindings">compute.serviceAttachments.listTagBindings</a></li>
+    <li><a href="/permissions/compute.snapshotSettings.get">compute.snapshotSettings.get</a></li>
+    <li><a href="/permissions/compute.snapshots.get">compute.snapshots.get</a></li>
+    <li><a href="/permissions/compute.snapshots.getIamPolicy">compute.snapshots.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.snapshots.list">compute.snapshots.list</a></li>
+    <li><a href="/permissions/compute.snapshots.listEffectiveTags">compute.snapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.snapshots.listTagBindings">compute.snapshots.listTagBindings</a></li>
+    <li><a href="/permissions/compute.spotAssistants.get">compute.spotAssistants.get</a></li>
+    <li><a href="/permissions/compute.sslCertificates.get">compute.sslCertificates.get</a></li>
+    <li><a href="/permissions/compute.sslCertificates.list">compute.sslCertificates.list</a></li>
+    <li><a href="/permissions/compute.sslCertificates.listEffectiveTags">compute.sslCertificates.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.sslCertificates.listTagBindings">compute.sslCertificates.listTagBindings</a></li>
+    <li><a href="/permissions/compute.sslPolicies.get">compute.sslPolicies.get</a></li>
+    <li><a href="/permissions/compute.sslPolicies.list">compute.sslPolicies.list</a></li>
+    <li><a href="/permissions/compute.sslPolicies.listAvailableFeatures">compute.sslPolicies.listAvailableFeatures</a></li>
+    <li><a href="/permissions/compute.sslPolicies.listEffectiveTags">compute.sslPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.sslPolicies.listTagBindings">compute.sslPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.storagePools.get">compute.storagePools.get</a></li>
+    <li><a href="/permissions/compute.storagePools.getIamPolicy">compute.storagePools.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.storagePools.list">compute.storagePools.list</a></li>
+    <li><a href="/permissions/compute.storagePools.listEffectiveTags">compute.storagePools.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.storagePools.listTagBindings">compute.storagePools.listTagBindings</a></li>
+    <li><a href="/permissions/compute.subnetworks.get">compute.subnetworks.get</a></li>
+    <li><a href="/permissions/compute.subnetworks.getIamPolicy">compute.subnetworks.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.subnetworks.list">compute.subnetworks.list</a></li>
+    <li><a href="/permissions/compute.subnetworks.listEffectiveTags">compute.subnetworks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.subnetworks.listTagBindings">compute.subnetworks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.get">compute.targetGrpcProxies.get</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.list">compute.targetGrpcProxies.list</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.listEffectiveTags">compute.targetGrpcProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.listTagBindings">compute.targetGrpcProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.get">compute.targetHttpProxies.get</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.list">compute.targetHttpProxies.list</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.listEffectiveTags">compute.targetHttpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.listTagBindings">compute.targetHttpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.get">compute.targetHttpsProxies.get</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.list">compute.targetHttpsProxies.list</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.listEffectiveTags">compute.targetHttpsProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.listTagBindings">compute.targetHttpsProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetInstances.get">compute.targetInstances.get</a></li>
+    <li><a href="/permissions/compute.targetInstances.list">compute.targetInstances.list</a></li>
+    <li><a href="/permissions/compute.targetInstances.listEffectiveTags">compute.targetInstances.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetInstances.listTagBindings">compute.targetInstances.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetPools.get">compute.targetPools.get</a></li>
+    <li><a href="/permissions/compute.targetPools.list">compute.targetPools.list</a></li>
+    <li><a href="/permissions/compute.targetPools.listEffectiveTags">compute.targetPools.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetPools.listTagBindings">compute.targetPools.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.get">compute.targetSslProxies.get</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.list">compute.targetSslProxies.list</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.listEffectiveTags">compute.targetSslProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.listTagBindings">compute.targetSslProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.get">compute.targetTcpProxies.get</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.list">compute.targetTcpProxies.list</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.listEffectiveTags">compute.targetTcpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.listTagBindings">compute.targetTcpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.get">compute.targetVpnGateways.get</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.list">compute.targetVpnGateways.list</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.listEffectiveTags">compute.targetVpnGateways.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.listTagBindings">compute.targetVpnGateways.listTagBindings</a></li>
+    <li><a href="/permissions/compute.urlMaps.get">compute.urlMaps.get</a></li>
+    <li><a href="/permissions/compute.urlMaps.list">compute.urlMaps.list</a></li>
+    <li><a href="/permissions/compute.urlMaps.listEffectiveTags">compute.urlMaps.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.urlMaps.listTagBindings">compute.urlMaps.listTagBindings</a></li>
+    <li><a href="/permissions/compute.urlMaps.validate">compute.urlMaps.validate</a></li>
+    <li><a href="/permissions/compute.vmExtensionPolicies.get">compute.vmExtensionPolicies.get</a></li>
+    <li><a href="/permissions/compute.vmExtensionPolicies.list">compute.vmExtensionPolicies.list</a></li>
+    <li><a href="/permissions/compute.vpnGateways.get">compute.vpnGateways.get</a></li>
+    <li><a href="/permissions/compute.vpnGateways.list">compute.vpnGateways.list</a></li>
+    <li><a href="/permissions/compute.vpnGateways.listEffectiveTags">compute.vpnGateways.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.vpnGateways.listTagBindings">compute.vpnGateways.listTagBindings</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.get">compute.vpnTunnels.get</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.list">compute.vpnTunnels.list</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.listEffectiveTags">compute.vpnTunnels.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.listTagBindings">compute.vpnTunnels.listTagBindings</a></li>
+    <li><a href="/permissions/compute.wireGroups.get">compute.wireGroups.get</a></li>
+    <li><a href="/permissions/compute.wireGroups.list">compute.wireGroups.list</a></li>
+    <li><a href="/permissions/compute.zoneOperations.get">compute.zoneOperations.get</a></li>
+    <li><a href="/permissions/compute.zoneOperations.getIamPolicy">compute.zoneOperations.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.zoneOperations.list">compute.zoneOperations.list</a></li>
+    <li><a href="/permissions/compute.zones.get">compute.zones.get</a></li>
+    <li><a href="/permissions/compute.zones.list">compute.zones.list</a></li>
+    <li><a href="/permissions/notebooks.environments.get">notebooks.environments.get</a></li>
+    <li><a href="/permissions/notebooks.environments.getIamPolicy">notebooks.environments.getIamPolicy</a></li>
+    <li><a href="/permissions/notebooks.environments.list">notebooks.environments.list</a></li>
+    <li><a href="/permissions/notebooks.executions.get">notebooks.executions.get</a></li>
+    <li><a href="/permissions/notebooks.executions.getIamPolicy">notebooks.executions.getIamPolicy</a></li>
+    <li><a href="/permissions/notebooks.executions.list">notebooks.executions.list</a></li>
+    <li><a href="/permissions/notebooks.instances.checkUpgradability">notebooks.instances.checkUpgradability</a></li>
+    <li><a href="/permissions/notebooks.instances.get">notebooks.instances.get</a></li>
+    <li><a href="/permissions/notebooks.instances.getHealth">notebooks.instances.getHealth</a></li>
+    <li><a href="/permissions/notebooks.instances.getIamPolicy">notebooks.instances.getIamPolicy</a></li>
+    <li><a href="/permissions/notebooks.instances.list">notebooks.instances.list</a></li>
+    <li><a href="/permissions/notebooks.locations.get">notebooks.locations.get</a></li>
+    <li><a href="/permissions/notebooks.locations.list">notebooks.locations.list</a></li>
+    <li><a href="/permissions/notebooks.operations.get">notebooks.operations.get</a></li>
+    <li><a href="/permissions/notebooks.operations.list">notebooks.operations.list</a></li>
+    <li><a href="/permissions/notebooks.runtimes.get">notebooks.runtimes.get</a></li>
+    <li><a href="/permissions/notebooks.runtimes.getIamPolicy">notebooks.runtimes.getIamPolicy</a></li>
+    <li><a href="/permissions/notebooks.runtimes.list">notebooks.runtimes.list</a></li>
+    <li><a href="/permissions/notebooks.schedules.get">notebooks.schedules.get</a></li>
+    <li><a href="/permissions/notebooks.schedules.getIamPolicy">notebooks.schedules.getIamPolicy</a></li>
+    <li><a href="/permissions/notebooks.schedules.list">notebooks.schedules.list</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.projects.list">resourcemanager.projects.list</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.analyze">serviceusage.consumerpolicy.analyze</a></li>
+    <li><a href="/permissions/serviceusage.consumerpolicy.get">serviceusage.consumerpolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.effectivepolicy.get">serviceusage.effectivepolicy.get</a></li>
+    <li><a href="/permissions/serviceusage.groups.list">serviceusage.groups.list</a></li>
+    <li><a href="/permissions/serviceusage.groups.listExpandedMembers">serviceusage.groups.listExpandedMembers</a></li>
+    <li><a href="/permissions/serviceusage.groups.listMembers">serviceusage.groups.listMembers</a></li>
+    <li><a href="/permissions/serviceusage.quotas.get">serviceusage.quotas.get</a></li>
+    <li><a href="/permissions/serviceusage.services.get">serviceusage.services.get</a></li>
+    <li><a href="/permissions/serviceusage.services.list">serviceusage.services.list</a></li>
+    <li><a href="/permissions/serviceusage.values.test">serviceusage.values.test</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag User (roles/resourcemanager.tagUser) | GCP IAM Reference</title>
+    <meta name="description" content="Tag User - Access to list Tags and manage their associations with resources">
+    <link rel="canonical" href="https://gcpiam.com/roles/resourcemanager.tagUser">
+    <meta property="og:title" content="Tag User (roles/resourcemanager.tagUser)">
+    <meta property="og:description" content="Tag User - Access to list Tags and manage their associations with resources">
+    <meta property="og:url" content="https://gcpiam.com/roles/resourcemanager.tagUser">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --text-primary: #1a1a1a;
+            --text-secondary: #666666;
+            --border-color: #e0e0e0;
+            --accent: #1a73e8;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-primary: #1a1a1a;
+                --bg-secondary: #2d2d2d;
+                --text-primary: #e0e0e0;
+                --text-secondary: #b0b0b0;
+                --border-color: #404040;
+                --accent: #8ab4f8;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 { color: var(--accent); margin-bottom: 0.5rem; word-break: break-word; }
+        h2 { margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; }
+        .subtitle { color: var(--text-secondary); margin-bottom: 1rem; }
+        .description { background: var(--bg-secondary); padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; }
+        .badge-ga { background: #e8f5e9; color: #2e7d32; }
+        .badge-beta { background: #fff3e0; color: #e65100; }
+        .badge-alpha { background: #e3f2fd; color: #1565c0; }
+        .badge-deprecated { background: #ffebee; color: #c62828; }
+        .list { list-style: none; }
+        .list li { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border-color); }
+        .list li:hover { background: var(--bg-secondary); }
+        .list a { color: var(--accent); text-decoration: none; }
+        .list a:hover { text-decoration: underline; }
+        .role-title { color: var(--text-secondary); font-size: 0.9rem; }
+        .count { color: var(--text-secondary); font-size: 0.9rem; }
+        .back-link { display: inline-block; margin-bottom: 1rem; color: var(--accent); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        @media (prefers-color-scheme: dark) {
+            .badge-ga { background: #1b3d20; color: #81c784; }
+            .badge-beta { background: #3d2f1f; color: #ffb74d; }
+            .badge-alpha { background: #1e3a5f; color: #90caf9; }
+            .badge-deprecated { background: #3d1f1f; color: #ef9a9a; }
+        }
+    </style>
+</head>
+<body>
+    <a href="/" class="back-link">&larr; Back to Search</a>
+
+    <h1>roles/resourcemanager.tagUser</h1>
+    <p class="subtitle">Tag User <span class="badge badge-ga">GA</span></p>
+
+    <div class="description">
+        <p>Access to list Tags and manage their associations with resources</p>
+    </div>
+
+    <h2>Included Permissions <span class="count">(527)</span></h2>
+<ul class="list">
+    <li><a href="/permissions/alloydb.backups.createTagBinding">alloydb.backups.createTagBinding</a></li>
+    <li><a href="/permissions/alloydb.backups.deleteTagBinding">alloydb.backups.deleteTagBinding</a></li>
+    <li><a href="/permissions/alloydb.backups.listEffectiveTags">alloydb.backups.listEffectiveTags</a></li>
+    <li><a href="/permissions/alloydb.backups.listTagBindings">alloydb.backups.listTagBindings</a></li>
+    <li><a href="/permissions/alloydb.clusters.createTagBinding">alloydb.clusters.createTagBinding</a></li>
+    <li><a href="/permissions/alloydb.clusters.deleteTagBinding">alloydb.clusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/alloydb.clusters.listEffectiveTags">alloydb.clusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/alloydb.clusters.listTagBindings">alloydb.clusters.listTagBindings</a></li>
+    <li><a href="/permissions/apigateway.apis.createTagBinding">apigateway.apis.createTagBinding</a></li>
+    <li><a href="/permissions/apigateway.apis.deleteTagBinding">apigateway.apis.deleteTagBinding</a></li>
+    <li><a href="/permissions/apigateway.apis.listEffectiveTags">apigateway.apis.listEffectiveTags</a></li>
+    <li><a href="/permissions/apigateway.apis.listTagBindings">apigateway.apis.listTagBindings</a></li>
+    <li><a href="/permissions/apigateway.gateways.createTagBinding">apigateway.gateways.createTagBinding</a></li>
+    <li><a href="/permissions/apigateway.gateways.deleteTagBinding">apigateway.gateways.deleteTagBinding</a></li>
+    <li><a href="/permissions/apigateway.gateways.listEffectiveTags">apigateway.gateways.listEffectiveTags</a></li>
+    <li><a href="/permissions/apigateway.gateways.listTagBindings">apigateway.gateways.listTagBindings</a></li>
+    <li><a href="/permissions/apihub.apis.createTagBinding">apihub.apis.createTagBinding</a></li>
+    <li><a href="/permissions/apihub.apis.deleteTagBinding">apihub.apis.deleteTagBinding</a></li>
+    <li><a href="/permissions/apihub.apis.listEffectiveTags">apihub.apis.listEffectiveTags</a></li>
+    <li><a href="/permissions/apihub.apis.listTagBindings">apihub.apis.listTagBindings</a></li>
+    <li><a href="/permissions/apihub.deployments.createTagBinding">apihub.deployments.createTagBinding</a></li>
+    <li><a href="/permissions/apihub.deployments.deleteTagBinding">apihub.deployments.deleteTagBinding</a></li>
+    <li><a href="/permissions/apihub.deployments.listEffectiveTags">apihub.deployments.listEffectiveTags</a></li>
+    <li><a href="/permissions/apihub.deployments.listTagBindings">apihub.deployments.listTagBindings</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.createTagBinding">artifactregistry.repositories.createTagBinding</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.deleteTagBinding">artifactregistry.repositories.deleteTagBinding</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.listEffectiveTags">artifactregistry.repositories.listEffectiveTags</a></li>
+    <li><a href="/permissions/artifactregistry.repositories.listTagBindings">artifactregistry.repositories.listTagBindings</a></li>
+    <li><a href="/permissions/bigquery.datasets.createTagBinding">bigquery.datasets.createTagBinding</a></li>
+    <li><a href="/permissions/bigquery.datasets.deleteTagBinding">bigquery.datasets.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigquery.datasets.listEffectiveTags">bigquery.datasets.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigquery.datasets.listTagBindings">bigquery.datasets.listTagBindings</a></li>
+    <li><a href="/permissions/bigquery.tables.createTagBinding">bigquery.tables.createTagBinding</a></li>
+    <li><a href="/permissions/bigquery.tables.deleteTagBinding">bigquery.tables.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigquery.tables.listEffectiveTags">bigquery.tables.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigquery.tables.listTagBindings">bigquery.tables.listTagBindings</a></li>
+    <li><a href="/permissions/bigtable.authorizedViews.createTagBinding">bigtable.authorizedViews.createTagBinding</a></li>
+    <li><a href="/permissions/bigtable.authorizedViews.deleteTagBinding">bigtable.authorizedViews.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigtable.authorizedViews.listEffectiveTags">bigtable.authorizedViews.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigtable.authorizedViews.listTagBindings">bigtable.authorizedViews.listTagBindings</a></li>
+    <li><a href="/permissions/bigtable.instances.createTagBinding">bigtable.instances.createTagBinding</a></li>
+    <li><a href="/permissions/bigtable.instances.deleteTagBinding">bigtable.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/bigtable.instances.listEffectiveTags">bigtable.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/bigtable.instances.listTagBindings">bigtable.instances.listTagBindings</a></li>
+    <li><a href="/permissions/certificatemanager.certissuanceconfigs.createTagBinding">certificatemanager.certissuanceconfigs.createTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certissuanceconfigs.deleteTagBinding">certificatemanager.certissuanceconfigs.deleteTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certissuanceconfigs.listEffectiveTags">certificatemanager.certissuanceconfigs.listEffectiveTags</a></li>
+    <li><a href="/permissions/certificatemanager.certissuanceconfigs.listTagBindings">certificatemanager.certissuanceconfigs.listTagBindings</a></li>
+    <li><a href="/permissions/certificatemanager.certmapentries.createTagBinding">certificatemanager.certmapentries.createTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certmapentries.deleteTagBinding">certificatemanager.certmapentries.deleteTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certmapentries.listEffectiveTags">certificatemanager.certmapentries.listEffectiveTags</a></li>
+    <li><a href="/permissions/certificatemanager.certmapentries.listTagBindings">certificatemanager.certmapentries.listTagBindings</a></li>
+    <li><a href="/permissions/certificatemanager.certmaps.createTagBinding">certificatemanager.certmaps.createTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certmaps.deleteTagBinding">certificatemanager.certmaps.deleteTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certmaps.listEffectiveTags">certificatemanager.certmaps.listEffectiveTags</a></li>
+    <li><a href="/permissions/certificatemanager.certmaps.listTagBindings">certificatemanager.certmaps.listTagBindings</a></li>
+    <li><a href="/permissions/certificatemanager.certs.createTagBinding">certificatemanager.certs.createTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certs.deleteTagBinding">certificatemanager.certs.deleteTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.certs.listEffectiveTags">certificatemanager.certs.listEffectiveTags</a></li>
+    <li><a href="/permissions/certificatemanager.certs.listTagBindings">certificatemanager.certs.listTagBindings</a></li>
+    <li><a href="/permissions/certificatemanager.dnsauthorizations.createTagBinding">certificatemanager.dnsauthorizations.createTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.dnsauthorizations.deleteTagBinding">certificatemanager.dnsauthorizations.deleteTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.dnsauthorizations.listEffectiveTags">certificatemanager.dnsauthorizations.listEffectiveTags</a></li>
+    <li><a href="/permissions/certificatemanager.dnsauthorizations.listTagBindings">certificatemanager.dnsauthorizations.listTagBindings</a></li>
+    <li><a href="/permissions/certificatemanager.trustconfigs.createTagBinding">certificatemanager.trustconfigs.createTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.trustconfigs.deleteTagBinding">certificatemanager.trustconfigs.deleteTagBinding</a></li>
+    <li><a href="/permissions/certificatemanager.trustconfigs.listEffectiveTags">certificatemanager.trustconfigs.listEffectiveTags</a></li>
+    <li><a href="/permissions/certificatemanager.trustconfigs.listTagBindings">certificatemanager.trustconfigs.listTagBindings</a></li>
+    <li><a href="/permissions/clouddeploy.deliveryPipelines.createTagBinding">clouddeploy.deliveryPipelines.createTagBinding</a></li>
+    <li><a href="/permissions/clouddeploy.deliveryPipelines.deleteTagBinding">clouddeploy.deliveryPipelines.deleteTagBinding</a></li>
+    <li><a href="/permissions/clouddeploy.deliveryPipelines.listEffectiveTags">clouddeploy.deliveryPipelines.listEffectiveTags</a></li>
+    <li><a href="/permissions/clouddeploy.deliveryPipelines.listTagBindings">clouddeploy.deliveryPipelines.listTagBindings</a></li>
+    <li><a href="/permissions/clouddeploy.targets.createTagBinding">clouddeploy.targets.createTagBinding</a></li>
+    <li><a href="/permissions/clouddeploy.targets.deleteTagBinding">clouddeploy.targets.deleteTagBinding</a></li>
+    <li><a href="/permissions/clouddeploy.targets.listEffectiveTags">clouddeploy.targets.listEffectiveTags</a></li>
+    <li><a href="/permissions/clouddeploy.targets.listTagBindings">clouddeploy.targets.listTagBindings</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.createTagBinding">cloudkms.keyRings.createTagBinding</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.deleteTagBinding">cloudkms.keyRings.deleteTagBinding</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.listEffectiveTags">cloudkms.keyRings.listEffectiveTags</a></li>
+    <li><a href="/permissions/cloudkms.keyRings.listTagBindings">cloudkms.keyRings.listTagBindings</a></li>
+    <li><a href="/permissions/cloudsql.instances.createTagBinding">cloudsql.instances.createTagBinding</a></li>
+    <li><a href="/permissions/cloudsql.instances.deleteTagBinding">cloudsql.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/cloudsql.instances.listEffectiveTags">cloudsql.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/cloudsql.instances.listTagBindings">cloudsql.instances.listTagBindings</a></li>
+    <li><a href="/permissions/compute.addresses.createTagBinding">compute.addresses.createTagBinding</a></li>
+    <li><a href="/permissions/compute.addresses.deleteTagBinding">compute.addresses.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.addresses.listEffectiveTags">compute.addresses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.addresses.listTagBindings">compute.addresses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.backendBuckets.createTagBinding">compute.backendBuckets.createTagBinding</a></li>
+    <li><a href="/permissions/compute.backendBuckets.deleteTagBinding">compute.backendBuckets.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.backendBuckets.listEffectiveTags">compute.backendBuckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.backendBuckets.listTagBindings">compute.backendBuckets.listTagBindings</a></li>
+    <li><a href="/permissions/compute.backendServices.createTagBinding">compute.backendServices.createTagBinding</a></li>
+    <li><a href="/permissions/compute.backendServices.deleteTagBinding">compute.backendServices.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.backendServices.listEffectiveTags">compute.backendServices.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.backendServices.listTagBindings">compute.backendServices.listTagBindings</a></li>
+    <li><a href="/permissions/compute.disks.createTagBinding">compute.disks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.disks.deleteTagBinding">compute.disks.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.disks.listEffectiveTags">compute.disks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.disks.listTagBindings">compute.disks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.createTagBinding">compute.externalVpnGateways.createTagBinding</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.deleteTagBinding">compute.externalVpnGateways.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.listEffectiveTags">compute.externalVpnGateways.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.externalVpnGateways.listTagBindings">compute.externalVpnGateways.listTagBindings</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.createTagBinding">compute.firewallPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.deleteTagBinding">compute.firewallPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.listEffectiveTags">compute.firewallPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.firewallPolicies.listTagBindings">compute.firewallPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.firewalls.createTagBinding">compute.firewalls.createTagBinding</a></li>
+    <li><a href="/permissions/compute.firewalls.deleteTagBinding">compute.firewalls.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.firewalls.listEffectiveTags">compute.firewalls.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.firewalls.listTagBindings">compute.firewalls.listTagBindings</a></li>
+    <li><a href="/permissions/compute.forwardingRules.createTagBinding">compute.forwardingRules.createTagBinding</a></li>
+    <li><a href="/permissions/compute.forwardingRules.deleteTagBinding">compute.forwardingRules.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.forwardingRules.listEffectiveTags">compute.forwardingRules.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.forwardingRules.listTagBindings">compute.forwardingRules.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalAddresses.createTagBinding">compute.globalAddresses.createTagBinding</a></li>
+    <li><a href="/permissions/compute.globalAddresses.deleteTagBinding">compute.globalAddresses.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.globalAddresses.listEffectiveTags">compute.globalAddresses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalAddresses.listTagBindings">compute.globalAddresses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.createTagBinding">compute.globalForwardingRules.createTagBinding</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.deleteTagBinding">compute.globalForwardingRules.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.listEffectiveTags">compute.globalForwardingRules.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalForwardingRules.listTagBindings">compute.globalForwardingRules.listTagBindings</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.createTagBinding">compute.globalNetworkEndpointGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.deleteTagBinding">compute.globalNetworkEndpointGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.listEffectiveTags">compute.globalNetworkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.globalNetworkEndpointGroups.listTagBindings">compute.globalNetworkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.healthChecks.createTagBinding">compute.healthChecks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.healthChecks.deleteTagBinding">compute.healthChecks.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.healthChecks.listEffectiveTags">compute.healthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.healthChecks.listTagBindings">compute.healthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.createTagBinding">compute.httpHealthChecks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.deleteTagBinding">compute.httpHealthChecks.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.listEffectiveTags">compute.httpHealthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.httpHealthChecks.listTagBindings">compute.httpHealthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.createTagBinding">compute.httpsHealthChecks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.deleteTagBinding">compute.httpsHealthChecks.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.listEffectiveTags">compute.httpsHealthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.httpsHealthChecks.listTagBindings">compute.httpsHealthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.images.createTagBinding">compute.images.createTagBinding</a></li>
+    <li><a href="/permissions/compute.images.deleteTagBinding">compute.images.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.images.listEffectiveTags">compute.images.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.images.listTagBindings">compute.images.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.createTagBinding">compute.instanceGroupManagers.createTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.deleteTagBinding">compute.instanceGroupManagers.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.listEffectiveTags">compute.instanceGroupManagers.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instanceGroupManagers.listTagBindings">compute.instanceGroupManagers.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instanceGroups.createTagBinding">compute.instanceGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroups.deleteTagBinding">compute.instanceGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.instanceGroups.listEffectiveTags">compute.instanceGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instanceGroups.listTagBindings">compute.instanceGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instances.createTagBinding">compute.instances.createTagBinding</a></li>
+    <li><a href="/permissions/compute.instances.deleteTagBinding">compute.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.instances.listEffectiveTags">compute.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instances.listTagBindings">compute.instances.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.createTagBinding">compute.instantSnapshots.createTagBinding</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.deleteTagBinding">compute.instantSnapshots.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.listEffectiveTags">compute.instantSnapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.instantSnapshots.listTagBindings">compute.instantSnapshots.listTagBindings</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.createTagBinding">compute.interconnectAttachments.createTagBinding</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.deleteTagBinding">compute.interconnectAttachments.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.listEffectiveTags">compute.interconnectAttachments.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.interconnectAttachments.listTagBindings">compute.interconnectAttachments.listTagBindings</a></li>
+    <li><a href="/permissions/compute.interconnects.createTagBinding">compute.interconnects.createTagBinding</a></li>
+    <li><a href="/permissions/compute.interconnects.deleteTagBinding">compute.interconnects.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.interconnects.listEffectiveTags">compute.interconnects.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.interconnects.listTagBindings">compute.interconnects.listTagBindings</a></li>
+    <li><a href="/permissions/compute.licenses.createTagBinding">compute.licenses.createTagBinding</a></li>
+    <li><a href="/permissions/compute.licenses.deleteTagBinding">compute.licenses.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.licenses.listEffectiveTags">compute.licenses.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.licenses.listTagBindings">compute.licenses.listTagBindings</a></li>
+    <li><a href="/permissions/compute.machineImages.createTagBinding">compute.machineImages.createTagBinding</a></li>
+    <li><a href="/permissions/compute.machineImages.deleteTagBinding">compute.machineImages.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.machineImages.listEffectiveTags">compute.machineImages.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.machineImages.listTagBindings">compute.machineImages.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networkAttachments.createTagBinding">compute.networkAttachments.createTagBinding</a></li>
+    <li><a href="/permissions/compute.networkAttachments.deleteTagBinding">compute.networkAttachments.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.networkAttachments.listEffectiveTags">compute.networkAttachments.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networkAttachments.listTagBindings">compute.networkAttachments.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.createTagBinding">compute.networkEdgeSecurityServices.createTagBinding</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.deleteTagBinding">compute.networkEdgeSecurityServices.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.listEffectiveTags">compute.networkEdgeSecurityServices.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networkEdgeSecurityServices.listTagBindings">compute.networkEdgeSecurityServices.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.createTagBinding">compute.networkEndpointGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.deleteTagBinding">compute.networkEndpointGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.listEffectiveTags">compute.networkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networkEndpointGroups.listTagBindings">compute.networkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.networks.createTagBinding">compute.networks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.networks.deleteTagBinding">compute.networks.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.networks.listEffectiveTags">compute.networks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.networks.listTagBindings">compute.networks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.createTagBinding">compute.packetMirrorings.createTagBinding</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.deleteTagBinding">compute.packetMirrorings.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.listEffectiveTags">compute.packetMirrorings.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.packetMirrorings.listTagBindings">compute.packetMirrorings.listTagBindings</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.createTagBinding">compute.publicDelegatedPrefixes.createTagBinding</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.deleteTagBinding">compute.publicDelegatedPrefixes.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.listEffectiveTags">compute.publicDelegatedPrefixes.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.publicDelegatedPrefixes.listTagBindings">compute.publicDelegatedPrefixes.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.createTagBinding">compute.regionBackendBuckets.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.deleteTagBinding">compute.regionBackendBuckets.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.listEffectiveTags">compute.regionBackendBuckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionBackendBuckets.listTagBindings">compute.regionBackendBuckets.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.createTagBinding">compute.regionBackendServices.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.deleteTagBinding">compute.regionBackendServices.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.listEffectiveTags">compute.regionBackendServices.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionBackendServices.listTagBindings">compute.regionBackendServices.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.createTagBinding">compute.regionFirewallPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.deleteTagBinding">compute.regionFirewallPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.listEffectiveTags">compute.regionFirewallPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionFirewallPolicies.listTagBindings">compute.regionFirewallPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.createTagBinding">compute.regionHealthChecks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.deleteTagBinding">compute.regionHealthChecks.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.listEffectiveTags">compute.regionHealthChecks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionHealthChecks.listTagBindings">compute.regionHealthChecks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.createTagBinding">compute.regionNetworkEndpointGroups.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.deleteTagBinding">compute.regionNetworkEndpointGroups.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.listEffectiveTags">compute.regionNetworkEndpointGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionNetworkEndpointGroups.listTagBindings">compute.regionNetworkEndpointGroups.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.createTagBinding">compute.regionSecurityPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.deleteTagBinding">compute.regionSecurityPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.listEffectiveTags">compute.regionSecurityPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionSecurityPolicies.listTagBindings">compute.regionSecurityPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.createTagBinding">compute.regionSslCertificates.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.deleteTagBinding">compute.regionSslCertificates.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.listEffectiveTags">compute.regionSslCertificates.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionSslCertificates.listTagBindings">compute.regionSslCertificates.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.createTagBinding">compute.regionSslPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.deleteTagBinding">compute.regionSslPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.listEffectiveTags">compute.regionSslPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.listTagBindings">compute.regionSslPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.createTagBinding">compute.regionTargetHttpProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.deleteTagBinding">compute.regionTargetHttpProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.listEffectiveTags">compute.regionTargetHttpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpProxies.listTagBindings">compute.regionTargetHttpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.createTagBinding">compute.regionTargetHttpsProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.deleteTagBinding">compute.regionTargetHttpsProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.listEffectiveTags">compute.regionTargetHttpsProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionTargetHttpsProxies.listTagBindings">compute.regionTargetHttpsProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.createTagBinding">compute.regionTargetTcpProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.deleteTagBinding">compute.regionTargetTcpProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.listEffectiveTags">compute.regionTargetTcpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionTargetTcpProxies.listTagBindings">compute.regionTargetTcpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.createTagBinding">compute.regionUrlMaps.createTagBinding</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.deleteTagBinding">compute.regionUrlMaps.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.listEffectiveTags">compute.regionUrlMaps.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.regionUrlMaps.listTagBindings">compute.regionUrlMaps.listTagBindings</a></li>
+    <li><a href="/permissions/compute.reservations.createTagBinding">compute.reservations.createTagBinding</a></li>
+    <li><a href="/permissions/compute.reservations.deleteTagBinding">compute.reservations.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.reservations.listEffectiveTags">compute.reservations.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.reservations.listTagBindings">compute.reservations.listTagBindings</a></li>
+    <li><a href="/permissions/compute.routers.createTagBinding">compute.routers.createTagBinding</a></li>
+    <li><a href="/permissions/compute.routers.deleteTagBinding">compute.routers.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.routers.listEffectiveTags">compute.routers.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.routers.listTagBindings">compute.routers.listTagBindings</a></li>
+    <li><a href="/permissions/compute.routes.createTagBinding">compute.routes.createTagBinding</a></li>
+    <li><a href="/permissions/compute.routes.deleteTagBinding">compute.routes.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.routes.listEffectiveTags">compute.routes.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.routes.listTagBindings">compute.routes.listTagBindings</a></li>
+    <li><a href="/permissions/compute.securityPolicies.createTagBinding">compute.securityPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.securityPolicies.deleteTagBinding">compute.securityPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.securityPolicies.listEffectiveTags">compute.securityPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.securityPolicies.listTagBindings">compute.securityPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.createTagBinding">compute.serviceAttachments.createTagBinding</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.deleteTagBinding">compute.serviceAttachments.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.listEffectiveTags">compute.serviceAttachments.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.serviceAttachments.listTagBindings">compute.serviceAttachments.listTagBindings</a></li>
+    <li><a href="/permissions/compute.snapshots.createTagBinding">compute.snapshots.createTagBinding</a></li>
+    <li><a href="/permissions/compute.snapshots.deleteTagBinding">compute.snapshots.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.snapshots.listEffectiveTags">compute.snapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.snapshots.listTagBindings">compute.snapshots.listTagBindings</a></li>
+    <li><a href="/permissions/compute.sslCertificates.createTagBinding">compute.sslCertificates.createTagBinding</a></li>
+    <li><a href="/permissions/compute.sslCertificates.deleteTagBinding">compute.sslCertificates.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.sslCertificates.listEffectiveTags">compute.sslCertificates.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.sslCertificates.listTagBindings">compute.sslCertificates.listTagBindings</a></li>
+    <li><a href="/permissions/compute.sslPolicies.createTagBinding">compute.sslPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.sslPolicies.deleteTagBinding">compute.sslPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.sslPolicies.listEffectiveTags">compute.sslPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.sslPolicies.listTagBindings">compute.sslPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.storagePools.createTagBinding">compute.storagePools.createTagBinding</a></li>
+    <li><a href="/permissions/compute.storagePools.deleteTagBinding">compute.storagePools.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.storagePools.listEffectiveTags">compute.storagePools.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.storagePools.listTagBindings">compute.storagePools.listTagBindings</a></li>
+    <li><a href="/permissions/compute.subnetworks.createTagBinding">compute.subnetworks.createTagBinding</a></li>
+    <li><a href="/permissions/compute.subnetworks.deleteTagBinding">compute.subnetworks.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.subnetworks.listEffectiveTags">compute.subnetworks.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.subnetworks.listTagBindings">compute.subnetworks.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.createTagBinding">compute.targetGrpcProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.deleteTagBinding">compute.targetGrpcProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.listEffectiveTags">compute.targetGrpcProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetGrpcProxies.listTagBindings">compute.targetGrpcProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.createTagBinding">compute.targetHttpProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.deleteTagBinding">compute.targetHttpProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.listEffectiveTags">compute.targetHttpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetHttpProxies.listTagBindings">compute.targetHttpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.createTagBinding">compute.targetHttpsProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.deleteTagBinding">compute.targetHttpsProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.listEffectiveTags">compute.targetHttpsProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetHttpsProxies.listTagBindings">compute.targetHttpsProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetInstances.createTagBinding">compute.targetInstances.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetInstances.deleteTagBinding">compute.targetInstances.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetInstances.listEffectiveTags">compute.targetInstances.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetInstances.listTagBindings">compute.targetInstances.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetPools.createTagBinding">compute.targetPools.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetPools.deleteTagBinding">compute.targetPools.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetPools.listEffectiveTags">compute.targetPools.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetPools.listTagBindings">compute.targetPools.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.createTagBinding">compute.targetSslProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.deleteTagBinding">compute.targetSslProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.listEffectiveTags">compute.targetSslProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetSslProxies.listTagBindings">compute.targetSslProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.createTagBinding">compute.targetTcpProxies.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.deleteTagBinding">compute.targetTcpProxies.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.listEffectiveTags">compute.targetTcpProxies.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetTcpProxies.listTagBindings">compute.targetTcpProxies.listTagBindings</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.createTagBinding">compute.targetVpnGateways.createTagBinding</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.deleteTagBinding">compute.targetVpnGateways.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.listEffectiveTags">compute.targetVpnGateways.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.targetVpnGateways.listTagBindings">compute.targetVpnGateways.listTagBindings</a></li>
+    <li><a href="/permissions/compute.urlMaps.createTagBinding">compute.urlMaps.createTagBinding</a></li>
+    <li><a href="/permissions/compute.urlMaps.deleteTagBinding">compute.urlMaps.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.urlMaps.listEffectiveTags">compute.urlMaps.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.urlMaps.listTagBindings">compute.urlMaps.listTagBindings</a></li>
+    <li><a href="/permissions/compute.vpnGateways.createTagBinding">compute.vpnGateways.createTagBinding</a></li>
+    <li><a href="/permissions/compute.vpnGateways.deleteTagBinding">compute.vpnGateways.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.vpnGateways.listEffectiveTags">compute.vpnGateways.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.vpnGateways.listTagBindings">compute.vpnGateways.listTagBindings</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.createTagBinding">compute.vpnTunnels.createTagBinding</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.deleteTagBinding">compute.vpnTunnels.deleteTagBinding</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.listEffectiveTags">compute.vpnTunnels.listEffectiveTags</a></li>
+    <li><a href="/permissions/compute.vpnTunnels.listTagBindings">compute.vpnTunnels.listTagBindings</a></li>
+    <li><a href="/permissions/container.clusters.createTagBinding">container.clusters.createTagBinding</a></li>
+    <li><a href="/permissions/container.clusters.deleteTagBinding">container.clusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/container.clusters.listEffectiveTags">container.clusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/container.clusters.listTagBindings">container.clusters.listTagBindings</a></li>
+    <li><a href="/permissions/datafusion.instances.createTagBinding">datafusion.instances.createTagBinding</a></li>
+    <li><a href="/permissions/datafusion.instances.deleteTagBinding">datafusion.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/datafusion.instances.listEffectiveTags">datafusion.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/datafusion.instances.listTagBindings">datafusion.instances.listTagBindings</a></li>
+    <li><a href="/permissions/datastore.databases.createTagBinding">datastore.databases.createTagBinding</a></li>
+    <li><a href="/permissions/datastore.databases.deleteTagBinding">datastore.databases.deleteTagBinding</a></li>
+    <li><a href="/permissions/datastore.databases.listEffectiveTags">datastore.databases.listEffectiveTags</a></li>
+    <li><a href="/permissions/datastore.databases.listTagBindings">datastore.databases.listTagBindings</a></li>
+    <li><a href="/permissions/datastream.connectionProfiles.createTagBinding">datastream.connectionProfiles.createTagBinding</a></li>
+    <li><a href="/permissions/datastream.connectionProfiles.deleteTagBinding">datastream.connectionProfiles.deleteTagBinding</a></li>
+    <li><a href="/permissions/datastream.connectionProfiles.listEffectiveTags">datastream.connectionProfiles.listEffectiveTags</a></li>
+    <li><a href="/permissions/datastream.connectionProfiles.listTagBindings">datastream.connectionProfiles.listTagBindings</a></li>
+    <li><a href="/permissions/datastream.privateConnections.createTagBinding">datastream.privateConnections.createTagBinding</a></li>
+    <li><a href="/permissions/datastream.privateConnections.deleteTagBinding">datastream.privateConnections.deleteTagBinding</a></li>
+    <li><a href="/permissions/datastream.privateConnections.listEffectiveTags">datastream.privateConnections.listEffectiveTags</a></li>
+    <li><a href="/permissions/datastream.privateConnections.listTagBindings">datastream.privateConnections.listTagBindings</a></li>
+    <li><a href="/permissions/datastream.streams.createTagBinding">datastream.streams.createTagBinding</a></li>
+    <li><a href="/permissions/datastream.streams.deleteTagBinding">datastream.streams.deleteTagBinding</a></li>
+    <li><a href="/permissions/datastream.streams.listEffectiveTags">datastream.streams.listEffectiveTags</a></li>
+    <li><a href="/permissions/datastream.streams.listTagBindings">datastream.streams.listTagBindings</a></li>
+    <li><a href="/permissions/dns.policies.createTagBinding">dns.policies.createTagBinding</a></li>
+    <li><a href="/permissions/dns.policies.deleteTagBinding">dns.policies.deleteTagBinding</a></li>
+    <li><a href="/permissions/dns.policies.listEffectiveTags">dns.policies.listEffectiveTags</a></li>
+    <li><a href="/permissions/dns.policies.listTagBindings">dns.policies.listTagBindings</a></li>
+    <li><a href="/permissions/domains.registrations.createTagBinding">domains.registrations.createTagBinding</a></li>
+    <li><a href="/permissions/domains.registrations.deleteTagBinding">domains.registrations.deleteTagBinding</a></li>
+    <li><a href="/permissions/domains.registrations.listEffectiveTags">domains.registrations.listEffectiveTags</a></li>
+    <li><a href="/permissions/domains.registrations.listTagBindings">domains.registrations.listTagBindings</a></li>
+    <li><a href="/permissions/file.backups.createTagBinding">file.backups.createTagBinding</a></li>
+    <li><a href="/permissions/file.backups.deleteTagBinding">file.backups.deleteTagBinding</a></li>
+    <li><a href="/permissions/file.backups.listEffectiveTags">file.backups.listEffectiveTags</a></li>
+    <li><a href="/permissions/file.backups.listTagBindings">file.backups.listTagBindings</a></li>
+    <li><a href="/permissions/file.instances.createTagBinding">file.instances.createTagBinding</a></li>
+    <li><a href="/permissions/file.instances.deleteTagBinding">file.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/file.instances.listEffectiveTags">file.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/file.instances.listTagBindings">file.instances.listTagBindings</a></li>
+    <li><a href="/permissions/file.snapshots.createTagBinding">file.snapshots.createTagBinding</a></li>
+    <li><a href="/permissions/file.snapshots.deleteTagBinding">file.snapshots.deleteTagBinding</a></li>
+    <li><a href="/permissions/file.snapshots.listEffectiveTags">file.snapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/file.snapshots.listTagBindings">file.snapshots.listTagBindings</a></li>
+    <li><a href="/permissions/gkemulticloud.attachedClusters.createTagBinding">gkemulticloud.attachedClusters.createTagBinding</a></li>
+    <li><a href="/permissions/gkemulticloud.attachedClusters.deleteTagBinding">gkemulticloud.attachedClusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/gkemulticloud.attachedClusters.listEffectiveTags">gkemulticloud.attachedClusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/gkemulticloud.attachedClusters.listTagBindings">gkemulticloud.attachedClusters.listTagBindings</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalAdminClusters.createTagBinding">gkeonprem.bareMetalAdminClusters.createTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalAdminClusters.deleteTagBinding">gkeonprem.bareMetalAdminClusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalAdminClusters.listEffectiveTags">gkeonprem.bareMetalAdminClusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalAdminClusters.listTagBindings">gkeonprem.bareMetalAdminClusters.listTagBindings</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalClusters.createTagBinding">gkeonprem.bareMetalClusters.createTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalClusters.deleteTagBinding">gkeonprem.bareMetalClusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalClusters.listEffectiveTags">gkeonprem.bareMetalClusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/gkeonprem.bareMetalClusters.listTagBindings">gkeonprem.bareMetalClusters.listTagBindings</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareAdminClusters.createTagBinding">gkeonprem.vmwareAdminClusters.createTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareAdminClusters.deleteTagBinding">gkeonprem.vmwareAdminClusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareAdminClusters.listEffectiveTags">gkeonprem.vmwareAdminClusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareAdminClusters.listTagBindings">gkeonprem.vmwareAdminClusters.listTagBindings</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareClusters.createTagBinding">gkeonprem.vmwareClusters.createTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareClusters.deleteTagBinding">gkeonprem.vmwareClusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareClusters.listEffectiveTags">gkeonprem.vmwareClusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/gkeonprem.vmwareClusters.listTagBindings">gkeonprem.vmwareClusters.listTagBindings</a></li>
+    <li><a href="/permissions/iam.roles.createTagBinding">iam.roles.createTagBinding</a></li>
+    <li><a href="/permissions/iam.roles.deleteTagBinding">iam.roles.deleteTagBinding</a></li>
+    <li><a href="/permissions/iam.roles.listEffectiveTags">iam.roles.listEffectiveTags</a></li>
+    <li><a href="/permissions/iam.roles.listTagBindings">iam.roles.listTagBindings</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.createTagBinding">iam.serviceAccounts.createTagBinding</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.deleteTagBinding">iam.serviceAccounts.deleteTagBinding</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.listEffectiveTags">iam.serviceAccounts.listEffectiveTags</a></li>
+    <li><a href="/permissions/iam.serviceAccounts.listTagBindings">iam.serviceAccounts.listTagBindings</a></li>
+    <li><a href="/permissions/logging.buckets.createTagBinding">logging.buckets.createTagBinding</a></li>
+    <li><a href="/permissions/logging.buckets.deleteTagBinding">logging.buckets.deleteTagBinding</a></li>
+    <li><a href="/permissions/logging.buckets.listEffectiveTags">logging.buckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/logging.buckets.listTagBindings">logging.buckets.listTagBindings</a></li>
+    <li><a href="/permissions/managedidentities.domains.createTagBinding">managedidentities.domains.createTagBinding</a></li>
+    <li><a href="/permissions/managedidentities.domains.deleteTagBinding">managedidentities.domains.deleteTagBinding</a></li>
+    <li><a href="/permissions/managedidentities.domains.listEffectiveTags">managedidentities.domains.listEffectiveTags</a></li>
+    <li><a href="/permissions/managedidentities.domains.listTagBindings">managedidentities.domains.listTagBindings</a></li>
+    <li><a href="/permissions/memcache.instances.createTagBinding">memcache.instances.createTagBinding</a></li>
+    <li><a href="/permissions/memcache.instances.deleteTagBinding">memcache.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/memcache.instances.listEffectiveTags">memcache.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/memcache.instances.listTagBindings">memcache.instances.listTagBindings</a></li>
+    <li><a href="/permissions/metastore.federations.createTagBinding">metastore.federations.createTagBinding</a></li>
+    <li><a href="/permissions/metastore.federations.deleteTagBinding">metastore.federations.deleteTagBinding</a></li>
+    <li><a href="/permissions/metastore.federations.listEffectiveTags">metastore.federations.listEffectiveTags</a></li>
+    <li><a href="/permissions/metastore.federations.listTagBindings">metastore.federations.listTagBindings</a></li>
+    <li><a href="/permissions/metastore.services.createTagBinding">metastore.services.createTagBinding</a></li>
+    <li><a href="/permissions/metastore.services.deleteTagBinding">metastore.services.deleteTagBinding</a></li>
+    <li><a href="/permissions/metastore.services.listEffectiveTags">metastore.services.listEffectiveTags</a></li>
+    <li><a href="/permissions/metastore.services.listTagBindings">metastore.services.listTagBindings</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.createTagBinding">monitoring.alertPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.deleteTagBinding">monitoring.alertPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.listEffectiveTags">monitoring.alertPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/monitoring.alertPolicies.listTagBindings">monitoring.alertPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/monitoring.dashboards.createTagBinding">monitoring.dashboards.createTagBinding</a></li>
+    <li><a href="/permissions/monitoring.dashboards.deleteTagBinding">monitoring.dashboards.deleteTagBinding</a></li>
+    <li><a href="/permissions/monitoring.dashboards.listEffectiveTags">monitoring.dashboards.listEffectiveTags</a></li>
+    <li><a href="/permissions/monitoring.dashboards.listTagBindings">monitoring.dashboards.listTagBindings</a></li>
+    <li><a href="/permissions/privateca.caPools.createTagBinding">privateca.caPools.createTagBinding</a></li>
+    <li><a href="/permissions/privateca.caPools.deleteTagBinding">privateca.caPools.deleteTagBinding</a></li>
+    <li><a href="/permissions/privateca.caPools.listEffectiveTags">privateca.caPools.listEffectiveTags</a></li>
+    <li><a href="/permissions/privateca.caPools.listTagBindings">privateca.caPools.listTagBindings</a></li>
+    <li><a href="/permissions/privateca.certificateTemplates.createTagBinding">privateca.certificateTemplates.createTagBinding</a></li>
+    <li><a href="/permissions/privateca.certificateTemplates.deleteTagBinding">privateca.certificateTemplates.deleteTagBinding</a></li>
+    <li><a href="/permissions/privateca.certificateTemplates.listEffectiveTags">privateca.certificateTemplates.listEffectiveTags</a></li>
+    <li><a href="/permissions/privateca.certificateTemplates.listTagBindings">privateca.certificateTemplates.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.snapshots.createTagBinding">pubsub.snapshots.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.snapshots.deleteTagBinding">pubsub.snapshots.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.snapshots.listEffectiveTags">pubsub.snapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.snapshots.listTagBindings">pubsub.snapshots.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.createTagBinding">pubsub.subscriptions.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.deleteTagBinding">pubsub.subscriptions.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.listEffectiveTags">pubsub.subscriptions.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.subscriptions.listTagBindings">pubsub.subscriptions.listTagBindings</a></li>
+    <li><a href="/permissions/pubsub.topics.createTagBinding">pubsub.topics.createTagBinding</a></li>
+    <li><a href="/permissions/pubsub.topics.deleteTagBinding">pubsub.topics.deleteTagBinding</a></li>
+    <li><a href="/permissions/pubsub.topics.listEffectiveTags">pubsub.topics.listEffectiveTags</a></li>
+    <li><a href="/permissions/pubsub.topics.listTagBindings">pubsub.topics.listTagBindings</a></li>
+    <li><a href="/permissions/recaptchaenterprise.keys.createTagBinding">recaptchaenterprise.keys.createTagBinding</a></li>
+    <li><a href="/permissions/recaptchaenterprise.keys.deleteTagBinding">recaptchaenterprise.keys.deleteTagBinding</a></li>
+    <li><a href="/permissions/recaptchaenterprise.keys.listEffectiveTags">recaptchaenterprise.keys.listEffectiveTags</a></li>
+    <li><a href="/permissions/recaptchaenterprise.keys.listTagBindings">recaptchaenterprise.keys.listTagBindings</a></li>
+    <li><a href="/permissions/redis.instances.createTagBinding">redis.instances.createTagBinding</a></li>
+    <li><a href="/permissions/redis.instances.deleteTagBinding">redis.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/redis.instances.listEffectiveTags">redis.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/redis.instances.listTagBindings">redis.instances.listTagBindings</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.createTagBinding">resourcemanager.hierarchyNodes.createTagBinding</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.deleteTagBinding">resourcemanager.hierarchyNodes.deleteTagBinding</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.listEffectiveTags">resourcemanager.hierarchyNodes.listEffectiveTags</a></li>
+    <li><a href="/permissions/resourcemanager.hierarchyNodes.listTagBindings">resourcemanager.hierarchyNodes.listTagBindings</a></li>
+    <li><a href="/permissions/resourcemanager.projects.get">resourcemanager.projects.get</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.get">resourcemanager.tagKeys.get</a></li>
+    <li><a href="/permissions/resourcemanager.tagKeys.list">resourcemanager.tagKeys.list</a></li>
+    <li><a href="/permissions/resourcemanager.tagValueBindings.create">resourcemanager.tagValueBindings.create</a></li>
+    <li><a href="/permissions/resourcemanager.tagValueBindings.delete">resourcemanager.tagValueBindings.delete</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.get">resourcemanager.tagValues.get</a></li>
+    <li><a href="/permissions/resourcemanager.tagValues.list">resourcemanager.tagValues.list</a></li>
+    <li><a href="/permissions/run.jobs.createTagBinding">run.jobs.createTagBinding</a></li>
+    <li><a href="/permissions/run.jobs.deleteTagBinding">run.jobs.deleteTagBinding</a></li>
+    <li><a href="/permissions/run.jobs.listEffectiveTags">run.jobs.listEffectiveTags</a></li>
+    <li><a href="/permissions/run.jobs.listTagBindings">run.jobs.listTagBindings</a></li>
+    <li><a href="/permissions/run.services.createTagBinding">run.services.createTagBinding</a></li>
+    <li><a href="/permissions/run.services.deleteTagBinding">run.services.deleteTagBinding</a></li>
+    <li><a href="/permissions/run.services.listEffectiveTags">run.services.listEffectiveTags</a></li>
+    <li><a href="/permissions/run.services.listTagBindings">run.services.listTagBindings</a></li>
+    <li><a href="/permissions/secretmanager.secrets.createTagBinding">secretmanager.secrets.createTagBinding</a></li>
+    <li><a href="/permissions/secretmanager.secrets.deleteTagBinding">secretmanager.secrets.deleteTagBinding</a></li>
+    <li><a href="/permissions/secretmanager.secrets.listEffectiveTags">secretmanager.secrets.listEffectiveTags</a></li>
+    <li><a href="/permissions/secretmanager.secrets.listTagBindings">secretmanager.secrets.listTagBindings</a></li>
+    <li><a href="/permissions/spanner.instances.createTagBinding">spanner.instances.createTagBinding</a></li>
+    <li><a href="/permissions/spanner.instances.deleteTagBinding">spanner.instances.deleteTagBinding</a></li>
+    <li><a href="/permissions/spanner.instances.listEffectiveTags">spanner.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/spanner.instances.listTagBindings">spanner.instances.listTagBindings</a></li>
+    <li><a href="/permissions/storage.buckets.createTagBinding">storage.buckets.createTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.deleteTagBinding">storage.buckets.deleteTagBinding</a></li>
+    <li><a href="/permissions/storage.buckets.listEffectiveTags">storage.buckets.listEffectiveTags</a></li>
+    <li><a href="/permissions/storage.buckets.listTagBindings">storage.buckets.listTagBindings</a></li>
+    <li><a href="/permissions/transcoder.jobTemplates.createTagBinding">transcoder.jobTemplates.createTagBinding</a></li>
+    <li><a href="/permissions/transcoder.jobTemplates.deleteTagBinding">transcoder.jobTemplates.deleteTagBinding</a></li>
+    <li><a href="/permissions/transcoder.jobTemplates.listEffectiveTags">transcoder.jobTemplates.listEffectiveTags</a></li>
+    <li><a href="/permissions/transcoder.jobTemplates.listTagBindings">transcoder.jobTemplates.listTagBindings</a></li>
+    <li><a href="/permissions/transcoder.jobs.createTagBinding">transcoder.jobs.createTagBinding</a></li>
+    <li><a href="/permissions/transcoder.jobs.deleteTagBinding">transcoder.jobs.deleteTagBinding</a></li>
+    <li><a href="/permissions/transcoder.jobs.listEffectiveTags">transcoder.jobs.listEffectiveTags</a></li>
+    <li><a href="/permissions/transcoder.jobs.listTagBindings">transcoder.jobs.listTagBindings</a></li>
+    <li><a href="/permissions/vmwareengine.networkPeerings.createTagBinding">vmwareengine.networkPeerings.createTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.networkPeerings.deleteTagBinding">vmwareengine.networkPeerings.deleteTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.networkPeerings.listEffectiveTags">vmwareengine.networkPeerings.listEffectiveTags</a></li>
+    <li><a href="/permissions/vmwareengine.networkPeerings.listTagBindings">vmwareengine.networkPeerings.listTagBindings</a></li>
+    <li><a href="/permissions/vmwareengine.networkPolicies.createTagBinding">vmwareengine.networkPolicies.createTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.networkPolicies.deleteTagBinding">vmwareengine.networkPolicies.deleteTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.networkPolicies.listEffectiveTags">vmwareengine.networkPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/vmwareengine.networkPolicies.listTagBindings">vmwareengine.networkPolicies.listTagBindings</a></li>
+    <li><a href="/permissions/vmwareengine.privateClouds.createTagBinding">vmwareengine.privateClouds.createTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.privateClouds.deleteTagBinding">vmwareengine.privateClouds.deleteTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.privateClouds.listEffectiveTags">vmwareengine.privateClouds.listEffectiveTags</a></li>
+    <li><a href="/permissions/vmwareengine.privateClouds.listTagBindings">vmwareengine.privateClouds.listTagBindings</a></li>
+    <li><a href="/permissions/vmwareengine.privateConnections.createTagBinding">vmwareengine.privateConnections.createTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.privateConnections.deleteTagBinding">vmwareengine.privateConnections.deleteTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.privateConnections.listEffectiveTags">vmwareengine.privateConnections.listEffectiveTags</a></li>
+    <li><a href="/permissions/vmwareengine.privateConnections.listTagBindings">vmwareengine.privateConnections.listTagBindings</a></li>
+    <li><a href="/permissions/vmwareengine.vmwareEngineNetworks.createTagBinding">vmwareengine.vmwareEngineNetworks.createTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.vmwareEngineNetworks.deleteTagBinding">vmwareengine.vmwareEngineNetworks.deleteTagBinding</a></li>
+    <li><a href="/permissions/vmwareengine.vmwareEngineNetworks.listEffectiveTags">vmwareengine.vmwareEngineNetworks.listEffectiveTags</a></li>
+    <li><a href="/permissions/vmwareengine.vmwareEngineNetworks.listTagBindings">vmwareengine.vmwareEngineNetworks.listTagBindings</a></li>
+    <li><a href="/permissions/workflows.workflows.createTagBinding">workflows.workflows.createTagBinding</a></li>
+    <li><a href="/permissions/workflows.workflows.deleteTagBinding">workflows.workflows.deleteTagBinding</a></li>
+    <li><a href="/permissions/workflows.workflows.listEffectiveTags">workflows.workflows.listEffectiveTags</a></li>
+    <li><a href="/permissions/workflows.workflows.listTagBindings">workflows.workflows.listTagBindings</a></li>
+    <li><a href="/permissions/workstations.workstationClusters.createTagBinding">workstations.workstationClusters.createTagBinding</a></li>
+    <li><a href="/permissions/workstations.workstationClusters.deleteTagBinding">workstations.workstationClusters.deleteTagBinding</a></li>
+    <li><a href="/permissions/workstations.workstationClusters.listEffectiveTags">workstations.workstationClusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/workstations.workstationClusters.listTagBindings">workstations.workstationClusters.listTagBindings</a></li>
+</ul>
+
+    <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
+        <p>Data sourced from <a href="https://cloud.google.com/iam/docs/understanding-roles" style="color: var(--accent);">Google Cloud IAM API</a>.
+        Updated daily.</p>
+    </footer>
+</body>
+</html>
