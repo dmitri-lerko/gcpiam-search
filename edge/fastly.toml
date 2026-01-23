@@ -1,0 +1,17 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["dmitri-lerko"]
+description = "GCP IAM Permissions Search API"
+language = "rust"
+manifest_version = 3
+name = "gcpiam-search"
+service_id = "eUQUMxFI5qCyFrJ9pxGcy9"
+
+[local_server]
+
+  [local_server.backends]
+
+[scripts]
+  build = "RUSTC=/Users/devbox/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rustc /Users/devbox/.rustup/toolchains/stable-aarch64-apple-darwin/bin/cargo build --release --target wasm32-wasip1"
+  post_build = "mkdir -p bin && cp target/wasm32-wasip1/release/gcpiam-edge.wasm bin/main.wasm"

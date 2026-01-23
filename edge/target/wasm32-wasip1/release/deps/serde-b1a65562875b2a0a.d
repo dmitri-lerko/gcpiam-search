@@ -1,0 +1,14 @@
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/serde-b1a65562875b2a0a.d: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/build/serde-1843251c7d4ca88b/out/private.rs
+
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/libserde-b1a65562875b2a0a.rlib: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/build/serde-1843251c7d4ca88b/out/private.rs
+
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/libserde-b1a65562875b2a0a.rmeta: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/build/serde-1843251c7d4ca88b/out/private.rs
+
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/build/serde-1843251c7d4ca88b/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/build/serde-1843251c7d4ca88b/out

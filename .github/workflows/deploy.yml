@@ -1,0 +1,41 @@
+name: Deploy to Fastly
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'frontend/public/**'
+      - 'edge/**'
+      - 'Cargo.toml'
+      - '.github/workflows/deploy.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-wasip1
+
+      - name: Install Fastly CLI
+        run: curl https://apt.fastly.com/fastly.gpg.key | sudo apt-key add - && echo "deb https://apt.fastly.com ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/fastly.list && sudo apt update && sudo apt install -y fastly
+
+      - name: Build and deploy Fastly Compute
+        env:
+          FASTLY_API_TOKEN: ${{ secrets.FASTLY_API_TOKEN }}
+        run: |
+          cd edge
+          fastly compute publish --auto-yes
+
+      - name: Deployment Summary
+        run: |
+          echo "## Deployment Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Service: gcpiam-search" >> $GITHUB_STEP_SUMMARY
+          echo "- Domain: https://gcpiam.com" >> $GITHUB_STEP_SUMMARY
+          echo "- Status: Deployed" >> $GITHUB_STEP_SUMMARY

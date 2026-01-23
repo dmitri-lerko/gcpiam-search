@@ -8,7 +8,7 @@ import { SearchManager } from './search';
 
 // Configuration
 const CONFIG = {
-    API_BASE_URL: 'http://127.0.0.1:8000/api/v1',
+    API_BASE_URL: 'https://gcpiam.com/api/v1',
     SEARCH_DEBOUNCE_MS: 150,
     RESULT_LIMIT: 20,
     FUZZY_THRESHOLD: 0.5,

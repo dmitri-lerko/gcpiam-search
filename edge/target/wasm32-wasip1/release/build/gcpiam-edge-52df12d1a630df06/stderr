@@ -1,0 +1,4 @@
+Building search index from iam-data.json...
+Indexed 12678 permissions and 2041 roles
+Index size: 9528614 bytes (9.09 MB)
+Wrote prebuilt index to "/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/build/gcpiam-edge-52df12d1a630df06/out/prebuilt_index.bin"

@@ -161,7 +161,7 @@ export class SearchUI {
             : '<div class="no-roles">No roles grant this permission directly</div>';
 
         div.innerHTML = `
-            <div class="result-name">${this.escapeHtml(perm.name)}</div>
+            <a href="/permissions/${this.escapeHtml(perm.name)}" class="result-name result-link">${this.escapeHtml(perm.name)}</a>
             <div class="result-meta">
                 <span class="result-badge service">${this.escapeHtml(perm.service)}</span>
                 <span class="result-badge resource">${this.escapeHtml(perm.resource)}</span>
@@ -171,7 +171,9 @@ export class SearchUI {
             ${rolesHtml}
         `;
 
-        div.addEventListener('click', () => {
+        div.addEventListener('click', (e) => {
+            // Don't navigate if clicking the link directly
+            if ((e.target as HTMLElement).classList.contains('result-link')) return;
             this.selectItem(idx);
         });
 
@@ -207,7 +209,7 @@ export class SearchUI {
             : '';
 
         div.innerHTML = `
-            <div class="result-name">${this.escapeHtml(role.name)}</div>
+            <a href="/roles/${this.escapeHtml(role.name)}" class="result-name result-link">${this.escapeHtml(role.name)}</a>
             <div class="role-title">${this.escapeHtml(role.title)}</div>
             <div class="role-description">${this.escapeHtml(role.description)}</div>
             <div class="result-meta">
@@ -222,7 +224,8 @@ export class SearchUI {
             ${permissionsHtml}
         `;
 
-        div.addEventListener('click', () => {
+        div.addEventListener('click', (e) => {
+            if ((e.target as HTMLElement).classList.contains('result-link')) return;
             this.selectItem(idx);
         });
 

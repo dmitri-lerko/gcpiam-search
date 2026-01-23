@@ -1,5 +1,6 @@
 [workspace]
-members = ["scraper", "backend"]
+members = ["backend"]
+exclude = ["edge"]  # Edge builds separately with WASM target
 resolver = "2"
 
 [workspace.package]

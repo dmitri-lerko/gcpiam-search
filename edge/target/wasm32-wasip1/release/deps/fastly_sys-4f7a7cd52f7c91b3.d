@@ -1,0 +1,10 @@
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/fastly_sys-4f7a7cd52f7c91b3.d: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_cache.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_config_store.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_http_cache.rs
+
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/libfastly_sys-4f7a7cd52f7c91b3.rlib: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_cache.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_config_store.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_http_cache.rs
+
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/libfastly_sys-4f7a7cd52f7c91b3.rmeta: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_cache.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_config_store.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_http_cache.rs
+
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/lib.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_cache.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_config_store.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/fastly-sys-0.11.13/src/fastly_http_cache.rs:

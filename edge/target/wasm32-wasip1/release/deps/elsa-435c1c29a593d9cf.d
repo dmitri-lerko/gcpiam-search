@@ -1,0 +1,12 @@
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/elsa-435c1c29a593d9cf.d: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/map.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/vec.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_map.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_set.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/sync.rs
+
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/libelsa-435c1c29a593d9cf.rlib: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/map.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/vec.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_map.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_set.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/sync.rs
+
+/Users/devbox/dev/gcpiam.com/edge/target/wasm32-wasip1/release/deps/libelsa-435c1c29a593d9cf.rmeta: /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/lib.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/map.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/vec.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_map.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_set.rs /Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/sync.rs
+
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/lib.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/map.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/vec.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_map.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/index_set.rs:
+/Users/devbox/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/elsa-1.11.2/src/sync.rs:

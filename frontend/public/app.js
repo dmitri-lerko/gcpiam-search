@@ -205,7 +205,7 @@
       ).join("")}
                </div>` : '<div class="no-roles">No roles grant this permission directly</div>';
       div.innerHTML = `
-            <div class="result-name">${this.escapeHtml(perm.name)}</div>
+            <a href="/permissions/${this.escapeHtml(perm.name)}" class="result-name result-link">${this.escapeHtml(perm.name)}</a>
             <div class="result-meta">
                 <span class="result-badge service">${this.escapeHtml(perm.service)}</span>
                 <span class="result-badge resource">${this.escapeHtml(perm.resource)}</span>
@@ -214,7 +214,8 @@
             </div>
             ${rolesHtml}
         `;
-      div.addEventListener("click", () => {
+      div.addEventListener("click", (e) => {
+        if (e.target.classList.contains("result-link")) return;
         this.selectItem(idx);
       });
       return div;
@@ -236,7 +237,7 @@
                 ${role.permission_count > 5 ? `<span class="more-perms">+${role.permission_count - 5} more</span>` : ""}
                </div>` : "";
       div.innerHTML = `
-            <div class="result-name">${this.escapeHtml(role.name)}</div>
+            <a href="/roles/${this.escapeHtml(role.name)}" class="result-name result-link">${this.escapeHtml(role.name)}</a>
             <div class="role-title">${this.escapeHtml(role.title)}</div>
             <div class="role-description">${this.escapeHtml(role.description)}</div>
             <div class="result-meta">
@@ -250,7 +251,8 @@
             </div>
             ${permissionsHtml}
         `;
-      div.addEventListener("click", () => {
+      div.addEventListener("click", (e) => {
+        if (e.target.classList.contains("result-link")) return;
         this.selectItem(idx);
       });
       return div;
@@ -414,7 +416,7 @@
 
   // public/app.ts
   var CONFIG = {
-    API_BASE_URL: "http://127.0.0.1:8000/api/v1",
+    API_BASE_URL: "https://gcpiam.com/api/v1",
     SEARCH_DEBOUNCE_MS: 150,
     RESULT_LIMIT: 20,
     FUZZY_THRESHOLD: 0.5

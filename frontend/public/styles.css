@@ -312,6 +312,15 @@ body {
     word-break: break-word;
 }
 
+.result-link {
+    text-decoration: none;
+    display: block;
+}
+
+.result-link:hover {
+    text-decoration: underline;
+}
+
 .result-meta {
     font-size: var(--font-size-sm);
     color: var(--text-secondary);
