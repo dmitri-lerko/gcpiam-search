@@ -23,14 +23,28 @@ jobs:
           targets: wasm32-wasip1
 
       - name: Install Fastly CLI
-        run: curl https://apt.fastly.com/fastly.gpg.key | sudo apt-key add - && echo "deb https://apt.fastly.com ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/fastly.list && sudo apt update && sudo apt install -y fastly
+        run: |
+          curl -fsSL https://apt.fastly.com/fastly.asc | gpg --dearmor | sudo tee /usr/share/keyrings/fastly-archive-keyring.gpg >/dev/null 2>&1 || true
+          echo "deb [signed-by=/usr/share/keyrings/fastly-archive-keyring.gpg] https://apt.fastly.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/fastly.list >/dev/null 2>&1 || true
+          sudo apt-get update && sudo apt-get install -y fastly || {
+            echo "APT install failed, trying direct binary download..."
+            mkdir -p $HOME/.local/bin
+            curl -L https://github.com/fastly/cli/releases/download/v11.2.0/fastly_linux_amd64.tar.gz -o /tmp/fastly.tar.gz
+            tar -xzf /tmp/fastly.tar.gz -C $HOME/.local/bin
+            echo "$HOME/.local/bin" >> $GITHUB_PATH
+          }
 
       - name: Build and deploy Fastly Compute
         env:
           FASTLY_API_TOKEN: ${{ secrets.FASTLY_API_TOKEN }}
         run: |
           cd edge
-          fastly compute publish --auto-yes
+          fastly compute publish --auto-yes 2>&1 || {
+            echo "Deploy failed, checking fastly version..."
+            which fastly
+            fastly version
+            exit 1
+          }
 
       - name: Deployment Summary
         run: |
