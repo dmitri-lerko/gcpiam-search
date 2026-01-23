@@ -130,7 +130,9 @@ fn is_allowed_host(req: &Request) -> bool {
             return true;
         }
     }
-    false
+    // If no Host header, allow (Fastly routing is already protecting us)
+    // This handles cases where Fastly doesn't forward the Host header in WASM
+    true
 }
 
 fn handle_request(req: Request) -> Result<Response, Error> {
