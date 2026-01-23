@@ -1,4 +1,4 @@
-name: Deploy to Fastly
+name: Build and Test
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
       - '.github/workflows/deploy.yml'
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,40 +22,19 @@ jobs:
         with:
           targets: wasm32-wasip1
 
-      - name: Install Fastly CLI
-        run: |
-          # Try official install script
-          if curl -fsSL https://apt.fastly.com/install.sh | bash 2>/dev/null; then
-            echo "Installed via official script"
-          else
-            # Fallback: download release directly
-            mkdir -p /tmp/fastly-install
-            FASTLY_VERSION="11.2.0"
-            echo "Downloading fastly $FASTLY_VERSION..."
-            curl -fSL "https://releases.fastly.com/fastly-cli/v$FASTLY_VERSION/fastly_v${FASTLY_VERSION}_linux_amd64.tar.gz" -o /tmp/fastly.tar.gz || \
-            curl -fSL "https://github.com/fastly/cli/releases/download/v$FASTLY_VERSION/fastly_v${FASTLY_VERSION}_linux_amd64.tar.gz" -o /tmp/fastly.tar.gz
-            tar -xzf /tmp/fastly.tar.gz -C /tmp/fastly-install
-            sudo mv /tmp/fastly-install/fastly /usr/local/bin/
-            chmod +x /usr/local/bin/fastly
-          fi
-          fastly version
-
-      - name: Build and deploy Fastly Compute
-        env:
-          FASTLY_API_TOKEN: ${{ secrets.FASTLY_API_TOKEN }}
+      - name: Build Fastly Compute package
         run: |
           cd edge
-          fastly compute publish --auto-yes 2>&1 || {
-            echo "Deploy failed, checking fastly version..."
-            which fastly
-            fastly version
-            exit 1
-          }
+          cargo build --release --target wasm32-wasip1 2>&1
+          ls -lah target/wasm32-wasip1/release/gcpiam-edge.wasm
 
-      - name: Deployment Summary
+      - name: Build Summary
         run: |
-          echo "## Deployment Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## Build Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- Service: gcpiam-search" >> $GITHUB_STEP_SUMMARY
-          echo "- Domain: https://gcpiam.com" >> $GITHUB_STEP_SUMMARY
-          echo "- Status: Deployed" >> $GITHUB_STEP_SUMMARY
+          echo "✓ Fastly Compute package built successfully" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**To deploy:** Run locally:" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
+          echo "cd edge && fastly compute publish --auto-yes" >> $GITHUB_STEP_SUMMARY
+          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
