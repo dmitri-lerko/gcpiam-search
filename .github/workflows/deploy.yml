@@ -24,15 +24,21 @@ jobs:
 
       - name: Install Fastly CLI
         run: |
-          curl -fsSL https://apt.fastly.com/fastly.asc | gpg --dearmor | sudo tee /usr/share/keyrings/fastly-archive-keyring.gpg >/dev/null 2>&1 || true
-          echo "deb [signed-by=/usr/share/keyrings/fastly-archive-keyring.gpg] https://apt.fastly.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/fastly.list >/dev/null 2>&1 || true
-          sudo apt-get update && sudo apt-get install -y fastly || {
-            echo "APT install failed, trying direct binary download..."
-            mkdir -p $HOME/.local/bin
-            curl -L https://github.com/fastly/cli/releases/download/v11.2.0/fastly_linux_amd64.tar.gz -o /tmp/fastly.tar.gz
-            tar -xzf /tmp/fastly.tar.gz -C $HOME/.local/bin
-            echo "$HOME/.local/bin" >> $GITHUB_PATH
-          }
+          # Try official install script
+          if curl -fsSL https://apt.fastly.com/install.sh | bash 2>/dev/null; then
+            echo "Installed via official script"
+          else
+            # Fallback: download release directly
+            mkdir -p /tmp/fastly-install
+            FASTLY_VERSION="11.2.0"
+            echo "Downloading fastly $FASTLY_VERSION..."
+            curl -fSL "https://releases.fastly.com/fastly-cli/v$FASTLY_VERSION/fastly_v${FASTLY_VERSION}_linux_amd64.tar.gz" -o /tmp/fastly.tar.gz || \
+            curl -fSL "https://github.com/fastly/cli/releases/download/v$FASTLY_VERSION/fastly_v${FASTLY_VERSION}_linux_amd64.tar.gz" -o /tmp/fastly.tar.gz
+            tar -xzf /tmp/fastly.tar.gz -C /tmp/fastly-install
+            sudo mv /tmp/fastly-install/fastly /usr/local/bin/
+            chmod +x /usr/local/bin/fastly
+          fi
+          fastly version
 
       - name: Build and deploy Fastly Compute
         env:
