@@ -161,6 +161,7 @@ fn handle_request(req: Request) -> Result<Response, Error> {
         "/" | "/index.html" => serve_html(INDEX_HTML),
         "/styles.css" => serve_css(STYLES_CSS),
         "/app.js" => serve_js(APP_JS),
+        "/sitemap.xml" => serve_sitemap(),
         "/api/v1/health" => serve_json(handle_health()),
         "/api/v1/stats" => serve_json(handle_stats()),
         p if p.starts_with("/api/v1/search") => serve_json(handle_search(&req)),
@@ -191,6 +192,49 @@ fn serve_js(content: &str) -> Result<Response, Error> {
     resp.set_header("Content-Type", "application/javascript; charset=utf-8");
     resp.set_header("Cache-Control", "public, max-age=86400");
     resp.set_body(content);
+    Ok(resp)
+}
+
+fn serve_sitemap() -> Result<Response, Error> {
+    // Load index to get permissions and roles
+    let index_data: PrebuiltIndex = match bincode::deserialize(INDEX_DATA) {
+        Ok(data) => data,
+        Err(_) => {
+            let mut resp = Response::from_status(StatusCode::INTERNAL_SERVER_ERROR);
+            resp.set_body("Failed to load index");
+            return Ok(resp);
+        }
+    };
+
+    let mut sitemap = String::from("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n");
+
+    // Add homepage
+    sitemap.push_str("  <url>\n    <loc>https://gcpiam.com/</loc>\n    <priority>1.0</priority>\n  </url>\n");
+
+    // Add permission pages
+    for perm in &index_data.permissions {
+        let encoded = urlencoding::encode(&perm.name);
+        sitemap.push_str(&format!(
+            "  <url>\n    <loc>https://gcpiam.com/permissions/{}</loc>\n    <priority>0.8</priority>\n  </url>\n",
+            encoded
+        ));
+    }
+
+    // Add role pages
+    for role in &index_data.roles {
+        let encoded = urlencoding::encode(&role.name);
+        sitemap.push_str(&format!(
+            "  <url>\n    <loc>https://gcpiam.com/roles/{}</loc>\n    <priority>0.8</priority>\n  </url>\n",
+            encoded
+        ));
+    }
+
+    sitemap.push_str("</urlset>");
+
+    let mut resp = Response::from_status(StatusCode::OK);
+    resp.set_header("Content-Type", "application/xml; charset=utf-8");
+    resp.set_header("Cache-Control", "public, max-age=86400");
+    resp.set_body(sitemap);
     Ok(resp)
 }
 
