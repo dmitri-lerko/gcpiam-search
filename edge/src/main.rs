@@ -6,6 +6,9 @@ use std::collections::HashMap;
 // Include pre-built index at compile time
 static INDEX_DATA: &[u8] = include_bytes!(concat!(env!("OUT_DIR"), "/prebuilt_index.bin"));
 
+// Include generated timestamp constant
+include!(concat!(env!("OUT_DIR"), "/timestamp.rs"));
+
 // Include frontend files at compile time
 static INDEX_HTML: &str = include_str!("../../frontend/public/index.html");
 static STYLES_CSS: &str = include_str!("../../frontend/public/styles.css");
@@ -112,6 +115,13 @@ struct ErrorResponse {
     error: String,
 }
 
+#[derive(Serialize)]
+struct MetadataResponse {
+    last_updated: String,
+    total_permissions: u32,
+    total_roles: u32,
+}
+
 fn main() -> Result<(), Error> {
     let req = Request::from_client();
     let resp = handle_request(req)?;
@@ -164,6 +174,7 @@ fn handle_request(req: Request) -> Result<Response, Error> {
         "/sitemap.xml" => serve_sitemap(),
         "/api/v1/health" => serve_json(handle_health()),
         "/api/v1/stats" => serve_json(handle_stats()),
+        "/api/v1/info" => serve_json(handle_info()),
         p if p.starts_with("/api/v1/search") => serve_json(handle_search(&req)),
         p if p.starts_with("/permissions/") => serve_permission_page(p),
         p if p.starts_with("/roles/") => serve_role_page(p),
@@ -524,6 +535,17 @@ fn handle_stats() -> Result<String, String> {
             indexed: true,
             version: "0.1.0-edge".to_string(),
         },
+    })
+    .map_err(|e| e.to_string())
+}
+
+fn handle_info() -> Result<String, String> {
+    let index: PrebuiltIndex = bincode::deserialize(INDEX_DATA).map_err(|e| e.to_string())?;
+
+    serde_json::to_string(&MetadataResponse {
+        last_updated: LAST_UPDATED.to_string(),
+        total_permissions: index.permissions.len() as u32,
+        total_roles: index.roles.len() as u32,
     })
     .map_err(|e| e.to_string())
 }

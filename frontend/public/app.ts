@@ -31,6 +31,26 @@ async function initializeApp() {
         const clearBtn = document.getElementById('clearBtn') as HTMLButtonElement;
         const modeButtons = document.querySelectorAll('.mode-btn');
 
+        // Fetch and display metadata (last updated timestamp)
+        try {
+            const info = await apiClient.getInfo();
+            const lastUpdatedEl = document.getElementById('lastUpdated');
+            if (lastUpdatedEl) {
+                const date = new Date(info.last_updated);
+                const formatted = date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    timeZone: 'UTC',
+                });
+                lastUpdatedEl.textContent = `Last updated: ${formatted} UTC`;
+            }
+        } catch (error) {
+            console.warn('Failed to fetch metadata:', error);
+        }
+
         // Handle search input
         searchInput.addEventListener('input', async (e) => {
             const query = (e.target as HTMLInputElement).value.trim();

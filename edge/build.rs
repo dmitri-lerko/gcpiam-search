@@ -34,6 +34,7 @@ struct MetadataData {
     total_roles: usize,
     #[allow(dead_code)]
     total_permissions: usize,
+    last_updated: String,
 }
 
 // Serializable search index structures
@@ -112,6 +113,15 @@ fn main() {
 
     let content = fs::read_to_string(data_path).expect("Failed to read iam-data.json");
     let data: IamDataFile = serde_json::from_str(&content).expect("Failed to parse JSON");
+
+    // Extract and generate timestamp constant
+    let last_updated = &data.metadata.last_updated;
+    let timestamp_code = format!(
+        "pub const LAST_UPDATED: &str = \"{}\";\n",
+        last_updated
+    );
+    let timestamp_path = Path::new(&out_dir).join("timestamp.rs");
+    fs::write(&timestamp_path, timestamp_code).expect("Failed to write timestamp constant");
 
     // Build role index and summaries
     let mut roles: Vec<Role> = Vec::with_capacity(data.roles.len());

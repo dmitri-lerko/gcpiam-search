@@ -34,6 +34,12 @@ export interface SearchResults {
     roles: Role[];
 }
 
+export interface ApiInfo {
+    last_updated: string;
+    total_permissions: number;
+    total_roles: number;
+}
+
 export class SearchClient {
     private baseUrl: string;
     private cache: Map<string, SearchResults> = new Map();
@@ -123,5 +129,20 @@ export class SearchClient {
         } catch {
             return false;
         }
+    }
+
+    /**
+     * Get API info including last updated timestamp
+     */
+    async getInfo(): Promise<ApiInfo> {
+        const response = await fetch(`${this.baseUrl}/info`, {
+            method: 'GET',
+        });
+        if (!response.ok) {
+            throw new Error(`Failed to fetch info: HTTP ${response.status}`);
+        }
+        const json = await response.json();
+        // Handle both direct response and nested data
+        return json.data || json;
     }
 }
