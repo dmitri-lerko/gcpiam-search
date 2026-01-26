@@ -28,3 +28,8 @@ output "fastly_sa_private_key_json" {
   description = "Service account private key (base64 encoded) for Fastly logging"
   sensitive   = true
 }
+
+output "bigquery_logging_format" {
+  value       = local.bigquery_logging_format
+  description = "JSON format string for Fastly BigQuery logging (includes all available client-connection variables)"
+}
