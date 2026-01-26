@@ -13,7 +13,7 @@ locals {
 # Create and manage service account key
 resource "google_service_account_key" "fastly_logging" {
   service_account_id = google_service_account.fastly_logging.name
-  public_key_type    = "TYPE_X509_PEM"
+  public_key_type    = "TYPE_X509_PEM_FILE"
 }
 
 # IAM role: BigQuery Data Editor (for inserting logs)

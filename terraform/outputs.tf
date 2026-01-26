@@ -23,7 +23,8 @@ output "terraform_init_command" {
   description = "Command to initialize Terraform with remote backend"
 }
 
-output "fastly_logging_backend_name" {
-  value       = fastly_service_logging_bigquery.gcpiam_logs.name
-  description = "Name of the Fastly BigQuery logging backend"
+output "fastly_sa_private_key_json" {
+  value       = sensitive(google_service_account_key.fastly_logging.private_key)
+  description = "Service account private key (base64 encoded) for Fastly logging"
+  sensitive   = true
 }
