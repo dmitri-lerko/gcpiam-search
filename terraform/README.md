@@ -103,10 +103,38 @@ bq ls -d --project_id=mygha-461120
 
 # Verify BigQuery table
 bq show mygha-461120.fastly_logs.access_logs
-
-# Check Fastly service has logging backend
-gcloud compute backend-buckets list  # Or use Fastly API
 ```
+
+### Step 7: Configure Fastly BigQuery Logging Endpoint
+
+The BigQuery dataset and table are now ready. You must manually configure the logging endpoint in Fastly:
+
+**1. Get the service account credentials:**
+```bash
+terraform output -raw fastly_sa_private_key_json > key.json
+terraform output -raw bigquery_logging_format
+```
+
+**2. In Fastly Dashboard:**
+- Go to https://manage.fastly.com/
+- Select service: `gcpiam-search`
+- Navigate to: Logging → BigQuery
+- Click "Create a log endpoint" and select "BigQuery"
+
+**3. Fill in the form:**
+- **Name:** `gcpiam-bigquery-logging`
+- **Project ID:** `mygha-461120`
+- **Dataset:** `fastly_logs`
+- **Table:** `access_logs`
+- **Service Account JSON Key:** (paste contents of `key.json`)
+- **Log Line Format:** (paste the JSON from `terraform output bigquery_logging_format`)
+- **Placement:** `none` (required for WASM services)
+- **Gzip Level:** `9` (optional, for compression)
+
+**4. Save and Activate**
+- Click "Create" to save the endpoint
+- The endpoint will be added to your current service version
+- Deploy the service version to activate logging
 
 ## Testing the Logging
 
@@ -137,6 +165,48 @@ ORDER BY timestamp DESC
 LIMIT 10
 EOF
 ```
+
+## Available Logging Fields
+
+The logging format captures **50+ fields** including:
+
+**Timestamps & Duration:**
+- timestamp, time_elapsed
+
+**Client Information:**
+- client_ip, client_country, client_city, client_asn
+- client_latitude, client_longitude, client_postal_code
+- client_region, client_gmt_offset, client_area_code, client_dma_code
+- user_agent
+
+**Request Details:**
+- request_method, request_uri, request_protocol
+- request_host, request_referrer
+
+**Response Information:**
+- response_status, response_size, response_body_size
+
+**Cache Data:**
+- cache_status, cache_action
+
+**Edge/Origin Metrics:**
+- edge_location, edge_server, edge_response_time
+- origin_response_time, origin_status, is_tls
+
+**TLS/Security:**
+- tls_protocol, tls_cipher, tls_sni
+- tls_ja4, tls_ja3_md5, tls_extensions_sha (fingerprinting)
+
+**Client Certificates (mTLS):**
+- cert_is_verified, cert_serial_number
+- cert_issuer_dn, cert_subject_dn
+- cert_validity_start, cert_validity_end, cert_fingerprint
+
+**TCP Metrics:**
+- tcp_rtt, tcp_rtt_variance, tcp_cwnd, tcp_mss, tcp_ttl
+
+**Service:**
+- service_id
 
 ### Useful Queries
 

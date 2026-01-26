@@ -75,15 +75,24 @@ locals {
   })
 }
 
-# Enable BigQuery logging via Fastly API
-resource "null_resource" "fastly_bigquery_logging" {
-  provisioner "local-exec" {
-    interpreter = ["/bin/bash", "-c"]
-    command     = "curl -X POST 'https://api.fastly.com/service/${var.fastly_service_id}/version/14/logging/bigquery' -H 'Fastly-Key: ${var.fastly_api_token}' -H 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'name=gcpiam-bigquery-logging' --data-urlencode 'project_id=${var.gcp_project_id}' --data-urlencode 'dataset=${var.bigquery_dataset_id}' --data-urlencode 'table=${var.bigquery_table_id}' --data-urlencode 'secret_key=${base64encode(google_service_account_key.fastly_logging.private_key)}' --data-urlencode 'format=${local.bigquery_logging_format}' --data-urlencode 'gzip_level=9' && echo 'BigQuery logging endpoint created successfully'"
-  }
-
-  depends_on = [
-    google_service_account_key.fastly_logging,
-    google_bigquery_table.fastly_access_logs
-  ]
-}
+# MANUAL SETUP REQUIRED:
+# Configure BigQuery logging in Fastly dashboard at https://manage.fastly.com/
+#
+# Steps:
+# 1. Select service: gcpiam-search
+# 2. Go to Logging > BigQuery
+# 3. Create new endpoint with:
+#    - Name: gcpiam-bigquery-logging
+#    - Project ID: mygha-461120
+#    - Dataset: fastly_logs
+#    - Table: access_logs
+#    - Service Account JSON Key: (from terraform output fastly_sa_private_key_json)
+#    - Log Line Format: (from terraform output bigquery_logging_format)
+#    - Placement: none (required for WASM services)
+# 4. Save and activate
+#
+# To get the credentials:
+#   terraform output -raw fastly_sa_private_key_json > key.json
+#   terraform output -raw bigquery_logging_format
+#
+# Service Account Email: fastly-logging@mygha-461120.iam.gserviceaccount.com
