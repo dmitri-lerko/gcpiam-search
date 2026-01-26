@@ -20,7 +20,7 @@ Fastly Service (eUQUMxFI5qCyFrJ9pxGcy9)
 
 ## Prerequisites
 
-1. **GCP Project**: `gcpiam` (must exist before running Terraform)
+1. **GCP Project**: `mygha-461120` (must exist before running Terraform)
 2. **Fastly Account**: With service already created (`gcpiam-search`)
 3. **Terraform**: >= 1.5
 4. **gcloud CLI**: Authenticated to your GCP project
@@ -50,7 +50,7 @@ export FASTLY_API_TOKEN="your-fastly-api-token-here"
 
 # Verify GCP authentication
 gcloud auth application-default login
-gcloud config set project gcpiam
+gcloud config set project mygha-461120
 ```
 
 ### Step 2: Initialize Terraform (First Time Only)
@@ -75,7 +75,7 @@ terraform apply -target=google_storage_bucket.terraform_state
 
 ```bash
 # Now reconfigure Terraform to use the remote state bucket
-terraform init -backend-config="bucket=gcpiam-terraform-state"
+terraform init -backend-config="bucket=mygha-461120-terraform-state"
 
 # Confirm migration of local state (answer "yes")
 ```
@@ -99,10 +99,10 @@ terraform apply
 terraform output
 
 # Verify BigQuery dataset
-bq ls -d --project_id=gcpiam
+bq ls -d --project_id=mygha-461120
 
 # Verify BigQuery table
-bq show gcpiam.fastly_logs.access_logs
+bq show mygha-461120.fastly_logs.access_logs
 
 # Check Fastly service has logging backend
 gcloud compute backend-buckets list  # Or use Fastly API
@@ -123,7 +123,7 @@ curl -I https://gcpiam.com/
 
 ```bash
 # Simple query to verify data
-bq query --project_id=gcpiam << 'EOF'
+bq query --project_id=mygha-461120 << 'EOF'
 SELECT
   timestamp,
   client_ip,
@@ -132,7 +132,7 @@ SELECT
   response_status,
   cache_status,
   edge_location
-FROM `gcpiam.fastly_logs.access_logs`
+FROM `mygha-461120.fastly_logs.access_logs`
 ORDER BY timestamp DESC
 LIMIT 10
 EOF
@@ -146,7 +146,7 @@ SELECT
   cache_status,
   COUNT(*) as request_count,
   ROUND(100.0 * COUNT(*) / SUM(COUNT(*)) OVER (), 2) as percentage
-FROM `gcpiam.fastly_logs.access_logs`
+FROM `mygha-461120.fastly_logs.access_logs`
 WHERE DATE(timestamp) = CURRENT_DATE()
 GROUP BY cache_status
 ORDER BY request_count DESC
@@ -159,7 +159,7 @@ SELECT
   client_city,
   COUNT(*) as request_count,
   AVG(CAST(response_status AS FLOAT64)) as avg_status
-FROM `gcpiam.fastly_logs.access_logs`
+FROM `mygha-461120.fastly_logs.access_logs`
 WHERE DATE(timestamp) = CURRENT_DATE()
 GROUP BY client_country, client_city
 ORDER BY request_count DESC
@@ -173,7 +173,7 @@ SELECT
   ROUND(AVG(CAST(edge_response_time AS FLOAT64)), 2) as avg_edge_time_ms,
   ROUND(AVG(CAST(origin_response_time AS FLOAT64)), 2) as avg_origin_time_ms,
   COUNT(*) as request_count
-FROM `gcpiam.fastly_logs.access_logs`
+FROM `mygha-461120.fastly_logs.access_logs`
 WHERE DATE(timestamp) = CURRENT_DATE()
 GROUP BY hour
 ORDER BY hour DESC
@@ -183,7 +183,7 @@ ORDER BY hour DESC
 
 ### Remote State Bucket
 
-State is stored in: `gs://gcpiam-terraform-state/`
+State is stored in: `gs://mygha-461120-terraform-state/`
 
 **Features**:
 - Versioning enabled (keeps last 5 versions)
@@ -192,16 +192,16 @@ State is stored in: `gs://gcpiam-terraform-state/`
 
 **To view state history**:
 ```bash
-gsutil ls -L gs://gcpiam-terraform-state/
+gsutil ls -L gs://mygha-461120-terraform-state/
 ```
 
 **To restore from backup**:
 ```bash
 # List versions
-gsutil versioning get gs://gcpiam-terraform-state/
+gsutil versioning get gs://mygha-461120-terraform-state/
 
 # Copy specific version if needed
-gsutil cp gs://gcpiam-terraform-state/#<version-id> terraform.tfstate
+gsutil cp gs://mygha-461120-terraform-state/#<version-id> terraform.tfstate
 ```
 
 ## Scaling and Customization
@@ -271,12 +271,12 @@ curl -i https://api.fastly.com/service \
 
 2. Check BigQuery table permissions:
    ```bash
-   bq show --project_id=gcpiam gcpiam.fastly_logs.access_logs
+   bq show --project_id=mygha-461120 mygha-461120.fastly_logs.access_logs
    ```
 
 3. Verify service account has permissions:
    ```bash
-   gcloud projects get-iam-policy gcpiam \
+   gcloud projects get-iam-policy mygha-461120 \
      --flatten=bindings[].members \
      --filter="bindings.role:roles/bigquery.*"
    ```
@@ -287,7 +287,7 @@ curl -i https://api.fastly.com/service \
 
 ```bash
 # Export state bucket to local backup
-gsutil -m cp -r gs://gcpiam-terraform-state/ ./backup/
+gsutil -m cp -r gs://mygha-461120-terraform-state/ ./backup/
 
 # Or create scheduled backup via GCS lifecycle
 ```
