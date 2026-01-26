@@ -76,6 +76,19 @@
         return false;
       }
     }
+    /**
+     * Get API info including last updated timestamp
+     */
+    async getInfo() {
+      const response = await fetch(`${this.baseUrl}/info`, {
+        method: "GET"
+      });
+      if (!response.ok) {
+        throw new Error(`Failed to fetch info: HTTP ${response.status}`);
+      }
+      const json = await response.json();
+      return json.data || json;
+    }
   };
 
   // public/ui.ts
@@ -433,6 +446,24 @@
       const searchInput = document.getElementById("searchInput");
       const clearBtn = document.getElementById("clearBtn");
       const modeButtons = document.querySelectorAll(".mode-btn");
+      try {
+        const info = await apiClient.getInfo();
+        const lastUpdatedEl = document.getElementById("lastUpdated");
+        if (lastUpdatedEl) {
+          const date = new Date(info.last_updated);
+          const formatted = date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            timeZone: "UTC"
+          });
+          lastUpdatedEl.textContent = `Last updated: ${formatted} UTC`;
+        }
+      } catch (error) {
+        console.warn("Failed to fetch metadata:", error);
+      }
       searchInput.addEventListener("input", async (e) => {
         const query = e.target.value.trim();
         if (!query) {
