@@ -10,6 +10,10 @@ terraform {
       source  = "fastly/fastly"
       version = "~> 1.0"
     }
+    null = {
+      source  = "hashicorp/null"
+      version = "~> 3.2"
+    }
   }
 
   # Backend configured in backend.tf with dynamic bucket reference

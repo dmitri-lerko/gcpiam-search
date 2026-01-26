@@ -1,8 +1,3 @@
-# Note: To enable Fastly to BigQuery logging, you must configure it via Fastly API
-# The Terraform Fastly provider does not currently support BigQuery logging backend
-#
-# LOGGING FORMAT (JSON) for comprehensive BigQuery logging:
-# Include the following format string in your Fastly BigQuery logging backend configuration
 locals {
   bigquery_logging_format = jsonencode({
     # Timestamp and basic info
@@ -80,30 +75,15 @@ locals {
   })
 }
 
-# Manual Configuration Steps:
-# 1. Log in to Fastly dashboard (https://manage.fastly.com/)
-# 2. Select the gcpiam-search service
-# 3. Go to Logging > BigQuery
-# 4. Create new logging endpoint with:
-#    - Service: gcpiam-search
-#    - Name: gcpiam-bigquery-logging
-#    - Project ID: gcpiam
-#    - Dataset: fastly_logs
-#    - Table: access_logs
-#    - User: fastly-logging@gcpiam.iam.gserviceaccount.com
-#    - Private Key: (copy from terraform output or GCP Console)
-#    - Format: (use the format from 'local.bigquery_logging_format' above, or from README)
-#
-# To get the logging format JSON, run:
-#   terraform output -raw bigquery_logging_format
-#
-# Or use via curl with the Fastly API:
-# curl -X POST https://api.fastly.com/service/{service_id}/version/{version}/logging/bigquery \
-#   -H "Fastly-Key: $FASTLY_API_TOKEN" \
-#   -H "Content-Type: application/x-www-form-urlencoded" \
-#   --data-urlencode "name=gcpiam-bigquery-logging" \
-#   --data-urlencode "project_id=gcpiam" \
-#   --data-urlencode "dataset=fastly_logs" \
-#   --data-urlencode "table=access_logs" \
-#   --data-urlencode "secret_key=$(cat key.json | base64)" \
-#   --data-urlencode "format=$(terraform output -raw bigquery_logging_format)"
+# Enable BigQuery logging via Fastly API
+resource "null_resource" "fastly_bigquery_logging" {
+  provisioner "local-exec" {
+    interpreter = ["/bin/bash", "-c"]
+    command     = "curl -X POST 'https://api.fastly.com/service/${var.fastly_service_id}/version/14/logging/bigquery' -H 'Fastly-Key: ${var.fastly_api_token}' -H 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'name=gcpiam-bigquery-logging' --data-urlencode 'project_id=${var.gcp_project_id}' --data-urlencode 'dataset=${var.bigquery_dataset_id}' --data-urlencode 'table=${var.bigquery_table_id}' --data-urlencode 'secret_key=${base64encode(google_service_account_key.fastly_logging.private_key)}' --data-urlencode 'format=${local.bigquery_logging_format}' --data-urlencode 'gzip_level=9' && echo 'BigQuery logging endpoint created successfully'"
+  }
+
+  depends_on = [
+    google_service_account_key.fastly_logging,
+    google_bigquery_table.fastly_access_logs
+  ]
+}
