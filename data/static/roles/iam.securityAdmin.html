@@ -75,7 +75,7 @@
         <p>Security admin role, with permissions to get and set any IAM policy.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(2666)</span></h2>
+    <h2>Included Permissions <span class="count">(2689)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.list">accesscontextmanager.accessLevels.list</a></li>
@@ -88,6 +88,12 @@
     <li><a href="/permissions/actions.agentVersions.list">actions.agentVersions.list</a></li>
     <li><a href="/permissions/advisorynotifications.notifications.get">advisorynotifications.notifications.get</a></li>
     <li><a href="/permissions/advisorynotifications.notifications.list">advisorynotifications.notifications.list</a></li>
+    <li><a href="/permissions/agentregistry.agents.list">agentregistry.agents.list</a></li>
+    <li><a href="/permissions/agentregistry.endpoints.list">agentregistry.endpoints.list</a></li>
+    <li><a href="/permissions/agentregistry.locations.list">agentregistry.locations.list</a></li>
+    <li><a href="/permissions/agentregistry.mcpServers.list">agentregistry.mcpServers.list</a></li>
+    <li><a href="/permissions/agentregistry.operations.list">agentregistry.operations.list</a></li>
+    <li><a href="/permissions/agentregistry.services.list">agentregistry.services.list</a></li>
     <li><a href="/permissions/aiplatform.agentExamples.list">aiplatform.agentExamples.list</a></li>
     <li><a href="/permissions/aiplatform.agents.list">aiplatform.agents.list</a></li>
     <li><a href="/permissions/aiplatform.annotationSpecs.list">aiplatform.annotationSpecs.list</a></li>
@@ -928,6 +934,9 @@
     <li><a href="/permissions/compute.serviceAttachments.getIamPolicy">compute.serviceAttachments.getIamPolicy</a></li>
     <li><a href="/permissions/compute.serviceAttachments.list">compute.serviceAttachments.list</a></li>
     <li><a href="/permissions/compute.serviceAttachments.setIamPolicy">compute.serviceAttachments.setIamPolicy</a></li>
+    <li><a href="/permissions/compute.snapshotGroups.getIamPolicy">compute.snapshotGroups.getIamPolicy</a></li>
+    <li><a href="/permissions/compute.snapshotGroups.list">compute.snapshotGroups.list</a></li>
+    <li><a href="/permissions/compute.snapshotGroups.setIamPolicy">compute.snapshotGroups.setIamPolicy</a></li>
     <li><a href="/permissions/compute.snapshots.getIamPolicy">compute.snapshots.getIamPolicy</a></li>
     <li><a href="/permissions/compute.snapshots.list">compute.snapshots.list</a></li>
     <li><a href="/permissions/compute.snapshots.setIamPolicy">compute.snapshots.setIamPolicy</a></li>
@@ -1135,6 +1144,8 @@
     <li><a href="/permissions/databasecenter.fleetStats.list">databasecenter.fleetStats.list</a></li>
     <li><a href="/permissions/databasecenter.locations.list">databasecenter.locations.list</a></li>
     <li><a href="/permissions/databasecenter.products.list">databasecenter.products.list</a></li>
+    <li><a href="/permissions/databasecenter.queryStats.list">databasecenter.queryStats.list</a></li>
+    <li><a href="/permissions/databasecenter.reportConfigs.list">databasecenter.reportConfigs.list</a></li>
     <li><a href="/permissions/databasecenter.userLabels.list">databasecenter.userLabels.list</a></li>
     <li><a href="/permissions/databasecenter.userTags.list">databasecenter.userTags.list</a></li>
     <li><a href="/permissions/databaseinsights.locations.list">databaseinsights.locations.list</a></li>
@@ -1412,12 +1423,15 @@
     <li><a href="/permissions/dialogflow.transitionRouteGroups.list">dialogflow.transitionRouteGroups.list</a></li>
     <li><a href="/permissions/dialogflow.versions.list">dialogflow.versions.list</a></li>
     <li><a href="/permissions/dialogflow.webhooks.list">dialogflow.webhooks.list</a></li>
+    <li><a href="/permissions/discoveryengine.agentFiles.list">discoveryengine.agentFiles.list</a></li>
+    <li><a href="/permissions/discoveryengine.agentIamProposals.list">discoveryengine.agentIamProposals.list</a></li>
     <li><a href="/permissions/discoveryengine.agents.getIamPolicy">discoveryengine.agents.getIamPolicy</a></li>
     <li><a href="/permissions/discoveryengine.agents.list">discoveryengine.agents.list</a></li>
     <li><a href="/permissions/discoveryengine.agents.setIamPolicy">discoveryengine.agents.setIamPolicy</a></li>
     <li><a href="/permissions/discoveryengine.assistants.list">discoveryengine.assistants.list</a></li>
     <li><a href="/permissions/discoveryengine.billingAccountLicenseConfigs.list">discoveryengine.billingAccountLicenseConfigs.list</a></li>
     <li><a href="/permissions/discoveryengine.branches.list">discoveryengine.branches.list</a></li>
+    <li><a href="/permissions/discoveryengine.cannedQueries.list">discoveryengine.cannedQueries.list</a></li>
     <li><a href="/permissions/discoveryengine.cmekConfigs.list">discoveryengine.cmekConfigs.list</a></li>
     <li><a href="/permissions/discoveryengine.collections.list">discoveryengine.collections.list</a></li>
     <li><a href="/permissions/discoveryengine.connectorRuns.list">discoveryengine.connectorRuns.list</a></li>
@@ -1431,16 +1445,19 @@
     <li><a href="/permissions/discoveryengine.evaluations.list">discoveryengine.evaluations.list</a></li>
     <li><a href="/permissions/discoveryengine.identityMappingStores.list">discoveryengine.identityMappingStores.list</a></li>
     <li><a href="/permissions/discoveryengine.licenseConfigs.list">discoveryengine.licenseConfigs.list</a></li>
+    <li><a href="/permissions/discoveryengine.memories.list">discoveryengine.memories.list</a></li>
     <li><a href="/permissions/discoveryengine.models.list">discoveryengine.models.list</a></li>
     <li><a href="/permissions/discoveryengine.notebooks.getIamPolicy">discoveryengine.notebooks.getIamPolicy</a></li>
     <li><a href="/permissions/discoveryengine.notebooks.list">discoveryengine.notebooks.list</a></li>
     <li><a href="/permissions/discoveryengine.notebooks.setIamPolicy">discoveryengine.notebooks.setIamPolicy</a></li>
+    <li><a href="/permissions/discoveryengine.notificationMessages.list">discoveryengine.notificationMessages.list</a></li>
     <li><a href="/permissions/discoveryengine.operations.list">discoveryengine.operations.list</a></li>
     <li><a href="/permissions/discoveryengine.sampleQueries.list">discoveryengine.sampleQueries.list</a></li>
     <li><a href="/permissions/discoveryengine.sampleQuerySets.list">discoveryengine.sampleQuerySets.list</a></li>
     <li><a href="/permissions/discoveryengine.schemas.list">discoveryengine.schemas.list</a></li>
     <li><a href="/permissions/discoveryengine.servingConfigs.list">discoveryengine.servingConfigs.list</a></li>
     <li><a href="/permissions/discoveryengine.sessions.list">discoveryengine.sessions.list</a></li>
+    <li><a href="/permissions/discoveryengine.sharedContents.list">discoveryengine.sharedContents.list</a></li>
     <li><a href="/permissions/discoveryengine.targetSites.list">discoveryengine.targetSites.list</a></li>
     <li><a href="/permissions/dlp.analyzeRiskTemplates.list">dlp.analyzeRiskTemplates.list</a></li>
     <li><a href="/permissions/dlp.columnDataProfiles.list">dlp.columnDataProfiles.list</a></li>
@@ -2130,6 +2147,12 @@
     <li><a href="/permissions/oracledatabase.exadbVmClusters.list">oracledatabase.exadbVmClusters.list</a></li>
     <li><a href="/permissions/oracledatabase.exascaleDbStorageVaults.list">oracledatabase.exascaleDbStorageVaults.list</a></li>
     <li><a href="/permissions/oracledatabase.giVersions.list">oracledatabase.giVersions.list</a></li>
+    <li><a href="/permissions/oracledatabase.goldenGateConnectionAssignments.list">oracledatabase.goldenGateConnectionAssignments.list</a></li>
+    <li><a href="/permissions/oracledatabase.goldenGateConnectionTypes.list">oracledatabase.goldenGateConnectionTypes.list</a></li>
+    <li><a href="/permissions/oracledatabase.goldenGateConnections.list">oracledatabase.goldenGateConnections.list</a></li>
+    <li><a href="/permissions/oracledatabase.goldenGateDeploymentTypes.list">oracledatabase.goldenGateDeploymentTypes.list</a></li>
+    <li><a href="/permissions/oracledatabase.goldenGateDeploymentVersions.list">oracledatabase.goldenGateDeploymentVersions.list</a></li>
+    <li><a href="/permissions/oracledatabase.goldenGateDeployments.list">oracledatabase.goldenGateDeployments.list</a></li>
     <li><a href="/permissions/oracledatabase.locations.list">oracledatabase.locations.list</a></li>
     <li><a href="/permissions/oracledatabase.minorVersions.list">oracledatabase.minorVersions.list</a></li>
     <li><a href="/permissions/oracledatabase.odbNetworks.list">oracledatabase.odbNetworks.list</a></li>
