@@ -75,7 +75,7 @@
         <p>Read-only role designed for enabling security audit of your GCP environment, associated policies and viewing configurations.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(3768)</span></h2>
+    <h2>Included Permissions <span class="count">(3786)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.get">accesscontextmanager.accessLevels.get</a></li>
@@ -334,7 +334,10 @@
     <li><a href="/permissions/apphub.services.list">apphub.services.list</a></li>
     <li><a href="/permissions/apphub.workloads.list">apphub.workloads.list</a></li>
     <li><a href="/permissions/applianceactivation.rttCommands.list">applianceactivation.rttCommands.list</a></li>
+    <li><a href="/permissions/apptopology.applicationTopologies.generate">apptopology.applicationTopologies.generate</a></li>
+    <li><a href="/permissions/apptopology.locations.get">apptopology.locations.get</a></li>
     <li><a href="/permissions/apptopology.locations.list">apptopology.locations.list</a></li>
+    <li><a href="/permissions/apptopology.operations.get">apptopology.operations.get</a></li>
     <li><a href="/permissions/apptopology.operations.list">apptopology.operations.list</a></li>
     <li><a href="/permissions/artifactregistry.attachments.get">artifactregistry.attachments.get</a></li>
     <li><a href="/permissions/artifactregistry.attachments.list">artifactregistry.attachments.list</a></li>
@@ -379,14 +382,20 @@
     <li><a href="/permissions/assuredworkloads.updates.list">assuredworkloads.updates.list</a></li>
     <li><a href="/permissions/assuredworkloads.violations.list">assuredworkloads.violations.list</a></li>
     <li><a href="/permissions/assuredworkloads.workload.list">assuredworkloads.workload.list</a></li>
+    <li><a href="/permissions/auditmanager.auditReports.get">auditmanager.auditReports.get</a></li>
     <li><a href="/permissions/auditmanager.auditReports.list">auditmanager.auditReports.list</a></li>
     <li><a href="/permissions/auditmanager.auditSchedules.list">auditmanager.auditSchedules.list</a></li>
+    <li><a href="/permissions/auditmanager.billingSettings.get">auditmanager.billingSettings.get</a></li>
+    <li><a href="/permissions/auditmanager.controlReports.get">auditmanager.controlReports.get</a></li>
     <li><a href="/permissions/auditmanager.controlReports.list">auditmanager.controlReports.list</a></li>
     <li><a href="/permissions/auditmanager.controls.list">auditmanager.controls.list</a></li>
     <li><a href="/permissions/auditmanager.customComplianceFrameworks.list">auditmanager.customComplianceFrameworks.list</a></li>
     <li><a href="/permissions/auditmanager.findings.list">auditmanager.findings.list</a></li>
+    <li><a href="/permissions/auditmanager.locations.get">auditmanager.locations.get</a></li>
     <li><a href="/permissions/auditmanager.locations.list">auditmanager.locations.list</a></li>
+    <li><a href="/permissions/auditmanager.operations.get">auditmanager.operations.get</a></li>
     <li><a href="/permissions/auditmanager.operations.list">auditmanager.operations.list</a></li>
+    <li><a href="/permissions/auditmanager.resourceEnrollmentStatuses.get">auditmanager.resourceEnrollmentStatuses.get</a></li>
     <li><a href="/permissions/auditmanager.resourceEnrollmentStatuses.list">auditmanager.resourceEnrollmentStatuses.list</a></li>
     <li><a href="/permissions/automl.annotationSpecs.list">automl.annotationSpecs.list</a></li>
     <li><a href="/permissions/automl.annotations.list">automl.annotations.list</a></li>
@@ -562,6 +571,7 @@
     <li><a href="/permissions/certificatemanager.dnsauthorizations.listEffectiveTags">certificatemanager.dnsauthorizations.listEffectiveTags</a></li>
     <li><a href="/permissions/certificatemanager.dnsauthorizations.listTagBindings">certificatemanager.dnsauthorizations.listTagBindings</a></li>
     <li><a href="/permissions/certificatemanager.locations.list">certificatemanager.locations.list</a></li>
+    <li><a href="/permissions/certificatemanager.observedcerts.list">certificatemanager.observedcerts.list</a></li>
     <li><a href="/permissions/certificatemanager.operations.list">certificatemanager.operations.list</a></li>
     <li><a href="/permissions/certificatemanager.trustconfigs.list">certificatemanager.trustconfigs.list</a></li>
     <li><a href="/permissions/certificatemanager.trustconfigs.listEffectiveTags">certificatemanager.trustconfigs.listEffectiveTags</a></li>
@@ -1822,6 +1832,8 @@
     <li><a href="/permissions/compute.zones.get">compute.zones.get</a></li>
     <li><a href="/permissions/compute.zones.list">compute.zones.list</a></li>
     <li><a href="/permissions/confidentialcomputing.locations.list">confidentialcomputing.locations.list</a></li>
+    <li><a href="/permissions/config.deploymentgrouprevisions.list">config.deploymentgrouprevisions.list</a></li>
+    <li><a href="/permissions/config.deploymentgroups.list">config.deploymentgroups.list</a></li>
     <li><a href="/permissions/config.deployments.getIamPolicy">config.deployments.getIamPolicy</a></li>
     <li><a href="/permissions/config.deployments.list">config.deployments.list</a></li>
     <li><a href="/permissions/config.locations.list">config.locations.list</a></li>
@@ -2982,8 +2994,12 @@
     <li><a href="/permissions/networkmanagement.connectivitytests.getIamPolicy">networkmanagement.connectivitytests.getIamPolicy</a></li>
     <li><a href="/permissions/networkmanagement.connectivitytests.list">networkmanagement.connectivitytests.list</a></li>
     <li><a href="/permissions/networkmanagement.locations.list">networkmanagement.locations.list</a></li>
+    <li><a href="/permissions/networkmanagement.monitoringpoints.list">networkmanagement.monitoringpoints.list</a></li>
+    <li><a href="/permissions/networkmanagement.networkpaths.list">networkmanagement.networkpaths.list</a></li>
     <li><a href="/permissions/networkmanagement.operations.list">networkmanagement.operations.list</a></li>
+    <li><a href="/permissions/networkmanagement.providers.list">networkmanagement.providers.list</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.list">networkmanagement.vpcflowlogsconfigs.list</a></li>
+    <li><a href="/permissions/networkmanagement.webpaths.list">networkmanagement.webpaths.list</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.get">networksecurity.addressGroups.get</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.getIamPolicy">networksecurity.addressGroups.getIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.list">networksecurity.addressGroups.list</a></li>
@@ -3431,6 +3447,7 @@
     <li><a href="/permissions/rma.collectors.list">rma.collectors.list</a></li>
     <li><a href="/permissions/rma.locations.list">rma.locations.list</a></li>
     <li><a href="/permissions/rma.operations.list">rma.operations.list</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.list">roads.selectedRoutes.list</a></li>
     <li><a href="/permissions/run.configurations.get">run.configurations.get</a></li>
     <li><a href="/permissions/run.configurations.list">run.configurations.list</a></li>
     <li><a href="/permissions/run.executions.get">run.executions.get</a></li>
@@ -3443,6 +3460,7 @@
     <li><a href="/permissions/run.locations.list">run.locations.list</a></li>
     <li><a href="/permissions/run.operations.get">run.operations.get</a></li>
     <li><a href="/permissions/run.operations.list">run.operations.list</a></li>
+    <li><a href="/permissions/run.prompts.get">run.prompts.get</a></li>
     <li><a href="/permissions/run.revisions.get">run.revisions.get</a></li>
     <li><a href="/permissions/run.revisions.list">run.revisions.list</a></li>
     <li><a href="/permissions/run.routes.get">run.routes.get</a></li>

@@ -75,7 +75,7 @@
         <p>View most Google Cloud resources. See the list of included permissions.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(5666)</span></h2>
+    <h2>Included Permissions <span class="count">(5692)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -831,6 +831,7 @@
     <li><a href="/permissions/biglake.tables.getData">biglake.tables.getData</a></li>
     <li><a href="/permissions/biglake.tables.getIamPolicy">biglake.tables.getIamPolicy</a></li>
     <li><a href="/permissions/biglake.tables.list">biglake.tables.list</a></li>
+    <li><a href="/permissions/biglake.tables.listPartitions">biglake.tables.listPartitions</a></li>
     <li><a href="/permissions/bigquery.bireservations.get">bigquery.bireservations.get</a></li>
     <li><a href="/permissions/bigquery.capacityCommitments.get">bigquery.capacityCommitments.get</a></li>
     <li><a href="/permissions/bigquery.capacityCommitments.list">bigquery.capacityCommitments.list</a></li>
@@ -1003,6 +1004,8 @@
     <li><a href="/permissions/certificatemanager.dnsauthorizations.listTagBindings">certificatemanager.dnsauthorizations.listTagBindings</a></li>
     <li><a href="/permissions/certificatemanager.locations.get">certificatemanager.locations.get</a></li>
     <li><a href="/permissions/certificatemanager.locations.list">certificatemanager.locations.list</a></li>
+    <li><a href="/permissions/certificatemanager.observedcerts.get">certificatemanager.observedcerts.get</a></li>
+    <li><a href="/permissions/certificatemanager.observedcerts.list">certificatemanager.observedcerts.list</a></li>
     <li><a href="/permissions/certificatemanager.operations.get">certificatemanager.operations.get</a></li>
     <li><a href="/permissions/certificatemanager.operations.list">certificatemanager.operations.list</a></li>
     <li><a href="/permissions/certificatemanager.trustconfigs.get">certificatemanager.trustconfigs.get</a></li>
@@ -1038,6 +1041,7 @@
     <li><a href="/permissions/ces.locations.list">ces.locations.list</a></li>
     <li><a href="/permissions/ces.operations.get">ces.operations.get</a></li>
     <li><a href="/permissions/ces.operations.list">ces.operations.list</a></li>
+    <li><a href="/permissions/ces.securitySettings.get">ces.securitySettings.get</a></li>
     <li><a href="/permissions/ces.tools.get">ces.tools.get</a></li>
     <li><a href="/permissions/ces.tools.list">ces.tools.list</a></li>
     <li><a href="/permissions/ces.toolsets.get">ces.toolsets.get</a></li>
@@ -2203,6 +2207,10 @@
     <li><a href="/permissions/confidentialcomputing.locations.get">confidentialcomputing.locations.get</a></li>
     <li><a href="/permissions/confidentialcomputing.locations.list">confidentialcomputing.locations.list</a></li>
     <li><a href="/permissions/config.automigrationconfig.get">config.automigrationconfig.get</a></li>
+    <li><a href="/permissions/config.deploymentgrouprevisions.get">config.deploymentgrouprevisions.get</a></li>
+    <li><a href="/permissions/config.deploymentgrouprevisions.list">config.deploymentgrouprevisions.list</a></li>
+    <li><a href="/permissions/config.deploymentgroups.get">config.deploymentgroups.get</a></li>
+    <li><a href="/permissions/config.deploymentgroups.list">config.deploymentgroups.list</a></li>
     <li><a href="/permissions/config.deployments.get">config.deployments.get</a></li>
     <li><a href="/permissions/config.deployments.getIamPolicy">config.deployments.getIamPolicy</a></li>
     <li><a href="/permissions/config.deployments.list">config.deployments.list</a></li>
@@ -2572,14 +2580,20 @@
     <li><a href="/permissions/databaseinsights.aggregatedEvents.query">databaseinsights.aggregatedEvents.query</a></li>
     <li><a href="/permissions/databaseinsights.aggregatedStats.query">databaseinsights.aggregatedStats.query</a></li>
     <li><a href="/permissions/databaseinsights.clusterEvents.query">databaseinsights.clusterEvents.query</a></li>
+    <li><a href="/permissions/databaseinsights.databaseIssues.troubleshoot">databaseinsights.databaseIssues.troubleshoot</a></li>
+    <li><a href="/permissions/databaseinsights.dbCenter.query">databaseinsights.dbCenter.query</a></li>
+    <li><a href="/permissions/databaseinsights.dbPerformance.query">databaseinsights.dbPerformance.query</a></li>
     <li><a href="/permissions/databaseinsights.instanceEvents.query">databaseinsights.instanceEvents.query</a></li>
     <li><a href="/permissions/databaseinsights.locations.get">databaseinsights.locations.get</a></li>
     <li><a href="/permissions/databaseinsights.locations.list">databaseinsights.locations.list</a></li>
     <li><a href="/permissions/databaseinsights.performanceIssues.detect">databaseinsights.performanceIssues.detect</a></li>
     <li><a href="/permissions/databaseinsights.performanceIssues.investigate">databaseinsights.performanceIssues.investigate</a></li>
+    <li><a href="/permissions/databaseinsights.queryMetrics.fetch">databaseinsights.queryMetrics.fetch</a></li>
     <li><a href="/permissions/databaseinsights.recommendations.query">databaseinsights.recommendations.query</a></li>
     <li><a href="/permissions/databaseinsights.resourceRecommendations.query">databaseinsights.resourceRecommendations.query</a></li>
+    <li><a href="/permissions/databaseinsights.systemMetrics.fetch">databaseinsights.systemMetrics.fetch</a></li>
     <li><a href="/permissions/databaseinsights.timeSeries.query">databaseinsights.timeSeries.query</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbxAgent.query">databaseinsights.virtualDbxAgent.query</a></li>
     <li><a href="/permissions/databaseinsights.workloadRecommendations.fetch">databaseinsights.workloadRecommendations.fetch</a></li>
     <li><a href="/permissions/databasesconsole.databaseCenterViews.search">databasesconsole.databaseCenterViews.search</a></li>
     <li><a href="/permissions/databasesconsole.locations.get">databasesconsole.locations.get</a></li>
@@ -3607,6 +3621,7 @@
     <li><a href="/permissions/geminidataanalytics.dataAgents.list">geminidataanalytics.dataAgents.list</a></li>
     <li><a href="/permissions/geminidataanalytics.locations.get">geminidataanalytics.locations.get</a></li>
     <li><a href="/permissions/geminidataanalytics.locations.list">geminidataanalytics.locations.list</a></li>
+    <li><a href="/permissions/geminidataanalytics.locations.useDataEngineeringAgent">geminidataanalytics.locations.useDataEngineeringAgent</a></li>
     <li><a href="/permissions/geminidataanalytics.operations.get">geminidataanalytics.operations.get</a></li>
     <li><a href="/permissions/geminidataanalytics.operations.list">geminidataanalytics.operations.list</a></li>
     <li><a href="/permissions/genomics.datasets.get">genomics.datasets.get</a></li>
@@ -4306,11 +4321,19 @@
     <li><a href="/permissions/networkmanagement.connectivitytests.list">networkmanagement.connectivitytests.list</a></li>
     <li><a href="/permissions/networkmanagement.locations.get">networkmanagement.locations.get</a></li>
     <li><a href="/permissions/networkmanagement.locations.list">networkmanagement.locations.list</a></li>
+    <li><a href="/permissions/networkmanagement.monitoringpoints.get">networkmanagement.monitoringpoints.get</a></li>
+    <li><a href="/permissions/networkmanagement.monitoringpoints.list">networkmanagement.monitoringpoints.list</a></li>
+    <li><a href="/permissions/networkmanagement.networkpaths.get">networkmanagement.networkpaths.get</a></li>
+    <li><a href="/permissions/networkmanagement.networkpaths.list">networkmanagement.networkpaths.list</a></li>
     <li><a href="/permissions/networkmanagement.operations.get">networkmanagement.operations.get</a></li>
     <li><a href="/permissions/networkmanagement.operations.list">networkmanagement.operations.list</a></li>
+    <li><a href="/permissions/networkmanagement.providers.get">networkmanagement.providers.get</a></li>
+    <li><a href="/permissions/networkmanagement.providers.list">networkmanagement.providers.list</a></li>
     <li><a href="/permissions/networkmanagement.topologygraphs.read">networkmanagement.topologygraphs.read</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.get">networkmanagement.vpcflowlogsconfigs.get</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.list">networkmanagement.vpcflowlogsconfigs.list</a></li>
+    <li><a href="/permissions/networkmanagement.webpaths.get">networkmanagement.webpaths.get</a></li>
+    <li><a href="/permissions/networkmanagement.webpaths.list">networkmanagement.webpaths.list</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.get">networksecurity.addressGroups.get</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.getIamPolicy">networksecurity.addressGroups.getIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.list">networksecurity.addressGroups.list</a></li>
@@ -5048,6 +5071,8 @@
     <li><a href="/permissions/rma.locations.list">rma.locations.list</a></li>
     <li><a href="/permissions/rma.operations.get">rma.operations.get</a></li>
     <li><a href="/permissions/rma.operations.list">rma.operations.list</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.get">roads.selectedRoutes.get</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.list">roads.selectedRoutes.list</a></li>
     <li><a href="/permissions/routeoptimization.locations.use">routeoptimization.locations.use</a></li>
     <li><a href="/permissions/routeoptimization.operations.get">routeoptimization.operations.get</a></li>
     <li><a href="/permissions/run.configurations.get">run.configurations.get</a></li>
@@ -5062,6 +5087,7 @@
     <li><a href="/permissions/run.locations.list">run.locations.list</a></li>
     <li><a href="/permissions/run.operations.get">run.operations.get</a></li>
     <li><a href="/permissions/run.operations.list">run.operations.list</a></li>
+    <li><a href="/permissions/run.prompts.get">run.prompts.get</a></li>
     <li><a href="/permissions/run.revisions.get">run.revisions.get</a></li>
     <li><a href="/permissions/run.revisions.list">run.revisions.list</a></li>
     <li><a href="/permissions/run.routes.get">run.routes.get</a></li>
