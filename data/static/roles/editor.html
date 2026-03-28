@@ -75,7 +75,7 @@
         <p>View, create, update, and delete most Google Cloud resources. See the list of included permissions.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(11236)</span></h2>
+    <h2>Included Permissions <span class="count">(11280)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -1628,6 +1628,7 @@
     <li><a href="/permissions/biglake.catalogs.get">biglake.catalogs.get</a></li>
     <li><a href="/permissions/biglake.catalogs.getIamPolicy">biglake.catalogs.getIamPolicy</a></li>
     <li><a href="/permissions/biglake.catalogs.list">biglake.catalogs.list</a></li>
+    <li><a href="/permissions/biglake.catalogs.update">biglake.catalogs.update</a></li>
     <li><a href="/permissions/biglake.databases.create">biglake.databases.create</a></li>
     <li><a href="/permissions/biglake.databases.delete">biglake.databases.delete</a></li>
     <li><a href="/permissions/biglake.databases.get">biglake.databases.get</a></li>
@@ -1644,14 +1645,18 @@
     <li><a href="/permissions/biglake.namespaces.list">biglake.namespaces.list</a></li>
     <li><a href="/permissions/biglake.namespaces.update">biglake.namespaces.update</a></li>
     <li><a href="/permissions/biglake.tables.create">biglake.tables.create</a></li>
+    <li><a href="/permissions/biglake.tables.createPartitions">biglake.tables.createPartitions</a></li>
     <li><a href="/permissions/biglake.tables.delete">biglake.tables.delete</a></li>
+    <li><a href="/permissions/biglake.tables.deletePartitions">biglake.tables.deletePartitions</a></li>
     <li><a href="/permissions/biglake.tables.get">biglake.tables.get</a></li>
     <li><a href="/permissions/biglake.tables.getData">biglake.tables.getData</a></li>
     <li><a href="/permissions/biglake.tables.getIamPolicy">biglake.tables.getIamPolicy</a></li>
     <li><a href="/permissions/biglake.tables.list">biglake.tables.list</a></li>
+    <li><a href="/permissions/biglake.tables.listPartitions">biglake.tables.listPartitions</a></li>
     <li><a href="/permissions/biglake.tables.lock">biglake.tables.lock</a></li>
     <li><a href="/permissions/biglake.tables.update">biglake.tables.update</a></li>
     <li><a href="/permissions/biglake.tables.updateData">biglake.tables.updateData</a></li>
+    <li><a href="/permissions/biglake.tables.updatePartitions">biglake.tables.updatePartitions</a></li>
     <li><a href="/permissions/bigquery.bireservations.get">bigquery.bireservations.get</a></li>
     <li><a href="/permissions/bigquery.bireservations.update">bigquery.bireservations.update</a></li>
     <li><a href="/permissions/bigquery.capacityCommitments.get">bigquery.capacityCommitments.get</a></li>
@@ -1947,6 +1952,8 @@
     <li><a href="/permissions/certificatemanager.dnsauthorizations.use">certificatemanager.dnsauthorizations.use</a></li>
     <li><a href="/permissions/certificatemanager.locations.get">certificatemanager.locations.get</a></li>
     <li><a href="/permissions/certificatemanager.locations.list">certificatemanager.locations.list</a></li>
+    <li><a href="/permissions/certificatemanager.observedcerts.get">certificatemanager.observedcerts.get</a></li>
+    <li><a href="/permissions/certificatemanager.observedcerts.list">certificatemanager.observedcerts.list</a></li>
     <li><a href="/permissions/certificatemanager.operations.cancel">certificatemanager.operations.cancel</a></li>
     <li><a href="/permissions/certificatemanager.operations.delete">certificatemanager.operations.delete</a></li>
     <li><a href="/permissions/certificatemanager.operations.get">certificatemanager.operations.get</a></li>
@@ -1975,6 +1982,7 @@
     <li><a href="/permissions/ces.apps.get">ces.apps.get</a></li>
     <li><a href="/permissions/ces.apps.import">ces.apps.import</a></li>
     <li><a href="/permissions/ces.apps.list">ces.apps.list</a></li>
+    <li><a href="/permissions/ces.apps.runEvaluation">ces.apps.runEvaluation</a></li>
     <li><a href="/permissions/ces.apps.update">ces.apps.update</a></li>
     <li><a href="/permissions/ces.changelogs.get">ces.changelogs.get</a></li>
     <li><a href="/permissions/ces.changelogs.list">ces.changelogs.list</a></li>
@@ -2018,6 +2026,8 @@
     <li><a href="/permissions/ces.operations.delete">ces.operations.delete</a></li>
     <li><a href="/permissions/ces.operations.get">ces.operations.get</a></li>
     <li><a href="/permissions/ces.operations.list">ces.operations.list</a></li>
+    <li><a href="/permissions/ces.securitySettings.get">ces.securitySettings.get</a></li>
+    <li><a href="/permissions/ces.securitySettings.update">ces.securitySettings.update</a></li>
     <li><a href="/permissions/ces.sessions.bidiRunSession">ces.sessions.bidiRunSession</a></li>
     <li><a href="/permissions/ces.sessions.runSession">ces.sessions.runSession</a></li>
     <li><a href="/permissions/ces.tools.create">ces.tools.create</a></li>
@@ -2245,6 +2255,7 @@
     <li><a href="/permissions/chronicle.instances.logTypeClassifier">chronicle.instances.logTypeClassifier</a></li>
     <li><a href="/permissions/chronicle.instances.permitFederationAccess">chronicle.instances.permitFederationAccess</a></li>
     <li><a href="/permissions/chronicle.instances.report">chronicle.instances.report</a></li>
+    <li><a href="/permissions/chronicle.instances.runThreatHunt">chronicle.instances.runThreatHunt</a></li>
     <li><a href="/permissions/chronicle.instances.verifyNonce">chronicle.instances.verifyNonce</a></li>
     <li><a href="/permissions/chronicle.integrationActionRevisions.delete">chronicle.integrationActionRevisions.delete</a></li>
     <li><a href="/permissions/chronicle.integrationActionRevisions.get">chronicle.integrationActionRevisions.get</a></li>
@@ -4271,6 +4282,13 @@
     <li><a href="/permissions/config.artifacts.import">config.artifacts.import</a></li>
     <li><a href="/permissions/config.automigrationconfig.get">config.automigrationconfig.get</a></li>
     <li><a href="/permissions/config.automigrationconfig.update">config.automigrationconfig.update</a></li>
+    <li><a href="/permissions/config.deploymentgrouprevisions.get">config.deploymentgrouprevisions.get</a></li>
+    <li><a href="/permissions/config.deploymentgrouprevisions.list">config.deploymentgrouprevisions.list</a></li>
+    <li><a href="/permissions/config.deploymentgroups.create">config.deploymentgroups.create</a></li>
+    <li><a href="/permissions/config.deploymentgroups.delete">config.deploymentgroups.delete</a></li>
+    <li><a href="/permissions/config.deploymentgroups.get">config.deploymentgroups.get</a></li>
+    <li><a href="/permissions/config.deploymentgroups.list">config.deploymentgroups.list</a></li>
+    <li><a href="/permissions/config.deploymentgroups.update">config.deploymentgroups.update</a></li>
     <li><a href="/permissions/config.deployments.create">config.deployments.create</a></li>
     <li><a href="/permissions/config.deployments.delete">config.deployments.delete</a></li>
     <li><a href="/permissions/config.deployments.get">config.deployments.get</a></li>
@@ -5085,14 +5103,20 @@
     <li><a href="/permissions/databaseinsights.aggregatedEvents.query">databaseinsights.aggregatedEvents.query</a></li>
     <li><a href="/permissions/databaseinsights.aggregatedStats.query">databaseinsights.aggregatedStats.query</a></li>
     <li><a href="/permissions/databaseinsights.clusterEvents.query">databaseinsights.clusterEvents.query</a></li>
+    <li><a href="/permissions/databaseinsights.databaseIssues.troubleshoot">databaseinsights.databaseIssues.troubleshoot</a></li>
+    <li><a href="/permissions/databaseinsights.dbCenter.query">databaseinsights.dbCenter.query</a></li>
+    <li><a href="/permissions/databaseinsights.dbPerformance.query">databaseinsights.dbPerformance.query</a></li>
     <li><a href="/permissions/databaseinsights.instanceEvents.query">databaseinsights.instanceEvents.query</a></li>
     <li><a href="/permissions/databaseinsights.locations.get">databaseinsights.locations.get</a></li>
     <li><a href="/permissions/databaseinsights.locations.list">databaseinsights.locations.list</a></li>
     <li><a href="/permissions/databaseinsights.performanceIssues.detect">databaseinsights.performanceIssues.detect</a></li>
     <li><a href="/permissions/databaseinsights.performanceIssues.investigate">databaseinsights.performanceIssues.investigate</a></li>
+    <li><a href="/permissions/databaseinsights.queryMetrics.fetch">databaseinsights.queryMetrics.fetch</a></li>
     <li><a href="/permissions/databaseinsights.recommendations.query">databaseinsights.recommendations.query</a></li>
     <li><a href="/permissions/databaseinsights.resourceRecommendations.query">databaseinsights.resourceRecommendations.query</a></li>
+    <li><a href="/permissions/databaseinsights.systemMetrics.fetch">databaseinsights.systemMetrics.fetch</a></li>
     <li><a href="/permissions/databaseinsights.timeSeries.query">databaseinsights.timeSeries.query</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbxAgent.query">databaseinsights.virtualDbxAgent.query</a></li>
     <li><a href="/permissions/databaseinsights.workloadRecommendations.fetch">databaseinsights.workloadRecommendations.fetch</a></li>
     <li><a href="/permissions/databasesconsole.databaseCenterViews.create">databasesconsole.databaseCenterViews.create</a></li>
     <li><a href="/permissions/databasesconsole.databaseCenterViews.delete">databasesconsole.databaseCenterViews.delete</a></li>
@@ -5547,6 +5571,8 @@
     <li><a href="/permissions/dataplex.entryGroups.useRefreshCadenceAspect">dataplex.entryGroups.useRefreshCadenceAspect</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useRelatedEntryLink">dataplex.entryGroups.useRelatedEntryLink</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useSchemaAspect">dataplex.entryGroups.useSchemaAspect</a></li>
+    <li><a href="/permissions/dataplex.entryGroups.useSchemaJoinAspect">dataplex.entryGroups.useSchemaJoinAspect</a></li>
+    <li><a href="/permissions/dataplex.entryGroups.useSchemaJoinEntryLink">dataplex.entryGroups.useSchemaJoinEntryLink</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useStorageAspect">dataplex.entryGroups.useStorageAspect</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useSynonymEntryLink">dataplex.entryGroups.useSynonymEntryLink</a></li>
     <li><a href="/permissions/dataplex.entryLinks.create">dataplex.entryLinks.create</a></li>
@@ -7245,6 +7271,7 @@
     <li><a href="/permissions/geminidataanalytics.dataAgents.update">geminidataanalytics.dataAgents.update</a></li>
     <li><a href="/permissions/geminidataanalytics.locations.get">geminidataanalytics.locations.get</a></li>
     <li><a href="/permissions/geminidataanalytics.locations.list">geminidataanalytics.locations.list</a></li>
+    <li><a href="/permissions/geminidataanalytics.locations.useDataEngineeringAgent">geminidataanalytics.locations.useDataEngineeringAgent</a></li>
     <li><a href="/permissions/geminidataanalytics.operations.cancel">geminidataanalytics.operations.cancel</a></li>
     <li><a href="/permissions/geminidataanalytics.operations.delete">geminidataanalytics.operations.delete</a></li>
     <li><a href="/permissions/geminidataanalytics.operations.get">geminidataanalytics.operations.get</a></li>
@@ -7550,6 +7577,7 @@
     <li><a href="/permissions/healthcare.fhirResources.translateConceptMap">healthcare.fhirResources.translateConceptMap</a></li>
     <li><a href="/permissions/healthcare.fhirResources.update">healthcare.fhirResources.update</a></li>
     <li><a href="/permissions/healthcare.fhirStores.applyConsents">healthcare.fhirStores.applyConsents</a></li>
+    <li><a href="/permissions/healthcare.fhirStores.bulkDelete">healthcare.fhirStores.bulkDelete</a></li>
     <li><a href="/permissions/healthcare.fhirStores.configureSearch">healthcare.fhirStores.configureSearch</a></li>
     <li><a href="/permissions/healthcare.fhirStores.create">healthcare.fhirStores.create</a></li>
     <li><a href="/permissions/healthcare.fhirStores.deidentify">healthcare.fhirStores.deidentify</a></li>
@@ -7987,6 +8015,7 @@
     <li><a href="/permissions/lustre.instances.get">lustre.instances.get</a></li>
     <li><a href="/permissions/lustre.instances.importData">lustre.instances.importData</a></li>
     <li><a href="/permissions/lustre.instances.list">lustre.instances.list</a></li>
+    <li><a href="/permissions/lustre.instances.rescheduleMaintenance">lustre.instances.rescheduleMaintenance</a></li>
     <li><a href="/permissions/lustre.instances.update">lustre.instances.update</a></li>
     <li><a href="/permissions/lustre.locations.get">lustre.locations.get</a></li>
     <li><a href="/permissions/lustre.locations.list">lustre.locations.list</a></li>
@@ -8632,16 +8661,24 @@
     <li><a href="/permissions/networkmanagement.connectivitytests.update">networkmanagement.connectivitytests.update</a></li>
     <li><a href="/permissions/networkmanagement.locations.get">networkmanagement.locations.get</a></li>
     <li><a href="/permissions/networkmanagement.locations.list">networkmanagement.locations.list</a></li>
+    <li><a href="/permissions/networkmanagement.monitoringpoints.get">networkmanagement.monitoringpoints.get</a></li>
+    <li><a href="/permissions/networkmanagement.monitoringpoints.list">networkmanagement.monitoringpoints.list</a></li>
+    <li><a href="/permissions/networkmanagement.networkpaths.get">networkmanagement.networkpaths.get</a></li>
+    <li><a href="/permissions/networkmanagement.networkpaths.list">networkmanagement.networkpaths.list</a></li>
     <li><a href="/permissions/networkmanagement.operations.cancel">networkmanagement.operations.cancel</a></li>
     <li><a href="/permissions/networkmanagement.operations.delete">networkmanagement.operations.delete</a></li>
     <li><a href="/permissions/networkmanagement.operations.get">networkmanagement.operations.get</a></li>
     <li><a href="/permissions/networkmanagement.operations.list">networkmanagement.operations.list</a></li>
+    <li><a href="/permissions/networkmanagement.providers.get">networkmanagement.providers.get</a></li>
+    <li><a href="/permissions/networkmanagement.providers.list">networkmanagement.providers.list</a></li>
     <li><a href="/permissions/networkmanagement.topologygraphs.read">networkmanagement.topologygraphs.read</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.create">networkmanagement.vpcflowlogsconfigs.create</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.delete">networkmanagement.vpcflowlogsconfigs.delete</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.get">networkmanagement.vpcflowlogsconfigs.get</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.list">networkmanagement.vpcflowlogsconfigs.list</a></li>
     <li><a href="/permissions/networkmanagement.vpcflowlogsconfigs.update">networkmanagement.vpcflowlogsconfigs.update</a></li>
+    <li><a href="/permissions/networkmanagement.webpaths.get">networkmanagement.webpaths.get</a></li>
+    <li><a href="/permissions/networkmanagement.webpaths.list">networkmanagement.webpaths.list</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.create">networksecurity.addressGroups.create</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.delete">networksecurity.addressGroups.delete</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.get">networksecurity.addressGroups.get</a></li>
@@ -10006,6 +10043,11 @@
     <li><a href="/permissions/rma.operations.delete">rma.operations.delete</a></li>
     <li><a href="/permissions/rma.operations.get">rma.operations.get</a></li>
     <li><a href="/permissions/rma.operations.list">rma.operations.list</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.batchCreate">roads.selectedRoutes.batchCreate</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.create">roads.selectedRoutes.create</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.delete">roads.selectedRoutes.delete</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.get">roads.selectedRoutes.get</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.list">roads.selectedRoutes.list</a></li>
     <li><a href="/permissions/routeoptimization.locations.use">routeoptimization.locations.use</a></li>
     <li><a href="/permissions/routeoptimization.operations.create">routeoptimization.operations.create</a></li>
     <li><a href="/permissions/routeoptimization.operations.get">routeoptimization.operations.get</a></li>
@@ -10029,6 +10071,7 @@
     <li><a href="/permissions/run.operations.delete">run.operations.delete</a></li>
     <li><a href="/permissions/run.operations.get">run.operations.get</a></li>
     <li><a href="/permissions/run.operations.list">run.operations.list</a></li>
+    <li><a href="/permissions/run.prompts.get">run.prompts.get</a></li>
     <li><a href="/permissions/run.revisions.delete">run.revisions.delete</a></li>
     <li><a href="/permissions/run.revisions.get">run.revisions.get</a></li>
     <li><a href="/permissions/run.revisions.list">run.revisions.list</a></li>
@@ -10534,6 +10577,7 @@
     <li><a href="/permissions/spanner.databases.partitionQuery">spanner.databases.partitionQuery</a></li>
     <li><a href="/permissions/spanner.databases.partitionRead">spanner.databases.partitionRead</a></li>
     <li><a href="/permissions/spanner.databases.read">spanner.databases.read</a></li>
+    <li><a href="/permissions/spanner.databases.runGraphAlgorithms">spanner.databases.runGraphAlgorithms</a></li>
     <li><a href="/permissions/spanner.databases.select">spanner.databases.select</a></li>
     <li><a href="/permissions/spanner.databases.update">spanner.databases.update</a></li>
     <li><a href="/permissions/spanner.databases.updateDdl">spanner.databases.updateDdl</a></li>
