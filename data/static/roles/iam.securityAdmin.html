@@ -75,7 +75,7 @@
         <p>Security admin role, with permissions to get and set any IAM policy.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(2713)</span></h2>
+    <h2>Included Permissions <span class="count">(2734)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.list">accesscontextmanager.accessLevels.list</a></li>
@@ -89,6 +89,7 @@
     <li><a href="/permissions/advisorynotifications.notifications.get">advisorynotifications.notifications.get</a></li>
     <li><a href="/permissions/advisorynotifications.notifications.list">advisorynotifications.notifications.list</a></li>
     <li><a href="/permissions/agentregistry.agents.list">agentregistry.agents.list</a></li>
+    <li><a href="/permissions/agentregistry.bindings.list">agentregistry.bindings.list</a></li>
     <li><a href="/permissions/agentregistry.endpoints.list">agentregistry.endpoints.list</a></li>
     <li><a href="/permissions/agentregistry.locations.list">agentregistry.locations.list</a></li>
     <li><a href="/permissions/agentregistry.mcpServers.list">agentregistry.mcpServers.list</a></li>
@@ -169,7 +170,9 @@
     <li><a href="/permissions/aiplatform.provisionedThroughputs.list">aiplatform.provisionedThroughputs.list</a></li>
     <li><a href="/permissions/aiplatform.ragCorpora.list">aiplatform.ragCorpora.list</a></li>
     <li><a href="/permissions/aiplatform.ragFiles.list">aiplatform.ragFiles.list</a></li>
+    <li><a href="/permissions/aiplatform.reasoningEngines.getIamPolicy">aiplatform.reasoningEngines.getIamPolicy</a></li>
     <li><a href="/permissions/aiplatform.reasoningEngines.list">aiplatform.reasoningEngines.list</a></li>
+    <li><a href="/permissions/aiplatform.reasoningEngines.setIamPolicy">aiplatform.reasoningEngines.setIamPolicy</a></li>
     <li><a href="/permissions/aiplatform.sandboxEnvironments.list">aiplatform.sandboxEnvironments.list</a></li>
     <li><a href="/permissions/aiplatform.schedules.list">aiplatform.schedules.list</a></li>
     <li><a href="/permissions/aiplatform.semanticGovernancePolicies.list">aiplatform.semanticGovernancePolicies.list</a></li>
@@ -331,6 +334,9 @@
     <li><a href="/permissions/apphub.services.list">apphub.services.list</a></li>
     <li><a href="/permissions/apphub.workloads.list">apphub.workloads.list</a></li>
     <li><a href="/permissions/applianceactivation.rttCommands.list">applianceactivation.rttCommands.list</a></li>
+    <li><a href="/permissions/appoptimize.locations.list">appoptimize.locations.list</a></li>
+    <li><a href="/permissions/appoptimize.operations.list">appoptimize.operations.list</a></li>
+    <li><a href="/permissions/appoptimize.reports.list">appoptimize.reports.list</a></li>
     <li><a href="/permissions/apptopology.domains.list">apptopology.domains.list</a></li>
     <li><a href="/permissions/apptopology.locations.list">apptopology.locations.list</a></li>
     <li><a href="/permissions/apptopology.operations.list">apptopology.operations.list</a></li>
@@ -502,6 +508,7 @@
     <li><a href="/permissions/bigtable.materializedViews.getIamPolicy">bigtable.materializedViews.getIamPolicy</a></li>
     <li><a href="/permissions/bigtable.materializedViews.list">bigtable.materializedViews.list</a></li>
     <li><a href="/permissions/bigtable.materializedViews.setIamPolicy">bigtable.materializedViews.setIamPolicy</a></li>
+    <li><a href="/permissions/bigtable.memoryLayers.list">bigtable.memoryLayers.list</a></li>
     <li><a href="/permissions/bigtable.schemaBundles.getIamPolicy">bigtable.schemaBundles.getIamPolicy</a></li>
     <li><a href="/permissions/bigtable.schemaBundles.list">bigtable.schemaBundles.list</a></li>
     <li><a href="/permissions/bigtable.schemaBundles.setIamPolicy">bigtable.schemaBundles.setIamPolicy</a></li>
@@ -568,6 +575,8 @@
     <li><a href="/permissions/ces.toolsets.list">ces.toolsets.list</a></li>
     <li><a href="/permissions/chronicle.analyticValues.list">chronicle.analyticValues.list</a></li>
     <li><a href="/permissions/chronicle.analytics.list">chronicle.analytics.list</a></li>
+    <li><a href="/permissions/chronicle.chatSessionMessages.list">chronicle.chatSessionMessages.list</a></li>
+    <li><a href="/permissions/chronicle.chatSessions.list">chronicle.chatSessions.list</a></li>
     <li><a href="/permissions/chronicle.collectors.list">chronicle.collectors.list</a></li>
     <li><a href="/permissions/chronicle.conversations.list">chronicle.conversations.list</a></li>
     <li><a href="/permissions/chronicle.coverageDetails.list">chronicle.coverageDetails.list</a></li>
@@ -1444,6 +1453,7 @@
     <li><a href="/permissions/discoveryengine.agents.list">discoveryengine.agents.list</a></li>
     <li><a href="/permissions/discoveryengine.agents.setIamPolicy">discoveryengine.agents.setIamPolicy</a></li>
     <li><a href="/permissions/discoveryengine.assistants.list">discoveryengine.assistants.list</a></li>
+    <li><a href="/permissions/discoveryengine.authorizations.list">discoveryengine.authorizations.list</a></li>
     <li><a href="/permissions/discoveryengine.billingAccountLicenseConfigs.list">discoveryengine.billingAccountLicenseConfigs.list</a></li>
     <li><a href="/permissions/discoveryengine.branches.list">discoveryengine.branches.list</a></li>
     <li><a href="/permissions/discoveryengine.cannedQueries.list">discoveryengine.cannedQueries.list</a></li>
@@ -1738,6 +1748,8 @@
     <li><a href="/permissions/gkeonprem.vmwareNodePools.list">gkeonprem.vmwareNodePools.list</a></li>
     <li><a href="/permissions/gkeonprem.vmwareNodePools.setIamPolicy">gkeonprem.vmwareNodePools.setIamPolicy</a></li>
     <li><a href="/permissions/gsuiteaddons.deployments.list">gsuiteaddons.deployments.list</a></li>
+    <li><a href="/permissions/health.subscribers.list">health.subscribers.list</a></li>
+    <li><a href="/permissions/health.subscriptions.list">health.subscriptions.list</a></li>
     <li><a href="/permissions/healthcare.annotationStores.getIamPolicy">healthcare.annotationStores.getIamPolicy</a></li>
     <li><a href="/permissions/healthcare.annotationStores.list">healthcare.annotationStores.list</a></li>
     <li><a href="/permissions/healthcare.annotationStores.setIamPolicy">healthcare.annotationStores.setIamPolicy</a></li>
@@ -1791,6 +1803,13 @@
     <li><a href="/permissions/iam.serviceAccounts.getIamPolicy">iam.serviceAccounts.getIamPolicy</a></li>
     <li><a href="/permissions/iam.serviceAccounts.list">iam.serviceAccounts.list</a></li>
     <li><a href="/permissions/iam.serviceAccounts.setIamPolicy">iam.serviceAccounts.setIamPolicy</a></li>
+    <li><a href="/permissions/iamconnectors.accessEvents.list">iamconnectors.accessEvents.list</a></li>
+    <li><a href="/permissions/iamconnectors.authorizations.list">iamconnectors.authorizations.list</a></li>
+    <li><a href="/permissions/iamconnectors.connectors.getIamPolicy">iamconnectors.connectors.getIamPolicy</a></li>
+    <li><a href="/permissions/iamconnectors.connectors.list">iamconnectors.connectors.list</a></li>
+    <li><a href="/permissions/iamconnectors.connectors.setIamPolicy">iamconnectors.connectors.setIamPolicy</a></li>
+    <li><a href="/permissions/iamconnectors.locations.list">iamconnectors.locations.list</a></li>
+    <li><a href="/permissions/iamconnectors.operations.list">iamconnectors.operations.list</a></li>
     <li><a href="/permissions/iap.tunnel.getIamPolicy">iap.tunnel.getIamPolicy</a></li>
     <li><a href="/permissions/iap.tunnel.setIamPolicy">iap.tunnel.setIamPolicy</a></li>
     <li><a href="/permissions/iap.tunnelDestGroups.getIamPolicy">iap.tunnelDestGroups.getIamPolicy</a></li>
@@ -2101,6 +2120,7 @@
     <li><a href="/permissions/networksecurity.serverTlsPolicies.setIamPolicy">networksecurity.serverTlsPolicies.setIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.tlsInspectionPolicies.list">networksecurity.tlsInspectionPolicies.list</a></li>
     <li><a href="/permissions/networksecurity.urlLists.list">networksecurity.urlLists.list</a></li>
+    <li><a href="/permissions/networkservices.agentGateways.list">networkservices.agentGateways.list</a></li>
     <li><a href="/permissions/networkservices.authzExtensions.list">networkservices.authzExtensions.list</a></li>
     <li><a href="/permissions/networkservices.endpointPolicies.list">networkservices.endpointPolicies.list</a></li>
     <li><a href="/permissions/networkservices.gateways.list">networkservices.gateways.list</a></li>
@@ -2531,6 +2551,7 @@
     <li><a href="/permissions/securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.list">securitycentermanagement.effectiveSecurityHealthAnalyticsCustomModules.list</a></li>
     <li><a href="/permissions/securitycentermanagement.eventThreatDetectionCustomModules.list">securitycentermanagement.eventThreatDetectionCustomModules.list</a></li>
     <li><a href="/permissions/securitycentermanagement.locations.list">securitycentermanagement.locations.list</a></li>
+    <li><a href="/permissions/securitycentermanagement.operations.list">securitycentermanagement.operations.list</a></li>
     <li><a href="/permissions/securitycentermanagement.securityCenterServices.list">securitycentermanagement.securityCenterServices.list</a></li>
     <li><a href="/permissions/securitycentermanagement.securityHealthAnalyticsCustomModules.list">securitycentermanagement.securityHealthAnalyticsCustomModules.list</a></li>
     <li><a href="/permissions/securityposture.locations.list">securityposture.locations.list</a></li>
