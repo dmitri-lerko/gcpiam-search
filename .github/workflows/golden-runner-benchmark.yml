@@ -1,0 +1,99 @@
+name: golden runner benchmark
+
+on:
+  push:
+    branches:
+      - runs-on-gcp-golden-benchmark-20260502
+  workflow_dispatch:
+
+jobs:
+  github-hosted:
+    name: github-hosted ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Machine info
+        run: |
+          set -euo pipefail
+          echo "BENCH_RESULT job=github-hosted"
+          echo "BENCH_RESULT runner_name=${RUNNER_NAME:-}"
+          echo "BENCH_RESULT runner_os=${RUNNER_OS:-}"
+          echo "BENCH_RESULT runner_arch=${RUNNER_ARCH:-}"
+          echo "BENCH_RESULT nproc=$(nproc)"
+          awk '/MemTotal/ {print "BENCH_RESULT mem_kb=" $2}' /proc/meminfo
+          lscpu | sed -n 's/^Model name:[[:space:]]*/BENCH_RESULT cpu_model=/p; s/^CPU(s):[[:space:]]*/BENCH_RESULT cpu_count=/p'
+          df -k "$RUNNER_TEMP" | awk 'NR==2 {print "BENCH_RESULT temp_fs_kb=" $2; print "BENCH_RESULT temp_avail_kb=" $4}'
+          echo "BENCH_RESULT docker=$(docker --version || true)"
+          echo "BENCH_RESULT gh=$(gh --version | head -n1 || true)"
+          echo "BENCH_RESULT gcloud=$(gcloud --version | head -n1 || true)"
+      - name: CPU sha256
+        run: |
+          set -euo pipefail
+          openssl speed -elapsed -seconds 8 -multi "$(nproc)" sha256 2>&1 | tee cpu.log
+          awk '/^sha256[[:space:]]/ {gsub(/k$/, "", $NF); print "BENCH_RESULT openssl_sha256_16k_kbps=" $NF}' cpu.log
+      - name: Disk throughput
+        run: |
+          set -euo pipefail
+          path="$RUNNER_TEMP/benchfile"
+          bytes=$((2048 * 1024 * 1024))
+          rm -f "$path"
+          start=$(date +%s%3N)
+          dd if=/dev/zero of="$path" bs=1M count=2048 conv=fdatasync status=none
+          end=$(date +%s%3N)
+          write_ms=$((end - start))
+          start=$(date +%s%3N)
+          dd if="$path" of=/dev/null bs=1M status=none
+          end=$(date +%s%3N)
+          read_ms=$((end - start))
+          echo "BENCH_RESULT disk_write_ms=$write_ms"
+          echo "BENCH_RESULT disk_read_ms=$read_ms"
+          awk -v bytes="$bytes" -v ms="$write_ms" 'BEGIN {printf "BENCH_RESULT disk_write_mib_s=%.2f\n", bytes / 1024 / 1024 / (ms / 1000)}'
+          awk -v bytes="$bytes" -v ms="$read_ms" 'BEGIN {printf "BENCH_RESULT disk_read_mib_s=%.2f\n", bytes / 1024 / 1024 / (ms / 1000)}'
+          rm -f "$path"
+
+  gcp-golden-e2-standard-4:
+    name: runs-on-gcp golden e2-standard-4
+    runs-on:
+      - self-hosted
+      - runs-on=${{ github.run_id }}
+      - runner=golden-e2-standard-4
+      - spot=false
+    steps:
+      - name: Machine info
+        run: |
+          set -euo pipefail
+          echo "BENCH_RESULT job=runs-on-gcp-golden-e2-standard-4"
+          echo "BENCH_RESULT runner_name=${RUNNER_NAME:-}"
+          echo "BENCH_RESULT runner_os=${RUNNER_OS:-}"
+          echo "BENCH_RESULT runner_arch=${RUNNER_ARCH:-}"
+          echo "BENCH_RESULT nproc=$(nproc)"
+          awk '/MemTotal/ {print "BENCH_RESULT mem_kb=" $2}' /proc/meminfo
+          lscpu | sed -n 's/^Model name:[[:space:]]*/BENCH_RESULT cpu_model=/p; s/^CPU(s):[[:space:]]*/BENCH_RESULT cpu_count=/p'
+          df -k "$RUNNER_TEMP" | awk 'NR==2 {print "BENCH_RESULT temp_fs_kb=" $2; print "BENCH_RESULT temp_avail_kb=" $4}'
+          cat /etc/runs-on-gcp-image.json | sed 's/^/BENCH_RESULT image_meta=/' || true
+          echo "BENCH_RESULT docker=$(docker --version || true)"
+          echo "BENCH_RESULT gh=$(gh --version | head -n1 || true)"
+          echo "BENCH_RESULT gcloud=$(gcloud --version | head -n1 || true)"
+      - name: CPU sha256
+        run: |
+          set -euo pipefail
+          openssl speed -elapsed -seconds 8 -multi "$(nproc)" sha256 2>&1 | tee cpu.log
+          awk '/^sha256[[:space:]]/ {gsub(/k$/, "", $NF); print "BENCH_RESULT openssl_sha256_16k_kbps=" $NF}' cpu.log
+      - name: Disk throughput
+        run: |
+          set -euo pipefail
+          path="$RUNNER_TEMP/benchfile"
+          bytes=$((2048 * 1024 * 1024))
+          rm -f "$path"
+          start=$(date +%s%3N)
+          dd if=/dev/zero of="$path" bs=1M count=2048 conv=fdatasync status=none
+          end=$(date +%s%3N)
+          write_ms=$((end - start))
+          start=$(date +%s%3N)
+          dd if="$path" of=/dev/null bs=1M status=none
+          end=$(date +%s%3N)
+          read_ms=$((end - start))
+          echo "BENCH_RESULT disk_write_ms=$write_ms"
+          echo "BENCH_RESULT disk_read_ms=$read_ms"
+          awk -v bytes="$bytes" -v ms="$write_ms" 'BEGIN {printf "BENCH_RESULT disk_write_mib_s=%.2f\n", bytes / 1024 / 1024 / (ms / 1000)}'
+          awk -v bytes="$bytes" -v ms="$read_ms" 'BEGIN {printf "BENCH_RESULT disk_read_mib_s=%.2f\n", bytes / 1024 / 1024 / (ms / 1000)}'
+          rm -f "$path"
