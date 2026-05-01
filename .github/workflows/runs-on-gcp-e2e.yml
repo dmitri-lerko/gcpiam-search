@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 20
     runs-on:
       - self-hosted
-      - runs-on-gcp=${{ github.run_id }}/runner=2cpu-linux-x64/spot=false/max-run=1800/boot-timeout=600
+      - runs-on-gcp=${{ github.run_id }}/runner=e2e-configurable/max-run=1800/boot-timeout=600
     steps:
       - name: Show runner context
         run: |
