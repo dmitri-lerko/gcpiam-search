@@ -1,0 +1,25 @@
+name: Runs on GCP E2E
+
+on:
+  push:
+    branches:
+      - runs-on-gcp-e2e-20260501
+  workflow_dispatch:
+
+jobs:
+  runner-smoke:
+    timeout-minutes: 20
+    runs-on:
+      - self-hosted
+      - runs-on-gcp=${{ github.run_id }}/runner=2cpu-linux-x64/spot=false/max-run=1800/boot-timeout=600
+    steps:
+      - name: Show runner context
+        run: |
+          echo "repo=${GITHUB_REPOSITORY}"
+          echo "run_id=${GITHUB_RUN_ID}"
+          echo "runner_name=${RUNNER_NAME}"
+          uname -a
+      - name: Verify workspace
+        run: |
+          pwd
+          df -h .
