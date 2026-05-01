@@ -1,6 +1,9 @@
 name: runs-on-gcp parity test
 
 on:
+  push:
+    branches:
+      - runs-on-gcp-parity-20260501
   workflow_dispatch:
 
 jobs:
