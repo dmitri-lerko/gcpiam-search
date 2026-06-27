@@ -75,7 +75,7 @@
         <p>Full access to most Google Cloud resources. See the list of included permissions.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(13313)</span></h2>
+    <h2>Included Permissions <span class="count">(13350)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.approve">accessapproval.requests.approve</a></li>
     <li><a href="/permissions/accessapproval.requests.dismiss">accessapproval.requests.dismiss</a></li>
@@ -167,6 +167,8 @@
     <li><a href="/permissions/aiplatform.agents.get">aiplatform.agents.get</a></li>
     <li><a href="/permissions/aiplatform.agents.list">aiplatform.agents.list</a></li>
     <li><a href="/permissions/aiplatform.agents.update">aiplatform.agents.update</a></li>
+    <li><a href="/permissions/aiplatform.analyzedInvocations.get">aiplatform.analyzedInvocations.get</a></li>
+    <li><a href="/permissions/aiplatform.analyzedInvocations.list">aiplatform.analyzedInvocations.list</a></li>
     <li><a href="/permissions/aiplatform.analyzedSessions.aggregate">aiplatform.analyzedSessions.aggregate</a></li>
     <li><a href="/permissions/aiplatform.analyzedSessions.get">aiplatform.analyzedSessions.get</a></li>
     <li><a href="/permissions/aiplatform.analyzedSessions.list">aiplatform.analyzedSessions.list</a></li>
@@ -289,6 +291,10 @@
     <li><a href="/permissions/aiplatform.evaluationItems.get">aiplatform.evaluationItems.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationItems.list">aiplatform.evaluationItems.list</a></li>
     <li><a href="/permissions/aiplatform.evaluationItems.update">aiplatform.evaluationItems.update</a></li>
+    <li><a href="/permissions/aiplatform.evaluationMetrics.create">aiplatform.evaluationMetrics.create</a></li>
+    <li><a href="/permissions/aiplatform.evaluationMetrics.delete">aiplatform.evaluationMetrics.delete</a></li>
+    <li><a href="/permissions/aiplatform.evaluationMetrics.get">aiplatform.evaluationMetrics.get</a></li>
+    <li><a href="/permissions/aiplatform.evaluationMetrics.list">aiplatform.evaluationMetrics.list</a></li>
     <li><a href="/permissions/aiplatform.evaluationRuns.cancel">aiplatform.evaluationRuns.cancel</a></li>
     <li><a href="/permissions/aiplatform.evaluationRuns.create">aiplatform.evaluationRuns.create</a></li>
     <li><a href="/permissions/aiplatform.evaluationRuns.delete">aiplatform.evaluationRuns.delete</a></li>
@@ -3840,6 +3846,7 @@
     <li><a href="/permissions/cloudkms.cryptoKeyVersions.manageRawAesCtrKeys">cloudkms.cryptoKeyVersions.manageRawAesCtrKeys</a></li>
     <li><a href="/permissions/cloudkms.cryptoKeyVersions.manageRawPKCS1Keys">cloudkms.cryptoKeyVersions.manageRawPKCS1Keys</a></li>
     <li><a href="/permissions/cloudkms.cryptoKeyVersions.restore">cloudkms.cryptoKeyVersions.restore</a></li>
+    <li><a href="/permissions/cloudkms.cryptoKeyVersions.trustedImportExport">cloudkms.cryptoKeyVersions.trustedImportExport</a></li>
     <li><a href="/permissions/cloudkms.cryptoKeyVersions.update">cloudkms.cryptoKeyVersions.update</a></li>
     <li><a href="/permissions/cloudkms.cryptoKeyVersions.useToDecapsulate">cloudkms.cryptoKeyVersions.useToDecapsulate</a></li>
     <li><a href="/permissions/cloudkms.cryptoKeyVersions.useToDecrypt">cloudkms.cryptoKeyVersions.useToDecrypt</a></li>
@@ -3868,6 +3875,7 @@
     <li><a href="/permissions/cloudkms.ekmConnections.update">cloudkms.ekmConnections.update</a></li>
     <li><a href="/permissions/cloudkms.ekmConnections.use">cloudkms.ekmConnections.use</a></li>
     <li><a href="/permissions/cloudkms.ekmConnections.verifyConnectivity">cloudkms.ekmConnections.verifyConnectivity</a></li>
+    <li><a href="/permissions/cloudkms.folders.showEffectiveAutokeyConfig">cloudkms.folders.showEffectiveAutokeyConfig</a></li>
     <li><a href="/permissions/cloudkms.importJobs.create">cloudkms.importJobs.create</a></li>
     <li><a href="/permissions/cloudkms.importJobs.get">cloudkms.importJobs.get</a></li>
     <li><a href="/permissions/cloudkms.importJobs.getIamPolicy">cloudkms.importJobs.getIamPolicy</a></li>
@@ -4464,6 +4472,8 @@
     <li><a href="/permissions/compute.addresses.use">compute.addresses.use</a></li>
     <li><a href="/permissions/compute.addresses.useInternal">compute.addresses.useInternal</a></li>
     <li><a href="/permissions/compute.advice.calendarMode">compute.advice.calendarMode</a></li>
+    <li><a href="/permissions/compute.advice.capacity">compute.advice.capacity</a></li>
+    <li><a href="/permissions/compute.advice.capacityHistory">compute.advice.capacityHistory</a></li>
     <li><a href="/permissions/compute.autoscalers.create">compute.autoscalers.create</a></li>
     <li><a href="/permissions/compute.autoscalers.delete">compute.autoscalers.delete</a></li>
     <li><a href="/permissions/compute.autoscalers.get">compute.autoscalers.get</a></li>
@@ -6828,6 +6838,20 @@
     <li><a href="/permissions/dataplex.dataAttributes.list">dataplex.dataAttributes.list</a></li>
     <li><a href="/permissions/dataplex.dataAttributes.setIamPolicy">dataplex.dataAttributes.setIamPolicy</a></li>
     <li><a href="/permissions/dataplex.dataAttributes.update">dataplex.dataAttributes.update</a></li>
+    <li><a href="/permissions/dataplex.dataDomainBindings.create">dataplex.dataDomainBindings.create</a></li>
+    <li><a href="/permissions/dataplex.dataDomainBindings.delete">dataplex.dataDomainBindings.delete</a></li>
+    <li><a href="/permissions/dataplex.dataDomainBindings.get">dataplex.dataDomainBindings.get</a></li>
+    <li><a href="/permissions/dataplex.dataDomainBindings.list">dataplex.dataDomainBindings.list</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.create">dataplex.dataDomains.create</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.delete">dataplex.dataDomains.delete</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.discover">dataplex.dataDomains.discover</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.get">dataplex.dataDomains.get</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.getIamPolicy">dataplex.dataDomains.getIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.list">dataplex.dataDomains.list</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.lookupEntry">dataplex.dataDomains.lookupEntry</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.modifyEntry">dataplex.dataDomains.modifyEntry</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.setIamPolicy">dataplex.dataDomains.setIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.dataDomains.update">dataplex.dataDomains.update</a></li>
     <li><a href="/permissions/dataplex.dataProducts.approve">dataplex.dataProducts.approve</a></li>
     <li><a href="/permissions/dataplex.dataProducts.create">dataplex.dataProducts.create</a></li>
     <li><a href="/permissions/dataplex.dataProducts.delete">dataplex.dataProducts.delete</a></li>
@@ -10264,6 +10288,7 @@
     <li><a href="/permissions/netapp.backups.get">netapp.backups.get</a></li>
     <li><a href="/permissions/netapp.backups.list">netapp.backups.list</a></li>
     <li><a href="/permissions/netapp.backups.update">netapp.backups.update</a></li>
+    <li><a href="/permissions/netapp.backups.useReadOnly">netapp.backups.useReadOnly</a></li>
     <li><a href="/permissions/netapp.hostGroups.create">netapp.hostGroups.create</a></li>
     <li><a href="/permissions/netapp.hostGroups.delete">netapp.hostGroups.delete</a></li>
     <li><a href="/permissions/netapp.hostGroups.get">netapp.hostGroups.get</a></li>
@@ -10316,6 +10341,7 @@
     <li><a href="/permissions/netapp.storagePools.updateBackupConfig">netapp.storagePools.updateBackupConfig</a></li>
     <li><a href="/permissions/netapp.storagePools.validateDirectoryService">netapp.storagePools.validateDirectoryService</a></li>
     <li><a href="/permissions/netapp.volumes.create">netapp.volumes.create</a></li>
+    <li><a href="/permissions/netapp.volumes.createCrossProjectBackup">netapp.volumes.createCrossProjectBackup</a></li>
     <li><a href="/permissions/netapp.volumes.delete">netapp.volumes.delete</a></li>
     <li><a href="/permissions/netapp.volumes.export">netapp.volumes.export</a></li>
     <li><a href="/permissions/netapp.volumes.findValidCRRRegions">netapp.volumes.findValidCRRRegions</a></li>
@@ -10869,17 +10895,21 @@
     <li><a href="/permissions/ondemandscanning.scans.scan">ondemandscanning.scans.scan</a></li>
     <li><a href="/permissions/opsconfigmonitoring.resourceMetadata.list">opsconfigmonitoring.resourceMetadata.list</a></li>
     <li><a href="/permissions/opsconfigmonitoring.resourceMetadata.write">opsconfigmonitoring.resourceMetadata.write</a></li>
+    <li><a href="/permissions/oracledatabase.autonomousDatabaseBackups.clone">oracledatabase.autonomousDatabaseBackups.clone</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabaseBackups.create">oracledatabase.autonomousDatabaseBackups.create</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabaseBackups.delete">oracledatabase.autonomousDatabaseBackups.delete</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabaseBackups.get">oracledatabase.autonomousDatabaseBackups.get</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabaseBackups.list">oracledatabase.autonomousDatabaseBackups.list</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabaseCharacterSets.list">oracledatabase.autonomousDatabaseCharacterSets.list</a></li>
+    <li><a href="/permissions/oracledatabase.autonomousDatabases.clone">oracledatabase.autonomousDatabases.clone</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.create">oracledatabase.autonomousDatabases.create</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.delete">oracledatabase.autonomousDatabases.delete</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.failover">oracledatabase.autonomousDatabases.failover</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.generateWallet">oracledatabase.autonomousDatabases.generateWallet</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.get">oracledatabase.autonomousDatabases.get</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.list">oracledatabase.autonomousDatabases.list</a></li>
+    <li><a href="/permissions/oracledatabase.autonomousDatabases.listRefreshableClones">oracledatabase.autonomousDatabases.listRefreshableClones</a></li>
+    <li><a href="/permissions/oracledatabase.autonomousDatabases.refresh">oracledatabase.autonomousDatabases.refresh</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.restart">oracledatabase.autonomousDatabases.restart</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.restore">oracledatabase.autonomousDatabases.restore</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.start">oracledatabase.autonomousDatabases.start</a></li>
@@ -13327,6 +13357,13 @@
     <li><a href="/permissions/workloadcertificate.workloadRegistrations.get">workloadcertificate.workloadRegistrations.get</a></li>
     <li><a href="/permissions/workloadcertificate.workloadRegistrations.list">workloadcertificate.workloadRegistrations.list</a></li>
     <li><a href="/permissions/workloadcertificate.workloadRegistrations.update">workloadcertificate.workloadRegistrations.update</a></li>
+    <li><a href="/permissions/workloadidentity.locations.get">workloadidentity.locations.get</a></li>
+    <li><a href="/permissions/workloadidentity.locations.list">workloadidentity.locations.list</a></li>
+    <li><a href="/permissions/workloadidentity.operations.cancel">workloadidentity.operations.cancel</a></li>
+    <li><a href="/permissions/workloadidentity.operations.delete">workloadidentity.operations.delete</a></li>
+    <li><a href="/permissions/workloadidentity.operations.get">workloadidentity.operations.get</a></li>
+    <li><a href="/permissions/workloadidentity.operations.list">workloadidentity.operations.list</a></li>
+    <li><a href="/permissions/workloadidentity.serviceAgents.create">workloadidentity.serviceAgents.create</a></li>
     <li><a href="/permissions/workloadmanager.actuations.create">workloadmanager.actuations.create</a></li>
     <li><a href="/permissions/workloadmanager.actuations.delete">workloadmanager.actuations.delete</a></li>
     <li><a href="/permissions/workloadmanager.actuations.get">workloadmanager.actuations.get</a></li>

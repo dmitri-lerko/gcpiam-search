@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vector Search Service Agent (roles/vectorsearch.serviceAgent) | GCP IAM Reference</title>
-    <meta name="description" content="Vector Search Service Agent - Gives Vector Search access to read Cloud Storage buckets and read/create objects.">
+    <meta name="description" content="Vector Search Service Agent - Gives Vector Search access to read Cloud Storage buckets, read/create objects, use Vertex Models, and call Discovery Engine RankService.">
     <link rel="canonical" href="https://gcpiam.com/roles/vectorsearch.serviceAgent">
     <meta property="og:title" content="Vector Search Service Agent (roles/vectorsearch.serviceAgent)">
-    <meta property="og:description" content="Vector Search Service Agent - Gives Vector Search access to read Cloud Storage buckets and read/create objects.">
+    <meta property="og:description" content="Vector Search Service Agent - Gives Vector Search access to read Cloud Storage buckets, read/create objects, use Vertex Models, and call Discovery Engine RankService.">
     <meta property="og:url" content="https://gcpiam.com/roles/vectorsearch.serviceAgent">
     <meta property="og:type" content="website">
     <style>
@@ -72,12 +72,13 @@
     <p class="subtitle">Vector Search Service Agent <span class="badge badge-ga">GA</span></p>
 
     <div class="description">
-        <p>Gives Vector Search access to read Cloud Storage buckets and read/create objects.</p>
+        <p>Gives Vector Search access to read Cloud Storage buckets, read/create objects, use Vertex Models, and call Discovery Engine RankService.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(5)</span></h2>
+    <h2>Included Permissions <span class="count">(6)</span></h2>
 <ul class="list">
     <li><a href="/permissions/aiplatform.endpoints.predict">aiplatform.endpoints.predict</a></li>
+    <li><a href="/permissions/discoveryengine.rankingConfigs.rank">discoveryengine.rankingConfigs.rank</a></li>
     <li><a href="/permissions/storage.buckets.get">storage.buckets.get</a></li>
     <li><a href="/permissions/storage.objects.create">storage.objects.create</a></li>
     <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
