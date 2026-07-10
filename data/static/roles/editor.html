@@ -75,7 +75,7 @@
         <p>View, create, update, and delete most Google Cloud resources. See the list of included permissions.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(11825)</span></h2>
+    <h2>Included Permissions <span class="count">(11835)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -680,6 +680,12 @@
     <li><a href="/permissions/analyticshub.listings.getIamPolicy">analyticshub.listings.getIamPolicy</a></li>
     <li><a href="/permissions/analyticshub.listings.list">analyticshub.listings.list</a></li>
     <li><a href="/permissions/analyticshub.listings.update">analyticshub.listings.update</a></li>
+    <li><a href="/permissions/analyticshub.queryTemplates.approve">analyticshub.queryTemplates.approve</a></li>
+    <li><a href="/permissions/analyticshub.queryTemplates.create">analyticshub.queryTemplates.create</a></li>
+    <li><a href="/permissions/analyticshub.queryTemplates.delete">analyticshub.queryTemplates.delete</a></li>
+    <li><a href="/permissions/analyticshub.queryTemplates.get">analyticshub.queryTemplates.get</a></li>
+    <li><a href="/permissions/analyticshub.queryTemplates.list">analyticshub.queryTemplates.list</a></li>
+    <li><a href="/permissions/analyticshub.queryTemplates.update">analyticshub.queryTemplates.update</a></li>
     <li><a href="/permissions/analyticshub.subscriptions.create">analyticshub.subscriptions.create</a></li>
     <li><a href="/permissions/analyticshub.subscriptions.delete">analyticshub.subscriptions.delete</a></li>
     <li><a href="/permissions/analyticshub.subscriptions.get">analyticshub.subscriptions.get</a></li>
@@ -5690,8 +5696,6 @@
     <li><a href="/permissions/datalineage.runs.get">datalineage.runs.get</a></li>
     <li><a href="/permissions/datalineage.runs.list">datalineage.runs.list</a></li>
     <li><a href="/permissions/datalineage.runs.update">datalineage.runs.update</a></li>
-    <li><a href="/permissions/datamigration.connectionProfiles.listEffectiveTags">datamigration.connectionProfiles.listEffectiveTags</a></li>
-    <li><a href="/permissions/datamigration.connectionProfiles.listTagBindings">datamigration.connectionProfiles.listTagBindings</a></li>
     <li><a href="/permissions/datamigration.connectionprofiles.create">datamigration.connectionprofiles.create</a></li>
     <li><a href="/permissions/datamigration.connectionprofiles.delete">datamigration.connectionprofiles.delete</a></li>
     <li><a href="/permissions/datamigration.connectionprofiles.get">datamigration.connectionprofiles.get</a></li>
@@ -5714,8 +5718,6 @@
     <li><a href="/permissions/datamigration.locations.list">datamigration.locations.list</a></li>
     <li><a href="/permissions/datamigration.mappingrules.getIamPolicy">datamigration.mappingrules.getIamPolicy</a></li>
     <li><a href="/permissions/datamigration.mappingrules.import">datamigration.mappingrules.import</a></li>
-    <li><a href="/permissions/datamigration.migrationJobs.listEffectiveTags">datamigration.migrationJobs.listEffectiveTags</a></li>
-    <li><a href="/permissions/datamigration.migrationJobs.listTagBindings">datamigration.migrationJobs.listTagBindings</a></li>
     <li><a href="/permissions/datamigration.migrationjobs.create">datamigration.migrationjobs.create</a></li>
     <li><a href="/permissions/datamigration.migrationjobs.delete">datamigration.migrationjobs.delete</a></li>
     <li><a href="/permissions/datamigration.migrationjobs.demoteDestination">datamigration.migrationjobs.demoteDestination</a></li>
@@ -5738,8 +5740,6 @@
     <li><a href="/permissions/datamigration.operations.delete">datamigration.operations.delete</a></li>
     <li><a href="/permissions/datamigration.operations.get">datamigration.operations.get</a></li>
     <li><a href="/permissions/datamigration.operations.list">datamigration.operations.list</a></li>
-    <li><a href="/permissions/datamigration.privateConnections.listEffectiveTags">datamigration.privateConnections.listEffectiveTags</a></li>
-    <li><a href="/permissions/datamigration.privateConnections.listTagBindings">datamigration.privateConnections.listTagBindings</a></li>
     <li><a href="/permissions/datamigration.privateconnections.create">datamigration.privateconnections.create</a></li>
     <li><a href="/permissions/datamigration.privateconnections.delete">datamigration.privateconnections.delete</a></li>
     <li><a href="/permissions/datamigration.privateconnections.get">datamigration.privateconnections.get</a></li>
@@ -6113,6 +6113,7 @@
     <li><a href="/permissions/datastore.userCreds.update">datastore.userCreds.update</a></li>
     <li><a href="/permissions/datastream.connectionProfiles.create">datastream.connectionProfiles.create</a></li>
     <li><a href="/permissions/datastream.connectionProfiles.delete">datastream.connectionProfiles.delete</a></li>
+    <li><a href="/permissions/datastream.connectionProfiles.deriveDestinationSchema">datastream.connectionProfiles.deriveDestinationSchema</a></li>
     <li><a href="/permissions/datastream.connectionProfiles.destinationTypes">datastream.connectionProfiles.destinationTypes</a></li>
     <li><a href="/permissions/datastream.connectionProfiles.discover">datastream.connectionProfiles.discover</a></li>
     <li><a href="/permissions/datastream.connectionProfiles.get">datastream.connectionProfiles.get</a></li>
@@ -10555,8 +10556,17 @@
     <li><a href="/permissions/run.executions.delete">run.executions.delete</a></li>
     <li><a href="/permissions/run.executions.get">run.executions.get</a></li>
     <li><a href="/permissions/run.executions.list">run.executions.list</a></li>
+    <li><a href="/permissions/run.instances.create">run.instances.create</a></li>
+    <li><a href="/permissions/run.instances.delete">run.instances.delete</a></li>
+    <li><a href="/permissions/run.instances.get">run.instances.get</a></li>
+    <li><a href="/permissions/run.instances.getIamPolicy">run.instances.getIamPolicy</a></li>
+    <li><a href="/permissions/run.instances.invoke">run.instances.invoke</a></li>
+    <li><a href="/permissions/run.instances.list">run.instances.list</a></li>
     <li><a href="/permissions/run.instances.sshRead">run.instances.sshRead</a></li>
     <li><a href="/permissions/run.instances.sshRoot">run.instances.sshRoot</a></li>
+    <li><a href="/permissions/run.instances.start">run.instances.start</a></li>
+    <li><a href="/permissions/run.instances.stop">run.instances.stop</a></li>
+    <li><a href="/permissions/run.instances.update">run.instances.update</a></li>
     <li><a href="/permissions/run.jobs.create">run.jobs.create</a></li>
     <li><a href="/permissions/run.jobs.delete">run.jobs.delete</a></li>
     <li><a href="/permissions/run.jobs.get">run.jobs.get</a></li>
