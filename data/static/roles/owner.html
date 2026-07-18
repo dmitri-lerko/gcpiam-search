@@ -75,7 +75,7 @@
         <p>Full access to most Google Cloud resources. See the list of included permissions.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(13403)</span></h2>
+    <h2>Included Permissions <span class="count">(13444)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.approve">accessapproval.requests.approve</a></li>
     <li><a href="/permissions/accessapproval.requests.dismiss">accessapproval.requests.dismiss</a></li>
@@ -1943,6 +1943,7 @@
     <li><a href="/permissions/bigquery.reservationGroups.delete">bigquery.reservationGroups.delete</a></li>
     <li><a href="/permissions/bigquery.reservationGroups.get">bigquery.reservationGroups.get</a></li>
     <li><a href="/permissions/bigquery.reservationGroups.list">bigquery.reservationGroups.list</a></li>
+    <li><a href="/permissions/bigquery.reservationGroups.update">bigquery.reservationGroups.update</a></li>
     <li><a href="/permissions/bigquery.reservations.create">bigquery.reservations.create</a></li>
     <li><a href="/permissions/bigquery.reservations.delete">bigquery.reservations.delete</a></li>
     <li><a href="/permissions/bigquery.reservations.get">bigquery.reservations.get</a></li>
@@ -2151,6 +2152,7 @@
     <li><a href="/permissions/blockchainvalidatormanager.operations.delete">blockchainvalidatormanager.operations.delete</a></li>
     <li><a href="/permissions/blockchainvalidatormanager.operations.get">blockchainvalidatormanager.operations.get</a></li>
     <li><a href="/permissions/blockchainvalidatormanager.operations.list">blockchainvalidatormanager.operations.list</a></li>
+    <li><a href="/permissions/businessaicode.locations.fetchQuotaStatus">businessaicode.locations.fetchQuotaStatus</a></li>
     <li><a href="/permissions/businessaicode.locations.generateContent">businessaicode.locations.generateContent</a></li>
     <li><a href="/permissions/businessaicode.locations.queryConfiguration">businessaicode.locations.queryConfiguration</a></li>
     <li><a href="/permissions/businessaicode.locations.selfAssignLicense">businessaicode.locations.selfAssignLicense</a></li>
@@ -4207,6 +4209,7 @@
     <li><a href="/permissions/cloudtasks.cmekConfig.update">cloudtasks.cmekConfig.update</a></li>
     <li><a href="/permissions/cloudtasks.locations.get">cloudtasks.locations.get</a></li>
     <li><a href="/permissions/cloudtasks.locations.list">cloudtasks.locations.list</a></li>
+    <li><a href="/permissions/cloudtasks.operations.get">cloudtasks.operations.get</a></li>
     <li><a href="/permissions/cloudtasks.queues.create">cloudtasks.queues.create</a></li>
     <li><a href="/permissions/cloudtasks.queues.delete">cloudtasks.queues.delete</a></li>
     <li><a href="/permissions/cloudtasks.queues.get">cloudtasks.queues.get</a></li>
@@ -7379,7 +7382,12 @@
     <li><a href="/permissions/designcenter.spaces.update">designcenter.spaces.update</a></li>
     <li><a href="/permissions/developerconnect.accountConnectors.create">developerconnect.accountConnectors.create</a></li>
     <li><a href="/permissions/developerconnect.accountConnectors.delete">developerconnect.accountConnectors.delete</a></li>
+    <li><a href="/permissions/developerconnect.accountConnectors.fetchUserRepositories">developerconnect.accountConnectors.fetchUserRepositories</a></li>
     <li><a href="/permissions/developerconnect.accountConnectors.get">developerconnect.accountConnectors.get</a></li>
+    <li><a href="/permissions/developerconnect.accountConnectors.gitProxyRead">developerconnect.accountConnectors.gitProxyRead</a></li>
+    <li><a href="/permissions/developerconnect.accountConnectors.gitProxyWrite">developerconnect.accountConnectors.gitProxyWrite</a></li>
+    <li><a href="/permissions/developerconnect.accountConnectors.httpProxyRead">developerconnect.accountConnectors.httpProxyRead</a></li>
+    <li><a href="/permissions/developerconnect.accountConnectors.httpProxyWrite">developerconnect.accountConnectors.httpProxyWrite</a></li>
     <li><a href="/permissions/developerconnect.accountConnectors.list">developerconnect.accountConnectors.list</a></li>
     <li><a href="/permissions/developerconnect.accountConnectors.update">developerconnect.accountConnectors.update</a></li>
     <li><a href="/permissions/developerconnect.connections.constructGitHubAppManifest">developerconnect.connections.constructGitHubAppManifest</a></li>
@@ -9755,11 +9763,15 @@
     <li><a href="/permissions/looker.backups.get">looker.backups.get</a></li>
     <li><a href="/permissions/looker.backups.list">looker.backups.list</a></li>
     <li><a href="/permissions/looker.instances.create">looker.instances.create</a></li>
+    <li><a href="/permissions/looker.instances.createTagBinding">looker.instances.createTagBinding</a></li>
     <li><a href="/permissions/looker.instances.delete">looker.instances.delete</a></li>
+    <li><a href="/permissions/looker.instances.deleteTagBinding">looker.instances.deleteTagBinding</a></li>
     <li><a href="/permissions/looker.instances.export">looker.instances.export</a></li>
     <li><a href="/permissions/looker.instances.get">looker.instances.get</a></li>
     <li><a href="/permissions/looker.instances.import">looker.instances.import</a></li>
     <li><a href="/permissions/looker.instances.list">looker.instances.list</a></li>
+    <li><a href="/permissions/looker.instances.listEffectiveTags">looker.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/looker.instances.listTagBindings">looker.instances.listTagBindings</a></li>
     <li><a href="/permissions/looker.instances.login">looker.instances.login</a></li>
     <li><a href="/permissions/looker.instances.update">looker.instances.update</a></li>
     <li><a href="/permissions/looker.locations.get">looker.locations.get</a></li>
@@ -10218,6 +10230,12 @@
     <li><a href="/permissions/modelarmor.templates.useToSanitizeUserPrompt">modelarmor.templates.useToSanitizeUserPrompt</a></li>
     <li><a href="/permissions/modelarmor.templates.useToStreamSanitizeModelResponse">modelarmor.templates.useToStreamSanitizeModelResponse</a></li>
     <li><a href="/permissions/modelarmor.templates.useToStreamSanitizeUserPrompt">modelarmor.templates.useToStreamSanitizeUserPrompt</a></li>
+    <li><a href="/permissions/modelarmor.topics.create">modelarmor.topics.create</a></li>
+    <li><a href="/permissions/modelarmor.topics.delete">modelarmor.topics.delete</a></li>
+    <li><a href="/permissions/modelarmor.topics.get">modelarmor.topics.get</a></li>
+    <li><a href="/permissions/modelarmor.topics.list">modelarmor.topics.list</a></li>
+    <li><a href="/permissions/modelarmor.topics.test">modelarmor.topics.test</a></li>
+    <li><a href="/permissions/modelarmor.topics.update">modelarmor.topics.update</a></li>
     <li><a href="/permissions/monitoring.alertPolicies.create">monitoring.alertPolicies.create</a></li>
     <li><a href="/permissions/monitoring.alertPolicies.createTagBinding">monitoring.alertPolicies.createTagBinding</a></li>
     <li><a href="/permissions/monitoring.alertPolicies.delete">monitoring.alertPolicies.delete</a></li>
@@ -10328,6 +10346,7 @@
     <li><a href="/permissions/netapp.locations.get">netapp.locations.get</a></li>
     <li><a href="/permissions/netapp.locations.list">netapp.locations.list</a></li>
     <li><a href="/permissions/netapp.ontap.delete">netapp.ontap.delete</a></li>
+    <li><a href="/permissions/netapp.ontap.get">netapp.ontap.get</a></li>
     <li><a href="/permissions/netapp.ontap.patch">netapp.ontap.patch</a></li>
     <li><a href="/permissions/netapp.ontap.post">netapp.ontap.post</a></li>
     <li><a href="/permissions/netapp.operations.cancel">netapp.operations.cancel</a></li>
@@ -10523,10 +10542,14 @@
     <li><a href="/permissions/networksecurity.addressGroups.update">networksecurity.addressGroups.update</a></li>
     <li><a href="/permissions/networksecurity.addressGroups.use">networksecurity.addressGroups.use</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.create">networksecurity.authorizationPolicies.create</a></li>
+    <li><a href="/permissions/networksecurity.authorizationPolicies.createTagBinding">networksecurity.authorizationPolicies.createTagBinding</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.delete">networksecurity.authorizationPolicies.delete</a></li>
+    <li><a href="/permissions/networksecurity.authorizationPolicies.deleteTagBinding">networksecurity.authorizationPolicies.deleteTagBinding</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.get">networksecurity.authorizationPolicies.get</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.getIamPolicy">networksecurity.authorizationPolicies.getIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.list">networksecurity.authorizationPolicies.list</a></li>
+    <li><a href="/permissions/networksecurity.authorizationPolicies.listEffectiveTags">networksecurity.authorizationPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/networksecurity.authorizationPolicies.listTagBindings">networksecurity.authorizationPolicies.listTagBindings</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.setIamPolicy">networksecurity.authorizationPolicies.setIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.update">networksecurity.authorizationPolicies.update</a></li>
     <li><a href="/permissions/networksecurity.authorizationPolicies.use">networksecurity.authorizationPolicies.use</a></li>
@@ -10544,10 +10567,14 @@
     <li><a href="/permissions/networksecurity.backendAuthenticationConfigs.update">networksecurity.backendAuthenticationConfigs.update</a></li>
     <li><a href="/permissions/networksecurity.backendAuthenticationConfigs.use">networksecurity.backendAuthenticationConfigs.use</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.create">networksecurity.clientTlsPolicies.create</a></li>
+    <li><a href="/permissions/networksecurity.clientTlsPolicies.createTagBinding">networksecurity.clientTlsPolicies.createTagBinding</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.delete">networksecurity.clientTlsPolicies.delete</a></li>
+    <li><a href="/permissions/networksecurity.clientTlsPolicies.deleteTagBinding">networksecurity.clientTlsPolicies.deleteTagBinding</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.get">networksecurity.clientTlsPolicies.get</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.getIamPolicy">networksecurity.clientTlsPolicies.getIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.list">networksecurity.clientTlsPolicies.list</a></li>
+    <li><a href="/permissions/networksecurity.clientTlsPolicies.listEffectiveTags">networksecurity.clientTlsPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/networksecurity.clientTlsPolicies.listTagBindings">networksecurity.clientTlsPolicies.listTagBindings</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.setIamPolicy">networksecurity.clientTlsPolicies.setIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.update">networksecurity.clientTlsPolicies.update</a></li>
     <li><a href="/permissions/networksecurity.clientTlsPolicies.use">networksecurity.clientTlsPolicies.use</a></li>
@@ -10657,10 +10684,14 @@
     <li><a href="/permissions/networksecurity.securityProfiles.update">networksecurity.securityProfiles.update</a></li>
     <li><a href="/permissions/networksecurity.securityProfiles.use">networksecurity.securityProfiles.use</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.create">networksecurity.serverTlsPolicies.create</a></li>
+    <li><a href="/permissions/networksecurity.serverTlsPolicies.createTagBinding">networksecurity.serverTlsPolicies.createTagBinding</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.delete">networksecurity.serverTlsPolicies.delete</a></li>
+    <li><a href="/permissions/networksecurity.serverTlsPolicies.deleteTagBinding">networksecurity.serverTlsPolicies.deleteTagBinding</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.get">networksecurity.serverTlsPolicies.get</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.getIamPolicy">networksecurity.serverTlsPolicies.getIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.list">networksecurity.serverTlsPolicies.list</a></li>
+    <li><a href="/permissions/networksecurity.serverTlsPolicies.listEffectiveTags">networksecurity.serverTlsPolicies.listEffectiveTags</a></li>
+    <li><a href="/permissions/networksecurity.serverTlsPolicies.listTagBindings">networksecurity.serverTlsPolicies.listTagBindings</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.setIamPolicy">networksecurity.serverTlsPolicies.setIamPolicy</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.update">networksecurity.serverTlsPolicies.update</a></li>
     <li><a href="/permissions/networksecurity.serverTlsPolicies.use">networksecurity.serverTlsPolicies.use</a></li>
@@ -12206,11 +12237,13 @@
     <li><a href="/permissions/secretmanager.secrets.createTagBinding">secretmanager.secrets.createTagBinding</a></li>
     <li><a href="/permissions/secretmanager.secrets.delete">secretmanager.secrets.delete</a></li>
     <li><a href="/permissions/secretmanager.secrets.deleteTagBinding">secretmanager.secrets.deleteTagBinding</a></li>
+    <li><a href="/permissions/secretmanager.secrets.enableManagedRotation">secretmanager.secrets.enableManagedRotation</a></li>
     <li><a href="/permissions/secretmanager.secrets.get">secretmanager.secrets.get</a></li>
     <li><a href="/permissions/secretmanager.secrets.getIamPolicy">secretmanager.secrets.getIamPolicy</a></li>
     <li><a href="/permissions/secretmanager.secrets.list">secretmanager.secrets.list</a></li>
     <li><a href="/permissions/secretmanager.secrets.listEffectiveTags">secretmanager.secrets.listEffectiveTags</a></li>
     <li><a href="/permissions/secretmanager.secrets.listTagBindings">secretmanager.secrets.listTagBindings</a></li>
+    <li><a href="/permissions/secretmanager.secrets.rotate">secretmanager.secrets.rotate</a></li>
     <li><a href="/permissions/secretmanager.secrets.setIamPolicy">secretmanager.secrets.setIamPolicy</a></li>
     <li><a href="/permissions/secretmanager.secrets.update">secretmanager.secrets.update</a></li>
     <li><a href="/permissions/secretmanager.versions.access">secretmanager.versions.access</a></li>
@@ -13209,9 +13242,13 @@
     <li><a href="/permissions/vmmigration.deployments.get">vmmigration.deployments.get</a></li>
     <li><a href="/permissions/vmmigration.deployments.list">vmmigration.deployments.list</a></li>
     <li><a href="/permissions/vmmigration.groups.create">vmmigration.groups.create</a></li>
+    <li><a href="/permissions/vmmigration.groups.createTagBinding">vmmigration.groups.createTagBinding</a></li>
     <li><a href="/permissions/vmmigration.groups.delete">vmmigration.groups.delete</a></li>
+    <li><a href="/permissions/vmmigration.groups.deleteTagBinding">vmmigration.groups.deleteTagBinding</a></li>
     <li><a href="/permissions/vmmigration.groups.get">vmmigration.groups.get</a></li>
     <li><a href="/permissions/vmmigration.groups.list">vmmigration.groups.list</a></li>
+    <li><a href="/permissions/vmmigration.groups.listEffectiveTags">vmmigration.groups.listEffectiveTags</a></li>
+    <li><a href="/permissions/vmmigration.groups.listTagBindings">vmmigration.groups.listTagBindings</a></li>
     <li><a href="/permissions/vmmigration.groups.update">vmmigration.groups.update</a></li>
     <li><a href="/permissions/vmmigration.imageImportJobs.cancel">vmmigration.imageImportJobs.cancel</a></li>
     <li><a href="/permissions/vmmigration.imageImportJobs.get">vmmigration.imageImportJobs.get</a></li>
@@ -13234,9 +13271,13 @@
     <li><a href="/permissions/vmmigration.replicationCycles.get">vmmigration.replicationCycles.get</a></li>
     <li><a href="/permissions/vmmigration.replicationCycles.list">vmmigration.replicationCycles.list</a></li>
     <li><a href="/permissions/vmmigration.sources.create">vmmigration.sources.create</a></li>
+    <li><a href="/permissions/vmmigration.sources.createTagBinding">vmmigration.sources.createTagBinding</a></li>
     <li><a href="/permissions/vmmigration.sources.delete">vmmigration.sources.delete</a></li>
+    <li><a href="/permissions/vmmigration.sources.deleteTagBinding">vmmigration.sources.deleteTagBinding</a></li>
     <li><a href="/permissions/vmmigration.sources.get">vmmigration.sources.get</a></li>
     <li><a href="/permissions/vmmigration.sources.list">vmmigration.sources.list</a></li>
+    <li><a href="/permissions/vmmigration.sources.listEffectiveTags">vmmigration.sources.listEffectiveTags</a></li>
+    <li><a href="/permissions/vmmigration.sources.listTagBindings">vmmigration.sources.listTagBindings</a></li>
     <li><a href="/permissions/vmmigration.sources.update">vmmigration.sources.update</a></li>
     <li><a href="/permissions/vmmigration.targets.create">vmmigration.targets.create</a></li>
     <li><a href="/permissions/vmmigration.targets.delete">vmmigration.targets.delete</a></li>
