@@ -75,7 +75,7 @@
         <p>View, create, update, and delete most Google Cloud resources. See the list of included permissions.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(11974)</span></h2>
+    <h2>Included Permissions <span class="count">(11979)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -3961,10 +3961,12 @@
     <li><a href="/permissions/compute.instances.getSerialPortOutput">compute.instances.getSerialPortOutput</a></li>
     <li><a href="/permissions/compute.instances.getShieldedInstanceIdentity">compute.instances.getShieldedInstanceIdentity</a></li>
     <li><a href="/permissions/compute.instances.getShieldedVmIdentity">compute.instances.getShieldedVmIdentity</a></li>
+    <li><a href="/permissions/compute.instances.getVmExtensionState">compute.instances.getVmExtensionState</a></li>
     <li><a href="/permissions/compute.instances.list">compute.instances.list</a></li>
     <li><a href="/permissions/compute.instances.listEffectiveTags">compute.instances.listEffectiveTags</a></li>
     <li><a href="/permissions/compute.instances.listReferrers">compute.instances.listReferrers</a></li>
     <li><a href="/permissions/compute.instances.listTagBindings">compute.instances.listTagBindings</a></li>
+    <li><a href="/permissions/compute.instances.listVmExtensionStates">compute.instances.listVmExtensionStates</a></li>
     <li><a href="/permissions/compute.instances.osAdminLogin">compute.instances.osAdminLogin</a></li>
     <li><a href="/permissions/compute.instances.osLogin">compute.instances.osLogin</a></li>
     <li><a href="/permissions/compute.instances.pscInterfaceCreate">compute.instances.pscInterfaceCreate</a></li>
@@ -6709,6 +6711,7 @@
     <li><a href="/permissions/discoveryengine.ideaForgeIdeas.get">discoveryengine.ideaForgeIdeas.get</a></li>
     <li><a href="/permissions/discoveryengine.ideaForgeInstances.get">discoveryengine.ideaForgeInstances.get</a></li>
     <li><a href="/permissions/discoveryengine.ideaForgeInstances.start">discoveryengine.ideaForgeInstances.start</a></li>
+    <li><a href="/permissions/discoveryengine.ideaForgeInstances.stop">discoveryengine.ideaForgeInstances.stop</a></li>
     <li><a href="/permissions/discoveryengine.identityMappingStores.create">discoveryengine.identityMappingStores.create</a></li>
     <li><a href="/permissions/discoveryengine.identityMappingStores.delete">discoveryengine.identityMappingStores.delete</a></li>
     <li><a href="/permissions/discoveryengine.identityMappingStores.get">discoveryengine.identityMappingStores.get</a></li>
@@ -8199,6 +8202,7 @@
     <li><a href="/permissions/iamconnectors.operations.list">iamconnectors.operations.list</a></li>
     <li><a href="/permissions/iap.projects.getSettings">iap.projects.getSettings</a></li>
     <li><a href="/permissions/iap.projects.updateSettings">iap.projects.updateSettings</a></li>
+    <li><a href="/permissions/iap.resources.egressViaIAP">iap.resources.egressViaIAP</a></li>
     <li><a href="/permissions/iap.tunnelDestGroups.create">iap.tunnelDestGroups.create</a></li>
     <li><a href="/permissions/iap.tunnelDestGroups.delete">iap.tunnelDestGroups.delete</a></li>
     <li><a href="/permissions/iap.tunnelDestGroups.get">iap.tunnelDestGroups.get</a></li>
@@ -9831,9 +9835,6 @@
     <li><a href="/permissions/policysimulator.accessPolicySimulationResults.list">policysimulator.accessPolicySimulationResults.list</a></li>
     <li><a href="/permissions/policysimulator.accessPolicySimulations.get">policysimulator.accessPolicySimulations.get</a></li>
     <li><a href="/permissions/policysimulator.accessPolicySimulations.list">policysimulator.accessPolicySimulations.list</a></li>
-    <li><a href="/permissions/policysimulator.activityBacktestResults.search">policysimulator.activityBacktestResults.search</a></li>
-    <li><a href="/permissions/policysimulator.activityBacktests.list">policysimulator.activityBacktests.list</a></li>
-    <li><a href="/permissions/policysimulator.activityBacktests.viewRabPolicy">policysimulator.activityBacktests.viewRabPolicy</a></li>
     <li><a href="/permissions/policysimulator.orgPolicyViolations.list">policysimulator.orgPolicyViolations.list</a></li>
     <li><a href="/permissions/policysimulator.orgPolicyViolationsPreviews.create">policysimulator.orgPolicyViolationsPreviews.create</a></li>
     <li><a href="/permissions/policysimulator.orgPolicyViolationsPreviews.get">policysimulator.orgPolicyViolationsPreviews.get</a></li>
@@ -10676,10 +10677,13 @@
     <li><a href="/permissions/rma.operations.get">rma.operations.get</a></li>
     <li><a href="/permissions/rma.operations.list">rma.operations.list</a></li>
     <li><a href="/permissions/roads.selectedRoutes.batchCreate">roads.selectedRoutes.batchCreate</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.batchDelete">roads.selectedRoutes.batchDelete</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.batchUpdate">roads.selectedRoutes.batchUpdate</a></li>
     <li><a href="/permissions/roads.selectedRoutes.create">roads.selectedRoutes.create</a></li>
     <li><a href="/permissions/roads.selectedRoutes.delete">roads.selectedRoutes.delete</a></li>
     <li><a href="/permissions/roads.selectedRoutes.get">roads.selectedRoutes.get</a></li>
     <li><a href="/permissions/roads.selectedRoutes.list">roads.selectedRoutes.list</a></li>
+    <li><a href="/permissions/roads.selectedRoutes.update">roads.selectedRoutes.update</a></li>
     <li><a href="/permissions/routeoptimization.locations.use">routeoptimization.locations.use</a></li>
     <li><a href="/permissions/routeoptimization.operations.create">routeoptimization.operations.create</a></li>
     <li><a href="/permissions/routeoptimization.operations.get">routeoptimization.operations.get</a></li>
@@ -10713,6 +10717,7 @@
     <li><a href="/permissions/run.jobs.sshRoot">run.jobs.sshRoot</a></li>
     <li><a href="/permissions/run.jobs.update">run.jobs.update</a></li>
     <li><a href="/permissions/run.locations.list">run.locations.list</a></li>
+    <li><a href="/permissions/run.locations.uploadSource">run.locations.uploadSource</a></li>
     <li><a href="/permissions/run.operations.delete">run.operations.delete</a></li>
     <li><a href="/permissions/run.operations.get">run.operations.get</a></li>
     <li><a href="/permissions/run.operations.list">run.operations.list</a></li>
