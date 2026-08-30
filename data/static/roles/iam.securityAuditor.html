@@ -75,7 +75,7 @@
         <p>Read-only role designed for enabling security audit of your GCP environment, associated policies and viewing configurations.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(3999)</span></h2>
+    <h2>Included Permissions <span class="count">(4009)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.get">accesscontextmanager.accessLevels.get</a></li>
@@ -362,6 +362,7 @@
     <li><a href="/permissions/appoptimize.operations.list">appoptimize.operations.list</a></li>
     <li><a href="/permissions/appoptimize.reports.list">appoptimize.reports.list</a></li>
     <li><a href="/permissions/apptopology.applicationTopologies.generate">apptopology.applicationTopologies.generate</a></li>
+    <li><a href="/permissions/apptopology.devOpsDomainTopologies.generate">apptopology.devOpsDomainTopologies.generate</a></li>
     <li><a href="/permissions/apptopology.discoveredResourcesTopologies.generate">apptopology.discoveredResourcesTopologies.generate</a></li>
     <li><a href="/permissions/apptopology.domains.get">apptopology.domains.get</a></li>
     <li><a href="/permissions/apptopology.domains.list">apptopology.domains.list</a></li>
@@ -370,6 +371,8 @@
     <li><a href="/permissions/apptopology.operations.get">apptopology.operations.get</a></li>
     <li><a href="/permissions/apptopology.operations.list">apptopology.operations.list</a></li>
     <li><a href="/permissions/apptopology.schemas.get">apptopology.schemas.get</a></li>
+    <li><a href="/permissions/apptopology.securityDomainTopologies.generate">apptopology.securityDomainTopologies.generate</a></li>
+    <li><a href="/permissions/apptopology.sreDomainTopologies.generate">apptopology.sreDomainTopologies.generate</a></li>
     <li><a href="/permissions/apptopology.topologyViews.get">apptopology.topologyViews.get</a></li>
     <li><a href="/permissions/apptopology.topologyViews.list">apptopology.topologyViews.list</a></li>
     <li><a href="/permissions/artifactregistry.attachments.get">artifactregistry.attachments.get</a></li>
@@ -2239,6 +2242,8 @@
     <li><a href="/permissions/dataform.releaseConfigs.list">dataform.releaseConfigs.list</a></li>
     <li><a href="/permissions/dataform.repositories.getIamPolicy">dataform.repositories.getIamPolicy</a></li>
     <li><a href="/permissions/dataform.repositories.list">dataform.repositories.list</a></li>
+    <li><a href="/permissions/dataform.repositories.listEffectiveTags">dataform.repositories.listEffectiveTags</a></li>
+    <li><a href="/permissions/dataform.repositories.listTagBindings">dataform.repositories.listTagBindings</a></li>
     <li><a href="/permissions/dataform.teamFolders.getIamPolicy">dataform.teamFolders.getIamPolicy</a></li>
     <li><a href="/permissions/dataform.workflowConfigs.list">dataform.workflowConfigs.list</a></li>
     <li><a href="/permissions/dataform.workflowInvocations.list">dataform.workflowInvocations.list</a></li>
@@ -2310,14 +2315,20 @@
     <li><a href="/permissions/dataplex.entries.list">dataplex.entries.list</a></li>
     <li><a href="/permissions/dataplex.entryGroups.getIamPolicy">dataplex.entryGroups.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.entryGroups.list">dataplex.entryGroups.list</a></li>
+    <li><a href="/permissions/dataplex.entryGroups.listEffectiveTags">dataplex.entryGroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/dataplex.entryGroups.listTagBindings">dataplex.entryGroups.listTagBindings</a></li>
     <li><a href="/permissions/dataplex.entryTypes.getIamPolicy">dataplex.entryTypes.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.entryTypes.list">dataplex.entryTypes.list</a></li>
+    <li><a href="/permissions/dataplex.entryTypes.listEffectiveTags">dataplex.entryTypes.listEffectiveTags</a></li>
+    <li><a href="/permissions/dataplex.entryTypes.listTagBindings">dataplex.entryTypes.listTagBindings</a></li>
     <li><a href="/permissions/dataplex.environments.getIamPolicy">dataplex.environments.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.environments.list">dataplex.environments.list</a></li>
     <li><a href="/permissions/dataplex.glossaries.getIamPolicy">dataplex.glossaries.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.glossaries.list">dataplex.glossaries.list</a></li>
     <li><a href="/permissions/dataplex.glossaryCategories.list">dataplex.glossaryCategories.list</a></li>
     <li><a href="/permissions/dataplex.glossaryTerms.list">dataplex.glossaryTerms.list</a></li>
+    <li><a href="/permissions/dataplex.governanceRules.listEffectiveTags">dataplex.governanceRules.listEffectiveTags</a></li>
+    <li><a href="/permissions/dataplex.governanceRules.listTagBindings">dataplex.governanceRules.listTagBindings</a></li>
     <li><a href="/permissions/dataplex.lakeActions.list">dataplex.lakeActions.list</a></li>
     <li><a href="/permissions/dataplex.lakes.getIamPolicy">dataplex.lakes.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.lakes.list">dataplex.lakes.list</a></li>
@@ -3279,6 +3290,8 @@
     <li><a href="/permissions/notebooks.executions.list">notebooks.executions.list</a></li>
     <li><a href="/permissions/notebooks.instances.getIamPolicy">notebooks.instances.getIamPolicy</a></li>
     <li><a href="/permissions/notebooks.instances.list">notebooks.instances.list</a></li>
+    <li><a href="/permissions/notebooks.instances.listEffectiveTags">notebooks.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/notebooks.instances.listTagBindings">notebooks.instances.listTagBindings</a></li>
     <li><a href="/permissions/notebooks.locations.list">notebooks.locations.list</a></li>
     <li><a href="/permissions/notebooks.operations.list">notebooks.operations.list</a></li>
     <li><a href="/permissions/notebooks.runtimes.getIamPolicy">notebooks.runtimes.getIamPolicy</a></li>
@@ -3387,11 +3400,6 @@
     <li><a href="/permissions/privilegedaccessmanager.grants.list">privilegedaccessmanager.grants.list</a></li>
     <li><a href="/permissions/privilegedaccessmanager.locations.list">privilegedaccessmanager.locations.list</a></li>
     <li><a href="/permissions/privilegedaccessmanager.operations.list">privilegedaccessmanager.operations.list</a></li>
-    <li><a href="/permissions/prodactuation.dnsConfigs.list">prodactuation.dnsConfigs.list</a></li>
-    <li><a href="/permissions/prodactuation.ganpatiGroups.list">prodactuation.ganpatiGroups.list</a></li>
-    <li><a href="/permissions/prodactuation.locations.list">prodactuation.locations.list</a></li>
-    <li><a href="/permissions/prodactuation.operations.list">prodactuation.operations.list</a></li>
-    <li><a href="/permissions/prodactuation.uberProxyServices.list">prodactuation.uberProxyServices.list</a></li>
     <li><a href="/permissions/proximitybeacon.attachments.list">proximitybeacon.attachments.list</a></li>
     <li><a href="/permissions/proximitybeacon.beacons.getIamPolicy">proximitybeacon.beacons.getIamPolicy</a></li>
     <li><a href="/permissions/proximitybeacon.beacons.list">proximitybeacon.beacons.list</a></li>
@@ -3602,6 +3610,8 @@
     <li><a href="/permissions/redis.backupCollections.list">redis.backupCollections.list</a></li>
     <li><a href="/permissions/redis.backups.list">redis.backups.list</a></li>
     <li><a href="/permissions/redis.clusters.list">redis.clusters.list</a></li>
+    <li><a href="/permissions/redis.clusters.listEffectiveTags">redis.clusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/redis.clusters.listTagBindings">redis.clusters.listTagBindings</a></li>
     <li><a href="/permissions/redis.instances.list">redis.instances.list</a></li>
     <li><a href="/permissions/redis.instances.listEffectiveTags">redis.instances.listEffectiveTags</a></li>
     <li><a href="/permissions/redis.instances.listTagBindings">redis.instances.listTagBindings</a></li>
