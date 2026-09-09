@@ -75,7 +75,7 @@
         <p>Read-only role designed for enabling security audit of your GCP environment, associated policies and viewing configurations.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(4017)</span></h2>
+    <h2>Included Permissions <span class="count">(4051)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.get">accesscontextmanager.accessLevels.get</a></li>
@@ -160,6 +160,7 @@
     <li><a href="/permissions/aiplatform.hyperparameterTuningJobs.list">aiplatform.hyperparameterTuningJobs.list</a></li>
     <li><a href="/permissions/aiplatform.indexEndpoints.list">aiplatform.indexEndpoints.list</a></li>
     <li><a href="/permissions/aiplatform.indexes.list">aiplatform.indexes.list</a></li>
+    <li><a href="/permissions/aiplatform.interactions.list">aiplatform.interactions.list</a></li>
     <li><a href="/permissions/aiplatform.locations.list">aiplatform.locations.list</a></li>
     <li><a href="/permissions/aiplatform.memories.list">aiplatform.memories.list</a></li>
     <li><a href="/permissions/aiplatform.memoryRevisions.list">aiplatform.memoryRevisions.list</a></li>
@@ -1657,6 +1658,7 @@
     <li><a href="/permissions/compute.instances.listReferrers">compute.instances.listReferrers</a></li>
     <li><a href="/permissions/compute.instances.listTagBindings">compute.instances.listTagBindings</a></li>
     <li><a href="/permissions/compute.instances.listVmExtensionStates">compute.instances.listVmExtensionStates</a></li>
+    <li><a href="/permissions/compute.instances.troubleshoot">compute.instances.troubleshoot</a></li>
     <li><a href="/permissions/compute.instantSnapshotGroups.get">compute.instantSnapshotGroups.get</a></li>
     <li><a href="/permissions/compute.instantSnapshotGroups.getIamPolicy">compute.instantSnapshotGroups.getIamPolicy</a></li>
     <li><a href="/permissions/compute.instantSnapshotGroups.list">compute.instantSnapshotGroups.list</a></li>
@@ -1824,6 +1826,8 @@
     <li><a href="/permissions/compute.regionUrlMaps.validate">compute.regionUrlMaps.validate</a></li>
     <li><a href="/permissions/compute.regions.get">compute.regions.get</a></li>
     <li><a href="/permissions/compute.regions.list">compute.regions.list</a></li>
+    <li><a href="/permissions/compute.reliabilityRisks.get">compute.reliabilityRisks.get</a></li>
+    <li><a href="/permissions/compute.reliabilityRisks.list">compute.reliabilityRisks.list</a></li>
     <li><a href="/permissions/compute.reservationBlocks.get">compute.reservationBlocks.get</a></li>
     <li><a href="/permissions/compute.reservationBlocks.list">compute.reservationBlocks.list</a></li>
     <li><a href="/permissions/compute.reservationSlots.get">compute.reservationSlots.get</a></li>
@@ -2282,16 +2286,22 @@
     <li><a href="/permissions/datalineage.runs.list">datalineage.runs.list</a></li>
     <li><a href="/permissions/datamigration.connectionprofiles.getIamPolicy">datamigration.connectionprofiles.getIamPolicy</a></li>
     <li><a href="/permissions/datamigration.connectionprofiles.list">datamigration.connectionprofiles.list</a></li>
+    <li><a href="/permissions/datamigration.connectionprofiles.listEffectiveTags">datamigration.connectionprofiles.listEffectiveTags</a></li>
+    <li><a href="/permissions/datamigration.connectionprofiles.listTagBindings">datamigration.connectionprofiles.listTagBindings</a></li>
     <li><a href="/permissions/datamigration.conversionworkspaces.getIamPolicy">datamigration.conversionworkspaces.getIamPolicy</a></li>
     <li><a href="/permissions/datamigration.conversionworkspaces.list">datamigration.conversionworkspaces.list</a></li>
     <li><a href="/permissions/datamigration.locations.list">datamigration.locations.list</a></li>
     <li><a href="/permissions/datamigration.mappingrules.getIamPolicy">datamigration.mappingrules.getIamPolicy</a></li>
     <li><a href="/permissions/datamigration.migrationjobs.getIamPolicy">datamigration.migrationjobs.getIamPolicy</a></li>
     <li><a href="/permissions/datamigration.migrationjobs.list">datamigration.migrationjobs.list</a></li>
+    <li><a href="/permissions/datamigration.migrationjobs.listEffectiveTags">datamigration.migrationjobs.listEffectiveTags</a></li>
+    <li><a href="/permissions/datamigration.migrationjobs.listTagBindings">datamigration.migrationjobs.listTagBindings</a></li>
     <li><a href="/permissions/datamigration.objects.list">datamigration.objects.list</a></li>
     <li><a href="/permissions/datamigration.operations.list">datamigration.operations.list</a></li>
     <li><a href="/permissions/datamigration.privateconnections.getIamPolicy">datamigration.privateconnections.getIamPolicy</a></li>
     <li><a href="/permissions/datamigration.privateconnections.list">datamigration.privateconnections.list</a></li>
+    <li><a href="/permissions/datamigration.privateconnections.listEffectiveTags">datamigration.privateconnections.listEffectiveTags</a></li>
+    <li><a href="/permissions/datamigration.privateconnections.listTagBindings">datamigration.privateconnections.listTagBindings</a></li>
     <li><a href="/permissions/datapipelines.jobs.list">datapipelines.jobs.list</a></li>
     <li><a href="/permissions/datapipelines.pipelines.list">datapipelines.pipelines.list</a></li>
     <li><a href="/permissions/dataplex.aspectTypes.getIamPolicy">dataplex.aspectTypes.getIamPolicy</a></li>
@@ -3161,6 +3171,7 @@
     <li><a href="/permissions/networkconnectivity.policyBasedRoutes.get">networkconnectivity.policyBasedRoutes.get</a></li>
     <li><a href="/permissions/networkconnectivity.policyBasedRoutes.getIamPolicy">networkconnectivity.policyBasedRoutes.getIamPolicy</a></li>
     <li><a href="/permissions/networkconnectivity.policyBasedRoutes.list">networkconnectivity.policyBasedRoutes.list</a></li>
+    <li><a href="/permissions/networkconnectivity.pscAuthorizationPolicies.list">networkconnectivity.pscAuthorizationPolicies.list</a></li>
     <li><a href="/permissions/networkconnectivity.regionalEndpoints.list">networkconnectivity.regionalEndpoints.list</a></li>
     <li><a href="/permissions/networkconnectivity.remoteTransportProfiles.list">networkconnectivity.remoteTransportProfiles.list</a></li>
     <li><a href="/permissions/networkconnectivity.serviceClasses.list">networkconnectivity.serviceClasses.list</a></li>
@@ -3326,6 +3337,7 @@
     <li><a href="/permissions/oracledatabase.databases.list">oracledatabase.databases.list</a></li>
     <li><a href="/permissions/oracledatabase.dbNodes.list">oracledatabase.dbNodes.list</a></li>
     <li><a href="/permissions/oracledatabase.dbServers.list">oracledatabase.dbServers.list</a></li>
+    <li><a href="/permissions/oracledatabase.dbSystemComputePerformances.list">oracledatabase.dbSystemComputePerformances.list</a></li>
     <li><a href="/permissions/oracledatabase.dbSystemInitialStorageSizes.list">oracledatabase.dbSystemInitialStorageSizes.list</a></li>
     <li><a href="/permissions/oracledatabase.dbSystemShapes.list">oracledatabase.dbSystemShapes.list</a></li>
     <li><a href="/permissions/oracledatabase.dbSystems.list">oracledatabase.dbSystems.list</a></li>
@@ -3333,6 +3345,7 @@
     <li><a href="/permissions/oracledatabase.entitlements.list">oracledatabase.entitlements.list</a></li>
     <li><a href="/permissions/oracledatabase.exadbVmClusters.list">oracledatabase.exadbVmClusters.list</a></li>
     <li><a href="/permissions/oracledatabase.exascaleDbStorageVaults.list">oracledatabase.exascaleDbStorageVaults.list</a></li>
+    <li><a href="/permissions/oracledatabase.flexComponents.list">oracledatabase.flexComponents.list</a></li>
     <li><a href="/permissions/oracledatabase.giVersions.list">oracledatabase.giVersions.list</a></li>
     <li><a href="/permissions/oracledatabase.goldenGateConnectionAssignments.list">oracledatabase.goldenGateConnectionAssignments.list</a></li>
     <li><a href="/permissions/oracledatabase.goldenGateConnectionTypes.list">oracledatabase.goldenGateConnectionTypes.list</a></li>
@@ -3626,6 +3639,8 @@
     <li><a href="/permissions/redis.operations.list">redis.operations.list</a></li>
     <li><a href="/permissions/remotebuildexecution.instances.list">remotebuildexecution.instances.list</a></li>
     <li><a href="/permissions/remotebuildexecution.workerpools.list">remotebuildexecution.workerpools.list</a></li>
+    <li><a href="/permissions/resourcemanager.boundaries.list">resourcemanager.boundaries.list</a></li>
+    <li><a href="/permissions/resourcemanager.capabilityConfigs.list">resourcemanager.capabilityConfigs.list</a></li>
     <li><a href="/permissions/resourcemanager.folders.get">resourcemanager.folders.get</a></li>
     <li><a href="/permissions/resourcemanager.folders.getIamPolicy">resourcemanager.folders.getIamPolicy</a></li>
     <li><a href="/permissions/resourcemanager.folders.list">resourcemanager.folders.list</a></li>
@@ -3707,11 +3722,17 @@
     <li><a href="/permissions/saasservicemgmt.flags.list">saasservicemgmt.flags.list</a></li>
     <li><a href="/permissions/saasservicemgmt.locations.list">saasservicemgmt.locations.list</a></li>
     <li><a href="/permissions/saasservicemgmt.operations.list">saasservicemgmt.operations.list</a></li>
+    <li><a href="/permissions/saasservicemgmt.poolKinds.list">saasservicemgmt.poolKinds.list</a></li>
+    <li><a href="/permissions/saasservicemgmt.pools.list">saasservicemgmt.pools.list</a></li>
     <li><a href="/permissions/saasservicemgmt.releases.list">saasservicemgmt.releases.list</a></li>
     <li><a href="/permissions/saasservicemgmt.rolloutKinds.list">saasservicemgmt.rolloutKinds.list</a></li>
     <li><a href="/permissions/saasservicemgmt.rollouts.list">saasservicemgmt.rollouts.list</a></li>
     <li><a href="/permissions/saasservicemgmt.saas.list">saasservicemgmt.saas.list</a></li>
+    <li><a href="/permissions/saasservicemgmt.saasReleases.list">saasservicemgmt.saasReleases.list</a></li>
+    <li><a href="/permissions/saasservicemgmt.tenantOperations.list">saasservicemgmt.tenantOperations.list</a></li>
     <li><a href="/permissions/saasservicemgmt.tenants.list">saasservicemgmt.tenants.list</a></li>
+    <li><a href="/permissions/saasservicemgmt.unitGroupOperations.list">saasservicemgmt.unitGroupOperations.list</a></li>
+    <li><a href="/permissions/saasservicemgmt.unitGroups.list">saasservicemgmt.unitGroups.list</a></li>
     <li><a href="/permissions/saasservicemgmt.unitKinds.list">saasservicemgmt.unitKinds.list</a></li>
     <li><a href="/permissions/saasservicemgmt.unitOperations.list">saasservicemgmt.unitOperations.list</a></li>
     <li><a href="/permissions/saasservicemgmt.units.list">saasservicemgmt.units.list</a></li>
@@ -3765,6 +3786,9 @@
     <li><a href="/permissions/securitycenter.issues.group">securitycenter.issues.group</a></li>
     <li><a href="/permissions/securitycenter.issues.list">securitycenter.issues.list</a></li>
     <li><a href="/permissions/securitycenter.issues.listFilterValues">securitycenter.issues.listFilterValues</a></li>
+    <li><a href="/permissions/securitycenter.issues.retrieve">securitycenter.issues.retrieve</a></li>
+    <li><a href="/permissions/securitycenter.issues.search">securitycenter.issues.search</a></li>
+    <li><a href="/permissions/securitycenter.issues.searchImpactedResources">securitycenter.issues.searchImpactedResources</a></li>
     <li><a href="/permissions/securitycenter.muteconfigs.get">securitycenter.muteconfigs.get</a></li>
     <li><a href="/permissions/securitycenter.muteconfigs.list">securitycenter.muteconfigs.list</a></li>
     <li><a href="/permissions/securitycenter.notificationconfig.get">securitycenter.notificationconfig.get</a></li>
@@ -3944,6 +3968,8 @@
     <li><a href="/permissions/tpu.acceleratortypes.list">tpu.acceleratortypes.list</a></li>
     <li><a href="/permissions/tpu.locations.list">tpu.locations.list</a></li>
     <li><a href="/permissions/tpu.nodes.list">tpu.nodes.list</a></li>
+    <li><a href="/permissions/tpu.nodes.listEffectiveTags">tpu.nodes.listEffectiveTags</a></li>
+    <li><a href="/permissions/tpu.nodes.listTagBindings">tpu.nodes.listTagBindings</a></li>
     <li><a href="/permissions/tpu.operations.list">tpu.operations.list</a></li>
     <li><a href="/permissions/tpu.runtimeversions.list">tpu.runtimeversions.list</a></li>
     <li><a href="/permissions/tpu.tensorflowversions.list">tpu.tensorflowversions.list</a></li>
@@ -3966,12 +3992,20 @@
     <li><a href="/permissions/vectorsearch.locations.list">vectorsearch.locations.list</a></li>
     <li><a href="/permissions/vectorsearch.operations.list">vectorsearch.operations.list</a></li>
     <li><a href="/permissions/videostitcher.cdnKeys.list">videostitcher.cdnKeys.list</a></li>
+    <li><a href="/permissions/videostitcher.cdnKeys.listEffectiveTags">videostitcher.cdnKeys.listEffectiveTags</a></li>
+    <li><a href="/permissions/videostitcher.cdnKeys.listTagBindings">videostitcher.cdnKeys.listTagBindings</a></li>
     <li><a href="/permissions/videostitcher.liveAdTagDetails.list">videostitcher.liveAdTagDetails.list</a></li>
     <li><a href="/permissions/videostitcher.liveConfigs.list">videostitcher.liveConfigs.list</a></li>
+    <li><a href="/permissions/videostitcher.liveConfigs.listEffectiveTags">videostitcher.liveConfigs.listEffectiveTags</a></li>
+    <li><a href="/permissions/videostitcher.liveConfigs.listTagBindings">videostitcher.liveConfigs.listTagBindings</a></li>
     <li><a href="/permissions/videostitcher.operations.list">videostitcher.operations.list</a></li>
     <li><a href="/permissions/videostitcher.slates.list">videostitcher.slates.list</a></li>
+    <li><a href="/permissions/videostitcher.slates.listEffectiveTags">videostitcher.slates.listEffectiveTags</a></li>
+    <li><a href="/permissions/videostitcher.slates.listTagBindings">videostitcher.slates.listTagBindings</a></li>
     <li><a href="/permissions/videostitcher.vodAdTagDetails.list">videostitcher.vodAdTagDetails.list</a></li>
     <li><a href="/permissions/videostitcher.vodConfigs.list">videostitcher.vodConfigs.list</a></li>
+    <li><a href="/permissions/videostitcher.vodConfigs.listEffectiveTags">videostitcher.vodConfigs.listEffectiveTags</a></li>
+    <li><a href="/permissions/videostitcher.vodConfigs.listTagBindings">videostitcher.vodConfigs.listTagBindings</a></li>
     <li><a href="/permissions/videostitcher.vodStitchDetails.list">videostitcher.vodStitchDetails.list</a></li>
     <li><a href="/permissions/visionai.analyses.getIamPolicy">visionai.analyses.getIamPolicy</a></li>
     <li><a href="/permissions/visionai.analyses.list">visionai.analyses.list</a></li>
