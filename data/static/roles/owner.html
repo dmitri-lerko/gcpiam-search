@@ -75,7 +75,7 @@
         <p>Full access to most Google Cloud resources. See the list of included permissions.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(13702)</span></h2>
+    <h2>Included Permissions <span class="count">(13734)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.approve">accessapproval.requests.approve</a></li>
     <li><a href="/permissions/accessapproval.requests.dismiss">accessapproval.requests.dismiss</a></li>
@@ -544,6 +544,7 @@
     <li><a href="/permissions/aiplatform.provisionedThroughputRevisions.get">aiplatform.provisionedThroughputRevisions.get</a></li>
     <li><a href="/permissions/aiplatform.provisionedThroughputRevisions.list">aiplatform.provisionedThroughputRevisions.list</a></li>
     <li><a href="/permissions/aiplatform.provisionedThroughputs.cancel">aiplatform.provisionedThroughputs.cancel</a></li>
+    <li><a href="/permissions/aiplatform.provisionedThroughputs.changeScope">aiplatform.provisionedThroughputs.changeScope</a></li>
     <li><a href="/permissions/aiplatform.provisionedThroughputs.create">aiplatform.provisionedThroughputs.create</a></li>
     <li><a href="/permissions/aiplatform.provisionedThroughputs.get">aiplatform.provisionedThroughputs.get</a></li>
     <li><a href="/permissions/aiplatform.provisionedThroughputs.list">aiplatform.provisionedThroughputs.list</a></li>
@@ -4249,6 +4250,11 @@
     <li><a href="/permissions/cloudsql.users.get">cloudsql.users.get</a></li>
     <li><a href="/permissions/cloudsql.users.list">cloudsql.users.list</a></li>
     <li><a href="/permissions/cloudsql.users.update">cloudsql.users.update</a></li>
+    <li><a href="/permissions/cloudsql.workloadCaptures.list">cloudsql.workloadCaptures.list</a></li>
+    <li><a href="/permissions/cloudsql.workloadCaptures.start">cloudsql.workloadCaptures.start</a></li>
+    <li><a href="/permissions/cloudsql.workloadCaptures.startReplay">cloudsql.workloadCaptures.startReplay</a></li>
+    <li><a href="/permissions/cloudsql.workloadCaptures.stop">cloudsql.workloadCaptures.stop</a></li>
+    <li><a href="/permissions/cloudsql.workloadCaptures.stopReplay">cloudsql.workloadCaptures.stopReplay</a></li>
     <li><a href="/permissions/cloudsupport.accounts.create">cloudsupport.accounts.create</a></li>
     <li><a href="/permissions/cloudsupport.accounts.delete">cloudsupport.accounts.delete</a></li>
     <li><a href="/permissions/cloudsupport.accounts.get">cloudsupport.accounts.get</a></li>
@@ -5615,20 +5621,28 @@
     <li><a href="/permissions/config.deploymentgrouprevisions.get">config.deploymentgrouprevisions.get</a></li>
     <li><a href="/permissions/config.deploymentgrouprevisions.list">config.deploymentgrouprevisions.list</a></li>
     <li><a href="/permissions/config.deploymentgroups.create">config.deploymentgroups.create</a></li>
+    <li><a href="/permissions/config.deploymentgroups.createTagBinding">config.deploymentgroups.createTagBinding</a></li>
     <li><a href="/permissions/config.deploymentgroups.delete">config.deploymentgroups.delete</a></li>
+    <li><a href="/permissions/config.deploymentgroups.deleteTagBinding">config.deploymentgroups.deleteTagBinding</a></li>
     <li><a href="/permissions/config.deploymentgroups.deprovision">config.deploymentgroups.deprovision</a></li>
     <li><a href="/permissions/config.deploymentgroups.get">config.deploymentgroups.get</a></li>
     <li><a href="/permissions/config.deploymentgroups.list">config.deploymentgroups.list</a></li>
+    <li><a href="/permissions/config.deploymentgroups.listEffectiveTags">config.deploymentgroups.listEffectiveTags</a></li>
+    <li><a href="/permissions/config.deploymentgroups.listTagBindings">config.deploymentgroups.listTagBindings</a></li>
     <li><a href="/permissions/config.deploymentgroups.provision">config.deploymentgroups.provision</a></li>
     <li><a href="/permissions/config.deploymentgroups.update">config.deploymentgroups.update</a></li>
     <li><a href="/permissions/config.deployments.create">config.deployments.create</a></li>
+    <li><a href="/permissions/config.deployments.createTagBinding">config.deployments.createTagBinding</a></li>
     <li><a href="/permissions/config.deployments.delete">config.deployments.delete</a></li>
     <li><a href="/permissions/config.deployments.deleteState">config.deployments.deleteState</a></li>
+    <li><a href="/permissions/config.deployments.deleteTagBinding">config.deployments.deleteTagBinding</a></li>
     <li><a href="/permissions/config.deployments.get">config.deployments.get</a></li>
     <li><a href="/permissions/config.deployments.getIamPolicy">config.deployments.getIamPolicy</a></li>
     <li><a href="/permissions/config.deployments.getLock">config.deployments.getLock</a></li>
     <li><a href="/permissions/config.deployments.getState">config.deployments.getState</a></li>
     <li><a href="/permissions/config.deployments.list">config.deployments.list</a></li>
+    <li><a href="/permissions/config.deployments.listEffectiveTags">config.deployments.listEffectiveTags</a></li>
+    <li><a href="/permissions/config.deployments.listTagBindings">config.deployments.listTagBindings</a></li>
     <li><a href="/permissions/config.deployments.lock">config.deployments.lock</a></li>
     <li><a href="/permissions/config.deployments.setIamPolicy">config.deployments.setIamPolicy</a></li>
     <li><a href="/permissions/config.deployments.unlock">config.deployments.unlock</a></li>
@@ -5641,10 +5655,14 @@
     <li><a href="/permissions/config.operations.get">config.operations.get</a></li>
     <li><a href="/permissions/config.operations.list">config.operations.list</a></li>
     <li><a href="/permissions/config.previews.create">config.previews.create</a></li>
+    <li><a href="/permissions/config.previews.createTagBinding">config.previews.createTagBinding</a></li>
     <li><a href="/permissions/config.previews.delete">config.previews.delete</a></li>
+    <li><a href="/permissions/config.previews.deleteTagBinding">config.previews.deleteTagBinding</a></li>
     <li><a href="/permissions/config.previews.export">config.previews.export</a></li>
     <li><a href="/permissions/config.previews.get">config.previews.get</a></li>
     <li><a href="/permissions/config.previews.list">config.previews.list</a></li>
+    <li><a href="/permissions/config.previews.listEffectiveTags">config.previews.listEffectiveTags</a></li>
+    <li><a href="/permissions/config.previews.listTagBindings">config.previews.listTagBindings</a></li>
     <li><a href="/permissions/config.previews.upload">config.previews.upload</a></li>
     <li><a href="/permissions/config.resourcechanges.get">config.resourcechanges.get</a></li>
     <li><a href="/permissions/config.resourcechanges.list">config.resourcechanges.list</a></li>
@@ -11732,6 +11750,14 @@
     <li><a href="/permissions/recommender.computeFirewallInsights.get">recommender.computeFirewallInsights.get</a></li>
     <li><a href="/permissions/recommender.computeFirewallInsights.list">recommender.computeFirewallInsights.list</a></li>
     <li><a href="/permissions/recommender.computeFirewallInsights.update">recommender.computeFirewallInsights.update</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceInsights.get">recommender.computeIdleResourceInsights.get</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceInsights.list">recommender.computeIdleResourceInsights.list</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceInsights.update">recommender.computeIdleResourceInsights.update</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceRecommendations.get">recommender.computeIdleResourceRecommendations.get</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceRecommendations.list">recommender.computeIdleResourceRecommendations.list</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceRecommendations.update">recommender.computeIdleResourceRecommendations.update</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceRecommenderConfig.get">recommender.computeIdleResourceRecommenderConfig.get</a></li>
+    <li><a href="/permissions/recommender.computeIdleResourceRecommenderConfig.update">recommender.computeIdleResourceRecommenderConfig.update</a></li>
     <li><a href="/permissions/recommender.computeImageIdleResourceInsights.get">recommender.computeImageIdleResourceInsights.get</a></li>
     <li><a href="/permissions/recommender.computeImageIdleResourceInsights.list">recommender.computeImageIdleResourceInsights.list</a></li>
     <li><a href="/permissions/recommender.computeImageIdleResourceInsights.update">recommender.computeImageIdleResourceInsights.update</a></li>
@@ -13224,6 +13250,12 @@
     <li><a href="/permissions/translationhub.portals.get">translationhub.portals.get</a></li>
     <li><a href="/permissions/translationhub.portals.list">translationhub.portals.list</a></li>
     <li><a href="/permissions/translationhub.portals.update">translationhub.portals.update</a></li>
+    <li><a href="/permissions/universalledger.endpoints.get">universalledger.endpoints.get</a></li>
+    <li><a href="/permissions/universalledger.endpoints.list">universalledger.endpoints.list</a></li>
+    <li><a href="/permissions/universalledger.endpoints.readNetwork">universalledger.endpoints.readNetwork</a></li>
+    <li><a href="/permissions/universalledger.endpoints.submit">universalledger.endpoints.submit</a></li>
+    <li><a href="/permissions/universalledger.locations.get">universalledger.locations.get</a></li>
+    <li><a href="/permissions/universalledger.locations.list">universalledger.locations.list</a></li>
     <li><a href="/permissions/vectorsearch.collections.create">vectorsearch.collections.create</a></li>
     <li><a href="/permissions/vectorsearch.collections.delete">vectorsearch.collections.delete</a></li>
     <li><a href="/permissions/vectorsearch.collections.get">vectorsearch.collections.get</a></li>
