@@ -75,7 +75,7 @@
         <p>Security admin role, with permissions to get and set any IAM policy.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(2865)</span></h2>
+    <h2>Included Permissions <span class="count">(2876)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.list">accesscontextmanager.accessLevels.list</a></li>
@@ -103,7 +103,9 @@
     <li><a href="/permissions/agentregistry.publishers.list">agentregistry.publishers.list</a></li>
     <li><a href="/permissions/agentregistry.services.list">agentregistry.services.list</a></li>
     <li><a href="/permissions/agentregistry.skillRevisions.list">agentregistry.skillRevisions.list</a></li>
+    <li><a href="/permissions/agentregistry.skills.getIamPolicy">agentregistry.skills.getIamPolicy</a></li>
     <li><a href="/permissions/agentregistry.skills.list">agentregistry.skills.list</a></li>
+    <li><a href="/permissions/agentregistry.skills.setIamPolicy">agentregistry.skills.setIamPolicy</a></li>
     <li><a href="/permissions/aiplatform.agentAnomalyDetectionScopes.list">aiplatform.agentAnomalyDetectionScopes.list</a></li>
     <li><a href="/permissions/aiplatform.agentExamples.list">aiplatform.agentExamples.list</a></li>
     <li><a href="/permissions/aiplatform.agents.list">aiplatform.agents.list</a></li>
@@ -685,6 +687,7 @@
     <li><a href="/permissions/cloudaicompanion.codeToolsSettings.list">cloudaicompanion.codeToolsSettings.list</a></li>
     <li><a href="/permissions/cloudaicompanion.dataSharingWithGoogleSettings.list">cloudaicompanion.dataSharingWithGoogleSettings.list</a></li>
     <li><a href="/permissions/cloudaicompanion.geminiGcpEnablementSettings.list">cloudaicompanion.geminiGcpEnablementSettings.list</a></li>
+    <li><a href="/permissions/cloudaicompanion.gibqObservabilitySettings.list">cloudaicompanion.gibqObservabilitySettings.list</a></li>
     <li><a href="/permissions/cloudaicompanion.loggingSettings.list">cloudaicompanion.loggingSettings.list</a></li>
     <li><a href="/permissions/cloudaicompanion.operations.list">cloudaicompanion.operations.list</a></li>
     <li><a href="/permissions/cloudaicompanion.releaseChannelSettings.list">cloudaicompanion.releaseChannelSettings.list</a></li>
@@ -996,7 +999,9 @@
     <li><a href="/permissions/compute.regionOperations.setIamPolicy">compute.regionOperations.setIamPolicy</a></li>
     <li><a href="/permissions/compute.regionSecurityPolicies.list">compute.regionSecurityPolicies.list</a></li>
     <li><a href="/permissions/compute.regionSslCertificates.list">compute.regionSslCertificates.list</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.getIamPolicy">compute.regionSslPolicies.getIamPolicy</a></li>
     <li><a href="/permissions/compute.regionSslPolicies.list">compute.regionSslPolicies.list</a></li>
+    <li><a href="/permissions/compute.regionSslPolicies.setIamPolicy">compute.regionSslPolicies.setIamPolicy</a></li>
     <li><a href="/permissions/compute.regionTargetHttpProxies.list">compute.regionTargetHttpProxies.list</a></li>
     <li><a href="/permissions/compute.regionTargetHttpsProxies.list">compute.regionTargetHttpsProxies.list</a></li>
     <li><a href="/permissions/compute.regionTargetTcpProxies.list">compute.regionTargetTcpProxies.list</a></li>
@@ -1004,6 +1009,7 @@
     <li><a href="/permissions/compute.regions.list">compute.regions.list</a></li>
     <li><a href="/permissions/compute.reliabilityRisks.list">compute.reliabilityRisks.list</a></li>
     <li><a href="/permissions/compute.reservationBlocks.list">compute.reservationBlocks.list</a></li>
+    <li><a href="/permissions/compute.reservationConsumedInstances.list">compute.reservationConsumedInstances.list</a></li>
     <li><a href="/permissions/compute.reservationSlots.list">compute.reservationSlots.list</a></li>
     <li><a href="/permissions/compute.reservationSubBlocks.list">compute.reservationSubBlocks.list</a></li>
     <li><a href="/permissions/compute.reservations.list">compute.reservations.list</a></li>
@@ -1025,7 +1031,9 @@
     <li><a href="/permissions/compute.snapshots.list">compute.snapshots.list</a></li>
     <li><a href="/permissions/compute.snapshots.setIamPolicy">compute.snapshots.setIamPolicy</a></li>
     <li><a href="/permissions/compute.sslCertificates.list">compute.sslCertificates.list</a></li>
+    <li><a href="/permissions/compute.sslPolicies.getIamPolicy">compute.sslPolicies.getIamPolicy</a></li>
     <li><a href="/permissions/compute.sslPolicies.list">compute.sslPolicies.list</a></li>
+    <li><a href="/permissions/compute.sslPolicies.setIamPolicy">compute.sslPolicies.setIamPolicy</a></li>
     <li><a href="/permissions/compute.storagePools.getIamPolicy">compute.storagePools.getIamPolicy</a></li>
     <li><a href="/permissions/compute.storagePools.list">compute.storagePools.list</a></li>
     <li><a href="/permissions/compute.storagePools.setIamPolicy">compute.storagePools.setIamPolicy</a></li>
@@ -1363,6 +1371,9 @@
     <li><a href="/permissions/dataplex.entryGroups.getIamPolicy">dataplex.entryGroups.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.entryGroups.list">dataplex.entryGroups.list</a></li>
     <li><a href="/permissions/dataplex.entryGroups.setIamPolicy">dataplex.entryGroups.setIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.entryLinkTypes.getIamPolicy">dataplex.entryLinkTypes.getIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.entryLinkTypes.list">dataplex.entryLinkTypes.list</a></li>
+    <li><a href="/permissions/dataplex.entryLinkTypes.setIamPolicy">dataplex.entryLinkTypes.setIamPolicy</a></li>
     <li><a href="/permissions/dataplex.entryTypes.getIamPolicy">dataplex.entryTypes.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.entryTypes.list">dataplex.entryTypes.list</a></li>
     <li><a href="/permissions/dataplex.entryTypes.setIamPolicy">dataplex.entryTypes.setIamPolicy</a></li>
@@ -1487,6 +1498,7 @@
     <li><a href="/permissions/devicerun.locations.list">devicerun.locations.list</a></li>
     <li><a href="/permissions/devicerun.operations.list">devicerun.operations.list</a></li>
     <li><a href="/permissions/devicerun.sessions.list">devicerun.sessions.list</a></li>
+    <li><a href="/permissions/devicerun.softwareVersions.list">devicerun.softwareVersions.list</a></li>
     <li><a href="/permissions/devicestreaming.deviceSessions.list">devicestreaming.deviceSessions.list</a></li>
     <li><a href="/permissions/dialogflow.agents.list">dialogflow.agents.list</a></li>
     <li><a href="/permissions/dialogflow.answerrecords.list">dialogflow.answerrecords.list</a></li>
@@ -1654,6 +1666,7 @@
     <li><a href="/permissions/enterpriseknowledgegraph.entityReconciliationJobs.list">enterpriseknowledgegraph.entityReconciliationJobs.list</a></li>
     <li><a href="/permissions/enterprisepurchasing.gcveCuds.list">enterprisepurchasing.gcveCuds.list</a></li>
     <li><a href="/permissions/enterprisepurchasing.gcveNodePricingInfo.list">enterprisepurchasing.gcveNodePricingInfo.list</a></li>
+    <li><a href="/permissions/enterprisepurchasing.licenseKeys.list">enterprisepurchasing.licenseKeys.list</a></li>
     <li><a href="/permissions/enterprisepurchasing.locations.list">enterprisepurchasing.locations.list</a></li>
     <li><a href="/permissions/enterprisepurchasing.operations.list">enterprisepurchasing.operations.list</a></li>
     <li><a href="/permissions/errorreporting.applications.list">errorreporting.applications.list</a></li>
@@ -2797,8 +2810,6 @@
     <li><a href="/permissions/threatintelligence.alerts.list">threatintelligence.alerts.list</a></li>
     <li><a href="/permissions/threatintelligence.configurations.list">threatintelligence.configurations.list</a></li>
     <li><a href="/permissions/threatintelligence.findings.list">threatintelligence.findings.list</a></li>
-    <li><a href="/permissions/timeseriesinsights.datasets.list">timeseriesinsights.datasets.list</a></li>
-    <li><a href="/permissions/timeseriesinsights.locations.list">timeseriesinsights.locations.list</a></li>
     <li><a href="/permissions/tpu.acceleratortypes.list">tpu.acceleratortypes.list</a></li>
     <li><a href="/permissions/tpu.locations.list">tpu.locations.list</a></li>
     <li><a href="/permissions/tpu.nodes.list">tpu.nodes.list</a></li>
