@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dataform Editor (roles/dataform.editor) | GCP IAM Reference</title>
-    <meta name="description" content="Dataform Editor - Edit access to Workspaces and Read-only access to Repositories.">
+    <meta name="description" content="Dataform Editor - Edit access to Workspaces and Repositories.">
     <link rel="canonical" href="https://gcpiam.com/roles/dataform.editor">
     <meta property="og:title" content="Dataform Editor (roles/dataform.editor)">
-    <meta property="og:description" content="Dataform Editor - Edit access to Workspaces and Read-only access to Repositories.">
+    <meta property="og:description" content="Dataform Editor - Edit access to Workspaces and Repositories.">
     <meta property="og:url" content="https://gcpiam.com/roles/dataform.editor">
     <meta property="og:type" content="website">
     <style>
@@ -72,30 +72,51 @@
     <p class="subtitle">Dataform Editor <span class="badge badge-ga">GA</span></p>
 
     <div class="description">
-        <p>Edit access to Workspaces and Read-only access to Repositories.</p>
+        <p>Edit access to Workspaces and Repositories.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(62)</span></h2>
+    <h2>Included Permissions <span class="count">(94)</span></h2>
 <ul class="list">
+    <li><a href="/permissions/dataform.commentThreads.create">dataform.commentThreads.create</a></li>
+    <li><a href="/permissions/dataform.commentThreads.delete">dataform.commentThreads.delete</a></li>
     <li><a href="/permissions/dataform.commentThreads.get">dataform.commentThreads.get</a></li>
     <li><a href="/permissions/dataform.commentThreads.list">dataform.commentThreads.list</a></li>
+    <li><a href="/permissions/dataform.commentThreads.update">dataform.commentThreads.update</a></li>
+    <li><a href="/permissions/dataform.comments.create">dataform.comments.create</a></li>
+    <li><a href="/permissions/dataform.comments.delete">dataform.comments.delete</a></li>
     <li><a href="/permissions/dataform.comments.get">dataform.comments.get</a></li>
     <li><a href="/permissions/dataform.comments.list">dataform.comments.list</a></li>
+    <li><a href="/permissions/dataform.comments.update">dataform.comments.update</a></li>
     <li><a href="/permissions/dataform.compilationResults.create">dataform.compilationResults.create</a></li>
     <li><a href="/permissions/dataform.compilationResults.get">dataform.compilationResults.get</a></li>
     <li><a href="/permissions/dataform.compilationResults.list">dataform.compilationResults.list</a></li>
     <li><a href="/permissions/dataform.compilationResults.query">dataform.compilationResults.query</a></li>
     <li><a href="/permissions/dataform.config.get">dataform.config.get</a></li>
+    <li><a href="/permissions/dataform.config.update">dataform.config.update</a></li>
+    <li><a href="/permissions/dataform.folders.addContents">dataform.folders.addContents</a></li>
+    <li><a href="/permissions/dataform.folders.create">dataform.folders.create</a></li>
+    <li><a href="/permissions/dataform.folders.delete">dataform.folders.delete</a></li>
+    <li><a href="/permissions/dataform.folders.deleteTree">dataform.folders.deleteTree</a></li>
     <li><a href="/permissions/dataform.folders.get">dataform.folders.get</a></li>
     <li><a href="/permissions/dataform.folders.getIamPolicy">dataform.folders.getIamPolicy</a></li>
+    <li><a href="/permissions/dataform.folders.move">dataform.folders.move</a></li>
     <li><a href="/permissions/dataform.folders.queryContents">dataform.folders.queryContents</a></li>
+    <li><a href="/permissions/dataform.folders.update">dataform.folders.update</a></li>
     <li><a href="/permissions/dataform.locations.get">dataform.locations.get</a></li>
     <li><a href="/permissions/dataform.locations.list">dataform.locations.list</a></li>
+    <li><a href="/permissions/dataform.operations.cancel">dataform.operations.cancel</a></li>
+    <li><a href="/permissions/dataform.operations.delete">dataform.operations.delete</a></li>
     <li><a href="/permissions/dataform.operations.get">dataform.operations.get</a></li>
     <li><a href="/permissions/dataform.operations.list">dataform.operations.list</a></li>
+    <li><a href="/permissions/dataform.releaseConfigs.create">dataform.releaseConfigs.create</a></li>
+    <li><a href="/permissions/dataform.releaseConfigs.delete">dataform.releaseConfigs.delete</a></li>
     <li><a href="/permissions/dataform.releaseConfigs.get">dataform.releaseConfigs.get</a></li>
     <li><a href="/permissions/dataform.releaseConfigs.list">dataform.releaseConfigs.list</a></li>
+    <li><a href="/permissions/dataform.releaseConfigs.update">dataform.releaseConfigs.update</a></li>
+    <li><a href="/permissions/dataform.repositories.commit">dataform.repositories.commit</a></li>
     <li><a href="/permissions/dataform.repositories.computeAccessTokenStatus">dataform.repositories.computeAccessTokenStatus</a></li>
+    <li><a href="/permissions/dataform.repositories.create">dataform.repositories.create</a></li>
+    <li><a href="/permissions/dataform.repositories.delete">dataform.repositories.delete</a></li>
     <li><a href="/permissions/dataform.repositories.fetchHistory">dataform.repositories.fetchHistory</a></li>
     <li><a href="/permissions/dataform.repositories.fetchRemoteBranches">dataform.repositories.fetchRemoteBranches</a></li>
     <li><a href="/permissions/dataform.repositories.get">dataform.repositories.get</a></li>
@@ -103,12 +124,23 @@
     <li><a href="/permissions/dataform.repositories.list">dataform.repositories.list</a></li>
     <li><a href="/permissions/dataform.repositories.listEffectiveTags">dataform.repositories.listEffectiveTags</a></li>
     <li><a href="/permissions/dataform.repositories.listTagBindings">dataform.repositories.listTagBindings</a></li>
+    <li><a href="/permissions/dataform.repositories.move">dataform.repositories.move</a></li>
     <li><a href="/permissions/dataform.repositories.queryDirectoryContents">dataform.repositories.queryDirectoryContents</a></li>
     <li><a href="/permissions/dataform.repositories.readFile">dataform.repositories.readFile</a></li>
+    <li><a href="/permissions/dataform.repositories.scheduleRelease">dataform.repositories.scheduleRelease</a></li>
+    <li><a href="/permissions/dataform.repositories.scheduleWorkflow">dataform.repositories.scheduleWorkflow</a></li>
+    <li><a href="/permissions/dataform.repositories.update">dataform.repositories.update</a></li>
+    <li><a href="/permissions/dataform.teamFolders.create">dataform.teamFolders.create</a></li>
+    <li><a href="/permissions/dataform.teamFolders.delete">dataform.teamFolders.delete</a></li>
+    <li><a href="/permissions/dataform.teamFolders.deleteTree">dataform.teamFolders.deleteTree</a></li>
     <li><a href="/permissions/dataform.teamFolders.get">dataform.teamFolders.get</a></li>
     <li><a href="/permissions/dataform.teamFolders.getIamPolicy">dataform.teamFolders.getIamPolicy</a></li>
+    <li><a href="/permissions/dataform.teamFolders.update">dataform.teamFolders.update</a></li>
+    <li><a href="/permissions/dataform.workflowConfigs.create">dataform.workflowConfigs.create</a></li>
+    <li><a href="/permissions/dataform.workflowConfigs.delete">dataform.workflowConfigs.delete</a></li>
     <li><a href="/permissions/dataform.workflowConfigs.get">dataform.workflowConfigs.get</a></li>
     <li><a href="/permissions/dataform.workflowConfigs.list">dataform.workflowConfigs.list</a></li>
+    <li><a href="/permissions/dataform.workflowConfigs.update">dataform.workflowConfigs.update</a></li>
     <li><a href="/permissions/dataform.workflowInvocations.cancel">dataform.workflowInvocations.cancel</a></li>
     <li><a href="/permissions/dataform.workflowInvocations.create">dataform.workflowInvocations.create</a></li>
     <li><a href="/permissions/dataform.workflowInvocations.delete">dataform.workflowInvocations.delete</a></li>
