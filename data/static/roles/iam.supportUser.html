@@ -75,7 +75,7 @@
         <p>Provide a user the ability to create and manage support cases in their own enterprise by viewing their GCP resource configurations, monitoring and logging information that may be needed for providing required information to GCP support.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(6647)</span></h2>
+    <h2>Included Permissions <span class="count">(6684)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -138,6 +138,7 @@
     <li><a href="/permissions/aiplatform.agentExamples.get">aiplatform.agentExamples.get</a></li>
     <li><a href="/permissions/aiplatform.agentExamples.list">aiplatform.agentExamples.list</a></li>
     <li><a href="/permissions/aiplatform.agents.get">aiplatform.agents.get</a></li>
+    <li><a href="/permissions/aiplatform.agents.getIamPolicy">aiplatform.agents.getIamPolicy</a></li>
     <li><a href="/permissions/aiplatform.agents.list">aiplatform.agents.list</a></li>
     <li><a href="/permissions/aiplatform.analyzedInvocations.get">aiplatform.analyzedInvocations.get</a></li>
     <li><a href="/permissions/aiplatform.analyzedInvocations.list">aiplatform.analyzedInvocations.list</a></li>
@@ -1084,6 +1085,7 @@
     <li><a href="/permissions/capacityplanner.capacityPlans.get">capacityplanner.capacityPlans.get</a></li>
     <li><a href="/permissions/capacityplanner.capacityPlans.list">capacityplanner.capacityPlans.list</a></li>
     <li><a href="/permissions/capacityplanner.forecasts.list">capacityplanner.forecasts.list</a></li>
+    <li><a href="/permissions/capacityplanner.messages.generate">capacityplanner.messages.generate</a></li>
     <li><a href="/permissions/capacityplanner.operations.get">capacityplanner.operations.get</a></li>
     <li><a href="/permissions/capacityplanner.planAlertInsights.list">capacityplanner.planAlertInsights.list</a></li>
     <li><a href="/permissions/capacityplanner.usageAlertInsights.list">capacityplanner.usageAlertInsights.list</a></li>
@@ -2502,6 +2504,10 @@
     <li><a href="/permissions/compute.firewalls.list">compute.firewalls.list</a></li>
     <li><a href="/permissions/compute.firewalls.listEffectiveTags">compute.firewalls.listEffectiveTags</a></li>
     <li><a href="/permissions/compute.firewalls.listTagBindings">compute.firewalls.listTagBindings</a></li>
+    <li><a href="/permissions/compute.folderVmExtensionPolicies.get">compute.folderVmExtensionPolicies.get</a></li>
+    <li><a href="/permissions/compute.folderVmExtensionPolicies.list">compute.folderVmExtensionPolicies.list</a></li>
+    <li><a href="/permissions/compute.folderVmExtensions.get">compute.folderVmExtensions.get</a></li>
+    <li><a href="/permissions/compute.folderVmExtensions.list">compute.folderVmExtensions.list</a></li>
     <li><a href="/permissions/compute.forwardingRules.get">compute.forwardingRules.get</a></li>
     <li><a href="/permissions/compute.forwardingRules.list">compute.forwardingRules.list</a></li>
     <li><a href="/permissions/compute.forwardingRules.listEffectiveTags">compute.forwardingRules.listEffectiveTags</a></li>
@@ -2661,6 +2667,10 @@
     <li><a href="/permissions/compute.orgRolloutPlans.list">compute.orgRolloutPlans.list</a></li>
     <li><a href="/permissions/compute.orgRollouts.get">compute.orgRollouts.get</a></li>
     <li><a href="/permissions/compute.orgRollouts.list">compute.orgRollouts.list</a></li>
+    <li><a href="/permissions/compute.orgVmExtensionPolicies.get">compute.orgVmExtensionPolicies.get</a></li>
+    <li><a href="/permissions/compute.orgVmExtensionPolicies.list">compute.orgVmExtensionPolicies.list</a></li>
+    <li><a href="/permissions/compute.orgVmExtensions.get">compute.orgVmExtensions.get</a></li>
+    <li><a href="/permissions/compute.orgVmExtensions.list">compute.orgVmExtensions.list</a></li>
     <li><a href="/permissions/compute.organizations.listAssociations">compute.organizations.listAssociations</a></li>
     <li><a href="/permissions/compute.packetMirrorings.get">compute.packetMirrorings.get</a></li>
     <li><a href="/permissions/compute.packetMirrorings.list">compute.packetMirrorings.list</a></li>
@@ -2862,6 +2872,8 @@
     <li><a href="/permissions/compute.urlMaps.validate">compute.urlMaps.validate</a></li>
     <li><a href="/permissions/compute.vmExtensionPolicies.get">compute.vmExtensionPolicies.get</a></li>
     <li><a href="/permissions/compute.vmExtensionPolicies.list">compute.vmExtensionPolicies.list</a></li>
+    <li><a href="/permissions/compute.vmExtensions.get">compute.vmExtensions.get</a></li>
+    <li><a href="/permissions/compute.vmExtensions.list">compute.vmExtensions.list</a></li>
     <li><a href="/permissions/compute.vpnGateways.get">compute.vpnGateways.get</a></li>
     <li><a href="/permissions/compute.vpnGateways.list">compute.vpnGateways.list</a></li>
     <li><a href="/permissions/compute.vpnGateways.listEffectiveTags">compute.vpnGateways.listEffectiveTags</a></li>
@@ -3257,26 +3269,48 @@
     <li><a href="/permissions/databasecenter.userLabels.list">databasecenter.userLabels.list</a></li>
     <li><a href="/permissions/databasecenter.userTags.list">databasecenter.userTags.list</a></li>
     <li><a href="/permissions/databaseinsights.activeQueries.fetch">databaseinsights.activeQueries.fetch</a></li>
+    <li><a href="/permissions/databaseinsights.activeSessionHistory.query">databaseinsights.activeSessionHistory.query</a></li>
     <li><a href="/permissions/databaseinsights.activitySummary.fetch">databaseinsights.activitySummary.fetch</a></li>
+    <li><a href="/permissions/databaseinsights.agentPolicies.getAgentPolicy">databaseinsights.agentPolicies.getAgentPolicy</a></li>
     <li><a href="/permissions/databaseinsights.aggregatedEvents.query">databaseinsights.aggregatedEvents.query</a></li>
     <li><a href="/permissions/databaseinsights.aggregatedStats.query">databaseinsights.aggregatedStats.query</a></li>
     <li><a href="/permissions/databaseinsights.clusterEvents.query">databaseinsights.clusterEvents.query</a></li>
     <li><a href="/permissions/databaseinsights.databaseIssues.troubleshoot">databaseinsights.databaseIssues.troubleshoot</a></li>
     <li><a href="/permissions/databaseinsights.dbCenter.query">databaseinsights.dbCenter.query</a></li>
     <li><a href="/permissions/databaseinsights.dbPerformance.query">databaseinsights.dbPerformance.query</a></li>
+    <li><a href="/permissions/databaseinsights.genUiAgent.getBlueprint">databaseinsights.genUiAgent.getBlueprint</a></li>
+    <li><a href="/permissions/databaseinsights.genUiAgent.listBlueprints">databaseinsights.genUiAgent.listBlueprints</a></li>
+    <li><a href="/permissions/databaseinsights.genUiAgent.query">databaseinsights.genUiAgent.query</a></li>
+    <li><a href="/permissions/databaseinsights.goals.getGoal">databaseinsights.goals.getGoal</a></li>
+    <li><a href="/permissions/databaseinsights.goals.getTask">databaseinsights.goals.getTask</a></li>
+    <li><a href="/permissions/databaseinsights.goals.listGoals">databaseinsights.goals.listGoals</a></li>
+    <li><a href="/permissions/databaseinsights.goals.listTasks">databaseinsights.goals.listTasks</a></li>
     <li><a href="/permissions/databaseinsights.indexRecommendations.query">databaseinsights.indexRecommendations.query</a></li>
     <li><a href="/permissions/databaseinsights.instanceEvents.query">databaseinsights.instanceEvents.query</a></li>
     <li><a href="/permissions/databaseinsights.locations.get">databaseinsights.locations.get</a></li>
     <li><a href="/permissions/databaseinsights.locations.list">databaseinsights.locations.list</a></li>
+    <li><a href="/permissions/databaseinsights.logs.fetch">databaseinsights.logs.fetch</a></li>
+    <li><a href="/permissions/databaseinsights.operations.get">databaseinsights.operations.get</a></li>
     <li><a href="/permissions/databaseinsights.performanceIssues.detect">databaseinsights.performanceIssues.detect</a></li>
     <li><a href="/permissions/databaseinsights.performanceIssues.investigate">databaseinsights.performanceIssues.investigate</a></li>
     <li><a href="/permissions/databaseinsights.queryMetrics.fetch">databaseinsights.queryMetrics.fetch</a></li>
     <li><a href="/permissions/databaseinsights.queryStats.fetch">databaseinsights.queryStats.fetch</a></li>
     <li><a href="/permissions/databaseinsights.queryTimeSeries.fetch">databaseinsights.queryTimeSeries.fetch</a></li>
     <li><a href="/permissions/databaseinsights.recommendations.query">databaseinsights.recommendations.query</a></li>
+    <li><a href="/permissions/databaseinsights.resourceMetadata.fetch">databaseinsights.resourceMetadata.fetch</a></li>
     <li><a href="/permissions/databaseinsights.resourceRecommendations.query">databaseinsights.resourceRecommendations.query</a></li>
     <li><a href="/permissions/databaseinsights.systemMetrics.fetch">databaseinsights.systemMetrics.fetch</a></li>
+    <li><a href="/permissions/databaseinsights.telemetryConfig.fetch">databaseinsights.telemetryConfig.fetch</a></li>
     <li><a href="/permissions/databaseinsights.timeSeries.query">databaseinsights.timeSeries.query</a></li>
+    <li><a href="/permissions/databaseinsights.traces.fetch">databaseinsights.traces.fetch</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.fetchContextService">databaseinsights.virtualDbaAgent.fetchContextService</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.getAgentPolicy">databaseinsights.virtualDbaAgent.getAgentPolicy</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.getGoal">databaseinsights.virtualDbaAgent.getGoal</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.getTask">databaseinsights.virtualDbaAgent.getTask</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.listGoals">databaseinsights.virtualDbaAgent.listGoals</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.listTasks">databaseinsights.virtualDbaAgent.listTasks</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.listTodos">databaseinsights.virtualDbaAgent.listTodos</a></li>
+    <li><a href="/permissions/databaseinsights.virtualDbaAgent.query">databaseinsights.virtualDbaAgent.query</a></li>
     <li><a href="/permissions/databaseinsights.virtualDbxAgent.query">databaseinsights.virtualDbxAgent.query</a></li>
     <li><a href="/permissions/databaseinsights.waitEventStats.fetch">databaseinsights.waitEventStats.fetch</a></li>
     <li><a href="/permissions/databaseinsights.waitEventTimeSeries.fetch">databaseinsights.waitEventTimeSeries.fetch</a></li>
@@ -3440,6 +3474,10 @@
     <li><a href="/permissions/datapipelines.jobs.list">datapipelines.jobs.list</a></li>
     <li><a href="/permissions/datapipelines.pipelines.get">datapipelines.pipelines.get</a></li>
     <li><a href="/permissions/datapipelines.pipelines.list">datapipelines.pipelines.list</a></li>
+    <li><a href="/permissions/dataplex.agentTasks.get">dataplex.agentTasks.get</a></li>
+    <li><a href="/permissions/dataplex.agentTasks.getData">dataplex.agentTasks.getData</a></li>
+    <li><a href="/permissions/dataplex.agentTasks.getIamPolicy">dataplex.agentTasks.getIamPolicy</a></li>
+    <li><a href="/permissions/dataplex.agentTasks.list">dataplex.agentTasks.list</a></li>
     <li><a href="/permissions/dataplex.aspectTypes.get">dataplex.aspectTypes.get</a></li>
     <li><a href="/permissions/dataplex.aspectTypes.getIamPolicy">dataplex.aspectTypes.getIamPolicy</a></li>
     <li><a href="/permissions/dataplex.aspectTypes.list">dataplex.aspectTypes.list</a></li>
@@ -5025,8 +5063,6 @@
     <li><a href="/permissions/modelarmor.locations.list">modelarmor.locations.list</a></li>
     <li><a href="/permissions/modelarmor.templates.get">modelarmor.templates.get</a></li>
     <li><a href="/permissions/modelarmor.templates.list">modelarmor.templates.list</a></li>
-    <li><a href="/permissions/modelarmor.topics.get">modelarmor.topics.get</a></li>
-    <li><a href="/permissions/modelarmor.topics.list">modelarmor.topics.list</a></li>
     <li><a href="/permissions/monitoring.alertPolicies.get">monitoring.alertPolicies.get</a></li>
     <li><a href="/permissions/monitoring.alertPolicies.list">monitoring.alertPolicies.list</a></li>
     <li><a href="/permissions/monitoring.alertPolicies.listEffectiveTags">monitoring.alertPolicies.listEffectiveTags</a></li>
@@ -5349,6 +5385,8 @@
     <li><a href="/permissions/oracledatabase.cloudVmClusters.get">oracledatabase.cloudVmClusters.get</a></li>
     <li><a href="/permissions/oracledatabase.cloudVmClusters.list">oracledatabase.cloudVmClusters.list</a></li>
     <li><a href="/permissions/oracledatabase.databaseCharacterSets.list">oracledatabase.databaseCharacterSets.list</a></li>
+    <li><a href="/permissions/oracledatabase.databaseConnections.get">oracledatabase.databaseConnections.get</a></li>
+    <li><a href="/permissions/oracledatabase.databaseConnections.list">oracledatabase.databaseConnections.list</a></li>
     <li><a href="/permissions/oracledatabase.databases.get">oracledatabase.databases.get</a></li>
     <li><a href="/permissions/oracledatabase.databases.list">oracledatabase.databases.list</a></li>
     <li><a href="/permissions/oracledatabase.dbNodes.list">oracledatabase.dbNodes.list</a></li>
@@ -6344,7 +6382,6 @@
     <li><a href="/permissions/storage.managedFolders.get">storage.managedFolders.get</a></li>
     <li><a href="/permissions/storage.managedFolders.getIamPolicy">storage.managedFolders.getIamPolicy</a></li>
     <li><a href="/permissions/storage.managedFolders.list">storage.managedFolders.list</a></li>
-    <li><a href="/permissions/storage.multipartUploads.listParts">storage.multipartUploads.listParts</a></li>
     <li><a href="/permissions/storage.objects.get">storage.objects.get</a></li>
     <li><a href="/permissions/storage.objects.getIamPolicy">storage.objects.getIamPolicy</a></li>
     <li><a href="/permissions/storage.objects.list">storage.objects.list</a></li>
