@@ -189605,6 +189605,7 @@
         "resourcemanager.projects.getIamPolicy",
         "resourcemanager.projects.list",
         "run.routes.invoke",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -189612,6 +189613,8 @@
         "serviceusage.groups.listExpandedMembers",
         "serviceusage.groups.listMembers",
         "serviceusage.services.get",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.services.use",
         "serviceusage.values.test",
         "storage.buckets.create",
@@ -189894,6 +189897,7 @@
         "run.workerpools.sshRead",
         "run.workerpools.sshRoot",
         "run.workerpools.update",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -189903,6 +189907,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.services.use",
         "serviceusage.values.test",
         "storage.buckets.create",
@@ -190045,6 +190051,7 @@
         "run.workerpools.get",
         "run.workerpools.getIamPolicy",
         "run.workerpools.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -190054,6 +190061,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "storage.folders.get",
         "storage.folders.list",
@@ -191971,6 +191980,7 @@
         "securityposture.postures.list",
         "securityposture.reports.get",
         "securityposture.reports.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -191981,6 +191991,8 @@
         "serviceusage.services.enable",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.services.use",
         "serviceusage.values.test",
         "stackdriver.projects.get",
@@ -192326,6 +192338,7 @@
         "securityposture.postures.list",
         "securityposture.reports.get",
         "securityposture.reports.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -192335,6 +192348,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "stackdriver.projects.get",
         "stackdriver.resourceMetadata.list"
@@ -192646,6 +192661,7 @@
         "securityposture.postures.list",
         "securityposture.reports.get",
         "securityposture.reports.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -192655,6 +192671,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "stackdriver.projects.get",
         "stackdriver.resourceMetadata.list"
@@ -192754,6 +192772,7 @@
         "resourcemanager.projects.get",
         "resourcemanager.projects.getIamPolicy",
         "resourcemanager.projects.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -192763,6 +192782,8 @@
         "serviceusage.groups.listMembers",
         "serviceusage.services.enable",
         "serviceusage.services.get",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test"
       ],
       "etag": "AA=="
@@ -193458,6 +193479,7 @@
         "securitycentermanagement.securityHealthAnalyticsCustomModules.list",
         "securitycentermanagement.securityHealthAnalyticsCustomModules.simulate",
         "securitycentermanagement.securityHealthAnalyticsCustomModules.update",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -193471,6 +193493,8 @@
         "serviceusage.services.enable",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "stackdriver.projects.get",
         "storage.buckets.get",
@@ -194367,6 +194391,7 @@
         "resourcemanager.projects.get",
         "resourcemanager.projects.list",
         "securitycenter.organizationsettings.get",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -194376,6 +194401,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "stackdriver.projects.get"
       ],
@@ -195035,6 +195062,7 @@
         "securitycentermanagement.securityHealthAnalyticsCustomModules.list",
         "securitycentermanagement.securityHealthAnalyticsCustomModules.simulate",
         "securitycentermanagement.securityHealthAnalyticsCustomModules.update",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -195048,6 +195076,8 @@
         "serviceusage.services.enable",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "stackdriver.projects.get",
         "storage.buckets.get",
@@ -196339,6 +196369,7 @@
         "servicemanagement.services.report",
         "servicemanagement.services.setIamPolicy",
         "servicemanagement.services.update",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -196347,6 +196378,8 @@
         "serviceusage.groups.listMembers",
         "serviceusage.quotas.get",
         "serviceusage.services.get",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test"
       ],
       "etag": "AA=="
@@ -196413,6 +196446,7 @@
         "resourcemanager.organizations.get",
         "resourcemanager.projects.get",
         "resourcemanager.projects.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -196426,6 +196460,8 @@
         "serviceusage.services.enable",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test"
       ],
       "etag": "AA=="
@@ -196438,6 +196474,7 @@
       "included_permissions": [
         "cloudquotas.quotas.get",
         "monitoring.timeSeries.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -196447,6 +196484,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test"
       ],
       "etag": "AA=="
@@ -196748,6 +196787,7 @@
         "cloudquotas.quotas.get",
         "cloudquotas.quotas.update",
         "monitoring.timeSeries.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -196767,6 +196807,8 @@
         "serviceusage.services.enable",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.services.use",
         "serviceusage.values.test"
       ],
@@ -196779,6 +196821,7 @@
       "stage": "GA",
       "included_permissions": [
         "monitoring.timeSeries.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.contentsecuritypolicy.get",
@@ -196792,6 +196835,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.services.use",
         "serviceusage.values.test"
       ],
@@ -196804,6 +196849,7 @@
       "stage": "GA",
       "included_permissions": [
         "monitoring.timeSeries.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.contentsecuritypolicy.get",
@@ -196817,6 +196863,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test"
       ],
       "etag": "AA=="
@@ -197568,6 +197616,7 @@
         "pubsub.topics.update",
         "pubsub.topics.updateTag",
         "resourcemanager.projects.get",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -197577,6 +197626,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test"
       ],
       "etag": "AA=="
@@ -197700,6 +197751,7 @@
       "included_permissions": [
         "resourcemanager.projects.get",
         "resourcemanager.projects.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -197709,6 +197761,8 @@
         "serviceusage.groups.listMembers",
         "serviceusage.services.enable",
         "serviceusage.services.get",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "stackdriver.projects.edit",
         "stackdriver.projects.get"
@@ -198779,6 +198833,7 @@
         "monitoring.timeSeries.list",
         "observability.scopes.get",
         "resourcemanager.projects.get",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -198798,6 +198853,8 @@
         "serviceusage.services.enable",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.services.use",
         "serviceusage.values.test",
         "source.repos.get",
@@ -200091,6 +200148,7 @@
         "agentidentity.authProviders.list",
         "agentidentity.authProviders.queryWorkloads",
         "agentidentity.authorizations.get",
+        "agentidentity.authorizations.getIamPolicy",
         "agentidentity.authorizations.list",
         "agentidentity.locations.get",
         "agentidentity.locations.list",
@@ -201111,6 +201169,7 @@
         "ces.apps.export",
         "ces.apps.get",
         "ces.apps.list",
+        "ces.arcSessions.get",
         "ces.assistantSessions.get",
         "ces.assistantSessions.list",
         "ces.changelogs.get",
@@ -201940,6 +201999,8 @@
         "commerceprice.privateoffers.list",
         "commerceproducer.analyticsHubListingProductConfigs.get",
         "commerceproducer.analyticsHubListingProductConfigs.list",
+        "commerceproducer.consumerEnforcementActions.get",
+        "commerceproducer.consumerEnforcementActions.list",
         "commerceproducer.locations.get",
         "commerceproducer.locations.list",
         "commerceproducer.privateOfferDocuments.get",
@@ -202020,6 +202081,10 @@
         "compute.firewalls.list",
         "compute.firewalls.listEffectiveTags",
         "compute.firewalls.listTagBindings",
+        "compute.folderRolloutPlans.get",
+        "compute.folderRolloutPlans.list",
+        "compute.folderRollouts.get",
+        "compute.folderRollouts.list",
         "compute.folderVmExtensionPolicies.get",
         "compute.folderVmExtensionPolicies.list",
         "compute.folderVmExtensions.get",
@@ -204075,6 +204140,7 @@
         "gkeonprem.vmwareNodePools.getIamPolicy",
         "gkeonprem.vmwareNodePools.list",
         "gsuiteaddons.authorizations.get",
+        "gsuiteaddons.chatAppConfigs.get",
         "gsuiteaddons.deployments.get",
         "gsuiteaddons.deployments.list",
         "health.subscribers.list",
@@ -204933,6 +204999,8 @@
         "oracledatabase.locations.get",
         "oracledatabase.locations.list",
         "oracledatabase.minorVersions.list",
+        "oracledatabase.odbDnsZones.get",
+        "oracledatabase.odbDnsZones.list",
         "oracledatabase.odbNetworks.get",
         "oracledatabase.odbNetworks.list",
         "oracledatabase.odbSubnets.get",
@@ -204941,6 +205009,8 @@
         "oracledatabase.operations.list",
         "oracledatabase.pluggableDatabases.get",
         "oracledatabase.pluggableDatabases.list",
+        "oracledatabase.serviceIntegrations.get",
+        "oracledatabase.serviceIntegrations.list",
         "oracledatabase.systemVersions.list",
         "orgpolicy.constraints.list",
         "orgpolicy.customConstraints.get",
@@ -205799,6 +205869,7 @@
         "servicesecurityinsights.securityViews.get",
         "servicesecurityinsights.workloadPolicies.list",
         "servicesecurityinsights.workloadSecurityInfo.get",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.contentsecuritypolicy.get",
@@ -205812,6 +205883,8 @@
         "serviceusage.quotas.get",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "source.repos.get",
         "source.repos.getIamPolicy",
@@ -209582,6 +209655,7 @@
         "servicedirectory.services.list",
         "servicemanagement.services.get",
         "servicemanagement.services.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -209589,6 +209663,8 @@
         "serviceusage.groups.listExpandedMembers",
         "serviceusage.groups.listMembers",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "spanner.backupSchedules.list",
         "spanner.backups.list",
@@ -210003,6 +210079,7 @@
         "resourcemanager.projects.get",
         "resourcemanager.projects.getIamPolicy",
         "resourcemanager.projects.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -210011,6 +210088,8 @@
         "serviceusage.groups.listMembers",
         "serviceusage.quotas.get",
         "serviceusage.services.get",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "storage.buckets.list",
         "storage.objects.list",
@@ -210073,6 +210152,7 @@
         "resourcemanager.projects.get",
         "resourcemanager.projects.getIamPolicy",
         "resourcemanager.projects.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -210081,6 +210161,8 @@
         "serviceusage.groups.listMembers",
         "serviceusage.quotas.get",
         "serviceusage.services.get",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "storage.buckets.list",
         "storage.objects.list",
@@ -210289,6 +210371,7 @@
       "included_permissions": [
         "resourcemanager.projects.get",
         "resourcemanager.projects.list",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -210297,6 +210380,8 @@
         "serviceusage.groups.listMembers",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test",
         "workloadmanager.discoveredprofiles.get",
         "workloadmanager.discoveredprofiles.getHealth",
@@ -210530,6 +210615,7 @@
         "servicedirectory.namespaces.delete",
         "servicedirectory.services.create",
         "servicedirectory.services.delete",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.effectivepolicy.get",
@@ -210537,6 +210623,8 @@
         "serviceusage.groups.listExpandedMembers",
         "serviceusage.groups.listMembers",
         "serviceusage.services.get",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.values.test"
       ],
       "etag": "AA=="
@@ -210652,8 +210740,10 @@
         "agentidentity.authProviders.revokeAuthorizations",
         "agentidentity.authProviders.undelete",
         "agentidentity.authProviders.update",
+        "agentidentity.authorizations.create",
         "agentidentity.authorizations.delete",
         "agentidentity.authorizations.get",
+        "agentidentity.authorizations.getIamPolicy",
         "agentidentity.authorizations.list",
         "agentidentity.locations.get",
         "agentidentity.locations.list",
@@ -212697,6 +212787,7 @@
         "ces.apps.list",
         "ces.apps.runEvaluation",
         "ces.apps.update",
+        "ces.arcSessions.get",
         "ces.assistantSessions.create",
         "ces.assistantSessions.get",
         "ces.assistantSessions.list",
@@ -214223,6 +214314,11 @@
         "commerceproducer.analyticsHubListingProductConfigs.get",
         "commerceproducer.analyticsHubListingProductConfigs.list",
         "commerceproducer.analyticsHubListingProductConfigs.update",
+        "commerceproducer.consumerEnforcementActions.create",
+        "commerceproducer.consumerEnforcementActions.delete",
+        "commerceproducer.consumerEnforcementActions.get",
+        "commerceproducer.consumerEnforcementActions.list",
+        "commerceproducer.consumerEnforcementActions.update",
         "commerceproducer.locations.get",
         "commerceproducer.locations.list",
         "commerceproducer.privateOfferDocuments.create",
@@ -214389,6 +214485,16 @@
         "compute.firewalls.listEffectiveTags",
         "compute.firewalls.listTagBindings",
         "compute.firewalls.update",
+        "compute.folderRolloutPlans.create",
+        "compute.folderRolloutPlans.delete",
+        "compute.folderRolloutPlans.get",
+        "compute.folderRolloutPlans.list",
+        "compute.folderRollouts.cancel",
+        "compute.folderRollouts.delete",
+        "compute.folderRollouts.get",
+        "compute.folderRollouts.list",
+        "compute.folderRollouts.pause",
+        "compute.folderRollouts.resume",
         "compute.folderVmExtensionPolicies.create",
         "compute.folderVmExtensionPolicies.delete",
         "compute.folderVmExtensionPolicies.get",
@@ -216587,6 +216693,7 @@
         "dataplex.entryGroups.listTagBindings",
         "dataplex.entryGroups.requestChanges",
         "dataplex.entryGroups.update",
+        "dataplex.entryGroups.useCertificationAspect",
         "dataplex.entryGroups.useContactsAspect",
         "dataplex.entryGroups.useContextAspect",
         "dataplex.entryGroups.useContextEntry",
@@ -216610,6 +216717,8 @@
         "dataplex.entryGroups.useOverviewAspect",
         "dataplex.entryGroups.usePostgreSQLConnectorTypes",
         "dataplex.entryGroups.useQueriesAspect",
+        "dataplex.entryGroups.useQueryTemplateAspect",
+        "dataplex.entryGroups.useQueryTemplateEntry",
         "dataplex.entryGroups.useReferenceEntryLink",
         "dataplex.entryGroups.useRefreshCadenceAspect",
         "dataplex.entryGroups.useRelatedEntryLink",
@@ -218679,6 +218788,8 @@
         "gkeonprem.vmwareNodePools.unenroll",
         "gkeonprem.vmwareNodePools.update",
         "gsuiteaddons.authorizations.get",
+        "gsuiteaddons.chatAppConfigs.get",
+        "gsuiteaddons.chatAppConfigs.update",
         "gsuiteaddons.deployments.create",
         "gsuiteaddons.deployments.delete",
         "gsuiteaddons.deployments.execute",
@@ -220375,6 +220486,7 @@
         "oracledatabase.databaseConnections.list",
         "oracledatabase.databaseConnections.test",
         "oracledatabase.databaseConnections.update",
+        "oracledatabase.databaseConnections.use",
         "oracledatabase.databases.get",
         "oracledatabase.databases.list",
         "oracledatabase.dbNodes.list",
@@ -220429,6 +220541,10 @@
         "oracledatabase.locations.get",
         "oracledatabase.locations.list",
         "oracledatabase.minorVersions.list",
+        "oracledatabase.odbDnsZones.create",
+        "oracledatabase.odbDnsZones.delete",
+        "oracledatabase.odbDnsZones.get",
+        "oracledatabase.odbDnsZones.list",
         "oracledatabase.odbNetworks.create",
         "oracledatabase.odbNetworks.delete",
         "oracledatabase.odbNetworks.get",
@@ -220447,6 +220563,10 @@
         "oracledatabase.operations.list",
         "oracledatabase.pluggableDatabases.get",
         "oracledatabase.pluggableDatabases.list",
+        "oracledatabase.serviceIntegrations.create",
+        "oracledatabase.serviceIntegrations.delete",
+        "oracledatabase.serviceIntegrations.get",
+        "oracledatabase.serviceIntegrations.list",
         "oracledatabase.systemVersions.list",
         "orgpolicy.constraints.list",
         "orgpolicy.customConstraints.get",
@@ -221973,6 +222093,7 @@
         "servicesecurityinsights.workloadSecurityInfo.get",
         "serviceusage.apiKeys.regenerate",
         "serviceusage.apiKeys.revert",
+        "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
         "serviceusage.consumerpolicy.update",
@@ -221992,6 +222113,8 @@
         "serviceusage.services.enable",
         "serviceusage.services.get",
         "serviceusage.services.list",
+        "serviceusage.services.listApis",
+        "serviceusage.services.listDependentServices",
         "serviceusage.services.use",
         "serviceusage.values.test",
         "source.repos.get",
@@ -226601,6 +226724,19 @@
       ]
     },
     {
+      "name": "agentidentity.authorizations.create",
+      "service": "agentidentity",
+      "resource": "authorizations",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "agentidentity.authorizations.delete",
       "service": "agentidentity",
       "resource": "authorizations",
@@ -226709,6 +226845,24 @@
           "title": "Reader",
           "stage": "GA"
         },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "agentidentity.authorizations.getIamPolicy",
+      "service": "agentidentity",
+      "resource": "authorizations",
+      "action": "getIamPolicy",
+      "granted_by_roles": [
         {
           "name": "roles/viewer",
           "title": "Viewer",
@@ -393905,6 +394059,24 @@
         {
           "name": "roles/owner",
           "title": "Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "ces.arcSessions.get",
+      "service": "ces",
+      "resource": "arcSessions",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
           "stage": "GA"
         },
         {
@@ -570103,6 +570275,81 @@
       ]
     },
     {
+      "name": "commerceproducer.consumerEnforcementActions.create",
+      "service": "commerceproducer",
+      "resource": "consumerEnforcementActions",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "commerceproducer.consumerEnforcementActions.delete",
+      "service": "commerceproducer",
+      "resource": "consumerEnforcementActions",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "commerceproducer.consumerEnforcementActions.get",
+      "service": "commerceproducer",
+      "resource": "consumerEnforcementActions",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "commerceproducer.consumerEnforcementActions.list",
+      "service": "commerceproducer",
+      "resource": "consumerEnforcementActions",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "commerceproducer.consumerEnforcementActions.update",
+      "service": "commerceproducer",
+      "resource": "consumerEnforcementActions",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "commerceproducer.locations.get",
       "service": "commerceproducer",
       "resource": "locations",
@@ -592267,6 +592514,156 @@
           "title": "Workstations Service Agent",
           "stage": "GA"
         },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRolloutPlans.create",
+      "service": "compute",
+      "resource": "folderRolloutPlans",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRolloutPlans.delete",
+      "service": "compute",
+      "resource": "folderRolloutPlans",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRolloutPlans.get",
+      "service": "compute",
+      "resource": "folderRolloutPlans",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRolloutPlans.list",
+      "service": "compute",
+      "resource": "folderRolloutPlans",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRollouts.cancel",
+      "service": "compute",
+      "resource": "folderRollouts",
+      "action": "cancel",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRollouts.delete",
+      "service": "compute",
+      "resource": "folderRollouts",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRollouts.get",
+      "service": "compute",
+      "resource": "folderRollouts",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRollouts.list",
+      "service": "compute",
+      "resource": "folderRollouts",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRollouts.pause",
+      "service": "compute",
+      "resource": "folderRollouts",
+      "action": "pause",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.folderRollouts.resume",
+      "service": "compute",
+      "resource": "folderRollouts",
+      "action": "resume",
+      "granted_by_roles": [
         {
           "name": "roles/writer",
           "title": "Writer",
@@ -841150,6 +841547,19 @@
       ]
     },
     {
+      "name": "dataplex.entryGroups.useCertificationAspect",
+      "service": "dataplex",
+      "resource": "entryGroups",
+      "action": "useCertificationAspect",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "dataplex.entryGroups.useContactsAspect",
       "service": "dataplex",
       "resource": "entryGroups",
@@ -842651,6 +843061,32 @@
           "title": "Owner",
           "stage": "GA"
         },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "dataplex.entryGroups.useQueryTemplateAspect",
+      "service": "dataplex",
+      "resource": "entryGroups",
+      "action": "useQueryTemplateAspect",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "dataplex.entryGroups.useQueryTemplateEntry",
+      "service": "dataplex",
+      "resource": "entryGroups",
+      "action": "useQueryTemplateEntry",
+      "granted_by_roles": [
         {
           "name": "roles/writer",
           "title": "Writer",
@@ -991503,6 +991939,37 @@
       ]
     },
     {
+      "name": "gsuiteaddons.chatAppConfigs.get",
+      "service": "gsuiteaddons",
+      "resource": "chatAppConfigs",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "gsuiteaddons.chatAppConfigs.update",
+      "service": "gsuiteaddons",
+      "resource": "chatAppConfigs",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "gsuiteaddons.deployments.create",
       "service": "gsuiteaddons",
       "resource": "deployments",
@@ -1123061,6 +1123528,19 @@
       ]
     },
     {
+      "name": "oracledatabase.databaseConnections.use",
+      "service": "oracledatabase",
+      "resource": "databaseConnections",
+      "action": "use",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "oracledatabase.databases.get",
       "service": "oracledatabase",
       "resource": "databases",
@@ -1126758,6 +1127238,68 @@
       ]
     },
     {
+      "name": "oracledatabase.odbDnsZones.create",
+      "service": "oracledatabase",
+      "resource": "odbDnsZones",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "oracledatabase.odbDnsZones.delete",
+      "service": "oracledatabase",
+      "resource": "odbDnsZones",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "oracledatabase.odbDnsZones.get",
+      "service": "oracledatabase",
+      "resource": "odbDnsZones",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "oracledatabase.odbDnsZones.list",
+      "service": "oracledatabase",
+      "resource": "odbDnsZones",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "oracledatabase.odbNetworks.create",
       "service": "oracledatabase",
       "resource": "odbNetworks",
@@ -1128219,6 +1128761,68 @@
           "title": "Reader",
           "stage": "GA"
         },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "oracledatabase.serviceIntegrations.create",
+      "service": "oracledatabase",
+      "resource": "serviceIntegrations",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "oracledatabase.serviceIntegrations.delete",
+      "service": "oracledatabase",
+      "resource": "serviceIntegrations",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "oracledatabase.serviceIntegrations.get",
+      "service": "oracledatabase",
+      "resource": "serviceIntegrations",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "oracledatabase.serviceIntegrations.list",
+      "service": "oracledatabase",
+      "resource": "serviceIntegrations",
+      "action": "list",
+      "granted_by_roles": [
         {
           "name": "roles/viewer",
           "title": "Viewer",
@@ -1263265,6 +1263869,144 @@
       ]
     },
     {
+      "name": "serviceusage.catalogs.listMembers",
+      "service": "serviceusage",
+      "resource": "catalogs",
+      "action": "listMembers",
+      "granted_by_roles": [
+        {
+          "name": "roles/run.serviceAgent",
+          "title": "Cloud Run Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/run.sourceDeveloper",
+          "title": "Cloud Run Source Developer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/run.sourceViewer",
+          "title": "Cloud Run Source Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.admin",
+          "title": "Security Center Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.adminEditor",
+          "title": "Security Center Admin Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.adminViewer",
+          "title": "Security Center Admin Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.automationServiceAgent",
+          "title": "Security Center Automation Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.controlServiceAgent",
+          "title": "Security Center Control Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.securityHealthAnalyticsServiceAgent",
+          "title": "Security Health Analytics Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.serviceAgent",
+          "title": "Security Center Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/servicemanagement.admin",
+          "title": "Service Management Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/servicemanagement.quotaAdmin",
+          "title": "Quota Administrator",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/servicemanagement.quotaViewer",
+          "title": "Quota Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageAdmin",
+          "title": "Service Usage Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageConsumer",
+          "title": "Service Usage Consumer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageViewer",
+          "title": "Service Usage Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/spectrumsas.serviceAgent",
+          "title": "Spectrum SAS Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/stackdriver.accounts.editor",
+          "title": "Stackdriver Accounts Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/telcoautomation.admin",
+          "title": "Telco Automation Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/workloadmanager.admin",
+          "title": "Workload Manager Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workloadmanager.deploymentAdmin",
+          "title": "Workload Manager Deployment Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workloadmanager.workloadViewer",
+          "title": "Workload Manager Workload Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workstations.serviceAgent",
+          "title": "Workstations Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "serviceusage.consumerpolicy.analyze",
       "service": "serviceusage",
       "resource": "consumerpolicy",
@@ -1272903,6 +1273645,282 @@
           "name": "roles/workloadmanager.workloadViewer",
           "title": "Workload Manager Workload Viewer",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "serviceusage.services.listApis",
+      "service": "serviceusage",
+      "resource": "services",
+      "action": "listApis",
+      "granted_by_roles": [
+        {
+          "name": "roles/run.serviceAgent",
+          "title": "Cloud Run Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/run.sourceDeveloper",
+          "title": "Cloud Run Source Developer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/run.sourceViewer",
+          "title": "Cloud Run Source Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.admin",
+          "title": "Security Center Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.adminEditor",
+          "title": "Security Center Admin Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.adminViewer",
+          "title": "Security Center Admin Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.automationServiceAgent",
+          "title": "Security Center Automation Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.controlServiceAgent",
+          "title": "Security Center Control Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.securityHealthAnalyticsServiceAgent",
+          "title": "Security Health Analytics Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.serviceAgent",
+          "title": "Security Center Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/servicemanagement.admin",
+          "title": "Service Management Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/servicemanagement.quotaAdmin",
+          "title": "Quota Administrator",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/servicemanagement.quotaViewer",
+          "title": "Quota Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageAdmin",
+          "title": "Service Usage Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageConsumer",
+          "title": "Service Usage Consumer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageViewer",
+          "title": "Service Usage Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/spectrumsas.serviceAgent",
+          "title": "Spectrum SAS Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/stackdriver.accounts.editor",
+          "title": "Stackdriver Accounts Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/telcoautomation.admin",
+          "title": "Telco Automation Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/workloadmanager.admin",
+          "title": "Workload Manager Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workloadmanager.deploymentAdmin",
+          "title": "Workload Manager Deployment Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workloadmanager.workloadViewer",
+          "title": "Workload Manager Workload Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workstations.serviceAgent",
+          "title": "Workstations Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "serviceusage.services.listDependentServices",
+      "service": "serviceusage",
+      "resource": "services",
+      "action": "listDependentServices",
+      "granted_by_roles": [
+        {
+          "name": "roles/run.serviceAgent",
+          "title": "Cloud Run Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/run.sourceDeveloper",
+          "title": "Cloud Run Source Developer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/run.sourceViewer",
+          "title": "Cloud Run Source Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.admin",
+          "title": "Security Center Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.adminEditor",
+          "title": "Security Center Admin Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.adminViewer",
+          "title": "Security Center Admin Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.automationServiceAgent",
+          "title": "Security Center Automation Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.controlServiceAgent",
+          "title": "Security Center Control Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.securityHealthAnalyticsServiceAgent",
+          "title": "Security Health Analytics Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/securitycenter.serviceAgent",
+          "title": "Security Center Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/servicemanagement.admin",
+          "title": "Service Management Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/servicemanagement.quotaAdmin",
+          "title": "Quota Administrator",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/servicemanagement.quotaViewer",
+          "title": "Quota Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageAdmin",
+          "title": "Service Usage Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageConsumer",
+          "title": "Service Usage Consumer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/serviceusage.serviceUsageViewer",
+          "title": "Service Usage Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/spectrumsas.serviceAgent",
+          "title": "Spectrum SAS Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/stackdriver.accounts.editor",
+          "title": "Stackdriver Accounts Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/telcoautomation.admin",
+          "title": "Telco Automation Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/workloadmanager.admin",
+          "title": "Workload Manager Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workloadmanager.deploymentAdmin",
+          "title": "Workload Manager Deployment Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workloadmanager.workloadViewer",
+          "title": "Workload Manager Workload Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/workstations.serviceAgent",
+          "title": "Workstations Service Agent",
+          "stage": "GA"
         },
         {
           "name": "roles/writer",
@@ -1340713,8 +1341731,8 @@
   ],
   "metadata": {
     "total_roles": 2415,
-    "total_permissions": 14014,
-    "last_updated": "2026-10-16T06:43:10.017289Z",
+    "total_permissions": 14049,
+    "last_updated": "2026-10-17T06:32:04.730982Z",
     "source": "Google Cloud IAM API"
   }
 }
