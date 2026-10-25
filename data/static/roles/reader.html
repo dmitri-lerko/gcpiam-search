@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reader (roles/reader) | GCP IAM Reference</title>
-    <meta name="description" content="Reader - Read access to all resources.">
+    <meta name="description" content="Reader - Read-only access to view, list, and inspect most GCP resources.">
     <link rel="canonical" href="https://gcpiam.com/roles/reader">
     <meta property="og:title" content="Reader (roles/reader)">
-    <meta property="og:description" content="Reader - Read access to all resources.">
+    <meta property="og:description" content="Reader - Read-only access to view, list, and inspect most GCP resources.">
     <meta property="og:url" content="https://gcpiam.com/roles/reader">
     <meta property="og:type" content="website">
     <style>
@@ -72,10 +72,10 @@
     <p class="subtitle">Reader <span class="badge badge-ga">GA</span></p>
 
     <div class="description">
-        <p>Read access to all resources.</p>
+        <p>Read-only access to view, list, and inspect most GCP resources.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(6234)</span></h2>
+    <h2>Included Permissions <span class="count">(6243)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -581,6 +581,10 @@
     <li><a href="/permissions/apihub.discoveredApiOperations.list">apihub.discoveredApiOperations.list</a></li>
     <li><a href="/permissions/apihub.externalApis.get">apihub.externalApis.get</a></li>
     <li><a href="/permissions/apihub.externalApis.list">apihub.externalApis.list</a></li>
+    <li><a href="/permissions/apihub.generatedSpecApis.get">apihub.generatedSpecApis.get</a></li>
+    <li><a href="/permissions/apihub.generatedSpecApis.list">apihub.generatedSpecApis.list</a></li>
+    <li><a href="/permissions/apihub.generatedSpecApis.retrieveBoostedSpecView">apihub.generatedSpecApis.retrieveBoostedSpecView</a></li>
+    <li><a href="/permissions/apihub.generatedSpecApis.retrieveGeneratedSpecView">apihub.generatedSpecApis.retrieveGeneratedSpecView</a></li>
     <li><a href="/permissions/apihub.hostProjectRegistrations.get">apihub.hostProjectRegistrations.get</a></li>
     <li><a href="/permissions/apihub.hostProjectRegistrations.list">apihub.hostProjectRegistrations.list</a></li>
     <li><a href="/permissions/apihub.llmEnablements.get">apihub.llmEnablements.get</a></li>
@@ -2020,6 +2024,8 @@
     <li><a href="/permissions/compute.commitments.listTagBindings">compute.commitments.listTagBindings</a></li>
     <li><a href="/permissions/compute.crossSiteNetworks.get">compute.crossSiteNetworks.get</a></li>
     <li><a href="/permissions/compute.crossSiteNetworks.list">compute.crossSiteNetworks.list</a></li>
+    <li><a href="/permissions/compute.dhcpOptionsConfigs.get">compute.dhcpOptionsConfigs.get</a></li>
+    <li><a href="/permissions/compute.dhcpOptionsConfigs.list">compute.dhcpOptionsConfigs.list</a></li>
     <li><a href="/permissions/compute.diskSettings.get">compute.diskSettings.get</a></li>
     <li><a href="/permissions/compute.diskTypes.get">compute.diskTypes.get</a></li>
     <li><a href="/permissions/compute.diskTypes.list">compute.diskTypes.list</a></li>
@@ -2889,10 +2895,14 @@
     <li><a href="/permissions/dataconnectors.operations.list">dataconnectors.operations.list</a></li>
     <li><a href="/permissions/dataflow.jobs.get">dataflow.jobs.get</a></li>
     <li><a href="/permissions/dataflow.jobs.list">dataflow.jobs.list</a></li>
+    <li><a href="/permissions/dataflow.jobs.listEffectiveTags">dataflow.jobs.listEffectiveTags</a></li>
+    <li><a href="/permissions/dataflow.jobs.listTagBindings">dataflow.jobs.listTagBindings</a></li>
     <li><a href="/permissions/dataflow.messages.list">dataflow.messages.list</a></li>
     <li><a href="/permissions/dataflow.metrics.get">dataflow.metrics.get</a></li>
     <li><a href="/permissions/dataflow.snapshots.get">dataflow.snapshots.get</a></li>
     <li><a href="/permissions/dataflow.snapshots.list">dataflow.snapshots.list</a></li>
+    <li><a href="/permissions/dataflow.snapshots.listEffectiveTags">dataflow.snapshots.listEffectiveTags</a></li>
+    <li><a href="/permissions/dataflow.snapshots.listTagBindings">dataflow.snapshots.listTagBindings</a></li>
     <li><a href="/permissions/dataform.commentThreads.get">dataform.commentThreads.get</a></li>
     <li><a href="/permissions/dataform.commentThreads.list">dataform.commentThreads.list</a></li>
     <li><a href="/permissions/dataform.comments.get">dataform.comments.get</a></li>
@@ -3567,7 +3577,6 @@
     <li><a href="/permissions/dns.responsePolicies.list">dns.responsePolicies.list</a></li>
     <li><a href="/permissions/dns.responsePolicyRules.get">dns.responsePolicyRules.get</a></li>
     <li><a href="/permissions/dns.responsePolicyRules.list">dns.responsePolicyRules.list</a></li>
-    <li><a href="/permissions/documentai.dataLabelingJobs.list">documentai.dataLabelingJobs.list</a></li>
     <li><a href="/permissions/documentai.datasetSchemas.get">documentai.datasetSchemas.get</a></li>
     <li><a href="/permissions/documentai.datasets.get">documentai.datasets.get</a></li>
     <li><a href="/permissions/documentai.datasets.getDocuments">documentai.datasets.getDocuments</a></li>
