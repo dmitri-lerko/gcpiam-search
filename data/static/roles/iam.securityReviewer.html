@@ -75,7 +75,7 @@
         <p>Security reviewer role, with permissions to get any IAM policy.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(2579)</span></h2>
+    <h2>Included Permissions <span class="count">(2594)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.list">accesscontextmanager.accessLevels.list</a></li>
@@ -94,6 +94,8 @@
     <li><a href="/permissions/agentidentity.authorizations.list">agentidentity.authorizations.list</a></li>
     <li><a href="/permissions/agentidentity.locations.list">agentidentity.locations.list</a></li>
     <li><a href="/permissions/agentregistry.agents.list">agentregistry.agents.list</a></li>
+    <li><a href="/permissions/agentregistry.aiApplications.getIamPolicy">agentregistry.aiApplications.getIamPolicy</a></li>
+    <li><a href="/permissions/agentregistry.aiApplications.list">agentregistry.aiApplications.list</a></li>
     <li><a href="/permissions/agentregistry.bindings.list">agentregistry.bindings.list</a></li>
     <li><a href="/permissions/agentregistry.endpoints.list">agentregistry.endpoints.list</a></li>
     <li><a href="/permissions/agentregistry.locations.list">agentregistry.locations.list</a></li>
@@ -124,6 +126,7 @@
     <li><a href="/permissions/aiplatform.datasetVersions.list">aiplatform.datasetVersions.list</a></li>
     <li><a href="/permissions/aiplatform.datasets.list">aiplatform.datasets.list</a></li>
     <li><a href="/permissions/aiplatform.deploymentResourcePools.list">aiplatform.deploymentResourcePools.list</a></li>
+    <li><a href="/permissions/aiplatform.detectors.list">aiplatform.detectors.list</a></li>
     <li><a href="/permissions/aiplatform.edgeDeploymentJobs.list">aiplatform.edgeDeploymentJobs.list</a></li>
     <li><a href="/permissions/aiplatform.edgeDevices.list">aiplatform.edgeDevices.list</a></li>
     <li><a href="/permissions/aiplatform.endpoints.getIamPolicy">aiplatform.endpoints.getIamPolicy</a></li>
@@ -814,6 +817,8 @@
     <li><a href="/permissions/composer.operations.list">composer.operations.list</a></li>
     <li><a href="/permissions/composer.userworkloadsconfigmaps.list">composer.userworkloadsconfigmaps.list</a></li>
     <li><a href="/permissions/composer.userworkloadssecrets.list">composer.userworkloadssecrets.list</a></li>
+    <li><a href="/permissions/compute.acceleratorInterconnectMemberInstances.list">compute.acceleratorInterconnectMemberInstances.list</a></li>
+    <li><a href="/permissions/compute.acceleratorInterconnects.list">compute.acceleratorInterconnects.list</a></li>
     <li><a href="/permissions/compute.acceleratorTypes.list">compute.acceleratorTypes.list</a></li>
     <li><a href="/permissions/compute.addresses.list">compute.addresses.list</a></li>
     <li><a href="/permissions/compute.autoscalers.list">compute.autoscalers.list</a></li>
@@ -1442,9 +1447,12 @@
     <li><a href="/permissions/dlp.tableDataProfiles.list">dlp.tableDataProfiles.list</a></li>
     <li><a href="/permissions/dns.changes.list">dns.changes.list</a></li>
     <li><a href="/permissions/dns.dnsKeys.list">dns.dnsKeys.list</a></li>
+    <li><a href="/permissions/dns.locations.list">dns.locations.list</a></li>
     <li><a href="/permissions/dns.managedZoneOperations.list">dns.managedZoneOperations.list</a></li>
     <li><a href="/permissions/dns.managedZones.getIamPolicy">dns.managedZones.getIamPolicy</a></li>
     <li><a href="/permissions/dns.managedZones.list">dns.managedZones.list</a></li>
+    <li><a href="/permissions/dns.operations.list">dns.operations.list</a></li>
+    <li><a href="/permissions/dns.outboundEndpoints.list">dns.outboundEndpoints.list</a></li>
     <li><a href="/permissions/dns.policies.list">dns.policies.list</a></li>
     <li><a href="/permissions/dns.resourceRecordSets.list">dns.resourceRecordSets.list</a></li>
     <li><a href="/permissions/dns.responsePolicies.list">dns.responsePolicies.list</a></li>
@@ -1859,11 +1867,15 @@
     <li><a href="/permissions/memcache.instances.list">memcache.instances.list</a></li>
     <li><a href="/permissions/memcache.locations.list">memcache.locations.list</a></li>
     <li><a href="/permissions/memcache.operations.list">memcache.operations.list</a></li>
+    <li><a href="/permissions/memorystore.aclPolicies.list">memorystore.aclPolicies.list</a></li>
+    <li><a href="/permissions/memorystore.aclPolicyRevisions.list">memorystore.aclPolicyRevisions.list</a></li>
+    <li><a href="/permissions/memorystore.authTokens.list">memorystore.authTokens.list</a></li>
     <li><a href="/permissions/memorystore.backupCollections.list">memorystore.backupCollections.list</a></li>
     <li><a href="/permissions/memorystore.backups.list">memorystore.backups.list</a></li>
     <li><a href="/permissions/memorystore.instances.list">memorystore.instances.list</a></li>
     <li><a href="/permissions/memorystore.locations.list">memorystore.locations.list</a></li>
     <li><a href="/permissions/memorystore.operations.list">memorystore.operations.list</a></li>
+    <li><a href="/permissions/memorystore.tokenAuthUsers.list">memorystore.tokenAuthUsers.list</a></li>
     <li><a href="/permissions/metastore.backups.getIamPolicy">metastore.backups.getIamPolicy</a></li>
     <li><a href="/permissions/metastore.backups.list">metastore.backups.list</a></li>
     <li><a href="/permissions/metastore.databases.getIamPolicy">metastore.databases.getIamPolicy</a></li>
@@ -2380,7 +2392,9 @@
     <li><a href="/permissions/saasservicemgmt.unitKinds.list">saasservicemgmt.unitKinds.list</a></li>
     <li><a href="/permissions/saasservicemgmt.unitOperations.list">saasservicemgmt.unitOperations.list</a></li>
     <li><a href="/permissions/saasservicemgmt.units.list">saasservicemgmt.units.list</a></li>
+    <li><a href="/permissions/secretmanager.backups.list">secretmanager.backups.list</a></li>
     <li><a href="/permissions/secretmanager.locations.list">secretmanager.locations.list</a></li>
+    <li><a href="/permissions/secretmanager.operations.list">secretmanager.operations.list</a></li>
     <li><a href="/permissions/secretmanager.secrets.getIamPolicy">secretmanager.secrets.getIamPolicy</a></li>
     <li><a href="/permissions/secretmanager.secrets.list">secretmanager.secrets.list</a></li>
     <li><a href="/permissions/secretmanager.versions.list">secretmanager.versions.list</a></li>
@@ -2604,6 +2618,7 @@
     <li><a href="/permissions/vmmigration.sources.list">vmmigration.sources.list</a></li>
     <li><a href="/permissions/vmmigration.targets.list">vmmigration.targets.list</a></li>
     <li><a href="/permissions/vmmigration.utilizationReports.list">vmmigration.utilizationReports.list</a></li>
+    <li><a href="/permissions/vmwareengine.capacityAllocations.list">vmwareengine.capacityAllocations.list</a></li>
     <li><a href="/permissions/vmwareengine.clusters.getIamPolicy">vmwareengine.clusters.getIamPolicy</a></li>
     <li><a href="/permissions/vmwareengine.clusters.list">vmwareengine.clusters.list</a></li>
     <li><a href="/permissions/vmwareengine.datastores.getIamPolicy">vmwareengine.datastores.getIamPolicy</a></li>

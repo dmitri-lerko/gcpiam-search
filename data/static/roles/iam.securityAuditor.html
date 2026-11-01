@@ -75,7 +75,7 @@
         <p>Read-only role designed for enabling security audit of your GCP environment, associated policies and viewing configurations.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(4116)</span></h2>
+    <h2>Included Permissions <span class="count">(4168)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
     <li><a href="/permissions/accesscontextmanager.accessLevels.get">accesscontextmanager.accessLevels.get</a></li>
@@ -98,6 +98,8 @@
     <li><a href="/permissions/agentidentity.authorizations.list">agentidentity.authorizations.list</a></li>
     <li><a href="/permissions/agentidentity.locations.list">agentidentity.locations.list</a></li>
     <li><a href="/permissions/agentregistry.agents.list">agentregistry.agents.list</a></li>
+    <li><a href="/permissions/agentregistry.aiApplications.getIamPolicy">agentregistry.aiApplications.getIamPolicy</a></li>
+    <li><a href="/permissions/agentregistry.aiApplications.list">agentregistry.aiApplications.list</a></li>
     <li><a href="/permissions/agentregistry.bindings.list">agentregistry.bindings.list</a></li>
     <li><a href="/permissions/agentregistry.endpoints.list">agentregistry.endpoints.list</a></li>
     <li><a href="/permissions/agentregistry.locations.list">agentregistry.locations.list</a></li>
@@ -132,6 +134,7 @@
     <li><a href="/permissions/aiplatform.datasets.get">aiplatform.datasets.get</a></li>
     <li><a href="/permissions/aiplatform.datasets.list">aiplatform.datasets.list</a></li>
     <li><a href="/permissions/aiplatform.deploymentResourcePools.list">aiplatform.deploymentResourcePools.list</a></li>
+    <li><a href="/permissions/aiplatform.detectors.list">aiplatform.detectors.list</a></li>
     <li><a href="/permissions/aiplatform.edgeDeploymentJobs.list">aiplatform.edgeDeploymentJobs.list</a></li>
     <li><a href="/permissions/aiplatform.edgeDevices.list">aiplatform.edgeDevices.list</a></li>
     <li><a href="/permissions/aiplatform.endpoints.get">aiplatform.endpoints.get</a></li>
@@ -1549,6 +1552,10 @@
     <li><a href="/permissions/composer.operations.list">composer.operations.list</a></li>
     <li><a href="/permissions/composer.userworkloadsconfigmaps.list">composer.userworkloadsconfigmaps.list</a></li>
     <li><a href="/permissions/composer.userworkloadssecrets.list">composer.userworkloadssecrets.list</a></li>
+    <li><a href="/permissions/compute.acceleratorInterconnectMemberInstances.list">compute.acceleratorInterconnectMemberInstances.list</a></li>
+    <li><a href="/permissions/compute.acceleratorInterconnects.get">compute.acceleratorInterconnects.get</a></li>
+    <li><a href="/permissions/compute.acceleratorInterconnects.list">compute.acceleratorInterconnects.list</a></li>
+    <li><a href="/permissions/compute.acceleratorInterconnects.queryFormability">compute.acceleratorInterconnects.queryFormability</a></li>
     <li><a href="/permissions/compute.acceleratorTypes.get">compute.acceleratorTypes.get</a></li>
     <li><a href="/permissions/compute.acceleratorTypes.list">compute.acceleratorTypes.list</a></li>
     <li><a href="/permissions/compute.addresses.get">compute.addresses.get</a></li>
@@ -2501,6 +2508,8 @@
     <li><a href="/permissions/designcenter.spaces.list">designcenter.spaces.list</a></li>
     <li><a href="/permissions/developerconnect.accountConnectors.list">developerconnect.accountConnectors.list</a></li>
     <li><a href="/permissions/developerconnect.connections.list">developerconnect.connections.list</a></li>
+    <li><a href="/permissions/developerconnect.connections.listEffectiveTags">developerconnect.connections.listEffectiveTags</a></li>
+    <li><a href="/permissions/developerconnect.connections.listTagBindings">developerconnect.connections.listTagBindings</a></li>
     <li><a href="/permissions/developerconnect.deploymentEvents.list">developerconnect.deploymentEvents.list</a></li>
     <li><a href="/permissions/developerconnect.gitRepositoryLinks.list">developerconnect.gitRepositoryLinks.list</a></li>
     <li><a href="/permissions/developerconnect.insightsConfigs.list">developerconnect.insightsConfigs.list</a></li>
@@ -2612,11 +2621,17 @@
     <li><a href="/permissions/dns.changes.list">dns.changes.list</a></li>
     <li><a href="/permissions/dns.dnsKeys.get">dns.dnsKeys.get</a></li>
     <li><a href="/permissions/dns.dnsKeys.list">dns.dnsKeys.list</a></li>
+    <li><a href="/permissions/dns.locations.get">dns.locations.get</a></li>
+    <li><a href="/permissions/dns.locations.list">dns.locations.list</a></li>
     <li><a href="/permissions/dns.managedZoneOperations.get">dns.managedZoneOperations.get</a></li>
     <li><a href="/permissions/dns.managedZoneOperations.list">dns.managedZoneOperations.list</a></li>
     <li><a href="/permissions/dns.managedZones.get">dns.managedZones.get</a></li>
     <li><a href="/permissions/dns.managedZones.getIamPolicy">dns.managedZones.getIamPolicy</a></li>
     <li><a href="/permissions/dns.managedZones.list">dns.managedZones.list</a></li>
+    <li><a href="/permissions/dns.operations.get">dns.operations.get</a></li>
+    <li><a href="/permissions/dns.operations.list">dns.operations.list</a></li>
+    <li><a href="/permissions/dns.outboundEndpoints.get">dns.outboundEndpoints.get</a></li>
+    <li><a href="/permissions/dns.outboundEndpoints.list">dns.outboundEndpoints.list</a></li>
     <li><a href="/permissions/dns.policies.get">dns.policies.get</a></li>
     <li><a href="/permissions/dns.policies.list">dns.policies.list</a></li>
     <li><a href="/permissions/dns.policies.listEffectiveTags">dns.policies.listEffectiveTags</a></li>
@@ -2763,6 +2778,8 @@
     <li><a href="/permissions/firebaseappdistro.releases.list">firebaseappdistro.releases.list</a></li>
     <li><a href="/permissions/firebaseappdistro.testers.list">firebaseappdistro.testers.list</a></li>
     <li><a href="/permissions/firebaseapphosting.backends.list">firebaseapphosting.backends.list</a></li>
+    <li><a href="/permissions/firebaseapphosting.backends.listEffectiveTags">firebaseapphosting.backends.listEffectiveTags</a></li>
+    <li><a href="/permissions/firebaseapphosting.backends.listTagBindings">firebaseapphosting.backends.listTagBindings</a></li>
     <li><a href="/permissions/firebaseapphosting.builds.list">firebaseapphosting.builds.list</a></li>
     <li><a href="/permissions/firebaseapphosting.domains.list">firebaseapphosting.domains.list</a></li>
     <li><a href="/permissions/firebaseapphosting.locations.list">firebaseapphosting.locations.list</a></li>
@@ -2777,6 +2794,8 @@
     <li><a href="/permissions/firebasedataconnect.schemaRevisions.list">firebasedataconnect.schemaRevisions.list</a></li>
     <li><a href="/permissions/firebasedataconnect.schemas.list">firebasedataconnect.schemas.list</a></li>
     <li><a href="/permissions/firebasedataconnect.services.list">firebasedataconnect.services.list</a></li>
+    <li><a href="/permissions/firebasedataconnect.services.listEffectiveTags">firebasedataconnect.services.listEffectiveTags</a></li>
+    <li><a href="/permissions/firebasedataconnect.services.listTagBindings">firebasedataconnect.services.listTagBindings</a></li>
     <li><a href="/permissions/firebasedynamiclinks.destinations.list">firebasedynamiclinks.destinations.list</a></li>
     <li><a href="/permissions/firebasedynamiclinks.domains.list">firebasedynamiclinks.domains.list</a></li>
     <li><a href="/permissions/firebasedynamiclinks.links.list">firebasedynamiclinks.links.list</a></li>
@@ -2804,13 +2823,23 @@
     <li><a href="/permissions/gdchardwaremanagement.changeLogEntries.list">gdchardwaremanagement.changeLogEntries.list</a></li>
     <li><a href="/permissions/gdchardwaremanagement.comments.list">gdchardwaremanagement.comments.list</a></li>
     <li><a href="/permissions/gdchardwaremanagement.hardware.list">gdchardwaremanagement.hardware.list</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.hardware.listEffectiveTags">gdchardwaremanagement.hardware.listEffectiveTags</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.hardware.listTagBindings">gdchardwaremanagement.hardware.listTagBindings</a></li>
     <li><a href="/permissions/gdchardwaremanagement.hardwareGroups.list">gdchardwaremanagement.hardwareGroups.list</a></li>
     <li><a href="/permissions/gdchardwaremanagement.locations.list">gdchardwaremanagement.locations.list</a></li>
     <li><a href="/permissions/gdchardwaremanagement.operations.list">gdchardwaremanagement.operations.list</a></li>
     <li><a href="/permissions/gdchardwaremanagement.orders.list">gdchardwaremanagement.orders.list</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.orders.listEffectiveTags">gdchardwaremanagement.orders.listEffectiveTags</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.orders.listTagBindings">gdchardwaremanagement.orders.listTagBindings</a></li>
     <li><a href="/permissions/gdchardwaremanagement.sites.list">gdchardwaremanagement.sites.list</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.sites.listEffectiveTags">gdchardwaremanagement.sites.listEffectiveTags</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.sites.listTagBindings">gdchardwaremanagement.sites.listTagBindings</a></li>
     <li><a href="/permissions/gdchardwaremanagement.skus.list">gdchardwaremanagement.skus.list</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.zoneOperations.listEffectiveTags">gdchardwaremanagement.zoneOperations.listEffectiveTags</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.zoneOperations.listTagBindings">gdchardwaremanagement.zoneOperations.listTagBindings</a></li>
     <li><a href="/permissions/gdchardwaremanagement.zones.list">gdchardwaremanagement.zones.list</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.zones.listEffectiveTags">gdchardwaremanagement.zones.listEffectiveTags</a></li>
+    <li><a href="/permissions/gdchardwaremanagement.zones.listTagBindings">gdchardwaremanagement.zones.listTagBindings</a></li>
     <li><a href="/permissions/geminicloudassist.investigationRevisions.list">geminicloudassist.investigationRevisions.list</a></li>
     <li><a href="/permissions/geminicloudassist.investigations.getIamPolicy">geminicloudassist.investigations.getIamPolicy</a></li>
     <li><a href="/permissions/geminicloudassist.investigations.list">geminicloudassist.investigations.list</a></li>
@@ -3109,11 +3138,19 @@
     <li><a href="/permissions/memcache.instances.listTagBindings">memcache.instances.listTagBindings</a></li>
     <li><a href="/permissions/memcache.locations.list">memcache.locations.list</a></li>
     <li><a href="/permissions/memcache.operations.list">memcache.operations.list</a></li>
+    <li><a href="/permissions/memorystore.aclPolicies.list">memorystore.aclPolicies.list</a></li>
+    <li><a href="/permissions/memorystore.aclPolicyRevisions.list">memorystore.aclPolicyRevisions.list</a></li>
+    <li><a href="/permissions/memorystore.authTokens.list">memorystore.authTokens.list</a></li>
     <li><a href="/permissions/memorystore.backupCollections.list">memorystore.backupCollections.list</a></li>
+    <li><a href="/permissions/memorystore.backupCollections.listEffectiveTags">memorystore.backupCollections.listEffectiveTags</a></li>
+    <li><a href="/permissions/memorystore.backupCollections.listTagBindings">memorystore.backupCollections.listTagBindings</a></li>
     <li><a href="/permissions/memorystore.backups.list">memorystore.backups.list</a></li>
     <li><a href="/permissions/memorystore.instances.list">memorystore.instances.list</a></li>
+    <li><a href="/permissions/memorystore.instances.listEffectiveTags">memorystore.instances.listEffectiveTags</a></li>
+    <li><a href="/permissions/memorystore.instances.listTagBindings">memorystore.instances.listTagBindings</a></li>
     <li><a href="/permissions/memorystore.locations.list">memorystore.locations.list</a></li>
     <li><a href="/permissions/memorystore.operations.list">memorystore.operations.list</a></li>
+    <li><a href="/permissions/memorystore.tokenAuthUsers.list">memorystore.tokenAuthUsers.list</a></li>
     <li><a href="/permissions/metastore.backups.getIamPolicy">metastore.backups.getIamPolicy</a></li>
     <li><a href="/permissions/metastore.backups.list">metastore.backups.list</a></li>
     <li><a href="/permissions/metastore.databases.getIamPolicy">metastore.databases.getIamPolicy</a></li>
@@ -3383,9 +3420,15 @@
     <li><a href="/permissions/oracledatabase.autonomousDatabaseBackups.list">oracledatabase.autonomousDatabaseBackups.list</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabaseCharacterSets.list">oracledatabase.autonomousDatabaseCharacterSets.list</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDatabases.list">oracledatabase.autonomousDatabases.list</a></li>
+    <li><a href="/permissions/oracledatabase.autonomousDatabases.listEffectiveTags">oracledatabase.autonomousDatabases.listEffectiveTags</a></li>
+    <li><a href="/permissions/oracledatabase.autonomousDatabases.listTagBindings">oracledatabase.autonomousDatabases.listTagBindings</a></li>
     <li><a href="/permissions/oracledatabase.autonomousDbVersions.list">oracledatabase.autonomousDbVersions.list</a></li>
     <li><a href="/permissions/oracledatabase.cloudExadataInfrastructures.list">oracledatabase.cloudExadataInfrastructures.list</a></li>
+    <li><a href="/permissions/oracledatabase.cloudExadataInfrastructures.listEffectiveTags">oracledatabase.cloudExadataInfrastructures.listEffectiveTags</a></li>
+    <li><a href="/permissions/oracledatabase.cloudExadataInfrastructures.listTagBindings">oracledatabase.cloudExadataInfrastructures.listTagBindings</a></li>
     <li><a href="/permissions/oracledatabase.cloudVmClusters.list">oracledatabase.cloudVmClusters.list</a></li>
+    <li><a href="/permissions/oracledatabase.cloudVmClusters.listEffectiveTags">oracledatabase.cloudVmClusters.listEffectiveTags</a></li>
+    <li><a href="/permissions/oracledatabase.cloudVmClusters.listTagBindings">oracledatabase.cloudVmClusters.listTagBindings</a></li>
     <li><a href="/permissions/oracledatabase.databaseCharacterSets.list">oracledatabase.databaseCharacterSets.list</a></li>
     <li><a href="/permissions/oracledatabase.databaseConnections.list">oracledatabase.databaseConnections.list</a></li>
     <li><a href="/permissions/oracledatabase.databases.list">oracledatabase.databases.list</a></li>
@@ -3395,8 +3438,12 @@
     <li><a href="/permissions/oracledatabase.dbSystemInitialStorageSizes.list">oracledatabase.dbSystemInitialStorageSizes.list</a></li>
     <li><a href="/permissions/oracledatabase.dbSystemShapes.list">oracledatabase.dbSystemShapes.list</a></li>
     <li><a href="/permissions/oracledatabase.dbSystems.list">oracledatabase.dbSystems.list</a></li>
+    <li><a href="/permissions/oracledatabase.dbSystems.listEffectiveTags">oracledatabase.dbSystems.listEffectiveTags</a></li>
+    <li><a href="/permissions/oracledatabase.dbSystems.listTagBindings">oracledatabase.dbSystems.listTagBindings</a></li>
     <li><a href="/permissions/oracledatabase.dbVersions.list">oracledatabase.dbVersions.list</a></li>
     <li><a href="/permissions/oracledatabase.entitlements.list">oracledatabase.entitlements.list</a></li>
+    <li><a href="/permissions/oracledatabase.entitlements.listEffectiveTags">oracledatabase.entitlements.listEffectiveTags</a></li>
+    <li><a href="/permissions/oracledatabase.entitlements.listTagBindings">oracledatabase.entitlements.listTagBindings</a></li>
     <li><a href="/permissions/oracledatabase.exadbVmClusters.list">oracledatabase.exadbVmClusters.list</a></li>
     <li><a href="/permissions/oracledatabase.exascaleDbStorageVaults.list">oracledatabase.exascaleDbStorageVaults.list</a></li>
     <li><a href="/permissions/oracledatabase.flexComponents.list">oracledatabase.flexComponents.list</a></li>
@@ -3794,8 +3841,12 @@
     <li><a href="/permissions/saasservicemgmt.unitKinds.list">saasservicemgmt.unitKinds.list</a></li>
     <li><a href="/permissions/saasservicemgmt.unitOperations.list">saasservicemgmt.unitOperations.list</a></li>
     <li><a href="/permissions/saasservicemgmt.units.list">saasservicemgmt.units.list</a></li>
+    <li><a href="/permissions/secretmanager.backups.get">secretmanager.backups.get</a></li>
+    <li><a href="/permissions/secretmanager.backups.list">secretmanager.backups.list</a></li>
     <li><a href="/permissions/secretmanager.locations.get">secretmanager.locations.get</a></li>
     <li><a href="/permissions/secretmanager.locations.list">secretmanager.locations.list</a></li>
+    <li><a href="/permissions/secretmanager.operations.get">secretmanager.operations.get</a></li>
+    <li><a href="/permissions/secretmanager.operations.list">secretmanager.operations.list</a></li>
     <li><a href="/permissions/secretmanager.secrets.get">secretmanager.secrets.get</a></li>
     <li><a href="/permissions/secretmanager.secrets.getIamPolicy">secretmanager.secrets.getIamPolicy</a></li>
     <li><a href="/permissions/secretmanager.secrets.list">secretmanager.secrets.list</a></li>
@@ -4127,6 +4178,7 @@
     <li><a href="/permissions/vmmigration.sources.listTagBindings">vmmigration.sources.listTagBindings</a></li>
     <li><a href="/permissions/vmmigration.targets.list">vmmigration.targets.list</a></li>
     <li><a href="/permissions/vmmigration.utilizationReports.list">vmmigration.utilizationReports.list</a></li>
+    <li><a href="/permissions/vmwareengine.capacityAllocations.list">vmwareengine.capacityAllocations.list</a></li>
     <li><a href="/permissions/vmwareengine.clusters.getIamPolicy">vmwareengine.clusters.getIamPolicy</a></li>
     <li><a href="/permissions/vmwareengine.clusters.list">vmwareengine.clusters.list</a></li>
     <li><a href="/permissions/vmwareengine.datastores.getIamPolicy">vmwareengine.datastores.getIamPolicy</a></li>
