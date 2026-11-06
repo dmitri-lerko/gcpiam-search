@@ -82823,6 +82823,11 @@
         "cloudaicompanion.settingBindings.releaseChannelSettingsList",
         "cloudaicompanion.settingBindings.releaseChannelSettingsUpdate",
         "cloudaicompanion.settingBindings.releaseChannelSettingsUse",
+        "cloudkms.keyHandles.create",
+        "cloudkms.keyHandles.get",
+        "cloudkms.keyHandles.list",
+        "cloudkms.operations.get",
+        "cloudkms.projects.showEffectiveAutokeyConfig",
         "cloudnotifications.activities.list",
         "cloudtrace.insights.get",
         "cloudtrace.insights.list",
@@ -83328,6 +83333,11 @@
         "cloudaicompanion.settingBindings.releaseChannelSettingsList",
         "cloudaicompanion.settingBindings.releaseChannelSettingsUpdate",
         "cloudaicompanion.settingBindings.releaseChannelSettingsUse",
+        "cloudkms.keyHandles.create",
+        "cloudkms.keyHandles.get",
+        "cloudkms.keyHandles.list",
+        "cloudkms.operations.get",
+        "cloudkms.projects.showEffectiveAutokeyConfig",
         "cloudnotifications.activities.list",
         "cloudtrace.insights.get",
         "cloudtrace.insights.list",
@@ -83983,6 +83993,8 @@
       "description": "Grants user-level access to Gemini Enterprise resources.",
       "stage": "GA",
       "included_permissions": [
+        "agentregistry.skills.create",
+        "agentregistry.skills.search",
         "businessaicode.locations.fetchQuotaStatus",
         "businessaicode.locations.generateContent",
         "businessaicode.locations.queryConfiguration",
@@ -84058,6 +84070,7 @@
         "discoveryengine.locations.buildAuthorizationUrl",
         "discoveryengine.locations.completeExternalIdentities",
         "discoveryengine.locations.fetchAgentCards",
+        "discoveryengine.locations.getConnectorSource",
         "discoveryengine.locations.listConnectorSources",
         "discoveryengine.memories.delete",
         "discoveryengine.memories.list",
@@ -84623,6 +84636,8 @@
       "description": "Grants user-level access to the Podcast resources.",
       "stage": "BETA",
       "included_permissions": [
+        "agentregistry.skills.create",
+        "agentregistry.skills.search",
         "businessaicode.locations.fetchQuotaStatus",
         "businessaicode.locations.generateContent",
         "businessaicode.locations.queryConfiguration",
@@ -84698,6 +84713,7 @@
         "discoveryengine.locations.buildAuthorizationUrl",
         "discoveryengine.locations.completeExternalIdentities",
         "discoveryengine.locations.fetchAgentCards",
+        "discoveryengine.locations.getConnectorSource",
         "discoveryengine.locations.listConnectorSources",
         "discoveryengine.memories.delete",
         "discoveryengine.memories.list",
@@ -84782,6 +84798,7 @@
         "agentregistry.bindings.delete",
         "agentregistry.bindings.fetchAvailable",
         "agentregistry.bindings.get",
+        "agentregistry.bindings.list",
         "agentregistry.bindings.update",
         "agentregistry.mcpServers.get",
         "agentregistry.mcpServers.list",
@@ -84875,6 +84892,8 @@
         "integrations.testCases.invoke",
         "integrations.testCases.list",
         "logging.logEntries.create",
+        "modelarmor.floorSettings.computeEffectiveFloorSetting",
+        "modelarmor.floorSettings.get",
         "modelarmor.templates.create",
         "modelarmor.templates.delete",
         "modelarmor.templates.get",
@@ -84925,6 +84944,8 @@
       "description": "Grants user-level access to Discovery Engine resources.",
       "stage": "GA",
       "included_permissions": [
+        "agentregistry.skills.create",
+        "agentregistry.skills.search",
         "businessaicode.locations.fetchQuotaStatus",
         "businessaicode.locations.generateContent",
         "businessaicode.locations.queryConfiguration",
@@ -85000,6 +85021,7 @@
         "discoveryengine.locations.buildAuthorizationUrl",
         "discoveryengine.locations.completeExternalIdentities",
         "discoveryengine.locations.fetchAgentCards",
+        "discoveryengine.locations.getConnectorSource",
         "discoveryengine.locations.listConnectorSources",
         "discoveryengine.memories.delete",
         "discoveryengine.memories.list",
@@ -85884,6 +85906,10 @@
         "apihub.deployments.deleteTagBinding",
         "apihub.deployments.listEffectiveTags",
         "apihub.deployments.listTagBindings",
+        "apphub.applications.createTagBinding",
+        "apphub.applications.deleteTagBinding",
+        "apphub.applications.listEffectiveTags",
+        "apphub.applications.listTagBindings",
         "artifactregistry.repositories.createTagBinding",
         "artifactregistry.repositories.deleteTagBinding",
         "artifactregistry.repositories.listEffectiveTags",
@@ -86602,6 +86628,7 @@
         "cloudsql.instances.createTagBinding",
         "cloudsql.instances.deleteTagBinding",
         "cloudsql.instances.executeSql",
+        "cloudsql.instances.executeSqlReadOnly",
         "cloudsql.instances.get",
         "cloudsql.instances.listEffectiveTags",
         "cloudsql.instances.listTagBindings",
@@ -87695,6 +87722,10 @@
         "apihub.deployments.deleteTagBinding",
         "apihub.deployments.listEffectiveTags",
         "apihub.deployments.listTagBindings",
+        "apphub.applications.createTagBinding",
+        "apphub.applications.deleteTagBinding",
+        "apphub.applications.listEffectiveTags",
+        "apphub.applications.listTagBindings",
         "artifactregistry.repositories.createTagBinding",
         "artifactregistry.repositories.deleteTagBinding",
         "artifactregistry.repositories.listEffectiveTags",
@@ -88413,6 +88444,7 @@
         "cloudsql.instances.createTagBinding",
         "cloudsql.instances.deleteTagBinding",
         "cloudsql.instances.executeSql",
+        "cloudsql.instances.executeSqlReadOnly",
         "cloudsql.instances.get",
         "cloudsql.instances.listEffectiveTags",
         "cloudsql.instances.listTagBindings",
@@ -90684,6 +90716,11 @@
       "description": "Full access to Edge Container all resources.",
       "stage": "GA",
       "included_permissions": [
+        "cloudkms.keyHandles.create",
+        "cloudkms.keyHandles.get",
+        "cloudkms.keyHandles.list",
+        "cloudkms.operations.get",
+        "cloudkms.projects.showEffectiveAutokeyConfig",
         "edgecontainer.apikeys.create",
         "edgecontainer.apikeys.delete",
         "edgecontainer.apikeys.get",
@@ -90900,6 +90937,11 @@
       "description": "Editor role for Edge Container resources.",
       "stage": "GA",
       "included_permissions": [
+        "cloudkms.keyHandles.create",
+        "cloudkms.keyHandles.get",
+        "cloudkms.keyHandles.list",
+        "cloudkms.operations.get",
+        "cloudkms.projects.showEffectiveAutokeyConfig",
         "edgecontainer.apikeys.create",
         "edgecontainer.apikeys.delete",
         "edgecontainer.apikeys.get",
@@ -92667,10 +92709,14 @@
         "appengine.versions.list",
         "appengine.versions.update",
         "apphub.applications.create",
+        "apphub.applications.createTagBinding",
         "apphub.applications.delete",
+        "apphub.applications.deleteTagBinding",
         "apphub.applications.get",
         "apphub.applications.getIamPolicy",
         "apphub.applications.list",
+        "apphub.applications.listEffectiveTags",
+        "apphub.applications.listTagBindings",
         "apphub.applications.update",
         "apphub.boundaries.get",
         "apphub.discoveredServices.get",
@@ -93004,6 +93050,8 @@
         "backupdr.bvbackups.update",
         "backupdr.bvbackups.useReadOnlyForAlloydbCluster",
         "backupdr.bvbackups.useReadOnlyForCloudSqlInstance",
+        "backupdr.bvbackups.useReadOnlyForComputeDisk",
+        "backupdr.bvbackups.useReadOnlyForComputeInstance",
         "backupdr.bvbackups.useReadOnlyForFilestoreInstance",
         "backupdr.bvbackups.useReadOnlyForNetappVolumes",
         "backupdr.bvdataSources.abandonBackup",
@@ -93017,6 +93065,8 @@
         "backupdr.bvdataSources.update",
         "backupdr.bvdataSources.useReadOnlyForAlloydbCluster",
         "backupdr.bvdataSources.useReadOnlyForCloudSqlInstance",
+        "backupdr.bvdataSources.useReadOnlyForComputeDisk",
+        "backupdr.bvdataSources.useReadOnlyForComputeInstance",
         "backupdr.compute.restoreFromBackupVault",
         "backupdr.dataSourceReferences.fetchForAlloydbCluster",
         "backupdr.dataSourceReferences.fetchForCloudSqlInstance",
@@ -93078,6 +93128,53 @@
         "backupdr.resourceBackupConfigs.fetch",
         "backupdr.resourceBackupConfigs.get",
         "backupdr.resourceBackupConfigs.list",
+        "backupdr.restoreTargets.useForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.getForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.getForComputeDisk",
+        "backupdr.restoreTemplateExecutions.getForComputeInstance",
+        "backupdr.restoreTemplateExecutions.list",
+        "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeDisk",
+        "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeInstance",
+        "backupdr.restoreTemplates.createForCloudSqlInstance",
+        "backupdr.restoreTemplates.createForComputeDisk",
+        "backupdr.restoreTemplates.createForComputeInstance",
+        "backupdr.restoreTemplates.deleteForCloudSqlInstance",
+        "backupdr.restoreTemplates.deleteForComputeDisk",
+        "backupdr.restoreTemplates.deleteForComputeInstance",
+        "backupdr.restoreTemplates.getForCloudSqlInstance",
+        "backupdr.restoreTemplates.getForComputeDisk",
+        "backupdr.restoreTemplates.getForComputeInstance",
+        "backupdr.restoreTemplates.list",
+        "backupdr.restoreTemplates.runForCloudSqlInstance",
+        "backupdr.restoreTemplates.runForComputeDisk",
+        "backupdr.restoreTemplates.runForComputeInstance",
+        "backupdr.restoreTemplates.runWithCleanupForCloudSqlInstance",
+        "backupdr.restoreTemplates.runWithCleanupForComputeDisk",
+        "backupdr.restoreTemplates.runWithCleanupForComputeInstance",
+        "backupdr.restoreTemplates.updateForCloudSqlInstance",
+        "backupdr.restoreTemplates.updateForComputeDisk",
+        "backupdr.restoreTemplates.updateForComputeInstance",
+        "backupdr.restoreTemplates.useForCloudSqlInstance",
+        "backupdr.restoreTemplates.useForComputeDisk",
+        "backupdr.restoreTemplates.useForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.createForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.createForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.createForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.deleteForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.deleteForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.deleteForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.getForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.list",
+        "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeInstance",
+        "backupdr.restoreVerificationPlans.create",
+        "backupdr.restoreVerificationPlans.delete",
+        "backupdr.restoreVerificationPlans.get",
+        "backupdr.restoreVerificationPlans.list",
         "backupdr.serviceConfig.initialize",
         "backupdr.trial.end",
         "backupdr.trial.get",
@@ -94839,6 +94936,9 @@
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
         "cloudsql.blueGreenDeployments.switchover",
+        "cloudsql.customerManagedCertificates.delete",
+        "cloudsql.customerManagedCertificates.list",
+        "cloudsql.customerManagedCertificates.update",
         "cloudsql.databases.create",
         "cloudsql.databases.delete",
         "cloudsql.databases.get",
@@ -94856,6 +94956,7 @@
         "cloudsql.instances.delete",
         "cloudsql.instances.demoteMaster",
         "cloudsql.instances.executeSql",
+        "cloudsql.instances.executeSqlReadOnly",
         "cloudsql.instances.failover",
         "cloudsql.instances.get",
         "cloudsql.instances.getAgentSession",
@@ -97538,6 +97639,7 @@
         "dataplex.entryGroups.useContextAspect",
         "dataplex.entryGroups.useContextEntry",
         "dataplex.entryGroups.useContextEntryLink",
+        "dataplex.entryGroups.useDataContractAspect",
         "dataplex.entryGroups.useDataProfileAspect",
         "dataplex.entryGroups.useDataQualityRuleTemplateAspect",
         "dataplex.entryGroups.useDataQualityRuleTemplateEntry",
@@ -98037,6 +98139,7 @@
         "devicestreaming.deviceSessions.get",
         "devicestreaming.deviceSessions.list",
         "devicestreaming.deviceSessions.update",
+        "devicestreaming.deviceSessions.use",
         "dialogflow.agents.create",
         "dialogflow.agents.delete",
         "dialogflow.agents.export",
@@ -101114,6 +101217,11 @@
         "networksecurity.urlLists.list",
         "networksecurity.urlLists.update",
         "networksecurity.urlLists.use",
+        "networkservices.agentConnectivityTemplates.create",
+        "networkservices.agentConnectivityTemplates.delete",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
+        "networkservices.agentConnectivityTemplates.update",
         "networkservices.agentGateways.create",
         "networkservices.agentGateways.delete",
         "networkservices.agentGateways.get",
@@ -101146,6 +101254,7 @@
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
         "networkservices.googleTagGatewayPolicies.update",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
         "networkservices.grpcRoutes.create",
         "networkservices.grpcRoutes.delete",
         "networkservices.grpcRoutes.get",
@@ -101464,6 +101573,7 @@
         "oracledatabase.odbDnsZones.delete",
         "oracledatabase.odbDnsZones.get",
         "oracledatabase.odbDnsZones.list",
+        "oracledatabase.odbDnsZones.update",
         "oracledatabase.odbNetworks.create",
         "oracledatabase.odbNetworks.delete",
         "oracledatabase.odbNetworks.get",
@@ -103861,6 +103971,21 @@
         "workloadmanager.rules.list",
         "workloadmanager.workloads.get",
         "workloadmanager.workloads.list",
+        "workspacekeyaccess.configs.create",
+        "workspacekeyaccess.configs.delete",
+        "workspacekeyaccess.configs.get",
+        "workspacekeyaccess.configs.list",
+        "workspacekeyaccess.configs.update",
+        "workspacekeyaccess.endpoints.create",
+        "workspacekeyaccess.endpoints.get",
+        "workspacekeyaccess.endpoints.list",
+        "workspacekeyaccess.endpoints.update",
+        "workspacekeyaccess.locations.get",
+        "workspacekeyaccess.locations.list",
+        "workspacekeyaccess.operations.cancel",
+        "workspacekeyaccess.operations.delete",
+        "workspacekeyaccess.operations.get",
+        "workspacekeyaccess.operations.list",
         "workspacemarketplace.appConfiguration.update",
         "workspacemarketplace.appConfiguration.view",
         "workstations.operations.get",
@@ -110183,6 +110308,7 @@
       "description": "Grants Flow Service Agent permissions to manage resources in the consumer project.",
       "stage": "GA",
       "included_permissions": [
+        "aiplatform.endpoints.get",
         "aiplatform.endpoints.predict",
         "aiplatform.interactions.create",
         "aiplatform.interactions.get",
@@ -114728,15 +114854,7 @@
       "stage": "BETA",
       "included_permissions": [
         "aiplatform.agents.create",
-        "aiplatform.agents.delete",
-        "aiplatform.agents.get",
         "aiplatform.agents.list",
-        "aiplatform.agents.update",
-        "aiplatform.tasks.create",
-        "aiplatform.tasks.delete",
-        "aiplatform.tasks.get",
-        "aiplatform.tasks.list",
-        "aiplatform.tasks.update",
         "apphub.applications.create",
         "apphub.applications.delete",
         "apphub.applications.get",
@@ -118405,6 +118523,7 @@
         "compute.disks.setLabels",
         "compute.disks.update",
         "compute.disks.use",
+        "compute.disks.useReadOnly",
         "compute.firewallPolicies.cloneRules",
         "compute.firewallPolicies.create",
         "compute.firewallPolicies.delete",
@@ -120685,6 +120804,9 @@
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
         "cloudsql.blueGreenDeployments.switchover",
+        "cloudsql.customerManagedCertificates.delete",
+        "cloudsql.customerManagedCertificates.list",
+        "cloudsql.customerManagedCertificates.update",
         "cloudsql.databases.create",
         "cloudsql.databases.delete",
         "cloudsql.databases.get",
@@ -120704,6 +120826,7 @@
         "cloudsql.instances.deleteTagBinding",
         "cloudsql.instances.demoteMaster",
         "cloudsql.instances.executeSql",
+        "cloudsql.instances.executeSqlReadOnly",
         "cloudsql.instances.export",
         "cloudsql.instances.failover",
         "cloudsql.instances.get",
@@ -122109,6 +122232,8 @@
         "cloudsql.blueGreenDeployments.create",
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
+        "cloudsql.customerManagedCertificates.list",
+        "cloudsql.customerManagedCertificates.update",
         "cloudsql.databases.create",
         "cloudsql.databases.get",
         "cloudsql.databases.list",
@@ -124628,6 +124753,11 @@
         "networksecurity.urlLists.list",
         "networksecurity.urlLists.update",
         "networksecurity.urlLists.use",
+        "networkservices.agentConnectivityTemplates.create",
+        "networkservices.agentConnectivityTemplates.delete",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
+        "networkservices.agentConnectivityTemplates.update",
         "networkservices.agentGateways.create",
         "networkservices.agentGateways.delete",
         "networkservices.agentGateways.get",
@@ -124664,6 +124794,10 @@
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
         "networkservices.googleTagGatewayPolicies.update",
+        "networkservices.googleapis.com/agentGateways.createPolicyBinding",
+        "networkservices.googleapis.com/agentGateways.deletePolicyBinding",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
+        "networkservices.googleapis.com/agentGateways.updatePolicyBinding",
         "networkservices.grpcRoutes.create",
         "networkservices.grpcRoutes.delete",
         "networkservices.grpcRoutes.get",
@@ -127911,6 +128045,11 @@
         "networksecurity.urlLists.list",
         "networksecurity.urlLists.update",
         "networksecurity.urlLists.use",
+        "networkservices.agentConnectivityTemplates.create",
+        "networkservices.agentConnectivityTemplates.delete",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
+        "networkservices.agentConnectivityTemplates.update",
         "networkservices.agentGateways.create",
         "networkservices.agentGateways.delete",
         "networkservices.agentGateways.get",
@@ -127947,6 +128086,10 @@
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
         "networkservices.googleTagGatewayPolicies.update",
+        "networkservices.googleapis.com/agentGateways.createPolicyBinding",
+        "networkservices.googleapis.com/agentGateways.deletePolicyBinding",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
+        "networkservices.googleapis.com/agentGateways.updatePolicyBinding",
         "networkservices.grpcRoutes.create",
         "networkservices.grpcRoutes.delete",
         "networkservices.grpcRoutes.get",
@@ -128654,6 +128797,10 @@
         "backupdr.managementServers.setIamPolicy",
         "backupdr.operations.list",
         "backupdr.resourceBackupConfigs.list",
+        "backupdr.restoreTemplateExecutions.list",
+        "backupdr.restoreTemplates.list",
+        "backupdr.restoreVerificationPlanAssociations.list",
+        "backupdr.restoreVerificationPlans.list",
         "baremetalsolution.instancequotas.list",
         "baremetalsolution.instances.list",
         "baremetalsolution.luns.list",
@@ -128871,6 +129018,7 @@
         "chronicle.nativeDashboards.list",
         "chronicle.notebooks.list",
         "chronicle.operations.list",
+        "chronicle.parserAnalysisReports.list",
         "chronicle.parserExtensions.list",
         "chronicle.parsers.list",
         "chronicle.parsingErrors.list",
@@ -129027,6 +129175,7 @@
         "cloudsecurityscanner.scans.list",
         "cloudsql.backupRuns.list",
         "cloudsql.blueGreenDeployments.list",
+        "cloudsql.customerManagedCertificates.list",
         "cloudsql.databases.list",
         "cloudsql.instances.list",
         "cloudsql.sslCerts.list",
@@ -130469,6 +130618,7 @@
         "networksecurity.serverTlsPolicies.setIamPolicy",
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.urlLists.list",
+        "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.list",
         "networkservices.authzExtensions.list",
         "networkservices.endpointPolicies.list",
@@ -131188,6 +131338,10 @@
         "workloadmanager.results.list",
         "workloadmanager.rules.list",
         "workloadmanager.workloads.list",
+        "workspacekeyaccess.configs.list",
+        "workspacekeyaccess.endpoints.list",
+        "workspacekeyaccess.locations.list",
+        "workspacekeyaccess.operations.list",
         "workstations.operations.list",
         "workstations.workstationClusters.list",
         "workstations.workstationConfigs.getIamPolicy",
@@ -131486,6 +131640,8 @@
         "appengine.versions.list",
         "apphub.applications.getIamPolicy",
         "apphub.applications.list",
+        "apphub.applications.listEffectiveTags",
+        "apphub.applications.listTagBindings",
         "apphub.discoveredServices.list",
         "apphub.discoveredWorkloads.list",
         "apphub.extendedMetadataSchemas.list",
@@ -131618,6 +131774,10 @@
         "backupdr.managementServers.listTagBindings",
         "backupdr.operations.list",
         "backupdr.resourceBackupConfigs.list",
+        "backupdr.restoreTemplateExecutions.list",
+        "backupdr.restoreTemplates.list",
+        "backupdr.restoreVerificationPlanAssociations.list",
+        "backupdr.restoreVerificationPlans.list",
         "baremetalsolution.instancequotas.list",
         "baremetalsolution.instances.list",
         "baremetalsolution.luns.list",
@@ -131841,6 +132001,7 @@
         "chronicle.nativeDashboards.list",
         "chronicle.notebooks.list",
         "chronicle.operations.list",
+        "chronicle.parserAnalysisReports.list",
         "chronicle.parserExtensions.list",
         "chronicle.parsers.list",
         "chronicle.parsingErrors.list",
@@ -132595,6 +132756,7 @@
         "cloudsql.backupRuns.list",
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
+        "cloudsql.customerManagedCertificates.list",
         "cloudsql.databases.get",
         "cloudsql.databases.list",
         "cloudsql.instances.get",
@@ -134467,6 +134629,8 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.get",
         "networkservices.agentGateways.list",
         "networkservices.authzExtensions.get",
@@ -135365,6 +135529,10 @@
         "workloadmanager.results.list",
         "workloadmanager.rules.list",
         "workloadmanager.workloads.list",
+        "workspacekeyaccess.configs.list",
+        "workspacekeyaccess.endpoints.list",
+        "workspacekeyaccess.locations.list",
+        "workspacekeyaccess.operations.list",
         "workstations.operations.list",
         "workstations.workstationClusters.list",
         "workstations.workstationClusters.listEffectiveTags",
@@ -135721,6 +135889,10 @@
         "backupdr.managementServers.list",
         "backupdr.operations.list",
         "backupdr.resourceBackupConfigs.list",
+        "backupdr.restoreTemplateExecutions.list",
+        "backupdr.restoreTemplates.list",
+        "backupdr.restoreVerificationPlanAssociations.list",
+        "backupdr.restoreVerificationPlans.list",
         "baremetalsolution.instancequotas.list",
         "baremetalsolution.instances.list",
         "baremetalsolution.luns.list",
@@ -135913,6 +136085,7 @@
         "chronicle.nativeDashboards.list",
         "chronicle.notebooks.list",
         "chronicle.operations.list",
+        "chronicle.parserAnalysisReports.list",
         "chronicle.parserExtensions.list",
         "chronicle.parsers.list",
         "chronicle.parsingErrors.list",
@@ -136052,6 +136225,7 @@
         "cloudsecurityscanner.scans.list",
         "cloudsql.backupRuns.list",
         "cloudsql.blueGreenDeployments.list",
+        "cloudsql.customerManagedCertificates.list",
         "cloudsql.databases.list",
         "cloudsql.instances.list",
         "cloudsql.sslCerts.list",
@@ -137315,6 +137489,7 @@
         "networksecurity.serverTlsPolicies.list",
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.urlLists.list",
+        "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.list",
         "networkservices.authzExtensions.list",
         "networkservices.endpointPolicies.list",
@@ -137970,6 +138145,10 @@
         "workloadmanager.results.list",
         "workloadmanager.rules.list",
         "workloadmanager.workloads.list",
+        "workspacekeyaccess.configs.list",
+        "workspacekeyaccess.endpoints.list",
+        "workspacekeyaccess.locations.list",
+        "workspacekeyaccess.operations.list",
         "workstations.operations.list",
         "workstations.workstationClusters.list",
         "workstations.workstationConfigs.getIamPolicy",
@@ -138843,6 +139022,7 @@
         "cloudsql.backupRuns.list",
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
+        "cloudsql.customerManagedCertificates.list",
         "cloudsql.databases.get",
         "cloudsql.databases.list",
         "cloudsql.instances.get",
@@ -140524,6 +140704,8 @@
         "apphub.applications.get",
         "apphub.applications.getIamPolicy",
         "apphub.applications.list",
+        "apphub.applications.listEffectiveTags",
+        "apphub.applications.listTagBindings",
         "apphub.boundaries.get",
         "apphub.discoveredServices.get",
         "apphub.discoveredServices.list",
@@ -140743,6 +140925,20 @@
         "backupdr.resourceBackupConfigs.fetch",
         "backupdr.resourceBackupConfigs.get",
         "backupdr.resourceBackupConfigs.list",
+        "backupdr.restoreTemplateExecutions.getForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.getForComputeDisk",
+        "backupdr.restoreTemplateExecutions.getForComputeInstance",
+        "backupdr.restoreTemplateExecutions.list",
+        "backupdr.restoreTemplates.getForCloudSqlInstance",
+        "backupdr.restoreTemplates.getForComputeDisk",
+        "backupdr.restoreTemplates.getForComputeInstance",
+        "backupdr.restoreTemplates.list",
+        "backupdr.restoreVerificationPlanAssociations.getForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.list",
+        "backupdr.restoreVerificationPlans.get",
+        "backupdr.restoreVerificationPlans.list",
         "backupdr.trial.get",
         "baremetalsolution.instancequotas.list",
         "baremetalsolution.instances.get",
@@ -142179,9 +142375,11 @@
         "cloudsql.backupRuns.list",
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
+        "cloudsql.customerManagedCertificates.list",
         "cloudsql.databases.get",
         "cloudsql.databases.list",
         "cloudsql.instances.createBackupDrBackup",
+        "cloudsql.instances.executeSqlReadOnly",
         "cloudsql.instances.get",
         "cloudsql.instances.getAgentSession",
         "cloudsql.instances.getDiskShrinkConfig",
@@ -145223,6 +145421,8 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.get",
         "networkservices.agentGateways.list",
         "networkservices.authzExtensions.get",
@@ -145237,6 +145437,7 @@
         "networkservices.gateways.listTagBindings",
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
         "networkservices.grpcRoutes.get",
         "networkservices.grpcRoutes.list",
         "networkservices.httpFilters.get",
@@ -146724,6 +146925,14 @@
         "workloadmanager.rules.list",
         "workloadmanager.workloads.get",
         "workloadmanager.workloads.list",
+        "workspacekeyaccess.configs.get",
+        "workspacekeyaccess.configs.list",
+        "workspacekeyaccess.endpoints.get",
+        "workspacekeyaccess.endpoints.list",
+        "workspacekeyaccess.locations.get",
+        "workspacekeyaccess.locations.list",
+        "workspacekeyaccess.operations.get",
+        "workspacekeyaccess.operations.list",
         "workspacemarketplace.appConfiguration.view",
         "workstations.operations.get",
         "workstations.operations.list",
@@ -157882,6 +158091,11 @@
       "description": "Admin role for networkservices",
       "stage": "GA",
       "included_permissions": [
+        "networkservices.agentConnectivityTemplates.create",
+        "networkservices.agentConnectivityTemplates.delete",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
+        "networkservices.agentConnectivityTemplates.update",
         "networkservices.agentGateways.create",
         "networkservices.agentGateways.delete",
         "networkservices.agentGateways.get",
@@ -157918,6 +158132,10 @@
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
         "networkservices.googleTagGatewayPolicies.update",
+        "networkservices.googleapis.com/agentGateways.createPolicyBinding",
+        "networkservices.googleapis.com/agentGateways.deletePolicyBinding",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
+        "networkservices.googleapis.com/agentGateways.updatePolicyBinding",
         "networkservices.grpcRoutes.create",
         "networkservices.grpcRoutes.delete",
         "networkservices.grpcRoutes.get",
@@ -158025,6 +158243,11 @@
       "description": "Editor role for networkservices",
       "stage": "GA",
       "included_permissions": [
+        "networkservices.agentConnectivityTemplates.create",
+        "networkservices.agentConnectivityTemplates.delete",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
+        "networkservices.agentConnectivityTemplates.update",
         "networkservices.agentGateways.create",
         "networkservices.agentGateways.delete",
         "networkservices.agentGateways.get",
@@ -158057,6 +158280,7 @@
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
         "networkservices.googleTagGatewayPolicies.update",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
         "networkservices.grpcRoutes.create",
         "networkservices.grpcRoutes.delete",
         "networkservices.grpcRoutes.get",
@@ -158256,6 +158480,8 @@
       "description": "Viewer role for networkservices",
       "stage": "GA",
       "included_permissions": [
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.get",
         "networkservices.agentGateways.list",
         "networkservices.authzExtensions.get",
@@ -158270,6 +158496,7 @@
         "networkservices.gateways.listTagBindings",
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
         "networkservices.grpcRoutes.get",
         "networkservices.grpcRoutes.list",
         "networkservices.httpFilters.get",
@@ -163364,6 +163591,7 @@
         "oracledatabase.odbDnsZones.delete",
         "oracledatabase.odbDnsZones.get",
         "oracledatabase.odbDnsZones.list",
+        "oracledatabase.odbDnsZones.update",
         "oracledatabase.odbNetworks.create",
         "oracledatabase.odbNetworks.delete",
         "oracledatabase.odbNetworks.get",
@@ -163964,6 +164192,7 @@
         "oracledatabase.odbDnsZones.delete",
         "oracledatabase.odbDnsZones.get",
         "oracledatabase.odbDnsZones.list",
+        "oracledatabase.odbDnsZones.update",
         "oracledatabase.odbNetworks.create",
         "oracledatabase.odbNetworks.delete",
         "oracledatabase.odbNetworks.get",
@@ -165902,10 +166131,14 @@
         "appengine.versions.list",
         "appengine.versions.update",
         "apphub.applications.create",
+        "apphub.applications.createTagBinding",
         "apphub.applications.delete",
+        "apphub.applications.deleteTagBinding",
         "apphub.applications.get",
         "apphub.applications.getIamPolicy",
         "apphub.applications.list",
+        "apphub.applications.listEffectiveTags",
+        "apphub.applications.listTagBindings",
         "apphub.applications.setIamPolicy",
         "apphub.applications.update",
         "apphub.boundaries.attach",
@@ -166259,6 +166492,8 @@
         "backupdr.bvbackups.update",
         "backupdr.bvbackups.useReadOnlyForAlloydbCluster",
         "backupdr.bvbackups.useReadOnlyForCloudSqlInstance",
+        "backupdr.bvbackups.useReadOnlyForComputeDisk",
+        "backupdr.bvbackups.useReadOnlyForComputeInstance",
         "backupdr.bvbackups.useReadOnlyForFilestoreInstance",
         "backupdr.bvbackups.useReadOnlyForNetappVolumes",
         "backupdr.bvdataSources.abandonBackup",
@@ -166272,6 +166507,8 @@
         "backupdr.bvdataSources.update",
         "backupdr.bvdataSources.useReadOnlyForAlloydbCluster",
         "backupdr.bvdataSources.useReadOnlyForCloudSqlInstance",
+        "backupdr.bvdataSources.useReadOnlyForComputeDisk",
+        "backupdr.bvdataSources.useReadOnlyForComputeInstance",
         "backupdr.compute.restoreFromBackupVault",
         "backupdr.dataSourceReferences.fetchForAlloydbCluster",
         "backupdr.dataSourceReferences.fetchForCloudSqlInstance",
@@ -166337,6 +166574,53 @@
         "backupdr.resourceBackupConfigs.fetch",
         "backupdr.resourceBackupConfigs.get",
         "backupdr.resourceBackupConfigs.list",
+        "backupdr.restoreTargets.useForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.getForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.getForComputeDisk",
+        "backupdr.restoreTemplateExecutions.getForComputeInstance",
+        "backupdr.restoreTemplateExecutions.list",
+        "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeDisk",
+        "backupdr.restoreTemplateExecutions.triggerRestoreCleanupForComputeInstance",
+        "backupdr.restoreTemplates.createForCloudSqlInstance",
+        "backupdr.restoreTemplates.createForComputeDisk",
+        "backupdr.restoreTemplates.createForComputeInstance",
+        "backupdr.restoreTemplates.deleteForCloudSqlInstance",
+        "backupdr.restoreTemplates.deleteForComputeDisk",
+        "backupdr.restoreTemplates.deleteForComputeInstance",
+        "backupdr.restoreTemplates.getForCloudSqlInstance",
+        "backupdr.restoreTemplates.getForComputeDisk",
+        "backupdr.restoreTemplates.getForComputeInstance",
+        "backupdr.restoreTemplates.list",
+        "backupdr.restoreTemplates.runForCloudSqlInstance",
+        "backupdr.restoreTemplates.runForComputeDisk",
+        "backupdr.restoreTemplates.runForComputeInstance",
+        "backupdr.restoreTemplates.runWithCleanupForCloudSqlInstance",
+        "backupdr.restoreTemplates.runWithCleanupForComputeDisk",
+        "backupdr.restoreTemplates.runWithCleanupForComputeInstance",
+        "backupdr.restoreTemplates.updateForCloudSqlInstance",
+        "backupdr.restoreTemplates.updateForComputeDisk",
+        "backupdr.restoreTemplates.updateForComputeInstance",
+        "backupdr.restoreTemplates.useForCloudSqlInstance",
+        "backupdr.restoreTemplates.useForComputeDisk",
+        "backupdr.restoreTemplates.useForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.createForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.createForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.createForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.deleteForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.deleteForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.deleteForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.getForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.list",
+        "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.triggerRestoreVerificationForComputeInstance",
+        "backupdr.restoreVerificationPlans.create",
+        "backupdr.restoreVerificationPlans.delete",
+        "backupdr.restoreVerificationPlans.get",
+        "backupdr.restoreVerificationPlans.list",
         "backupdr.serviceConfig.initialize",
         "backupdr.trial.end",
         "backupdr.trial.get",
@@ -167517,6 +167801,8 @@
         "chronicle.operations.list",
         "chronicle.operations.streamSearch",
         "chronicle.operations.wait",
+        "chronicle.parserAnalysisReports.get",
+        "chronicle.parserAnalysisReports.list",
         "chronicle.parserExtensions.activate",
         "chronicle.parserExtensions.create",
         "chronicle.parserExtensions.delete",
@@ -167534,6 +167820,7 @@
         "chronicle.parsers.generateEventTypesSuggestions",
         "chronicle.parsers.get",
         "chronicle.parsers.list",
+        "chronicle.parsers.runAnalysis",
         "chronicle.parsers.runParser",
         "chronicle.parsers.update",
         "chronicle.parsingErrors.list",
@@ -168826,6 +169113,9 @@
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
         "cloudsql.blueGreenDeployments.switchover",
+        "cloudsql.customerManagedCertificates.delete",
+        "cloudsql.customerManagedCertificates.list",
+        "cloudsql.customerManagedCertificates.update",
         "cloudsql.databases.create",
         "cloudsql.databases.delete",
         "cloudsql.databases.get",
@@ -168845,6 +169135,7 @@
         "cloudsql.instances.deleteTagBinding",
         "cloudsql.instances.demoteMaster",
         "cloudsql.instances.executeSql",
+        "cloudsql.instances.executeSqlReadOnly",
         "cloudsql.instances.export",
         "cloudsql.instances.failover",
         "cloudsql.instances.get",
@@ -171811,6 +172102,7 @@
         "dataplex.entryGroups.useContextAspect",
         "dataplex.entryGroups.useContextEntry",
         "dataplex.entryGroups.useContextEntryLink",
+        "dataplex.entryGroups.useDataContractAspect",
         "dataplex.entryGroups.useDataProfileAspect",
         "dataplex.entryGroups.useDataQualityRuleTemplateAspect",
         "dataplex.entryGroups.useDataQualityRuleTemplateEntry",
@@ -172373,6 +172665,7 @@
         "devicestreaming.deviceSessions.get",
         "devicestreaming.deviceSessions.list",
         "devicestreaming.deviceSessions.update",
+        "devicestreaming.deviceSessions.use",
         "dialogflow.agents.create",
         "dialogflow.agents.delete",
         "dialogflow.agents.export",
@@ -175764,6 +176057,11 @@
         "networksecurity.urlLists.list",
         "networksecurity.urlLists.update",
         "networksecurity.urlLists.use",
+        "networkservices.agentConnectivityTemplates.create",
+        "networkservices.agentConnectivityTemplates.delete",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
+        "networkservices.agentConnectivityTemplates.update",
         "networkservices.agentGateways.create",
         "networkservices.agentGateways.delete",
         "networkservices.agentGateways.get",
@@ -175800,6 +176098,10 @@
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
         "networkservices.googleTagGatewayPolicies.update",
+        "networkservices.googleapis.com/agentGateways.createPolicyBinding",
+        "networkservices.googleapis.com/agentGateways.deletePolicyBinding",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
+        "networkservices.googleapis.com/agentGateways.updatePolicyBinding",
         "networkservices.grpcRoutes.create",
         "networkservices.grpcRoutes.delete",
         "networkservices.grpcRoutes.get",
@@ -176141,6 +176443,7 @@
         "oracledatabase.odbDnsZones.delete",
         "oracledatabase.odbDnsZones.get",
         "oracledatabase.odbDnsZones.list",
+        "oracledatabase.odbDnsZones.update",
         "oracledatabase.odbNetworks.create",
         "oracledatabase.odbNetworks.delete",
         "oracledatabase.odbNetworks.get",
@@ -178710,6 +179013,21 @@
         "workloadmanager.rules.list",
         "workloadmanager.workloads.get",
         "workloadmanager.workloads.list",
+        "workspacekeyaccess.configs.create",
+        "workspacekeyaccess.configs.delete",
+        "workspacekeyaccess.configs.get",
+        "workspacekeyaccess.configs.list",
+        "workspacekeyaccess.configs.update",
+        "workspacekeyaccess.endpoints.create",
+        "workspacekeyaccess.endpoints.get",
+        "workspacekeyaccess.endpoints.list",
+        "workspacekeyaccess.endpoints.update",
+        "workspacekeyaccess.locations.get",
+        "workspacekeyaccess.locations.list",
+        "workspacekeyaccess.operations.cancel",
+        "workspacekeyaccess.operations.delete",
+        "workspacekeyaccess.operations.get",
+        "workspacekeyaccess.operations.list",
         "workspacemarketplace.appConfiguration.update",
         "workspacemarketplace.appConfiguration.view",
         "workstations.operations.get",
@@ -180948,6 +181266,8 @@
         "apphub.applications.get",
         "apphub.applications.getIamPolicy",
         "apphub.applications.list",
+        "apphub.applications.listEffectiveTags",
+        "apphub.applications.listTagBindings",
         "apphub.boundaries.get",
         "apphub.discoveredServices.get",
         "apphub.discoveredServices.list",
@@ -181167,6 +181487,20 @@
         "backupdr.resourceBackupConfigs.fetch",
         "backupdr.resourceBackupConfigs.get",
         "backupdr.resourceBackupConfigs.list",
+        "backupdr.restoreTemplateExecutions.getForCloudSqlInstance",
+        "backupdr.restoreTemplateExecutions.getForComputeDisk",
+        "backupdr.restoreTemplateExecutions.getForComputeInstance",
+        "backupdr.restoreTemplateExecutions.list",
+        "backupdr.restoreTemplates.getForCloudSqlInstance",
+        "backupdr.restoreTemplates.getForComputeDisk",
+        "backupdr.restoreTemplates.getForComputeInstance",
+        "backupdr.restoreTemplates.list",
+        "backupdr.restoreVerificationPlanAssociations.getForCloudSqlInstance",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeDisk",
+        "backupdr.restoreVerificationPlanAssociations.getForComputeInstance",
+        "backupdr.restoreVerificationPlanAssociations.list",
+        "backupdr.restoreVerificationPlans.get",
+        "backupdr.restoreVerificationPlans.list",
         "backupdr.trial.get",
         "baremetalsolution.instancequotas.list",
         "baremetalsolution.instances.get",
@@ -182140,9 +182474,11 @@
         "cloudsql.backupRuns.list",
         "cloudsql.blueGreenDeployments.get",
         "cloudsql.blueGreenDeployments.list",
+        "cloudsql.customerManagedCertificates.list",
         "cloudsql.databases.get",
         "cloudsql.databases.list",
         "cloudsql.instances.createBackupDrBackup",
+        "cloudsql.instances.executeSqlReadOnly",
         "cloudsql.instances.get",
         "cloudsql.instances.getAgentSession",
         "cloudsql.instances.getDiskShrinkConfig",
@@ -185181,6 +185517,8 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
+        "networkservices.agentConnectivityTemplates.get",
+        "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.get",
         "networkservices.agentGateways.list",
         "networkservices.authzExtensions.get",
@@ -185195,6 +185533,7 @@
         "networkservices.gateways.listTagBindings",
         "networkservices.googleTagGatewayPolicies.get",
         "networkservices.googleTagGatewayPolicies.list",
+        "networkservices.googleapis.com/agentGateways.searchPolicyBindings",
         "networkservices.grpcRoutes.get",
         "networkservices.grpcRoutes.list",
         "networkservices.httpFilters.get",
@@ -186682,6 +187021,14 @@
         "workloadmanager.rules.list",
         "workloadmanager.workloads.get",
         "workloadmanager.workloads.list",
+        "workspacekeyaccess.configs.get",
+        "workspacekeyaccess.configs.list",
+        "workspacekeyaccess.endpoints.get",
+        "workspacekeyaccess.endpoints.list",
+        "workspacekeyaccess.locations.get",
+        "workspacekeyaccess.locations.list",
+        "workspacekeyaccess.operations.get",
+        "workspacekeyaccess.operations.list",
         "workspacemarketplace.appConfiguration.view",
         "workstations.operations.get",
         "workstations.operations.list",
@@ -233153,6 +233500,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.serviceAgent",
+          "title": "Discovery Engine Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -234710,8 +235062,23 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.agentspaceUser",
+          "title": "Gemini Enterprise User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.podcastApiUser",
+          "title": "Podcast API User",
+          "stage": "BETA"
+        },
+        {
           "name": "roles/discoveryengine.serviceAgent",
           "title": "Discovery Engine Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.user",
+          "title": "Discovery Engine User",
           "stage": "GA"
         },
         {
@@ -235037,6 +235404,21 @@
         {
           "name": "roles/agentregistry.viewer",
           "title": "Agent Registry API Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.agentspaceUser",
+          "title": "Gemini Enterprise User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.podcastApiUser",
+          "title": "Podcast API User",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/discoveryengine.user",
+          "title": "Discovery Engine User",
           "stage": "GA"
         },
         {
@@ -236169,11 +236551,6 @@
           "stage": "GA"
         },
         {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
-        },
-        {
           "name": "roles/iam.dataScientist",
           "title": "Data Scientist",
           "stage": "GA"
@@ -236280,11 +236657,6 @@
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
-        },
-        {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
         },
         {
           "name": "roles/iam.dataScientist",
@@ -236650,11 +237022,6 @@
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
-        },
-        {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
         },
         {
           "name": "roles/iam.dataScientist",
@@ -245695,6 +246062,11 @@
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/flow.serviceAgent",
+          "title": "Flow Service Agent",
           "stage": "GA"
         },
         {
@@ -275684,11 +276056,6 @@
           "stage": "GA"
         },
         {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
-        },
-        {
           "name": "roles/iam.dataScientist",
           "title": "Data Scientist",
           "stage": "GA"
@@ -275770,11 +276137,6 @@
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
-        },
-        {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
         },
         {
           "name": "roles/iam.dataScientist",
@@ -275868,11 +276230,6 @@
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
-        },
-        {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
         },
         {
           "name": "roles/iam.dataScientist",
@@ -275983,11 +276340,6 @@
           "stage": "GA"
         },
         {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
-        },
-        {
           "name": "roles/iam.dataScientist",
           "title": "Data Scientist",
           "stage": "GA"
@@ -276094,11 +276446,6 @@
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
-        },
-        {
-          "name": "roles/geminicloudassist.user",
-          "title": "Gemini Cloud Assist User",
-          "stage": "BETA"
         },
         {
           "name": "roles/iam.dataScientist",
@@ -320120,6 +320467,26 @@
           "stage": "GA"
         },
         {
+          "name": "roles/dlp.orgdriver",
+          "title": "DLP Organization Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.projectdriver",
+          "title": "DLP Project Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/resourcemanager.tagUser",
           "title": "Tag User",
           "stage": "GA"
@@ -320223,6 +320590,26 @@
         {
           "name": "roles/apphub.admin",
           "title": "App Hub Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.orgdriver",
+          "title": "DLP Organization Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.projectdriver",
+          "title": "DLP Project Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -320613,6 +321000,41 @@
           "stage": "BETA"
         },
         {
+          "name": "roles/dlp.orgdriver",
+          "title": "DLP Organization Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.projectdriver",
+          "title": "DLP Project Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/resourcemanager.tagUser",
           "title": "Tag User",
           "stage": "GA"
@@ -320669,6 +321091,41 @@
           "name": "roles/cloudhub.operator",
           "title": "Cloud Hub Operator",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/dlp.orgdriver",
+          "title": "DLP Organization Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.projectdriver",
+          "title": "DLP Project Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
         },
         {
           "name": "roles/resourcemanager.tagUser",
@@ -352987,6 +353444,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -353032,6 +353499,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -353832,6 +354309,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -353872,6 +354359,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -358403,6 +358900,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -358443,6 +358950,26 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -358494,6 +359021,26 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -358539,6 +359086,26 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -358590,6 +359157,41 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -358633,6 +359235,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -358668,6 +359280,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -358709,6 +359331,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -358744,6 +359376,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -358785,6 +359427,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -358820,6 +359472,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -358861,6 +359523,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -358899,6 +359571,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -358934,6 +359616,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -358977,6 +359669,26 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -359028,6 +359740,26 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -359073,6 +359805,26 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -359124,6 +359876,41 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -359167,6 +359954,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359202,6 +359999,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359243,6 +360050,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359273,6 +360090,16 @@
         {
           "name": "roles/backupdr.serviceAgent",
           "title": "Backup and DR Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359309,6 +360136,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359339,6 +360176,16 @@
         {
           "name": "roles/backupdr.serviceAgent",
           "title": "Backup and DR Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359380,6 +360227,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359415,6 +360272,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359456,6 +360323,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359491,6 +360368,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359532,6 +360419,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359567,6 +360464,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359608,6 +360515,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359643,6 +360560,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359684,6 +360611,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359719,6 +360656,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359760,6 +360707,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -359795,6 +360752,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -359838,6 +360805,26 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -359889,6 +360876,26 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -359934,6 +360941,26 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -359985,6 +361012,41 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -360028,6 +361090,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -360063,6 +361135,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -360104,6 +361186,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -360142,6 +361234,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -360177,6 +361279,16 @@
         {
           "name": "roles/backupdr.userv2",
           "title": "Backup and DR User V2",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -360220,6 +361332,26 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -360268,6 +361400,41 @@
         {
           "name": "roles/backupdr.viewer",
           "title": "Backup and DR Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -436916,6 +438083,11 @@
           "name": "roles/chronicle.admin",
           "title": "Chronicle API Admin",
           "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
         }
       ]
     },
@@ -436933,6 +438105,26 @@
         {
           "name": "roles/chronicle.admin",
           "title": "Chronicle API Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         }
       ]
@@ -437372,6 +438564,11 @@
         {
           "name": "roles/chronicle.admin",
           "title": "Chronicle API Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         }
       ]
@@ -548313,6 +549510,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.admin",
+          "title": "Discovery Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.agentspaceAdmin",
+          "title": "Gemini Enterprise Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
           "stage": "GA"
@@ -548331,6 +549538,16 @@
           "name": "roles/documentai.editor",
           "title": "Document AI Editor",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/edgecontainer.admin",
+          "title": "Edge Container Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/edgecontainer.editor",
+          "title": "Edge Container Editor",
+          "stage": "GA"
         },
         {
           "name": "roles/editor",
@@ -548671,6 +549888,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.admin",
+          "title": "Discovery Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.agentspaceAdmin",
+          "title": "Gemini Enterprise Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
           "stage": "GA"
@@ -548689,6 +549916,16 @@
           "name": "roles/documentai.editor",
           "title": "Document AI Editor",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/edgecontainer.admin",
+          "title": "Edge Container Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/edgecontainer.editor",
+          "title": "Edge Container Editor",
+          "stage": "GA"
         },
         {
           "name": "roles/editor",
@@ -549049,6 +550286,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.admin",
+          "title": "Discovery Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.agentspaceAdmin",
+          "title": "Gemini Enterprise Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
           "stage": "GA"
@@ -549067,6 +550314,16 @@
           "name": "roles/documentai.editor",
           "title": "Document AI Editor",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/edgecontainer.admin",
+          "title": "Edge Container Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/edgecontainer.editor",
+          "title": "Edge Container Editor",
+          "stage": "GA"
         },
         {
           "name": "roles/editor",
@@ -550579,6 +551836,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.admin",
+          "title": "Discovery Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.agentspaceAdmin",
+          "title": "Gemini Enterprise Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
           "stage": "GA"
@@ -550597,6 +551864,16 @@
           "name": "roles/documentai.editor",
           "title": "Document AI Editor",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/edgecontainer.admin",
+          "title": "Edge Container Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/edgecontainer.editor",
+          "title": "Edge Container Editor",
+          "stage": "GA"
         },
         {
           "name": "roles/editor",
@@ -550962,6 +552239,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.admin",
+          "title": "Discovery Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.agentspaceAdmin",
+          "title": "Gemini Enterprise Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
           "stage": "GA"
@@ -550980,6 +552267,16 @@
           "name": "roles/documentai.editor",
           "title": "Document AI Editor",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/edgecontainer.admin",
+          "title": "Edge Container Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/edgecontainer.editor",
+          "title": "Edge Container Editor",
+          "stage": "GA"
         },
         {
           "name": "roles/editor",
@@ -564778,6 +566075,21 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.databasesAdmin",
+          "title": "Databases Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -564816,6 +566128,56 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.databasesAdmin",
+          "title": "Databases Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.devOps",
+          "title": "Dev Ops",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.siteReliabilityEngineer",
+          "title": "Site Reliability Engineer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -564851,6 +566213,26 @@
         {
           "name": "roles/composer.serviceAgent",
           "title": "Cloud Composer API Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.databasesAdmin",
+          "title": "Databases Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.devOps",
+          "title": "Dev Ops",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -566116,6 +567498,41 @@
         {
           "name": "roles/composer.serviceAgent",
           "title": "Cloud Composer API Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.orgdriver",
+          "title": "DLP Organization Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.projectdriver",
+          "title": "DLP Project Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.databasesAdmin",
+          "title": "Databases Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -601091,6 +602508,11 @@
         {
           "name": "roles/gkebackup.serviceAgent",
           "title": "Backup for GKE Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/hypercomputecluster.serviceAgent",
+          "title": "Cluster Director Service Agent",
           "stage": "GA"
         },
         {
@@ -858250,6 +859672,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -898794,6 +900226,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -923405,6 +924847,11 @@
           "stage": "BETA"
         },
         {
+          "name": "roles/discoveryengine.agentspaceUser",
+          "title": "Gemini Enterprise User",
+          "stage": "GA"
+        },
+        {
           "name": "roles/discoveryengine.agentspaceViewer",
           "title": "Gemini Enterprise Viewer",
           "stage": "GA"
@@ -923412,6 +924859,16 @@
         {
           "name": "roles/discoveryengine.editor",
           "title": "Discovery Engine Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.podcastApiUser",
+          "title": "Podcast API User",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/discoveryengine.user",
+          "title": "Discovery Engine User",
           "stage": "GA"
         },
         {
@@ -1085008,6 +1086465,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/discoveryengine.serviceAgent",
+          "title": "Discovery Engine Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1085063,6 +1086525,11 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.serviceAgent",
+          "title": "Discovery Engine Service Agent",
           "stage": "GA"
         },
         {
@@ -1126189,6 +1127656,36 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.editor",
+          "title": "Network Services Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -1126229,6 +1127726,36 @@
         {
           "name": "roles/dataflow.serviceAgent",
           "title": "Cloud Dataflow Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.editor",
+          "title": "Network Services Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -1126287,6 +1127814,56 @@
         {
           "name": "roles/datafusion.serviceAgent",
           "title": "Cloud Data Fusion API Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.editor",
+          "title": "Network Services Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.viewer",
+          "title": "Network Services Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -1126353,6 +1127930,66 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.editor",
+          "title": "Network Services Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.viewer",
+          "title": "Network Services Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -1126398,6 +1128035,36 @@
         {
           "name": "roles/dataflow.serviceAgent",
           "title": "Cloud Dataflow Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.editor",
+          "title": "Network Services Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -1129955,6 +1131622,26 @@
           "name": "roles/dataflow.serviceAgent",
           "title": "Cloud Dataflow Service Agent",
           "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
         }
       ]
     },
@@ -1129993,6 +1131680,26 @@
           "name": "roles/dataflow.serviceAgent",
           "title": "Cloud Dataflow Service Agent",
           "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
         }
       ]
     },
@@ -1130030,6 +1131737,51 @@
         {
           "name": "roles/dataflow.serviceAgent",
           "title": "Cloud Dataflow Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.editor",
+          "title": "Network Services Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.viewer",
+          "title": "Network Services Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -1130078,6 +1131830,26 @@
         {
           "name": "roles/dataflow.serviceAgent",
           "title": "Cloud Dataflow Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networkservices.admin",
+          "title": "Network Services Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         }
       ]
@@ -1154574,6 +1156346,26 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/oracledatabase.admin",
+          "title": "Oracle Database@Google Cloud admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/oracledatabase.networkAdmin",
+          "title": "Oracle Database@Google Network Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
           "stage": "GA"
         },
         {
@@ -1371720,6 +1373512,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workspacekeyaccess.admin",
           "title": "Workspace Key Access API Admin",
           "stage": "BETA"
@@ -1371748,6 +1373550,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workspacekeyaccess.admin",
           "title": "Workspace Key Access API Admin",
           "stage": "BETA"
@@ -1371773,6 +1373585,26 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -1371814,6 +1373646,41 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -1371852,6 +1373719,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workspacekeyaccess.admin",
           "title": "Workspace Key Access API Admin",
           "stage": "BETA"
@@ -1371880,6 +1373757,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workspacekeyaccess.admin",
           "title": "Workspace Key Access API Admin",
           "stage": "BETA"
@@ -1371905,6 +1373792,26 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -1371946,6 +1373853,41 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -1371984,6 +1373926,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workspacekeyaccess.admin",
           "title": "Workspace Key Access API Admin",
           "stage": "BETA"
@@ -1372009,6 +1373961,26 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -1372050,6 +1374022,41 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
           "stage": "GA"
@@ -1372088,6 +1374095,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workspacekeyaccess.admin",
           "title": "Workspace Key Access API Admin",
           "stage": "BETA"
@@ -1372116,6 +1374133,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workspacekeyaccess.admin",
           "title": "Workspace Key Access API Admin",
           "stage": "BETA"
@@ -1372141,6 +1374168,26 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -1372179,6 +1374226,41 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
           "stage": "GA"
         },
         {
@@ -1373757,7 +1375839,7 @@
   "metadata": {
     "total_roles": 2429,
     "total_permissions": 14340,
-    "last_updated": "2026-11-05T08:55:55.605298Z",
+    "last_updated": "2026-11-06T08:54:43.498249Z",
     "source": "Google Cloud IAM API"
   }
 }
