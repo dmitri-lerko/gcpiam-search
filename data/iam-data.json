@@ -84814,6 +84814,7 @@
         "agentregistry.skills.delete",
         "agentregistry.skills.get",
         "agentregistry.skills.getIamPolicy",
+        "agentregistry.skills.list",
         "agentregistry.skills.update",
         "aiplatform.agents.get",
         "aiplatform.agents.list",
@@ -84843,6 +84844,7 @@
         "alloydb.databases.list",
         "alloydb.instances.get",
         "alloydb.operations.get",
+        "apphubendpoint.locations.lookup",
         "bigquery.datasets.create",
         "bigquery.datasets.get",
         "bigquery.jobs.create",
@@ -85713,12 +85715,14 @@
         "aiplatform.entityTypes.streamingReadFeatureValues",
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.get",
         "aiplatform.evaluationItems.list",
         "aiplatform.evaluationMetrics.get",
         "aiplatform.evaluationMetrics.list",
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.get",
         "aiplatform.evaluationSets.list",
         "aiplatform.exampleStores.get",
@@ -87529,12 +87533,14 @@
         "aiplatform.entityTypes.streamingReadFeatureValues",
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.get",
         "aiplatform.evaluationItems.list",
         "aiplatform.evaluationMetrics.get",
         "aiplatform.evaluationMetrics.list",
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.get",
         "aiplatform.evaluationSets.list",
         "aiplatform.exampleStores.get",
@@ -91583,6 +91589,7 @@
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.create",
         "agentregistry.bindings.delete",
         "agentregistry.bindings.fetchAvailable",
@@ -91757,6 +91764,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -91773,6 +91781,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -92748,6 +92758,7 @@
         "apphub.workloads.get",
         "apphub.workloads.list",
         "apphub.workloads.update",
+        "apphubendpoint.locations.lookup",
         "applianceactivation.rttCommands.approve",
         "applianceactivation.rttCommands.create",
         "applianceactivation.rttCommands.get",
@@ -94163,6 +94174,7 @@
         "chronicle.marketplaceIntegrations.install",
         "chronicle.marketplaceIntegrations.uninstall",
         "chronicle.messages.create",
+        "chronicle.messages.createLongRunning",
         "chronicle.messages.delete",
         "chronicle.messages.get",
         "chronicle.messages.list",
@@ -95300,6 +95312,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -97653,6 +97670,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -97672,6 +97690,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.create",
@@ -99400,6 +99419,22 @@
         "firebasestorage.defaultBucket.create",
         "firebasestorage.defaultBucket.delete",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.configs.update",
         "firebasevertexai.promptTemplates.create",
@@ -101211,6 +101246,23 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.tlsInspectionPolicies.update",
         "networksecurity.tlsInspectionPolicies.use",
+        "networksecurity.ullMirroringCollectorRules.create",
+        "networksecurity.ullMirroringCollectorRules.delete",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectorRules.update",
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "networksecurity.ullMirroringEngines.create",
+        "networksecurity.ullMirroringEngines.delete",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "networksecurity.ullMirroringEngines.update",
+        "networksecurity.ullMirroringEngines.use",
         "networksecurity.urlLists.create",
         "networksecurity.urlLists.delete",
         "networksecurity.urlLists.get",
@@ -105904,6 +105956,22 @@
         "firebasestorage.defaultBucket.create",
         "firebasestorage.defaultBucket.delete",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.configs.update",
         "firebasevertexai.promptTemplates.create",
@@ -107477,6 +107545,22 @@
         "firebasestorage.buckets.get",
         "firebasestorage.buckets.list",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.promptTemplates.get",
         "firebasevertexai.promptTemplates.list",
@@ -107802,6 +107886,7 @@
         "firebaserules.rulesets.create",
         "firebaserules.rulesets.get",
         "firebaserules.rulesets.list",
+        "firebasestorage.buckets.addFirebase",
         "firebasestorage.defaultBucket.get",
         "firebasevertexai.configs.get",
         "firebasevertexai.configs.update",
@@ -107881,6 +107966,22 @@
         "firebaseextensions.configs.list",
         "firebaseperformance.config.update",
         "firebaseperformance.data.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "logging.logEntries.download",
         "logging.views.access",
         "logging.views.listLogs",
@@ -107938,6 +108039,14 @@
         "firebasecrashlytics.sessions.get",
         "firebaseextensions.configs.list",
         "firebaseperformance.data.get",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "logging.logEntries.download",
         "logging.views.access",
         "logging.views.listLogs",
@@ -108411,6 +108520,14 @@
         "firebasestorage.buckets.get",
         "firebasestorage.buckets.list",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.promptTemplates.get",
         "firebasevertexai.promptTemplates.list",
@@ -109061,6 +109178,22 @@
         "firebasecrashlytics.issues.list",
         "firebasecrashlytics.issues.update",
         "firebasecrashlytics.sessions.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "logging.logEntries.download",
         "logging.views.access",
         "logging.views.listLogs",
@@ -109102,6 +109235,14 @@
         "firebasecrashlytics.issues.get",
         "firebasecrashlytics.issues.list",
         "firebasecrashlytics.sessions.get",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "logging.logEntries.download",
         "logging.views.access",
         "logging.views.listLogs",
@@ -109948,6 +110089,52 @@
         "storage.buckets.get",
         "storage.objects.get",
         "telemetry.traces.write"
+      ],
+      "etag": "AA=="
+    },
+    {
+      "name": "roles/firebasetelemetryadmin.admin",
+      "title": "Firebase Telemetry Admin Admin",
+      "description": "Full access to Firebase Telemetry Admin resources.",
+      "stage": "BETA",
+      "included_permissions": [
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
+      ],
+      "etag": "AA=="
+    },
+    {
+      "name": "roles/firebasetelemetryadmin.viewer",
+      "title": "Firebase Telemetry Admin Viewer",
+      "description": "Readonly access to Firebase Telemetry Admin resources.",
+      "stage": "BETA",
+      "included_permissions": [
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
       ],
       "etag": "AA=="
     },
@@ -115283,6 +115470,8 @@
         "backupdr.operations.get",
         "backupdr.operations.list",
         "backupdr.serviceConfig.initialize",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -119337,6 +119526,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -119353,6 +119543,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -120879,6 +121071,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -122934,6 +123128,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -125190,6 +125389,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -125206,6 +125406,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -126500,6 +126702,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -129250,6 +129457,7 @@
         "composer.userworkloadssecrets.list",
         "compute.acceleratorInterconnectMemberInstances.list",
         "compute.acceleratorInterconnects.list",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.list",
         "compute.addresses.list",
         "compute.autoscalers.list",
@@ -130143,6 +130351,10 @@
         "firebaserules.releases.list",
         "firebaserules.rulesets.list",
         "firebasestorage.buckets.list",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.promptTemplates.list",
         "fleetengine.deliveryvehicles.list",
         "fleetengine.tasks.list",
@@ -130617,6 +130829,9 @@
         "networksecurity.serverTlsPolicies.list",
         "networksecurity.serverTlsPolicies.setIamPolicy",
         "networksecurity.tlsInspectionPolicies.list",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.list",
         "networksecurity.urlLists.list",
         "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.list",
@@ -132846,6 +133061,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -134100,6 +134317,10 @@
         "firebaserules.releases.list",
         "firebaserules.rulesets.list",
         "firebasestorage.buckets.list",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.promptTemplates.list",
         "fleetengine.deliveryvehicles.list",
         "fleetengine.tasks.list",
@@ -134627,6 +134848,9 @@
         "networksecurity.serverTlsPolicies.listTagBindings",
         "networksecurity.tlsInspectionPolicies.get",
         "networksecurity.tlsInspectionPolicies.list",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.list",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
         "networkservices.agentConnectivityTemplates.get",
@@ -136298,6 +136522,7 @@
         "composer.userworkloadssecrets.list",
         "compute.acceleratorInterconnectMemberInstances.list",
         "compute.acceleratorInterconnects.list",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.list",
         "compute.addresses.list",
         "compute.autoscalers.list",
@@ -137075,6 +137300,10 @@
         "firebaserules.releases.list",
         "firebaserules.rulesets.list",
         "firebasestorage.buckets.list",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.promptTemplates.list",
         "fleetengine.deliveryvehicles.list",
         "fleetengine.tasks.list",
@@ -137488,6 +137717,9 @@
         "networksecurity.serverTlsPolicies.getIamPolicy",
         "networksecurity.serverTlsPolicies.list",
         "networksecurity.tlsInspectionPolicies.list",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.list",
         "networksecurity.urlLists.list",
         "networkservices.agentConnectivityTemplates.list",
         "networkservices.agentGateways.list",
@@ -139059,6 +139291,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -140171,6 +140405,7 @@
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.fetchAvailable",
         "agentregistry.bindings.get",
         "agentregistry.bindings.list",
@@ -140255,12 +140490,14 @@
         "aiplatform.entityTypes.streamingReadFeatureValues",
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.get",
         "aiplatform.evaluationItems.list",
         "aiplatform.evaluationMetrics.get",
         "aiplatform.evaluationMetrics.list",
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.get",
         "aiplatform.evaluationSets.list",
         "aiplatform.exampleStores.get",
@@ -140724,6 +140961,7 @@
         "apphub.services.list",
         "apphub.workloads.get",
         "apphub.workloads.list",
+        "apphubendpoint.locations.lookup",
         "applianceactivation.rttCommands.get",
         "applianceactivation.rttCommands.list",
         "appoptimize.locations.get",
@@ -142555,6 +142793,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -144502,6 +144742,14 @@
         "firebasestorage.buckets.get",
         "firebasestorage.buckets.list",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.promptTemplates.get",
         "firebasevertexai.promptTemplates.list",
@@ -145419,6 +145667,13 @@
         "networksecurity.serverTlsPolicies.listTagBindings",
         "networksecurity.tlsInspectionPolicies.get",
         "networksecurity.tlsInspectionPolicies.list",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
         "networkservices.agentConnectivityTemplates.get",
@@ -150088,6 +150343,8 @@
         "backupdr.operations.get",
         "backupdr.operations.list",
         "backupdr.serviceConfig.initialize",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -157480,6 +157737,23 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.tlsInspectionPolicies.update",
         "networksecurity.tlsInspectionPolicies.use",
+        "networksecurity.ullMirroringCollectorRules.create",
+        "networksecurity.ullMirroringCollectorRules.delete",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectorRules.update",
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "networksecurity.ullMirroringEngines.create",
+        "networksecurity.ullMirroringEngines.delete",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "networksecurity.ullMirroringEngines.update",
+        "networksecurity.ullMirroringEngines.use",
         "networksecurity.urlLists.create",
         "networksecurity.urlLists.delete",
         "networksecurity.urlLists.get",
@@ -157698,6 +157972,23 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.tlsInspectionPolicies.update",
         "networksecurity.tlsInspectionPolicies.use",
+        "networksecurity.ullMirroringCollectorRules.create",
+        "networksecurity.ullMirroringCollectorRules.delete",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectorRules.update",
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "networksecurity.ullMirroringEngines.create",
+        "networksecurity.ullMirroringEngines.delete",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "networksecurity.ullMirroringEngines.update",
+        "networksecurity.ullMirroringEngines.use",
         "networksecurity.urlLists.create",
         "networksecurity.urlLists.delete",
         "networksecurity.urlLists.get",
@@ -157982,6 +158273,93 @@
       "etag": "AA=="
     },
     {
+      "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+      "title": "Ull Mirroring Collector Admin",
+      "description": "Enables full access to Ull Mirroring Collector resources.",
+      "stage": "GA",
+      "included_permissions": [
+        "networksecurity.ullMirroringCollectorRules.create",
+        "networksecurity.ullMirroringCollectorRules.delete",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectorRules.update",
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
+      ],
+      "etag": "AA=="
+    },
+    {
+      "name": "roles/networksecurity.ullMirroringCollectorViewer",
+      "title": "Ull Mirroring Collector Viewer",
+      "description": "Enables read-only access to Ull Mirroring Collector resources.",
+      "stage": "GA",
+      "included_permissions": [
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
+      ],
+      "etag": "AA=="
+    },
+    {
+      "name": "roles/networksecurity.ullMirroringEngineAdmin",
+      "title": "Ull Mirroring Engine Admin",
+      "description": "Enables full access to Ull Mirroring Engine and Collector resources.",
+      "stage": "GA",
+      "included_permissions": [
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "networksecurity.ullMirroringEngines.create",
+        "networksecurity.ullMirroringEngines.delete",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "networksecurity.ullMirroringEngines.update",
+        "networksecurity.ullMirroringEngines.use",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
+      ],
+      "etag": "AA=="
+    },
+    {
+      "name": "roles/networksecurity.ullMirroringEngineUser",
+      "title": "Ull Mirroring Engine User",
+      "description": "Enables creating a collector for an in-scope engine.",
+      "stage": "GA",
+      "included_permissions": [
+        "networksecurity.ullMirroringEngines.use",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
+      ],
+      "etag": "AA=="
+    },
+    {
+      "name": "roles/networksecurity.ullMirroringEngineViewer",
+      "title": "Ull Mirroring Engine Viewer",
+      "description": "Enables read-only access to Ull Mirroring Engine and Collector resources.",
+      "stage": "GA",
+      "included_permissions": [
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
+      ],
+      "etag": "AA=="
+    },
+    {
       "name": "roles/networksecurity.viewer",
       "title": "Network Security Viewer",
       "description": "Viewer role for Network Security",
@@ -158055,6 +158433,13 @@
         "networksecurity.serverTlsPolicies.listTagBindings",
         "networksecurity.tlsInspectionPolicies.get",
         "networksecurity.tlsInspectionPolicies.list",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
         "resourcemanager.projects.get",
@@ -158564,6 +158949,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -159088,6 +159475,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -159629,6 +160018,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -160819,6 +161213,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -161312,6 +161708,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -161835,6 +162233,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -162542,6 +162942,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -164954,10 +165356,14 @@
         "agentregistry.agents.get",
         "agentregistry.agents.list",
         "agentregistry.agents.search",
+        "agentregistry.aiApplications.createPolicyBinding",
+        "agentregistry.aiApplications.deletePolicyBinding",
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.aiApplications.setIamPolicy",
+        "agentregistry.aiApplications.updatePolicyBinding",
         "agentregistry.bindings.create",
         "agentregistry.bindings.delete",
         "agentregistry.bindings.fetchAvailable",
@@ -165142,6 +165548,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -165158,6 +165565,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -166175,6 +166584,7 @@
         "apphub.workloads.get",
         "apphub.workloads.list",
         "apphub.workloads.update",
+        "apphubendpoint.locations.lookup",
         "applianceactivation.rttCommands.approve",
         "applianceactivation.rttCommands.create",
         "applianceactivation.rttCommands.get",
@@ -167772,6 +168182,7 @@
         "chronicle.marketplaceIntegrations.install",
         "chronicle.marketplaceIntegrations.uninstall",
         "chronicle.messages.create",
+        "chronicle.messages.createLongRunning",
         "chronicle.messages.delete",
         "chronicle.messages.get",
         "chronicle.messages.list",
@@ -169492,6 +169903,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -172116,6 +172532,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -172135,6 +172552,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.create",
@@ -173994,6 +174412,22 @@
         "firebasestorage.defaultBucket.create",
         "firebasestorage.defaultBucket.delete",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.configs.update",
         "firebasevertexai.promptTemplates.create",
@@ -176051,6 +176485,23 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.tlsInspectionPolicies.update",
         "networksecurity.tlsInspectionPolicies.use",
+        "networksecurity.ullMirroringCollectorRules.create",
+        "networksecurity.ullMirroringCollectorRules.delete",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectorRules.update",
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "networksecurity.ullMirroringEngines.create",
+        "networksecurity.ullMirroringEngines.delete",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "networksecurity.ullMirroringEngines.update",
+        "networksecurity.ullMirroringEngines.use",
         "networksecurity.urlLists.create",
         "networksecurity.urlLists.delete",
         "networksecurity.urlLists.get",
@@ -179118,6 +179569,11 @@
       "description": "Grants full access to all Parameter Manager resources. Intended for project admins & owners who need to perform all administrative tasks.",
       "stage": "GA",
       "included_permissions": [
+        "cloudkms.keyHandles.create",
+        "cloudkms.keyHandles.get",
+        "cloudkms.keyHandles.list",
+        "cloudkms.operations.get",
+        "cloudkms.projects.showEffectiveAutokeyConfig",
         "parametermanager.locations.get",
         "parametermanager.locations.list",
         "parametermanager.parameterVersions.create",
@@ -180733,6 +181189,7 @@
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.fetchAvailable",
         "agentregistry.bindings.get",
         "agentregistry.bindings.list",
@@ -180817,12 +181274,14 @@
         "aiplatform.entityTypes.streamingReadFeatureValues",
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.get",
         "aiplatform.evaluationItems.list",
         "aiplatform.evaluationMetrics.get",
         "aiplatform.evaluationMetrics.list",
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.get",
         "aiplatform.evaluationSets.list",
         "aiplatform.exampleStores.get",
@@ -181286,6 +181745,7 @@
         "apphub.services.list",
         "apphub.workloads.get",
         "apphub.workloads.list",
+        "apphubendpoint.locations.lookup",
         "applianceactivation.rttCommands.get",
         "applianceactivation.rttCommands.list",
         "appoptimize.locations.get",
@@ -182651,6 +183111,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -184598,6 +185060,14 @@
         "firebasestorage.buckets.get",
         "firebasestorage.buckets.list",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.promptTemplates.get",
         "firebasevertexai.promptTemplates.list",
@@ -185515,6 +185985,13 @@
         "networksecurity.serverTlsPolicies.listTagBindings",
         "networksecurity.tlsInspectionPolicies.get",
         "networksecurity.tlsInspectionPolicies.list",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
         "networkservices.agentConnectivityTemplates.get",
@@ -204865,6 +205342,7 @@
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.fetchAvailable",
         "agentregistry.bindings.get",
         "agentregistry.bindings.list",
@@ -204949,12 +205427,14 @@
         "aiplatform.entityTypes.streamingReadFeatureValues",
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.get",
         "aiplatform.evaluationItems.list",
         "aiplatform.evaluationMetrics.get",
         "aiplatform.evaluationMetrics.list",
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.get",
         "aiplatform.evaluationSets.list",
         "aiplatform.exampleStores.get",
@@ -205418,6 +205898,7 @@
         "apphub.services.list",
         "apphub.workloads.get",
         "apphub.workloads.list",
+        "apphubendpoint.locations.lookup",
         "applianceactivation.rttCommands.get",
         "applianceactivation.rttCommands.list",
         "appoptimize.locations.get",
@@ -206779,6 +207260,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -208726,6 +209209,14 @@
         "firebasestorage.buckets.get",
         "firebasestorage.buckets.list",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.promptTemplates.get",
         "firebasevertexai.promptTemplates.list",
@@ -209643,6 +210134,13 @@
         "networksecurity.serverTlsPolicies.listTagBindings",
         "networksecurity.tlsInspectionPolicies.get",
         "networksecurity.tlsInspectionPolicies.list",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
         "networksecurity.urlLists.get",
         "networksecurity.urlLists.list",
         "networkservices.agentConnectivityTemplates.get",
@@ -212589,6 +213087,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -212605,6 +213104,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -214304,6 +214805,7 @@
         "cloudasset.assets.searchAllResources",
         "cloudbuild.builds.list",
         "cloudbuild.connections.list",
+        "cloudbuild.repositories.list",
         "cloudbuild.workerpools.list",
         "cloudfunctions.functions.get",
         "cloudfunctions.functions.getIamPolicy",
@@ -214311,10 +214813,13 @@
         "cloudkms.cryptoKeyVersions.list",
         "cloudkms.cryptoKeys.getIamPolicy",
         "cloudkms.cryptoKeys.list",
+        "cloudkms.ekmConnections.list",
         "cloudkms.importJobs.list",
+        "cloudkms.keyHandles.list",
         "cloudkms.keyRings.getIamPolicy",
         "cloudkms.keyRings.list",
         "cloudkms.locations.list",
+        "cloudkms.singleTenantHsmInstances.list",
         "cloudscheduler.jobs.list",
         "cloudscheduler.locations.list",
         "cloudsecurityscanner.scans.list",
@@ -214342,6 +214847,7 @@
         "compute.externalVpnGateways.list",
         "compute.firewallPolicies.list",
         "compute.firewalls.list",
+        "compute.folderVmExtensionPolicies.list",
         "compute.forwardingRules.list",
         "compute.globalNetworkEndpointGroups.get",
         "compute.globalNetworkEndpointGroups.list",
@@ -214494,6 +215000,7 @@
         "dataproc.clusters.getIamPolicy",
         "dataproc.clusters.list",
         "dataproc.sessionTemplates.list",
+        "dataproc.sessions.list",
         "dataproc.workflowTemplates.list",
         "datastore.backups.list",
         "datastore.databases.list",
@@ -214552,9 +215059,11 @@
         "file.backups.list",
         "file.instances.list",
         "file.locations.list",
+        "firebaseappcheck.services.get",
         "firebasedataconnect.connectors.list",
         "firebasedataconnect.locations.list",
         "firebasedataconnect.services.list",
+        "firebaserules.releases.list",
         "firebaserules.rulesets.get",
         "firebaserules.rulesets.list",
         "ftp.locations.list",
@@ -214562,6 +215071,14 @@
         "gkebackup.backupPlans.list",
         "gkebackup.backups.list",
         "gkebackup.restorePlans.list",
+        "gkehub.features.list",
+        "gkehub.fleet.get",
+        "gkehub.locations.list",
+        "gkehub.membershipbindings.get",
+        "gkehub.membershipbindings.list",
+        "gkehub.memberships.list",
+        "gkehub.scopes.get",
+        "gkehub.scopes.list",
         "healthcare.consentStores.list",
         "healthcare.consents.list",
         "healthcare.datasets.list",
@@ -214652,11 +215169,13 @@
         "networksecurity.serverTlsPolicies.list",
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.urlLists.list",
+        "networkservices.agentGateways.list",
         "networkservices.authzExtensions.list",
         "networkservices.endpointPolicies.list",
         "networkservices.gateways.list",
         "networkservices.grpcRoutes.list",
         "networkservices.httpRoutes.list",
+        "networkservices.lbEdgeExtensions.list",
         "networkservices.lbRouteExtensions.list",
         "networkservices.lbTrafficExtensions.list",
         "networkservices.locations.list",
@@ -215925,6 +216444,7 @@
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.create",
         "agentregistry.bindings.delete",
         "agentregistry.bindings.fetchAvailable",
@@ -216099,6 +216619,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -216115,6 +216636,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -217090,6 +217613,7 @@
         "apphub.workloads.get",
         "apphub.workloads.list",
         "apphub.workloads.update",
+        "apphubendpoint.locations.lookup",
         "applianceactivation.rttCommands.approve",
         "applianceactivation.rttCommands.create",
         "applianceactivation.rttCommands.get",
@@ -218514,6 +219038,7 @@
         "chronicle.marketplaceIntegrations.install",
         "chronicle.marketplaceIntegrations.uninstall",
         "chronicle.messages.create",
+        "chronicle.messages.createLongRunning",
         "chronicle.messages.delete",
         "chronicle.messages.get",
         "chronicle.messages.list",
@@ -219651,6 +220176,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -222004,6 +222534,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -222023,6 +222554,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.create",
@@ -223751,6 +224283,22 @@
         "firebasestorage.defaultBucket.create",
         "firebasestorage.defaultBucket.delete",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.configs.update",
         "firebasevertexai.promptTemplates.create",
@@ -225562,6 +226110,23 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.tlsInspectionPolicies.update",
         "networksecurity.tlsInspectionPolicies.use",
+        "networksecurity.ullMirroringCollectorRules.create",
+        "networksecurity.ullMirroringCollectorRules.delete",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectorRules.update",
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "networksecurity.ullMirroringEngines.create",
+        "networksecurity.ullMirroringEngines.delete",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "networksecurity.ullMirroringEngines.update",
+        "networksecurity.ullMirroringEngines.use",
         "networksecurity.urlLists.create",
         "networksecurity.urlLists.delete",
         "networksecurity.urlLists.get",
@@ -232990,6 +233555,32 @@
       ]
     },
     {
+      "name": "agentregistry.aiApplications.createPolicyBinding",
+      "service": "agentregistry",
+      "resource": "aiApplications",
+      "action": "createPolicyBinding",
+      "granted_by_roles": [
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "agentregistry.aiApplications.deletePolicyBinding",
+      "service": "agentregistry",
+      "resource": "aiApplications",
+      "action": "deletePolicyBinding",
+      "granted_by_roles": [
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "agentregistry.aiApplications.get",
       "service": "agentregistry",
       "resource": "aiApplications",
@@ -233214,6 +233805,44 @@
       ]
     },
     {
+      "name": "agentregistry.aiApplications.searchPolicyBindings",
+      "service": "agentregistry",
+      "resource": "aiApplications",
+      "action": "searchPolicyBindings",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "agentregistry.aiApplications.setIamPolicy",
       "service": "agentregistry",
       "resource": "aiApplications",
@@ -233234,6 +233863,19 @@
           "title": "Security Admin",
           "stage": "GA"
         },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "agentregistry.aiApplications.updatePolicyBinding",
+      "service": "agentregistry",
+      "resource": "aiApplications",
+      "action": "updatePolicyBinding",
+      "granted_by_roles": [
         {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
@@ -235326,6 +235968,11 @@
         {
           "name": "roles/aiplatform.serviceAgent",
           "title": "Vertex AI Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/discoveryengine.serviceAgent",
+          "title": "Discovery Engine Service Agent",
           "stage": "GA"
         },
         {
@@ -248509,6 +249156,69 @@
       ]
     },
     {
+      "name": "aiplatform.evaluationItemRevisions.get",
+      "service": "aiplatform",
+      "resource": "evaluationItemRevisions",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/dlp.orgdriver",
+          "title": "DLP Organization Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.projectdriver",
+          "title": "DLP Project Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.dataScientist",
+          "title": "Data Scientist",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.mlEngineer",
+          "title": "ML Engineer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/visualinspection.serviceAgent",
+          "title": "Visual Inspection AI Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "aiplatform.evaluationItems.create",
       "service": "aiplatform",
       "resource": "evaluationItems",
@@ -249817,6 +250527,107 @@
         {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/visualinspection.serviceAgent",
+          "title": "Visual Inspection AI Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "aiplatform.evaluationSetRevisions.delete",
+      "service": "aiplatform",
+      "resource": "evaluationSetRevisions",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.dataScientist",
+          "title": "Data Scientist",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.mlEngineer",
+          "title": "ML Engineer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/visualinspection.serviceAgent",
+          "title": "Visual Inspection AI Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "aiplatform.evaluationSetRevisions.get",
+      "service": "aiplatform",
+      "resource": "evaluationSetRevisions",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/dlp.orgdriver",
+          "title": "DLP Organization Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dlp.projectdriver",
+          "title": "DLP Project Data Profiles Driver",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.dataScientist",
+          "title": "Data Scientist",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.mlEngineer",
+          "title": "ML Engineer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
           "stage": "GA"
         },
         {
@@ -323423,6 +324234,49 @@
         {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "apphubendpoint.locations.lookup",
+      "service": "apphubendpoint",
+      "resource": "locations",
+      "action": "lookup",
+      "granted_by_roles": [
+        {
+          "name": "roles/discoveryengine.serviceAgent",
+          "title": "Discovery Engine Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
           "stage": "GA"
         },
         {
@@ -436427,6 +437281,29 @@
       ]
     },
     {
+      "name": "chronicle.messages.createLongRunning",
+      "service": "chronicle",
+      "resource": "messages",
+      "action": "createLongRunning",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "chronicle.messages.delete",
       "service": "chronicle",
       "resource": "messages",
@@ -538001,6 +538878,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -548560,6 +549442,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -549630,6 +550517,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/parametermanager.admin",
+          "title": "Parameter Manager Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/pubsub.admin",
           "title": "Pub/Sub Admin",
           "stage": "GA"
@@ -550015,6 +550907,11 @@
         {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/parametermanager.admin",
+          "title": "Parameter Manager Admin",
           "stage": "GA"
         },
         {
@@ -550426,6 +551323,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/parametermanager.admin",
+          "title": "Parameter Manager Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/pubsub.admin",
           "title": "Pub/Sub Admin",
           "stage": "GA"
@@ -550488,6 +551390,11 @@
         {
           "name": "roles/vmmigration.admin",
           "title": "VM Migration Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -551966,6 +552873,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/parametermanager.admin",
+          "title": "Parameter Manager Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/pubsub.admin",
           "title": "Pub/Sub Admin",
           "stage": "GA"
@@ -552366,6 +553278,11 @@
         {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/parametermanager.admin",
+          "title": "Parameter Manager Admin",
           "stage": "GA"
         },
         {
@@ -553476,6 +554393,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -588031,6 +588953,346 @@
       ]
     },
     {
+      "name": "compute.acceleratorPodControllers.create",
+      "service": "compute",
+      "resource": "acceleratorPodControllers",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.legacyAdmin",
+          "title": "Notebooks Legacy Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.acceleratorPodControllers.delete",
+      "service": "compute",
+      "resource": "acceleratorPodControllers",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.legacyAdmin",
+          "title": "Notebooks Legacy Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.acceleratorPodControllers.get",
+      "service": "compute",
+      "resource": "acceleratorPodControllers",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/genomics.serviceAgent",
+          "title": "Genomics Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.databasesAdmin",
+          "title": "Databases Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.siteReliabilityEngineer",
+          "title": "Site Reliability Engineer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/lifesciences.serviceAgent",
+          "title": "Cloud Life Sciences Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.admin",
+          "title": "Notebooks Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.editor",
+          "title": "Notebooks Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.legacyAdmin",
+          "title": "Notebooks Legacy Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.legacyViewer",
+          "title": "Notebooks Legacy Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.runner",
+          "title": "Notebooks Runner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.serviceAgent",
+          "title": "AI Platform Notebooks Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.viewer",
+          "title": "Notebooks Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.acceleratorPodControllers.list",
+      "service": "compute",
+      "resource": "acceleratorPodControllers",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/genomics.serviceAgent",
+          "title": "Genomics Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.databasesAdmin",
+          "title": "Databases Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.siteReliabilityEngineer",
+          "title": "Site Reliability Engineer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/lifesciences.serviceAgent",
+          "title": "Cloud Life Sciences Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.admin",
+          "title": "Notebooks Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.editor",
+          "title": "Notebooks Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.legacyAdmin",
+          "title": "Notebooks Legacy Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.legacyViewer",
+          "title": "Notebooks Legacy Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.runner",
+          "title": "Notebooks Runner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.serviceAgent",
+          "title": "AI Platform Notebooks Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.viewer",
+          "title": "Notebooks Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "compute.acceleratorPodControllers.update",
+      "service": "compute",
+      "resource": "acceleratorPodControllers",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.infrastructureAdmin",
+          "title": "Infrastructure Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.networkAdmin",
+          "title": "Network Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/notebooks.legacyAdmin",
+          "title": "Notebooks Legacy Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "compute.acceleratorTypes.get",
       "service": "compute",
       "resource": "acceleratorTypes",
@@ -608502,6 +609764,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -860623,6 +861890,29 @@
       ]
     },
     {
+      "name": "dataplex.entryGroups.useGuidelinesAspect",
+      "service": "dataplex",
+      "resource": "entryGroups",
+      "action": "useGuidelinesAspect",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "dataplex.entryGroups.useManagedConnectorTypes",
       "service": "dataplex",
       "resource": "entryGroups",
@@ -861992,6 +863282,29 @@
           "title": "Dataplex Entry and EntryLink Owner",
           "stage": "GA"
         },
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "dataplex.entryGroups.useStructuredDataAspect",
+      "service": "dataplex",
+      "resource": "entryGroups",
+      "action": "useStructuredDataAspect",
+      "granted_by_roles": [
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -873285,6 +874598,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -979393,6 +980711,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -991259,6 +992582,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -991710,6 +993038,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/firebase.managementServiceAgent",
+          "title": "Firebase Service Management Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/firebasestorage.admin",
           "title": "Cloud Storage for Firebase Admin",
           "stage": "BETA"
@@ -992081,6 +993414,1114 @@
           "name": "roles/firebasestorage.viewer",
           "title": "Cloud Storage for Firebase Viewer",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.configs.create",
+      "service": "firebasetelemetryadmin",
+      "resource": "configs",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.configs.delete",
+      "service": "firebasetelemetryadmin",
+      "resource": "configs",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.configs.get",
+      "service": "firebasetelemetryadmin",
+      "resource": "configs",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.configs.list",
+      "service": "firebasetelemetryadmin",
+      "resource": "configs",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.configs.update",
+      "service": "firebasetelemetryadmin",
+      "resource": "configs",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.locations.get",
+      "service": "firebasetelemetryadmin",
+      "resource": "locations",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.locations.list",
+      "service": "firebasetelemetryadmin",
+      "resource": "locations",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.mappingFiles.create",
+      "service": "firebasetelemetryadmin",
+      "resource": "mappingFiles",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.mappingFiles.delete",
+      "service": "firebasetelemetryadmin",
+      "resource": "mappingFiles",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.mappingFiles.get",
+      "service": "firebasetelemetryadmin",
+      "resource": "mappingFiles",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.mappingFiles.list",
+      "service": "firebasetelemetryadmin",
+      "resource": "mappingFiles",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.mappingFiles.update",
+      "service": "firebasetelemetryadmin",
+      "resource": "mappingFiles",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.operations.cancel",
+      "service": "firebasetelemetryadmin",
+      "resource": "operations",
+      "action": "cancel",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.operations.delete",
+      "service": "firebasetelemetryadmin",
+      "resource": "operations",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.operations.get",
+      "service": "firebasetelemetryadmin",
+      "resource": "operations",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "firebasetelemetryadmin.operations.list",
+      "service": "firebasetelemetryadmin",
+      "resource": "operations",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.admin",
+          "title": "Firebase Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.editor",
+          "title": "Firebase Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityAdmin",
+          "title": "Firebase Quality Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.qualityViewer",
+          "title": "Firebase Quality Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebase.viewer",
+          "title": "Firebase Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.admin",
+          "title": "Firebase Crashlytics Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasecrashlytics.viewer",
+          "title": "Firebase Crashlytics Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
         },
         {
           "name": "roles/iam.supportUser",
@@ -1005542,6 +1007983,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -1005912,6 +1008358,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -1007216,6 +1009667,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/workloadcertificate.serviceAgent",
           "title": "Workload Certificate Service Agent",
           "stage": "GA"
@@ -1007400,6 +1009856,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -1007495,6 +1009956,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -1008566,6 +1011032,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -1009951,6 +1012422,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/writer",
           "title": "Writer",
           "stage": "GA"
@@ -1010159,6 +1012635,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -1127057,6 +1129538,912 @@
       ]
     },
     {
+      "name": "networksecurity.ullMirroringCollectorRules.create",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectorRules",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectorRules.delete",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectorRules",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectorRules.get",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectorRules",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorViewer",
+          "title": "Ull Mirroring Collector Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.viewer",
+          "title": "Network Security Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectorRules.list",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectorRules",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorViewer",
+          "title": "Ull Mirroring Collector Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.viewer",
+          "title": "Network Security Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectorRules.update",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectorRules",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectors.create",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectors",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectors.delete",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectors",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectors.get",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectors",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorViewer",
+          "title": "Ull Mirroring Collector Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineViewer",
+          "title": "Ull Mirroring Engine Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.viewer",
+          "title": "Network Security Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectors.list",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectors",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorViewer",
+          "title": "Ull Mirroring Collector Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineViewer",
+          "title": "Ull Mirroring Engine Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.viewer",
+          "title": "Network Security Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringCollectors.update",
+      "service": "networksecurity",
+      "resource": "ullMirroringCollectors",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringEngines.create",
+      "service": "networksecurity",
+      "resource": "ullMirroringEngines",
+      "action": "create",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringEngines.delete",
+      "service": "networksecurity",
+      "resource": "ullMirroringEngines",
+      "action": "delete",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringEngines.get",
+      "service": "networksecurity",
+      "resource": "ullMirroringEngines",
+      "action": "get",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineViewer",
+          "title": "Ull Mirroring Engine Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.viewer",
+          "title": "Network Security Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringEngines.list",
+      "service": "networksecurity",
+      "resource": "ullMirroringEngines",
+      "action": "list",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAdmin",
+          "title": "Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityAuditor",
+          "title": "Security Auditor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.securityReviewer",
+          "title": "Security Reviewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineViewer",
+          "title": "Ull Mirroring Engine Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.viewer",
+          "title": "Network Security Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringEngines.listNetworks",
+      "service": "networksecurity",
+      "resource": "ullMirroringEngines",
+      "action": "listNetworks",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/iam.supportUser",
+          "title": "Support User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineViewer",
+          "title": "Ull Mirroring Engine Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.viewer",
+          "title": "Network Security Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/reader",
+          "title": "Reader",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/viewer",
+          "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringEngines.update",
+      "service": "networksecurity",
+      "resource": "ullMirroringEngines",
+      "action": "update",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
+      "name": "networksecurity.ullMirroringEngines.use",
+      "service": "networksecurity",
+      "resource": "ullMirroringEngines",
+      "action": "use",
+      "granted_by_roles": [
+        {
+          "name": "roles/editor",
+          "title": "Editor (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.admin",
+          "title": "Network Security Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.editor",
+          "title": "Network Security Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineUser",
+          "title": "Ull Mirroring Engine User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/owner",
+          "title": "Owner (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/writer",
+          "title": "Writer",
+          "stage": "GA"
+        }
+      ]
+    },
+    {
       "name": "networksecurity.urlLists.create",
       "service": "networksecurity",
       "resource": "urlLists",
@@ -1128462,6 +1131849,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -1134968,6 +1138360,11 @@
         {
           "name": "roles/viewer",
           "title": "Viewer (Legacy)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/wiz.cloudInventoryViewer",
+          "title": "Wiz Cloud Inventory Viewer",
           "stage": "GA"
         },
         {
@@ -1232324,6 +1235721,16 @@
           "stage": "BETA"
         },
         {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
           "name": "roles/firebasevertexai.admin",
           "title": "Firebase AI Logic Admin",
           "stage": "BETA"
@@ -1233867,6 +1237274,31 @@
           "name": "roles/networksecurity.securityProfileAdmin",
           "title": "Security Profile Admin",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorViewer",
+          "title": "Ull Mirroring Collector Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineUser",
+          "title": "Ull Mirroring Engine User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineViewer",
+          "title": "Ull Mirroring Engine Viewer",
+          "stage": "GA"
         },
         {
           "name": "roles/networksecurity.viewer",
@@ -1240235,6 +1243667,16 @@
           "stage": "BETA"
         },
         {
+          "name": "roles/firebasetelemetryadmin.admin",
+          "title": "Firebase Telemetry Admin Admin",
+          "stage": "BETA"
+        },
+        {
+          "name": "roles/firebasetelemetryadmin.viewer",
+          "title": "Firebase Telemetry Admin Viewer",
+          "stage": "BETA"
+        },
+        {
           "name": "roles/firebasevertexai.admin",
           "title": "Firebase AI Logic Admin",
           "stage": "BETA"
@@ -1241728,6 +1245170,31 @@
           "name": "roles/networksecurity.securityProfileAdmin",
           "title": "Security Profile Admin",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorAdmin",
+          "title": "Ull Mirroring Collector Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringCollectorViewer",
+          "title": "Ull Mirroring Collector Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineAdmin",
+          "title": "Ull Mirroring Engine Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineUser",
+          "title": "Ull Mirroring Engine User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/networksecurity.ullMirroringEngineViewer",
+          "title": "Ull Mirroring Engine Viewer",
+          "stage": "GA"
         },
         {
           "name": "roles/networksecurity.viewer",
@@ -1375837,9 +1379304,9 @@
     }
   ],
   "metadata": {
-    "total_roles": 2429,
-    "total_permissions": 14340,
-    "last_updated": "2026-11-13T09:03:11.643662Z",
+    "total_roles": 2436,
+    "total_permissions": 14389,
+    "last_updated": "2026-11-14T08:34:00.742602Z",
     "source": "Google Cloud IAM API"
   }
 }

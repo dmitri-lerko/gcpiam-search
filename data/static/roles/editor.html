@@ -75,7 +75,7 @@
         <p>View, create, update, and delete most Google Cloud resources. See the list of included permissions. Legacy role: consider using the updated roles/writer instead.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(12497)</span></h2>
+    <h2>Included Permissions <span class="count">(12543)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -146,6 +146,7 @@
     <li><a href="/permissions/agentregistry.aiApplications.get">agentregistry.aiApplications.get</a></li>
     <li><a href="/permissions/agentregistry.aiApplications.getIamPolicy">agentregistry.aiApplications.getIamPolicy</a></li>
     <li><a href="/permissions/agentregistry.aiApplications.list">agentregistry.aiApplications.list</a></li>
+    <li><a href="/permissions/agentregistry.aiApplications.searchPolicyBindings">agentregistry.aiApplications.searchPolicyBindings</a></li>
     <li><a href="/permissions/agentregistry.bindings.create">agentregistry.bindings.create</a></li>
     <li><a href="/permissions/agentregistry.bindings.delete">agentregistry.bindings.delete</a></li>
     <li><a href="/permissions/agentregistry.bindings.fetchAvailable">agentregistry.bindings.fetchAvailable</a></li>
@@ -320,6 +321,7 @@
     <li><a href="/permissions/aiplatform.evaluationExperiments.get">aiplatform.evaluationExperiments.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationExperiments.list">aiplatform.evaluationExperiments.list</a></li>
     <li><a href="/permissions/aiplatform.evaluationExperiments.update">aiplatform.evaluationExperiments.update</a></li>
+    <li><a href="/permissions/aiplatform.evaluationItemRevisions.get">aiplatform.evaluationItemRevisions.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationItems.create">aiplatform.evaluationItems.create</a></li>
     <li><a href="/permissions/aiplatform.evaluationItems.delete">aiplatform.evaluationItems.delete</a></li>
     <li><a href="/permissions/aiplatform.evaluationItems.get">aiplatform.evaluationItems.get</a></li>
@@ -336,6 +338,8 @@
     <li><a href="/permissions/aiplatform.evaluationRuns.get">aiplatform.evaluationRuns.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationRuns.list">aiplatform.evaluationRuns.list</a></li>
     <li><a href="/permissions/aiplatform.evaluationRuns.update">aiplatform.evaluationRuns.update</a></li>
+    <li><a href="/permissions/aiplatform.evaluationSetRevisions.delete">aiplatform.evaluationSetRevisions.delete</a></li>
+    <li><a href="/permissions/aiplatform.evaluationSetRevisions.get">aiplatform.evaluationSetRevisions.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationSets.create">aiplatform.evaluationSets.create</a></li>
     <li><a href="/permissions/aiplatform.evaluationSets.delete">aiplatform.evaluationSets.delete</a></li>
     <li><a href="/permissions/aiplatform.evaluationSets.get">aiplatform.evaluationSets.get</a></li>
@@ -1311,6 +1315,7 @@
     <li><a href="/permissions/apphub.workloads.get">apphub.workloads.get</a></li>
     <li><a href="/permissions/apphub.workloads.list">apphub.workloads.list</a></li>
     <li><a href="/permissions/apphub.workloads.update">apphub.workloads.update</a></li>
+    <li><a href="/permissions/apphubendpoint.locations.lookup">apphubendpoint.locations.lookup</a></li>
     <li><a href="/permissions/applianceactivation.rttCommands.approve">applianceactivation.rttCommands.approve</a></li>
     <li><a href="/permissions/applianceactivation.rttCommands.create">applianceactivation.rttCommands.create</a></li>
     <li><a href="/permissions/applianceactivation.rttCommands.get">applianceactivation.rttCommands.get</a></li>
@@ -2726,6 +2731,7 @@
     <li><a href="/permissions/chronicle.marketplaceIntegrations.install">chronicle.marketplaceIntegrations.install</a></li>
     <li><a href="/permissions/chronicle.marketplaceIntegrations.uninstall">chronicle.marketplaceIntegrations.uninstall</a></li>
     <li><a href="/permissions/chronicle.messages.create">chronicle.messages.create</a></li>
+    <li><a href="/permissions/chronicle.messages.createLongRunning">chronicle.messages.createLongRunning</a></li>
     <li><a href="/permissions/chronicle.messages.delete">chronicle.messages.delete</a></li>
     <li><a href="/permissions/chronicle.messages.get">chronicle.messages.get</a></li>
     <li><a href="/permissions/chronicle.messages.list">chronicle.messages.list</a></li>
@@ -3863,6 +3869,11 @@
     <li><a href="/permissions/compute.acceleratorInterconnects.get">compute.acceleratorInterconnects.get</a></li>
     <li><a href="/permissions/compute.acceleratorInterconnects.list">compute.acceleratorInterconnects.list</a></li>
     <li><a href="/permissions/compute.acceleratorInterconnects.queryFormability">compute.acceleratorInterconnects.queryFormability</a></li>
+    <li><a href="/permissions/compute.acceleratorPodControllers.create">compute.acceleratorPodControllers.create</a></li>
+    <li><a href="/permissions/compute.acceleratorPodControllers.delete">compute.acceleratorPodControllers.delete</a></li>
+    <li><a href="/permissions/compute.acceleratorPodControllers.get">compute.acceleratorPodControllers.get</a></li>
+    <li><a href="/permissions/compute.acceleratorPodControllers.list">compute.acceleratorPodControllers.list</a></li>
+    <li><a href="/permissions/compute.acceleratorPodControllers.update">compute.acceleratorPodControllers.update</a></li>
     <li><a href="/permissions/compute.acceleratorTypes.get">compute.acceleratorTypes.get</a></li>
     <li><a href="/permissions/compute.acceleratorTypes.list">compute.acceleratorTypes.list</a></li>
     <li><a href="/permissions/compute.addresses.create">compute.addresses.create</a></li>
@@ -6216,6 +6227,7 @@
     <li><a href="/permissions/dataplex.entryGroups.useGenericAspect">dataplex.entryGroups.useGenericAspect</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useGenericEntry">dataplex.entryGroups.useGenericEntry</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useGraphProfileAspect">dataplex.entryGroups.useGraphProfileAspect</a></li>
+    <li><a href="/permissions/dataplex.entryGroups.useGuidelinesAspect">dataplex.entryGroups.useGuidelinesAspect</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useManagedConnectorTypes">dataplex.entryGroups.useManagedConnectorTypes</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useMySQLConnectorTypes">dataplex.entryGroups.useMySQLConnectorTypes</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useOracleConnectorTypes">dataplex.entryGroups.useOracleConnectorTypes</a></li>
@@ -6235,6 +6247,7 @@
     <li><a href="/permissions/dataplex.entryGroups.useSchemaJoinEntryLink">dataplex.entryGroups.useSchemaJoinEntryLink</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useSecondaryIndexesAspect">dataplex.entryGroups.useSecondaryIndexesAspect</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useStorageAspect">dataplex.entryGroups.useStorageAspect</a></li>
+    <li><a href="/permissions/dataplex.entryGroups.useStructuredDataAspect">dataplex.entryGroups.useStructuredDataAspect</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useSynonymEntryLink">dataplex.entryGroups.useSynonymEntryLink</a></li>
     <li><a href="/permissions/dataplex.entryGroups.useUsageAspect">dataplex.entryGroups.useUsageAspect</a></li>
     <li><a href="/permissions/dataplex.entryLinkTypes.create">dataplex.entryLinkTypes.create</a></li>
@@ -7963,6 +7976,22 @@
     <li><a href="/permissions/firebasestorage.defaultBucket.create">firebasestorage.defaultBucket.create</a></li>
     <li><a href="/permissions/firebasestorage.defaultBucket.delete">firebasestorage.defaultBucket.delete</a></li>
     <li><a href="/permissions/firebasestorage.defaultBucket.get">firebasestorage.defaultBucket.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.configs.create">firebasetelemetryadmin.configs.create</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.configs.delete">firebasetelemetryadmin.configs.delete</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.configs.get">firebasetelemetryadmin.configs.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.configs.list">firebasetelemetryadmin.configs.list</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.configs.update">firebasetelemetryadmin.configs.update</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.locations.get">firebasetelemetryadmin.locations.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.locations.list">firebasetelemetryadmin.locations.list</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.mappingFiles.create">firebasetelemetryadmin.mappingFiles.create</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.mappingFiles.delete">firebasetelemetryadmin.mappingFiles.delete</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.mappingFiles.get">firebasetelemetryadmin.mappingFiles.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.mappingFiles.list">firebasetelemetryadmin.mappingFiles.list</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.mappingFiles.update">firebasetelemetryadmin.mappingFiles.update</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.operations.cancel">firebasetelemetryadmin.operations.cancel</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.operations.delete">firebasetelemetryadmin.operations.delete</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.operations.get">firebasetelemetryadmin.operations.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.operations.list">firebasetelemetryadmin.operations.list</a></li>
     <li><a href="/permissions/firebasevertexai.configs.get">firebasevertexai.configs.get</a></li>
     <li><a href="/permissions/firebasevertexai.configs.update">firebasevertexai.configs.update</a></li>
     <li><a href="/permissions/firebasevertexai.promptTemplates.create">firebasevertexai.promptTemplates.create</a></li>
@@ -9774,6 +9803,23 @@
     <li><a href="/permissions/networksecurity.tlsInspectionPolicies.list">networksecurity.tlsInspectionPolicies.list</a></li>
     <li><a href="/permissions/networksecurity.tlsInspectionPolicies.update">networksecurity.tlsInspectionPolicies.update</a></li>
     <li><a href="/permissions/networksecurity.tlsInspectionPolicies.use">networksecurity.tlsInspectionPolicies.use</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectorRules.create">networksecurity.ullMirroringCollectorRules.create</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectorRules.delete">networksecurity.ullMirroringCollectorRules.delete</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectorRules.get">networksecurity.ullMirroringCollectorRules.get</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectorRules.list">networksecurity.ullMirroringCollectorRules.list</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectorRules.update">networksecurity.ullMirroringCollectorRules.update</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectors.create">networksecurity.ullMirroringCollectors.create</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectors.delete">networksecurity.ullMirroringCollectors.delete</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectors.get">networksecurity.ullMirroringCollectors.get</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectors.list">networksecurity.ullMirroringCollectors.list</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectors.update">networksecurity.ullMirroringCollectors.update</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.create">networksecurity.ullMirroringEngines.create</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.delete">networksecurity.ullMirroringEngines.delete</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.get">networksecurity.ullMirroringEngines.get</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.list">networksecurity.ullMirroringEngines.list</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.listNetworks">networksecurity.ullMirroringEngines.listNetworks</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.update">networksecurity.ullMirroringEngines.update</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.use">networksecurity.ullMirroringEngines.use</a></li>
     <li><a href="/permissions/networksecurity.urlLists.create">networksecurity.urlLists.create</a></li>
     <li><a href="/permissions/networksecurity.urlLists.delete">networksecurity.urlLists.delete</a></li>
     <li><a href="/permissions/networksecurity.urlLists.get">networksecurity.urlLists.get</a></li>

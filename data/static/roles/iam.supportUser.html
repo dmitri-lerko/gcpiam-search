@@ -75,7 +75,7 @@
         <p>Provide a user the ability to create and manage support cases in their own enterprise by viewing their GCP resource configurations, monitoring and logging information that may be needed for providing required information to GCP support.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(6813)</span></h2>
+    <h2>Included Permissions <span class="count">(6834)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accessapproval.requests.get">accessapproval.requests.get</a></li>
     <li><a href="/permissions/accessapproval.requests.list">accessapproval.requests.list</a></li>
@@ -115,6 +115,7 @@
     <li><a href="/permissions/agentregistry.aiApplications.get">agentregistry.aiApplications.get</a></li>
     <li><a href="/permissions/agentregistry.aiApplications.getIamPolicy">agentregistry.aiApplications.getIamPolicy</a></li>
     <li><a href="/permissions/agentregistry.aiApplications.list">agentregistry.aiApplications.list</a></li>
+    <li><a href="/permissions/agentregistry.aiApplications.searchPolicyBindings">agentregistry.aiApplications.searchPolicyBindings</a></li>
     <li><a href="/permissions/agentregistry.bindings.fetchAvailable">agentregistry.bindings.fetchAvailable</a></li>
     <li><a href="/permissions/agentregistry.bindings.get">agentregistry.bindings.get</a></li>
     <li><a href="/permissions/agentregistry.bindings.list">agentregistry.bindings.list</a></li>
@@ -199,12 +200,14 @@
     <li><a href="/permissions/aiplatform.entityTypes.streamingReadFeatureValues">aiplatform.entityTypes.streamingReadFeatureValues</a></li>
     <li><a href="/permissions/aiplatform.evaluationExperiments.get">aiplatform.evaluationExperiments.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationExperiments.list">aiplatform.evaluationExperiments.list</a></li>
+    <li><a href="/permissions/aiplatform.evaluationItemRevisions.get">aiplatform.evaluationItemRevisions.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationItems.get">aiplatform.evaluationItems.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationItems.list">aiplatform.evaluationItems.list</a></li>
     <li><a href="/permissions/aiplatform.evaluationMetrics.get">aiplatform.evaluationMetrics.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationMetrics.list">aiplatform.evaluationMetrics.list</a></li>
     <li><a href="/permissions/aiplatform.evaluationRuns.get">aiplatform.evaluationRuns.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationRuns.list">aiplatform.evaluationRuns.list</a></li>
+    <li><a href="/permissions/aiplatform.evaluationSetRevisions.get">aiplatform.evaluationSetRevisions.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationSets.get">aiplatform.evaluationSets.get</a></li>
     <li><a href="/permissions/aiplatform.evaluationSets.list">aiplatform.evaluationSets.list</a></li>
     <li><a href="/permissions/aiplatform.exampleStores.get">aiplatform.exampleStores.get</a></li>
@@ -668,6 +671,7 @@
     <li><a href="/permissions/apphub.services.list">apphub.services.list</a></li>
     <li><a href="/permissions/apphub.workloads.get">apphub.workloads.get</a></li>
     <li><a href="/permissions/apphub.workloads.list">apphub.workloads.list</a></li>
+    <li><a href="/permissions/apphubendpoint.locations.lookup">apphubendpoint.locations.lookup</a></li>
     <li><a href="/permissions/applianceactivation.rttCommands.get">applianceactivation.rttCommands.get</a></li>
     <li><a href="/permissions/applianceactivation.rttCommands.list">applianceactivation.rttCommands.list</a></li>
     <li><a href="/permissions/appoptimize.locations.get">appoptimize.locations.get</a></li>
@@ -2499,6 +2503,8 @@
     <li><a href="/permissions/compute.acceleratorInterconnects.get">compute.acceleratorInterconnects.get</a></li>
     <li><a href="/permissions/compute.acceleratorInterconnects.list">compute.acceleratorInterconnects.list</a></li>
     <li><a href="/permissions/compute.acceleratorInterconnects.queryFormability">compute.acceleratorInterconnects.queryFormability</a></li>
+    <li><a href="/permissions/compute.acceleratorPodControllers.get">compute.acceleratorPodControllers.get</a></li>
+    <li><a href="/permissions/compute.acceleratorPodControllers.list">compute.acceleratorPodControllers.list</a></li>
     <li><a href="/permissions/compute.acceleratorTypes.get">compute.acceleratorTypes.get</a></li>
     <li><a href="/permissions/compute.acceleratorTypes.list">compute.acceleratorTypes.list</a></li>
     <li><a href="/permissions/compute.addresses.get">compute.addresses.get</a></li>
@@ -4446,6 +4452,14 @@
     <li><a href="/permissions/firebasestorage.buckets.get">firebasestorage.buckets.get</a></li>
     <li><a href="/permissions/firebasestorage.buckets.list">firebasestorage.buckets.list</a></li>
     <li><a href="/permissions/firebasestorage.defaultBucket.get">firebasestorage.defaultBucket.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.configs.get">firebasetelemetryadmin.configs.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.configs.list">firebasetelemetryadmin.configs.list</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.locations.get">firebasetelemetryadmin.locations.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.locations.list">firebasetelemetryadmin.locations.list</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.mappingFiles.get">firebasetelemetryadmin.mappingFiles.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.mappingFiles.list">firebasetelemetryadmin.mappingFiles.list</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.operations.get">firebasetelemetryadmin.operations.get</a></li>
+    <li><a href="/permissions/firebasetelemetryadmin.operations.list">firebasetelemetryadmin.operations.list</a></li>
     <li><a href="/permissions/firebasevertexai.configs.get">firebasevertexai.configs.get</a></li>
     <li><a href="/permissions/firebasevertexai.promptTemplates.get">firebasevertexai.promptTemplates.get</a></li>
     <li><a href="/permissions/firebasevertexai.promptTemplates.list">firebasevertexai.promptTemplates.list</a></li>
@@ -5363,6 +5377,13 @@
     <li><a href="/permissions/networksecurity.serverTlsPolicies.listTagBindings">networksecurity.serverTlsPolicies.listTagBindings</a></li>
     <li><a href="/permissions/networksecurity.tlsInspectionPolicies.get">networksecurity.tlsInspectionPolicies.get</a></li>
     <li><a href="/permissions/networksecurity.tlsInspectionPolicies.list">networksecurity.tlsInspectionPolicies.list</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectorRules.get">networksecurity.ullMirroringCollectorRules.get</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectorRules.list">networksecurity.ullMirroringCollectorRules.list</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectors.get">networksecurity.ullMirroringCollectors.get</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringCollectors.list">networksecurity.ullMirroringCollectors.list</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.get">networksecurity.ullMirroringEngines.get</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.list">networksecurity.ullMirroringEngines.list</a></li>
+    <li><a href="/permissions/networksecurity.ullMirroringEngines.listNetworks">networksecurity.ullMirroringEngines.listNetworks</a></li>
     <li><a href="/permissions/networksecurity.urlLists.get">networksecurity.urlLists.get</a></li>
     <li><a href="/permissions/networksecurity.urlLists.list">networksecurity.urlLists.list</a></li>
     <li><a href="/permissions/networkservices.agentConnectivityTemplates.get">networkservices.agentConnectivityTemplates.get</a></li>

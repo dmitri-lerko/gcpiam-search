@@ -75,7 +75,7 @@
         <p>Provides broad read-only access to discover, list, and read resource metadata and configuration across Google Cloud. Intended for automated cloud asset discovery and inventory, configuration analysis, and building a unified security view of cloud infrastructure.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(608)</span></h2>
+    <h2>Included Permissions <span class="count">(626)</span></h2>
 <ul class="list">
     <li><a href="/permissions/accesscontextmanager.policies.list">accesscontextmanager.policies.list</a></li>
     <li><a href="/permissions/accesscontextmanager.servicePerimeters.list">accesscontextmanager.servicePerimeters.list</a></li>
@@ -201,6 +201,7 @@
     <li><a href="/permissions/cloudasset.assets.searchAllResources">cloudasset.assets.searchAllResources</a></li>
     <li><a href="/permissions/cloudbuild.builds.list">cloudbuild.builds.list</a></li>
     <li><a href="/permissions/cloudbuild.connections.list">cloudbuild.connections.list</a></li>
+    <li><a href="/permissions/cloudbuild.repositories.list">cloudbuild.repositories.list</a></li>
     <li><a href="/permissions/cloudbuild.workerpools.list">cloudbuild.workerpools.list</a></li>
     <li><a href="/permissions/cloudfunctions.functions.get">cloudfunctions.functions.get</a></li>
     <li><a href="/permissions/cloudfunctions.functions.getIamPolicy">cloudfunctions.functions.getIamPolicy</a></li>
@@ -208,10 +209,13 @@
     <li><a href="/permissions/cloudkms.cryptoKeyVersions.list">cloudkms.cryptoKeyVersions.list</a></li>
     <li><a href="/permissions/cloudkms.cryptoKeys.getIamPolicy">cloudkms.cryptoKeys.getIamPolicy</a></li>
     <li><a href="/permissions/cloudkms.cryptoKeys.list">cloudkms.cryptoKeys.list</a></li>
+    <li><a href="/permissions/cloudkms.ekmConnections.list">cloudkms.ekmConnections.list</a></li>
     <li><a href="/permissions/cloudkms.importJobs.list">cloudkms.importJobs.list</a></li>
+    <li><a href="/permissions/cloudkms.keyHandles.list">cloudkms.keyHandles.list</a></li>
     <li><a href="/permissions/cloudkms.keyRings.getIamPolicy">cloudkms.keyRings.getIamPolicy</a></li>
     <li><a href="/permissions/cloudkms.keyRings.list">cloudkms.keyRings.list</a></li>
     <li><a href="/permissions/cloudkms.locations.list">cloudkms.locations.list</a></li>
+    <li><a href="/permissions/cloudkms.singleTenantHsmInstances.list">cloudkms.singleTenantHsmInstances.list</a></li>
     <li><a href="/permissions/cloudscheduler.jobs.list">cloudscheduler.jobs.list</a></li>
     <li><a href="/permissions/cloudscheduler.locations.list">cloudscheduler.locations.list</a></li>
     <li><a href="/permissions/cloudsecurityscanner.scans.list">cloudsecurityscanner.scans.list</a></li>
@@ -239,6 +243,7 @@
     <li><a href="/permissions/compute.externalVpnGateways.list">compute.externalVpnGateways.list</a></li>
     <li><a href="/permissions/compute.firewallPolicies.list">compute.firewallPolicies.list</a></li>
     <li><a href="/permissions/compute.firewalls.list">compute.firewalls.list</a></li>
+    <li><a href="/permissions/compute.folderVmExtensionPolicies.list">compute.folderVmExtensionPolicies.list</a></li>
     <li><a href="/permissions/compute.forwardingRules.list">compute.forwardingRules.list</a></li>
     <li><a href="/permissions/compute.globalNetworkEndpointGroups.get">compute.globalNetworkEndpointGroups.get</a></li>
     <li><a href="/permissions/compute.globalNetworkEndpointGroups.list">compute.globalNetworkEndpointGroups.list</a></li>
@@ -391,6 +396,7 @@
     <li><a href="/permissions/dataproc.clusters.getIamPolicy">dataproc.clusters.getIamPolicy</a></li>
     <li><a href="/permissions/dataproc.clusters.list">dataproc.clusters.list</a></li>
     <li><a href="/permissions/dataproc.sessionTemplates.list">dataproc.sessionTemplates.list</a></li>
+    <li><a href="/permissions/dataproc.sessions.list">dataproc.sessions.list</a></li>
     <li><a href="/permissions/dataproc.workflowTemplates.list">dataproc.workflowTemplates.list</a></li>
     <li><a href="/permissions/datastore.backups.list">datastore.backups.list</a></li>
     <li><a href="/permissions/datastore.databases.list">datastore.databases.list</a></li>
@@ -449,9 +455,11 @@
     <li><a href="/permissions/file.backups.list">file.backups.list</a></li>
     <li><a href="/permissions/file.instances.list">file.instances.list</a></li>
     <li><a href="/permissions/file.locations.list">file.locations.list</a></li>
+    <li><a href="/permissions/firebaseappcheck.services.get">firebaseappcheck.services.get</a></li>
     <li><a href="/permissions/firebasedataconnect.connectors.list">firebasedataconnect.connectors.list</a></li>
     <li><a href="/permissions/firebasedataconnect.locations.list">firebasedataconnect.locations.list</a></li>
     <li><a href="/permissions/firebasedataconnect.services.list">firebasedataconnect.services.list</a></li>
+    <li><a href="/permissions/firebaserules.releases.list">firebaserules.releases.list</a></li>
     <li><a href="/permissions/firebaserules.rulesets.get">firebaserules.rulesets.get</a></li>
     <li><a href="/permissions/firebaserules.rulesets.list">firebaserules.rulesets.list</a></li>
     <li><a href="/permissions/ftp.locations.list">ftp.locations.list</a></li>
@@ -459,6 +467,14 @@
     <li><a href="/permissions/gkebackup.backupPlans.list">gkebackup.backupPlans.list</a></li>
     <li><a href="/permissions/gkebackup.backups.list">gkebackup.backups.list</a></li>
     <li><a href="/permissions/gkebackup.restorePlans.list">gkebackup.restorePlans.list</a></li>
+    <li><a href="/permissions/gkehub.features.list">gkehub.features.list</a></li>
+    <li><a href="/permissions/gkehub.fleet.get">gkehub.fleet.get</a></li>
+    <li><a href="/permissions/gkehub.locations.list">gkehub.locations.list</a></li>
+    <li><a href="/permissions/gkehub.membershipbindings.get">gkehub.membershipbindings.get</a></li>
+    <li><a href="/permissions/gkehub.membershipbindings.list">gkehub.membershipbindings.list</a></li>
+    <li><a href="/permissions/gkehub.memberships.list">gkehub.memberships.list</a></li>
+    <li><a href="/permissions/gkehub.scopes.get">gkehub.scopes.get</a></li>
+    <li><a href="/permissions/gkehub.scopes.list">gkehub.scopes.list</a></li>
     <li><a href="/permissions/healthcare.consentStores.list">healthcare.consentStores.list</a></li>
     <li><a href="/permissions/healthcare.consents.list">healthcare.consents.list</a></li>
     <li><a href="/permissions/healthcare.datasets.list">healthcare.datasets.list</a></li>
@@ -549,11 +565,13 @@
     <li><a href="/permissions/networksecurity.serverTlsPolicies.list">networksecurity.serverTlsPolicies.list</a></li>
     <li><a href="/permissions/networksecurity.tlsInspectionPolicies.list">networksecurity.tlsInspectionPolicies.list</a></li>
     <li><a href="/permissions/networksecurity.urlLists.list">networksecurity.urlLists.list</a></li>
+    <li><a href="/permissions/networkservices.agentGateways.list">networkservices.agentGateways.list</a></li>
     <li><a href="/permissions/networkservices.authzExtensions.list">networkservices.authzExtensions.list</a></li>
     <li><a href="/permissions/networkservices.endpointPolicies.list">networkservices.endpointPolicies.list</a></li>
     <li><a href="/permissions/networkservices.gateways.list">networkservices.gateways.list</a></li>
     <li><a href="/permissions/networkservices.grpcRoutes.list">networkservices.grpcRoutes.list</a></li>
     <li><a href="/permissions/networkservices.httpRoutes.list">networkservices.httpRoutes.list</a></li>
+    <li><a href="/permissions/networkservices.lbEdgeExtensions.list">networkservices.lbEdgeExtensions.list</a></li>
     <li><a href="/permissions/networkservices.lbRouteExtensions.list">networkservices.lbRouteExtensions.list</a></li>
     <li><a href="/permissions/networkservices.lbTrafficExtensions.list">networkservices.lbTrafficExtensions.list</a></li>
     <li><a href="/permissions/networkservices.locations.list">networkservices.locations.list</a></li>
