@@ -475,10 +475,14 @@
         "agentregistry.agents.get",
         "agentregistry.agents.list",
         "agentregistry.agents.search",
+        "agentregistry.aiApplications.createPolicyBinding",
+        "agentregistry.aiApplications.deletePolicyBinding",
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.aiApplications.setIamPolicy",
+        "agentregistry.aiApplications.updatePolicyBinding",
         "agentregistry.bindings.create",
         "agentregistry.bindings.delete",
         "agentregistry.bindings.fetchAvailable",
@@ -663,6 +667,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -679,6 +684,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -1696,6 +1703,7 @@
         "apphub.workloads.get",
         "apphub.workloads.list",
         "apphub.workloads.update",
+        "apphubendpoint.locations.lookup",
         "applianceactivation.rttCommands.approve",
         "applianceactivation.rttCommands.create",
         "applianceactivation.rttCommands.get",
@@ -3304,6 +3312,7 @@
         "chronicle.marketplaceIntegrations.install",
         "chronicle.marketplaceIntegrations.uninstall",
         "chronicle.messages.create",
+        "chronicle.messages.createLongRunning",
         "chronicle.messages.delete",
         "chronicle.messages.get",
         "chronicle.messages.list",
@@ -5024,6 +5033,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -7648,6 +7662,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -7667,6 +7682,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.create",
@@ -9526,6 +9542,22 @@
         "firebasestorage.defaultBucket.create",
         "firebasestorage.defaultBucket.delete",
         "firebasestorage.defaultBucket.get",
+        "firebasetelemetryadmin.configs.create",
+        "firebasetelemetryadmin.configs.delete",
+        "firebasetelemetryadmin.configs.get",
+        "firebasetelemetryadmin.configs.list",
+        "firebasetelemetryadmin.configs.update",
+        "firebasetelemetryadmin.locations.get",
+        "firebasetelemetryadmin.locations.list",
+        "firebasetelemetryadmin.mappingFiles.create",
+        "firebasetelemetryadmin.mappingFiles.delete",
+        "firebasetelemetryadmin.mappingFiles.get",
+        "firebasetelemetryadmin.mappingFiles.list",
+        "firebasetelemetryadmin.mappingFiles.update",
+        "firebasetelemetryadmin.operations.cancel",
+        "firebasetelemetryadmin.operations.delete",
+        "firebasetelemetryadmin.operations.get",
+        "firebasetelemetryadmin.operations.list",
         "firebasevertexai.configs.get",
         "firebasevertexai.configs.update",
         "firebasevertexai.promptTemplates.create",
@@ -11583,6 +11615,23 @@
         "networksecurity.tlsInspectionPolicies.list",
         "networksecurity.tlsInspectionPolicies.update",
         "networksecurity.tlsInspectionPolicies.use",
+        "networksecurity.ullMirroringCollectorRules.create",
+        "networksecurity.ullMirroringCollectorRules.delete",
+        "networksecurity.ullMirroringCollectorRules.get",
+        "networksecurity.ullMirroringCollectorRules.list",
+        "networksecurity.ullMirroringCollectorRules.update",
+        "networksecurity.ullMirroringCollectors.create",
+        "networksecurity.ullMirroringCollectors.delete",
+        "networksecurity.ullMirroringCollectors.get",
+        "networksecurity.ullMirroringCollectors.list",
+        "networksecurity.ullMirroringCollectors.update",
+        "networksecurity.ullMirroringEngines.create",
+        "networksecurity.ullMirroringEngines.delete",
+        "networksecurity.ullMirroringEngines.get",
+        "networksecurity.ullMirroringEngines.list",
+        "networksecurity.ullMirroringEngines.listNetworks",
+        "networksecurity.ullMirroringEngines.update",
+        "networksecurity.ullMirroringEngines.use",
         "networksecurity.urlLists.create",
         "networksecurity.urlLists.delete",
         "networksecurity.urlLists.get",
@@ -14678,10 +14727,15 @@
     {
       "name": "roles/agentgateway.serviceAgent",
       "title": "Agent Gateway Service Agent",
-      "description": "Grants Agent Gateway Service Agent permissions required to do DNS peering.",
+      "description": "Grants Agent Gateway Service Agent permissions required to do DNS peering, to look up Agent Registry entities via AppHub Endpoint, and to call Prism.",
       "stage": "GA",
       "included_permissions": [
-        "dns.networks.targetWithPeeringZone"
+        "agentregistry.aiApplications.get",
+        "agentregistry.bindings.fetchAvailable",
+        "apphubendpoint.locations.lookup",
+        "dns.networks.targetWithPeeringZone",
+        "serviceextensions.callouts.invoke",
+        "serviceusage.services.use"
       ],
       "etag": "AA=="
     },
@@ -14783,10 +14837,14 @@
         "agentregistry.agents.get",
         "agentregistry.agents.list",
         "agentregistry.agents.search",
+        "agentregistry.aiApplications.createPolicyBinding",
+        "agentregistry.aiApplications.deletePolicyBinding",
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.getIamPolicy",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.aiApplications.setIamPolicy",
+        "agentregistry.aiApplications.updatePolicyBinding",
         "agentregistry.bindings.create",
         "agentregistry.bindings.delete",
         "agentregistry.bindings.fetchAvailable",
@@ -14837,6 +14895,7 @@
         "agentregistry.agents.search",
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.fetchAvailable",
         "agentregistry.bindings.get",
         "agentregistry.bindings.list",
@@ -14875,13 +14934,14 @@
       "name": "roles/agentregistry.user",
       "title": "Agent Registry User",
       "description": "Create, update, and delete skills and skill revisions.",
-      "stage": "BETA",
+      "stage": "GA",
       "included_permissions": [
         "agentregistry.agents.get",
         "agentregistry.agents.list",
         "agentregistry.agents.search",
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.fetchAvailable",
         "agentregistry.bindings.get",
         "agentregistry.bindings.list",
@@ -14922,6 +14982,7 @@
         "agentregistry.agents.search",
         "agentregistry.aiApplications.get",
         "agentregistry.aiApplications.list",
+        "agentregistry.aiApplications.searchPolicyBindings",
         "agentregistry.bindings.fetchAvailable",
         "agentregistry.bindings.get",
         "agentregistry.bindings.list",
@@ -15107,6 +15168,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -15123,6 +15185,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -15980,6 +16044,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -15996,6 +16061,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -16500,6 +16567,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -16516,6 +16584,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -17840,6 +17910,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -17856,6 +17927,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -18676,6 +18749,7 @@
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
         "aiplatform.evaluationExperiments.update",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.create",
         "aiplatform.evaluationItems.delete",
         "aiplatform.evaluationItems.get",
@@ -18692,6 +18766,8 @@
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
         "aiplatform.evaluationRuns.update",
+        "aiplatform.evaluationSetRevisions.delete",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.create",
         "aiplatform.evaluationSets.delete",
         "aiplatform.evaluationSets.get",
@@ -19074,12 +19150,14 @@
         "aiplatform.entityTypes.streamingReadFeatureValues",
         "aiplatform.evaluationExperiments.get",
         "aiplatform.evaluationExperiments.list",
+        "aiplatform.evaluationItemRevisions.get",
         "aiplatform.evaluationItems.get",
         "aiplatform.evaluationItems.list",
         "aiplatform.evaluationMetrics.get",
         "aiplatform.evaluationMetrics.list",
         "aiplatform.evaluationRuns.get",
         "aiplatform.evaluationRuns.list",
+        "aiplatform.evaluationSetRevisions.get",
         "aiplatform.evaluationSets.get",
         "aiplatform.evaluationSets.list",
         "aiplatform.exampleStores.get",
@@ -19508,6 +19586,7 @@
         "biglake.tables.create",
         "biglake.tables.delete",
         "biglake.tables.get",
+        "biglake.tables.getData",
         "biglake.tables.list",
         "biglake.tables.register",
         "biglake.tables.update",
@@ -25101,6 +25180,18 @@
       "etag": "AA=="
     },
     {
+      "name": "roles/apphubendpoint.viewer",
+      "title": "App Hub Endpoint Viewer",
+      "description": "Viewer role for App Hub Endpoint.",
+      "stage": "BETA",
+      "included_permissions": [
+        "apphubendpoint.locations.lookup",
+        "resourcemanager.projects.get",
+        "resourcemanager.projects.list"
+      ],
+      "etag": "AA=="
+    },
+    {
       "name": "roles/applianceactivation.admin",
       "title": "Appliance Admin",
       "description": "Admin role for Appliance",
@@ -26235,6 +26326,13 @@
       "description": "Grants full access to Assured Workloads resources, CRM resources - project/folder and Organization Policy administration",
       "stage": "GA",
       "included_permissions": [
+        "accesscontextmanager.policies.create",
+        "accesscontextmanager.policies.delete",
+        "accesscontextmanager.policies.get",
+        "accesscontextmanager.servicePerimeters.create",
+        "accesscontextmanager.servicePerimeters.delete",
+        "accesscontextmanager.servicePerimeters.get",
+        "accesscontextmanager.servicePerimeters.update",
         "assuredworkloads.dbControlComplianceSummaries.list",
         "assuredworkloads.dbFindingSummaries.list",
         "assuredworkloads.dbFrameworkComplianceReports.aggregate",
@@ -26290,6 +26388,13 @@
       "description": "Grants read, write access to Assured Workloads resources, CRM resources - project/folder and Organization Policy administration",
       "stage": "GA",
       "included_permissions": [
+        "accesscontextmanager.policies.create",
+        "accesscontextmanager.policies.delete",
+        "accesscontextmanager.policies.get",
+        "accesscontextmanager.servicePerimeters.create",
+        "accesscontextmanager.servicePerimeters.delete",
+        "accesscontextmanager.servicePerimeters.get",
+        "accesscontextmanager.servicePerimeters.update",
         "assuredworkloads.dbControlComplianceSummaries.list",
         "assuredworkloads.dbFindingSummaries.list",
         "assuredworkloads.dbFrameworkComplianceReports.aggregate",
@@ -26382,11 +26487,13 @@
         "cloudasset.feeds.delete",
         "cloudasset.feeds.get",
         "cloudasset.feeds.list",
+        "cloudasset.feeds.update",
         "cloudkms.cryptoKeys.get",
         "cloudkms.cryptoKeys.list",
         "cloudkms.keyRings.list",
         "cloudsecurityscanner.scans.get",
         "cloudsecurityscanner.scans.list",
+        "cloudsql.instances.connect",
         "cloudsql.instances.get",
         "cloudsql.instances.list",
         "cloudsql.users.list",
@@ -26456,6 +26563,7 @@
         "resourcemanager.tagValues.get",
         "resourcemanager.tagValues.list",
         "secretmanager.secrets.list",
+        "securesourcemanager.sshkeys.listAny",
         "serviceusage.services.get",
         "serviceusage.services.list",
         "storage.buckets.get",
@@ -26674,6 +26782,26 @@
       "stage": "GA",
       "included_permissions": [
         "accessapproval.settings.get",
+        "aiplatform.customJobs.get",
+        "aiplatform.customJobs.list",
+        "aiplatform.datasets.get",
+        "aiplatform.datasets.list",
+        "aiplatform.endpoints.get",
+        "aiplatform.endpoints.list",
+        "aiplatform.featurestores.get",
+        "aiplatform.featurestores.list",
+        "aiplatform.hyperparameterTuningJobs.get",
+        "aiplatform.hyperparameterTuningJobs.list",
+        "aiplatform.metadataStores.get",
+        "aiplatform.metadataStores.list",
+        "aiplatform.models.get",
+        "aiplatform.models.list",
+        "aiplatform.notebookRuntimeTemplates.get",
+        "aiplatform.notebookRuntimeTemplates.list",
+        "aiplatform.tensorboards.get",
+        "aiplatform.tensorboards.list",
+        "aiplatform.trainingPipelines.get",
+        "aiplatform.trainingPipelines.list",
         "artifactregistry.repositories.get",
         "artifactregistry.repositories.list",
         "bigquery.datasets.get",
@@ -27285,15 +27413,22 @@
         "container.clusters.list",
         "discoveryengine.dataStores.get",
         "discoveryengine.dataStores.list",
+        "dlp.fileStoreProfiles.list",
         "dlp.inspectTemplates.list",
         "dlp.jobTriggers.list",
+        "dlp.jobs.list",
+        "dlp.tableDataProfiles.get",
+        "dlp.tableDataProfiles.list",
         "dns.managedZones.list",
         "iam.serviceAccountKeys.list",
         "iam.serviceAccounts.get",
         "iam.serviceAccounts.getIamPolicy",
         "logging.buckets.list",
+        "logging.logMetrics.list",
         "monitoring.alertPolicies.list",
         "monitoring.timeSeries.list",
+        "notebooks.instances.get",
+        "notebooks.instances.list",
         "orgpolicy.constraints.list",
         "orgpolicy.policy.get",
         "privateca.certificates.list",
@@ -27317,6 +27452,7 @@
         "resourcemanager.tagValues.get",
         "resourcemanager.tagValues.list",
         "secretmanager.secrets.list",
+        "securesourcemanager.sshkeys.listAny",
         "serviceusage.catalogs.listMembers",
         "serviceusage.consumerpolicy.analyze",
         "serviceusage.consumerpolicy.get",
@@ -30082,6 +30218,8 @@
         "backupdr.operations.get",
         "backupdr.operations.list",
         "backupdr.serviceConfig.initialize",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -36602,6 +36740,7 @@
         "chronicle.marketplaceIntegrations.install",
         "chronicle.marketplaceIntegrations.uninstall",
         "chronicle.messages.create",
+        "chronicle.messages.createLongRunning",
         "chronicle.messages.delete",
         "chronicle.messages.get",
         "chronicle.messages.list",
@@ -37229,6 +37368,7 @@
         "chronicle.marketplaceIntegrations.install",
         "chronicle.marketplaceIntegrations.uninstall",
         "chronicle.messages.create",
+        "chronicle.messages.createLongRunning",
         "chronicle.messages.delete",
         "chronicle.messages.get",
         "chronicle.messages.list",
@@ -37874,6 +38014,19 @@
         "aiplatform.agents.get",
         "aiplatform.agents.list",
         "aiplatform.agents.update",
+        "aiplatform.interactions.create",
+        "aiplatform.interactions.get",
+        "aiplatform.reasoningEngines.get",
+        "aiplatform.reasoningEngines.list",
+        "aiplatform.reasoningEngines.query",
+        "aiplatform.sessionEvents.append",
+        "aiplatform.sessionEvents.list",
+        "aiplatform.sessions.create",
+        "aiplatform.sessions.delete",
+        "aiplatform.sessions.get",
+        "aiplatform.sessions.list",
+        "aiplatform.sessions.run",
+        "aiplatform.sessions.update",
         "aiplatform.tasks.cancel",
         "aiplatform.tasks.create",
         "aiplatform.tasks.delete",
@@ -48651,6 +48804,8 @@
         "cloudasset.feeds.create",
         "cloudasset.feeds.delete",
         "cloudasset.feeds.get",
+        "cloudasset.feeds.list",
+        "cloudasset.feeds.update",
         "cloudasset.othercloudconnections.get",
         "cloudasset.othercloudconnections.list",
         "cloudasset.othercloudconnections.verify",
@@ -48714,17 +48869,20 @@
         "dlp.jobTriggers.list",
         "dlp.jobs.list",
         "dlp.tableDataProfiles.get",
+        "dlp.tableDataProfiles.list",
         "dns.managedZones.list",
         "iam.serviceAccountKeys.list",
         "iam.serviceAccounts.get",
         "iam.serviceAccounts.getIamPolicy",
         "logging.buckets.list",
+        "logging.logMetrics.list",
         "logging.settings.update",
         "monitoring.alertPolicies.list",
         "monitoring.timeSeries.list",
         "notebooks.instances.get",
         "notebooks.instances.list",
         "orgpolicy.constraints.list",
+        "orgpolicy.policies.list",
         "orgpolicy.policy.get",
         "privateca.certificates.list",
         "recommender.cloudAssetInsights.get",
@@ -48746,6 +48904,8 @@
         "resourcemanager.tagKeys.list",
         "resourcemanager.tagValues.get",
         "resourcemanager.tagValues.list",
+        "secretmanager.secrets.list",
+        "securesourcemanager.sshkeys.listAny",
         "securitycentermanagement.securityCenterServices.get",
         "securitycentermanagement.securityCenterServices.update",
         "serviceusage.catalogs.listMembers",
@@ -48766,6 +48926,7 @@
         "serviceusage.services.list",
         "serviceusage.services.listApis",
         "serviceusage.services.listDependentServices",
+        "serviceusage.services.use",
         "serviceusage.values.test",
         "storage.buckets.get",
         "storage.buckets.getIamPolicy",
@@ -49884,6 +50045,8 @@
         "backupdr.operations.get",
         "backupdr.operations.list",
         "backupdr.serviceConfig.initialize",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -52492,6 +52655,8 @@
         "cloudsql.workloadCaptures.stopReplay",
         "composer.dags.get",
         "composer.environments.get",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -55245,6 +55410,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -56376,6 +56546,11 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.create",
+        "compute.acceleratorPodControllers.delete",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
+        "compute.acceleratorPodControllers.update",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -57517,6 +57692,8 @@
         "cloudkms.keyHandles.list",
         "cloudkms.operations.get",
         "cloudkms.projects.showEffectiveAutokeyConfig",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -57807,6 +57984,8 @@
         "cloudkms.keyHandles.list",
         "cloudkms.operations.get",
         "cloudkms.projects.showEffectiveAutokeyConfig",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -61565,6 +61744,8 @@
         "compute.snapshotGroups.list",
         "compute.snapshotGroups.setIamPolicy",
         "compute.snapshotGroups.useReadOnly",
+        "compute.snapshotRecycleBinPolicy.get",
+        "compute.snapshotRecycleBinPolicy.update",
         "compute.snapshots.create",
         "compute.snapshots.createTagBinding",
         "compute.snapshots.delete",
@@ -61623,6 +61804,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -65501,6 +65684,8 @@
         "certificatemanager.trustconfigs.listTagBindings",
         "certificatemanager.trustconfigs.update",
         "certificatemanager.trustconfigs.use",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -66242,6 +66427,8 @@
         "compute.snapshotGroups.list",
         "compute.snapshotGroups.setIamPolicy",
         "compute.snapshotGroups.useReadOnly",
+        "compute.snapshotRecycleBinPolicy.get",
+        "compute.snapshotRecycleBinPolicy.update",
         "compute.snapshots.create",
         "compute.snapshots.createTagBinding",
         "compute.snapshots.delete",
@@ -68992,6 +69179,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -69011,6 +69199,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.create",
@@ -69322,6 +69511,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -69341,6 +69531,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.get",
@@ -69421,6 +69612,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -69440,6 +69632,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.get",
@@ -70127,12 +70320,15 @@
         "bigquery.transfers.get",
         "bigquery.transfers.update",
         "bigquerymigration.translation.translate",
+        "binaryauthorization.policy.evaluatePolicy",
         "cloudaicompanion.instances.completeTask",
         "clouddebugger.breakpoints.list",
         "clouddebugger.breakpoints.listActive",
         "clouddebugger.breakpoints.update",
         "clouddebugger.debuggees.create",
         "cloudnotifications.activities.list",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.create",
@@ -70825,6 +71021,8 @@
         "compute.snapshotGroups.list",
         "compute.snapshotGroups.setIamPolicy",
         "compute.snapshotGroups.useReadOnly",
+        "compute.snapshotRecycleBinPolicy.get",
+        "compute.snapshotRecycleBinPolicy.update",
         "compute.snapshots.create",
         "compute.snapshots.createTagBinding",
         "compute.snapshots.delete",
@@ -74845,6 +75043,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -74864,6 +75063,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.create",
@@ -74971,6 +75171,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -74990,6 +75191,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.create",
@@ -75134,6 +75336,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useOverviewAspect",
         "dataplex.entryGroups.useQueriesAspect",
         "dataplex.entryGroups.useQueryTemplateAspect",
@@ -75146,6 +75349,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinks.create",
@@ -75206,6 +75410,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useOverviewAspect",
         "dataplex.entryGroups.useQueriesAspect",
         "dataplex.entryGroups.useQueryTemplateAspect",
@@ -75218,6 +75423,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinks.create",
@@ -75808,6 +76014,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -75827,6 +76034,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.get",
@@ -75925,6 +76133,7 @@
         "dataplex.entryGroups.useGenericAspect",
         "dataplex.entryGroups.useGenericEntry",
         "dataplex.entryGroups.useGraphProfileAspect",
+        "dataplex.entryGroups.useGuidelinesAspect",
         "dataplex.entryGroups.useManagedConnectorTypes",
         "dataplex.entryGroups.useMySQLConnectorTypes",
         "dataplex.entryGroups.useOracleConnectorTypes",
@@ -75944,6 +76153,7 @@
         "dataplex.entryGroups.useSchemaJoinEntryLink",
         "dataplex.entryGroups.useSecondaryIndexesAspect",
         "dataplex.entryGroups.useStorageAspect",
+        "dataplex.entryGroups.useStructuredDataAspect",
         "dataplex.entryGroups.useSynonymEntryLink",
         "dataplex.entryGroups.useUsageAspect",
         "dataplex.entryLinkTypes.get",
@@ -76896,6 +77106,8 @@
         "compute.acceleratorInterconnects.get",
         "compute.acceleratorInterconnects.list",
         "compute.acceleratorInterconnects.queryFormability",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.get",
@@ -77855,6 +78067,8 @@
         "biglake.catalogs.create",
         "biglake.catalogs.get",
         "cloudaicompanion.instances.completeTask",
+        "compute.acceleratorPodControllers.get",
+        "compute.acceleratorPodControllers.list",
         "compute.acceleratorTypes.get",
         "compute.acceleratorTypes.list",
         "compute.addresses.createInternal",
@@ -78049,6 +78263,7 @@
         "compute.networks.listEffectiveTags",
         "compute.networks.listTagBindings",
         "compute.networks.setFirewallPolicy",
+        "compute.networks.updatePolicy",
         "compute.networks.use",
         "compute.networks.useExternalIp",
         "compute.nodeGroups.get",
@@ -79422,6 +79637,7 @@
         "bigquery.datasets.get",
         "bigquery.tables.create",
         "bigquery.tables.delete",
+        "bigquery.tables.get",
         "bigquery.tables.getData",
         "bigquery.tables.list",
         "bigquery.tables.update",
@@ -230457,6 +230673,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/assuredworkloads.admin",
+          "title": "Assured Workloads Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.editor",
+          "title": "Assured Workloads Editor",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -230502,6 +230728,16 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.admin",
+          "title": "Assured Workloads Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.editor",
+          "title": "Assured Workloads Editor",
           "stage": "GA"
         },
         {
@@ -230565,6 +230801,16 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.admin",
+          "title": "Assured Workloads Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.editor",
+          "title": "Assured Workloads Editor",
           "stage": "GA"
         },
         {
@@ -230961,6 +231207,16 @@
           "stage": "GA"
         },
         {
+          "name": "roles/assuredworkloads.admin",
+          "title": "Assured Workloads Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.editor",
+          "title": "Assured Workloads Editor",
+          "stage": "GA"
+        },
+        {
           "name": "roles/clouddeploymentmanager.serviceAgent",
           "title": "Cloud Deployment Manager Service Agent",
           "stage": "GA"
@@ -231011,6 +231267,16 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.admin",
+          "title": "Assured Workloads Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.editor",
+          "title": "Assured Workloads Editor",
           "stage": "GA"
         },
         {
@@ -231079,6 +231345,16 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.admin",
+          "title": "Assured Workloads Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.editor",
+          "title": "Assured Workloads Editor",
           "stage": "GA"
         },
         {
@@ -231308,6 +231584,16 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.admin",
+          "title": "Assured Workloads Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.editor",
+          "title": "Assured Workloads Editor",
           "stage": "GA"
         },
         {
@@ -233349,7 +233635,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -233422,7 +233708,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -233510,7 +233796,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -233561,6 +233847,16 @@
       "action": "createPolicyBinding",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentregistry.admin",
+          "title": "Agent Registry API Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
           "stage": "GA"
@@ -233573,6 +233869,16 @@
       "resource": "aiApplications",
       "action": "deletePolicyBinding",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentregistry.admin",
+          "title": "Agent Registry API Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
@@ -233592,6 +233898,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/agentgateway.serviceAgent",
+          "title": "Agent Gateway Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/agentregistry.admin",
           "title": "Agent Registry API Admin",
           "stage": "GA"
@@ -233604,7 +233915,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -233740,7 +234051,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -233811,6 +234122,31 @@
       "action": "searchPolicyBindings",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentregistry.admin",
+          "title": "Agent Registry API Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentregistry.editor",
+          "title": "Agent Registry API Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentregistry.user",
+          "title": "Agent Registry User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentregistry.viewer",
+          "title": "Agent Registry API Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -233876,6 +234212,16 @@
       "resource": "aiApplications",
       "action": "updatePolicyBinding",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentregistry.admin",
+          "title": "Agent Registry API Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/owner",
           "title": "Owner (Legacy)",
@@ -233971,6 +234317,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/agentgateway.serviceAgent",
+          "title": "Agent Gateway Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/agentregistry.admin",
           "title": "Agent Registry API Admin",
           "stage": "GA"
@@ -233983,7 +234334,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234056,7 +234407,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234129,7 +234480,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234255,7 +234606,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234323,7 +234674,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234406,7 +234757,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234469,7 +234820,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234552,7 +234903,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234625,7 +234976,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234713,7 +235064,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234877,7 +235228,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -234950,7 +235301,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235038,7 +235389,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235101,7 +235452,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235265,7 +235616,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235333,7 +235684,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235454,7 +235805,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/discoveryengine.serviceAgent",
@@ -235502,7 +235853,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/discoveryengine.serviceAgent",
@@ -235550,7 +235901,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235618,7 +235969,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235696,7 +236047,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/aiplatform.serviceAgent",
@@ -235764,7 +236115,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/aiplatform.serviceAgent",
@@ -235817,7 +236168,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -235958,7 +236309,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -236046,7 +236397,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/agentregistry.viewer",
@@ -236152,7 +236503,7 @@
         {
           "name": "roles/agentregistry.user",
           "title": "Agent Registry User",
-          "stage": "BETA"
+          "stage": "GA"
         },
         {
           "name": "roles/discoveryengine.serviceAgent",
@@ -242129,6 +242480,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -242259,6 +242615,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -243959,6 +244320,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -244167,6 +244533,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -246682,6 +247053,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/ces.serviceAgent",
           "title": "Customer Engagement Suite Service Agent",
           "stage": "GA"
@@ -246955,6 +247331,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -249162,6 +249543,41 @@
       "action": "get",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.admin",
+          "title": "Agent Platform Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.customCodeServiceAgent",
+          "title": "Vertex AI Custom Code Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.editor",
+          "title": "Aiplatform Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.serviceAgent",
+          "title": "Vertex AI Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.user",
+          "title": "Agent Platform User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.viewer",
+          "title": "Agent Platform Viewer",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
           "stage": "GA"
@@ -250548,6 +250964,36 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.admin",
+          "title": "Agent Platform Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.customCodeServiceAgent",
+          "title": "Vertex AI Custom Code Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.editor",
+          "title": "Aiplatform Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.serviceAgent",
+          "title": "Vertex AI Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.user",
+          "title": "Agent Platform User",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -250585,6 +251031,41 @@
       "resource": "evaluationSetRevisions",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.admin",
+          "title": "Agent Platform Administrator",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.customCodeServiceAgent",
+          "title": "Vertex AI Custom Code Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.editor",
+          "title": "Aiplatform Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.serviceAgent",
+          "title": "Vertex AI Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.user",
+          "title": "Agent Platform User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/aiplatform.viewer",
+          "title": "Agent Platform Viewer",
+          "stage": "GA"
+        },
         {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
@@ -257229,6 +257710,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -257555,6 +258041,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -258856,6 +259347,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -258961,6 +259457,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -260304,6 +260805,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -260462,6 +260968,11 @@
         {
           "name": "roles/aisandbox.serviceAgent",
           "title": "FlowService Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
           "stage": "GA"
         },
         {
@@ -262658,6 +263169,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -262768,6 +263284,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -265449,6 +265970,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/ces.serviceAgent",
           "title": "Customer Engagement Suite Service Agent",
           "stage": "GA"
@@ -265594,6 +266120,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -267738,6 +268269,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/bigquery.studioAdmin",
           "title": "BigQuery Studio Admin",
           "stage": "GA"
@@ -268016,6 +268552,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -272876,6 +273417,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/discoveryengine.serviceAgent",
           "title": "Discovery Engine Service Agent",
           "stage": "GA"
@@ -273067,6 +273613,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/discoveryengine.serviceAgent",
           "title": "Discovery Engine Service Agent",
           "stage": "GA"
@@ -273197,6 +273748,11 @@
         {
           "name": "roles/aiplatform.viewer",
           "title": "Agent Platform Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
           "stage": "GA"
         },
         {
@@ -275105,6 +275661,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -275200,6 +275761,11 @@
         {
           "name": "roles/aiplatform.viewer",
           "title": "Agent Platform Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
           "stage": "GA"
         },
         {
@@ -275336,6 +275902,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -275426,6 +275997,11 @@
         {
           "name": "roles/aiplatform.user",
           "title": "Agent Platform User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
           "stage": "GA"
         },
         {
@@ -275524,6 +276100,11 @@
         {
           "name": "roles/aiplatform.viewer",
           "title": "Agent Platform Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
           "stage": "GA"
         },
         {
@@ -275650,6 +276231,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dlp.orgdriver",
           "title": "DLP Organization Data Profiles Driver",
           "stage": "GA"
@@ -275758,6 +276344,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -275848,6 +276439,11 @@
         {
           "name": "roles/aiplatform.user",
           "title": "Agent Platform User",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.serviceAgent",
+          "title": "Chronicle Service Agent",
           "stage": "GA"
         },
         {
@@ -279301,6 +279897,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -279411,6 +280012,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -279857,6 +280463,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -279962,6 +280573,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -324249,6 +324865,21 @@
       "resource": "locations",
       "action": "lookup",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/agentgateway.serviceAgent",
+          "title": "Agent Gateway Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/apphubendpoint.viewer",
+          "title": "App Hub Endpoint Viewer",
+          "stage": "BETA"
+        },
         {
           "name": "roles/discoveryengine.serviceAgent",
           "title": "Discovery Engine Service Agent",
@@ -372583,6 +373214,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/alloydb.serviceAgent",
+          "title": "AlloyDB Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/biglake.admin",
           "title": "BigLake Admin",
           "stage": "GA"
@@ -385561,6 +386197,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/datastudio.managedStorageServiceAgent",
+          "title": "Data Studio Managed Storage Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/dialogflow.serviceAgent",
           "title": "Dialogflow Service Agent",
           "stage": "GA"
@@ -398344,6 +398985,11 @@
         {
           "name": "roles/container.serviceAgent",
           "title": "Kubernetes Engine Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataflow.serviceAgent",
+          "title": "Cloud Dataflow Service Agent",
           "stage": "GA"
         },
         {
@@ -437286,6 +437932,21 @@
       "resource": "messages",
       "action": "createLongRunning",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.admin",
+          "title": "Chronicle API Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/chronicle.editor",
+          "title": "Chronicle API Editor",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -534710,6 +535371,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/iam.securityAdmin",
           "title": "Security Admin",
           "stage": "GA"
@@ -534763,6 +535429,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/assuredworkloads.monitoringServiceAgent",
+          "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/binaryauthorization.serviceAgent",
           "title": "Binary Authorization Service Agent",
           "stage": "GA"
@@ -534775,6 +535446,11 @@
         {
           "name": "roles/cloudasset.owner",
           "title": "Cloud Asset Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
         },
         {
@@ -567841,6 +568517,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/assuredworkloads.monitoringServiceAgent",
+          "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/auditmanager.serviceAgent",
           "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
@@ -588959,6 +589640,21 @@
       "action": "create",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.admin",
+          "title": "Compute Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.editor",
+          "title": "Compute Editor",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -588997,6 +589693,21 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.admin",
+          "title": "Compute Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.editor",
+          "title": "Compute Editor",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -589034,6 +589745,71 @@
       "resource": "acceleratorPodControllers",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/batch.serviceAgent",
+          "title": "Google Batch Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/cloudtpu.serviceAgent",
+          "title": "Cloud TPU V2 API Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/composer.serviceAgent",
+          "title": "Cloud Composer API Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.admin",
+          "title": "Compute Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.editor",
+          "title": "Compute Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.instanceAdmin",
+          "title": "Compute Instance Admin (beta)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.instanceAdmin.v1",
+          "title": "Compute Instance Admin (v1)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.viewer",
+          "title": "Compute Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/container.serviceAgent",
+          "title": "Kubernetes Engine Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataflow.serviceAgent",
+          "title": "Cloud Dataflow Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataprep.serviceAgent",
+          "title": "Dataprep Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataproc.serviceAgent",
+          "title": "Dataproc Service Agent",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -589142,6 +589918,71 @@
       "resource": "acceleratorPodControllers",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/batch.serviceAgent",
+          "title": "Google Batch Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/cloudtpu.serviceAgent",
+          "title": "Cloud TPU V2 API Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/composer.serviceAgent",
+          "title": "Cloud Composer API Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.admin",
+          "title": "Compute Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.editor",
+          "title": "Compute Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.instanceAdmin",
+          "title": "Compute Instance Admin (beta)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.instanceAdmin.v1",
+          "title": "Compute Instance Admin (v1)",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.viewer",
+          "title": "Compute Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/container.serviceAgent",
+          "title": "Kubernetes Engine Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataflow.serviceAgent",
+          "title": "Cloud Dataflow Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataprep.serviceAgent",
+          "title": "Dataprep Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataproc.serviceAgent",
+          "title": "Dataproc Service Agent",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -589260,6 +590101,21 @@
       "resource": "acceleratorPodControllers",
       "action": "update",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.admin",
+          "title": "Compute Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.editor",
+          "title": "Compute Editor",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -664974,6 +665830,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/dataproc.serviceAgent",
+          "title": "Dataproc Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/edgecontainer.serviceAgent",
           "title": "Edge Container Service Agent",
           "stage": "GA"
@@ -710824,8 +711685,23 @@
           "stage": "GA"
         },
         {
+          "name": "roles/compute.storageAdmin",
+          "title": "Compute Storage Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/compute.viewer",
           "title": "Compute Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/container.serviceAgent",
+          "title": "Kubernetes Engine Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataflow.serviceAgent",
+          "title": "Cloud Dataflow Service Agent",
           "stage": "GA"
         },
         {
@@ -710944,6 +711820,21 @@
         {
           "name": "roles/compute.editor",
           "title": "Compute Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/compute.storageAdmin",
+          "title": "Compute Storage Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/container.serviceAgent",
+          "title": "Kubernetes Engine Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataflow.serviceAgent",
+          "title": "Cloud Dataflow Service Agent",
           "stage": "GA"
         },
         {
@@ -861896,6 +862787,56 @@
       "action": "useGuidelinesAspect",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/datacatalog.admin",
+          "title": "Data Catalog Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/datacatalog.entryGroupOwner",
+          "title": "DataCatalog EntryGroup Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/datacatalog.entryOwner",
+          "title": "DataCatalog Entry Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.catalogAdmin",
+          "title": "Dataplex Catalog Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.catalogEditor",
+          "title": "Dataplex Catalog Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.contentAdmin",
+          "title": "Dataplex Content Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.contentEditor",
+          "title": "Dataplex Content Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.entryGroupOwner",
+          "title": "Dataplex Entry Group Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.entryOwner",
+          "title": "Dataplex Entry and EntryLink Owner",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -863305,6 +864246,56 @@
       "resource": "entryGroups",
       "action": "useStructuredDataAspect",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/datacatalog.admin",
+          "title": "Data Catalog Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/datacatalog.entryGroupOwner",
+          "title": "DataCatalog EntryGroup Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/datacatalog.entryOwner",
+          "title": "DataCatalog Entry Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.catalogAdmin",
+          "title": "Dataplex Catalog Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.catalogEditor",
+          "title": "Dataplex Catalog Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.contentAdmin",
+          "title": "Dataplex Content Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.contentEditor",
+          "title": "Dataplex Content Editor",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.entryGroupOwner",
+          "title": "Dataplex Entry Group Owner",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/dataplex.entryOwner",
+          "title": "Dataplex Entry and EntryLink Owner",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -936629,6 +937620,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -938098,6 +939094,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -939514,6 +940515,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -939629,6 +940635,16 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
         },
         {
@@ -993449,6 +994465,11 @@
       "action": "create",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -993497,6 +994518,11 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -993544,6 +994570,11 @@
       "resource": "configs",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -993627,6 +994658,11 @@
       "resource": "configs",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -993726,6 +994762,11 @@
       "action": "update",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -993773,6 +994814,11 @@
       "resource": "locations",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -993856,6 +994902,11 @@
       "resource": "locations",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -993955,6 +995006,11 @@
       "action": "create",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -994003,6 +995059,11 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -994050,6 +995111,11 @@
       "resource": "mappingFiles",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -994133,6 +995199,11 @@
       "resource": "mappingFiles",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -994232,6 +995303,11 @@
       "action": "update",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -994279,6 +995355,11 @@
       "resource": "operations",
       "action": "cancel",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -994328,6 +995409,11 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -994375,6 +995461,11 @@
       "resource": "operations",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -994458,6 +995549,11 @@
       "resource": "operations",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1057323,9 +1058419,19 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudhub.operator",
           "title": "Cloud Hub Operator",
           "stage": "BETA"
+        },
+        {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
+          "stage": "GA"
         },
         {
           "name": "roles/composer.serviceAgent",
@@ -1129544,6 +1130650,11 @@
       "action": "create",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1129582,6 +1130693,11 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1129619,6 +1130735,11 @@
       "resource": "ullMirroringCollectorRules",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1129682,6 +1130803,11 @@
       "resource": "ullMirroringCollectorRules",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1129761,6 +1130887,11 @@
       "action": "update",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1129798,6 +1130929,11 @@
       "resource": "ullMirroringCollectors",
       "action": "create",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1129842,6 +1130978,11 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1129884,6 +1131025,11 @@
       "resource": "ullMirroringCollectors",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1129957,6 +1131103,11 @@
       "resource": "ullMirroringCollectors",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1130046,6 +1131197,11 @@
       "action": "update",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1130089,6 +1131245,11 @@
       "action": "create",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1130127,6 +1131288,11 @@
       "action": "delete",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1130164,6 +1131330,11 @@
       "resource": "ullMirroringEngines",
       "action": "get",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1130227,6 +1131398,11 @@
       "resource": "ullMirroringEngines",
       "action": "list",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1130306,6 +1131482,11 @@
       "action": "listNetworks",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1130369,6 +1131550,11 @@
       "action": "update",
       "granted_by_roles": [
         {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1130406,6 +1131592,11 @@
       "resource": "ullMirroringEngines",
       "action": "use",
       "granted_by_roles": [
+        {
+          "name": "roles/admin",
+          "title": "Admin",
+          "stage": "GA"
+        },
         {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
@@ -1146280,6 +1147471,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/cloudsecuritycompliance.serviceAgent",
           "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
@@ -1146541,6 +1147737,11 @@
         {
           "name": "roles/assuredworkloads.monitoringServiceAgent",
           "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
           "stage": "GA"
         },
         {
@@ -1161954,6 +1163155,11 @@
         {
           "name": "roles/assuredworkloads.viewer",
           "title": "Assured Workloads Viewer",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
         },
         {
@@ -1232306,6 +1233512,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/apphubendpoint.viewer",
+          "title": "App Hub Endpoint Viewer",
+          "stage": "BETA"
+        },
+        {
           "name": "roles/applianceactivation.admin",
           "title": "Appliance Admin",
           "stage": "BETA"
@@ -1240465,6 +1241676,11 @@
           "name": "roles/apphub.viewer",
           "title": "App Hub Viewer",
           "stage": "GA"
+        },
+        {
+          "name": "roles/apphubendpoint.viewer",
+          "title": "App Hub Endpoint Viewer",
+          "stage": "BETA"
         },
         {
           "name": "roles/applianceactivation.admin",
@@ -1272452,6 +1273668,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/editor",
           "title": "Editor (Legacy)",
           "stage": "GA"
@@ -1277936,6 +1279157,21 @@
         {
           "name": "roles/admin",
           "title": "Admin",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/assuredworkloads.monitoringServiceAgent",
+          "title": "Assured Workloads Monitoring Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/auditmanager.serviceAgent",
+          "title": "Audit Manager Auditing Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
         },
         {
@@ -1294305,6 +1295541,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/agentgateway.serviceAgent",
+          "title": "Agent Gateway Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/discoveryengine.serviceAgent",
           "title": "Discovery Engine Service Agent",
           "stage": "GA"
@@ -1310467,6 +1311708,11 @@
           "stage": "GA"
         },
         {
+          "name": "roles/agentgateway.serviceAgent",
+          "title": "Agent Gateway Service Agent",
+          "stage": "GA"
+        },
+        {
           "name": "roles/aiplatform.agentSandboxServiceAgent",
           "title": "Vertex AI Agent Sandbox Service Agent",
           "stage": "GA"
@@ -1310579,6 +1311825,11 @@
         {
           "name": "roles/cloudfunctions.standardServiceAgent",
           "title": "Cloud Functions Service Agent",
+          "stage": "GA"
+        },
+        {
+          "name": "roles/cloudsecuritycompliance.serviceAgent",
+          "title": "Cloud Security Compliance Service Agent",
           "stage": "GA"
         },
         {
@@ -1379304,9 +1380555,9 @@
     }
   ],
   "metadata": {
-    "total_roles": 2436,
+    "total_roles": 2437,
     "total_permissions": 14389,
-    "last_updated": "2026-11-14T08:34:00.742602Z",
+    "last_updated": "2026-11-15T08:48:00.822831Z",
     "source": "Google Cloud IAM API"
   }
 }

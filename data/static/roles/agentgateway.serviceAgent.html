@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agent Gateway Service Agent (roles/agentgateway.serviceAgent) | GCP IAM Reference</title>
-    <meta name="description" content="Agent Gateway Service Agent - Grants Agent Gateway Service Agent permissions required to do DNS peering.">
+    <meta name="description" content="Agent Gateway Service Agent - Grants Agent Gateway Service Agent permissions required to do DNS peering, to look up Agent Registry entities via AppHub Endpoint, and to call Prism.">
     <link rel="canonical" href="https://gcpiam.com/roles/agentgateway.serviceAgent">
     <meta property="og:title" content="Agent Gateway Service Agent (roles/agentgateway.serviceAgent)">
-    <meta property="og:description" content="Agent Gateway Service Agent - Grants Agent Gateway Service Agent permissions required to do DNS peering.">
+    <meta property="og:description" content="Agent Gateway Service Agent - Grants Agent Gateway Service Agent permissions required to do DNS peering, to look up Agent Registry entities via AppHub Endpoint, and to call Prism.">
     <meta property="og:url" content="https://gcpiam.com/roles/agentgateway.serviceAgent">
     <meta property="og:type" content="website">
     <style>
@@ -72,12 +72,17 @@
     <p class="subtitle">Agent Gateway Service Agent <span class="badge badge-ga">GA</span></p>
 
     <div class="description">
-        <p>Grants Agent Gateway Service Agent permissions required to do DNS peering.</p>
+        <p>Grants Agent Gateway Service Agent permissions required to do DNS peering, to look up Agent Registry entities via AppHub Endpoint, and to call Prism.</p>
     </div>
 
-    <h2>Included Permissions <span class="count">(1)</span></h2>
+    <h2>Included Permissions <span class="count">(6)</span></h2>
 <ul class="list">
+    <li><a href="/permissions/agentregistry.aiApplications.get">agentregistry.aiApplications.get</a></li>
+    <li><a href="/permissions/agentregistry.bindings.fetchAvailable">agentregistry.bindings.fetchAvailable</a></li>
+    <li><a href="/permissions/apphubendpoint.locations.lookup">apphubendpoint.locations.lookup</a></li>
     <li><a href="/permissions/dns.networks.targetWithPeeringZone">dns.networks.targetWithPeeringZone</a></li>
+    <li><a href="/permissions/serviceextensions.callouts.invoke">serviceextensions.callouts.invoke</a></li>
+    <li><a href="/permissions/serviceusage.services.use">serviceusage.services.use</a></li>
 </ul>
 
     <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border-color); color: var(--text-secondary); font-size: 0.85rem;">
